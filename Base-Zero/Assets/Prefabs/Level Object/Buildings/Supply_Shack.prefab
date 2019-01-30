@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33877117595552826}
   - component: {fileID: 23702017589105540}
   - component: {fileID: 208374526777231444}
+  - component: {fileID: 64620508717813080}
   m_Layer: 0
   m_Name: Supply_Shack
   m_TagString: Untagged
@@ -36,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1301404334621194}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 366.4, y: 5.9, z: 21.7}
-  m_LocalScale: {x: 2.319, y: 2.319, z: 2.319}
+  m_LocalPosition: {x: 134, y: 4.22, z: 85.53}
+  m_LocalScale: {x: 1.68909, y: 1.68909, z: 1.68909}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -83,6 +84,20 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1301404334621194}
+  m_Mesh: {fileID: 4300000, guid: 76882c3d0d983c6489f4ded0242d028b, type: 3}
+--- !u!64 &64620508717813080
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1301404334621194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 76882c3d0d983c6489f4ded0242d028b, type: 3}
 --- !u!208 &208374526777231444
 NavMeshObstacle:
