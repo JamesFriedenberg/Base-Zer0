@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/AI Test Scene.unity
-=======
-- path: Assets/Scenes/Trainyard.unity
->>>>>>> eb35d668ec4e6c0ac46dabc1dcbf7b0de4d0a2ac
+- path: Assets/Scenes/VehicleDepot.unity
   isLoaded: 1
   isActive: 1

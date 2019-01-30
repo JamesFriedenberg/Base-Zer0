@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4638473975675708}
   - component: {fileID: 33813015430979968}
   - component: {fileID: 23468497765128100}
+  - component: {fileID: 65002754515051934}
   m_Layer: 0
   m_Name: Steetlight
   m_TagString: Untagged
@@ -63,14 +64,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1486338357784678}
-  m_LocalRotation: {x: -0, y: 0.86681855, z: -0, w: 0.4986238}
-  m_LocalPosition: {x: 96.36, y: 1.1218699, z: 80.65}
+  m_LocalRotation: {x: -0, y: 0.8895594, z: -0, w: -0.4568195}
+  m_LocalPosition: {x: 83.5, y: 1.1218699, z: 44.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4115881494468304}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 120.18201, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 234.36398, z: 0}
 --- !u!23 &23468497765128100
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -114,6 +115,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1486338357784678}
   m_Mesh: {fileID: 4300000, guid: 43fca3f9a3ea8e1458ac489c0198121a, type: 3}
+--- !u!65 &65002754515051934
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1486338357784678}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5740496, y: 10.255245, z: 0.36154336}
+  m_Center: {x: -0.00000047721176, y: 5.127639, z: -0.039737444}
 --- !u!108 &108823018999270452
 Light:
   m_ObjectHideFlags: 1
@@ -124,9 +137,9 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 4.12
   m_Range: 14.847109
-  m_SpotAngle: 60.65251
+  m_SpotAngle: 92.8732
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
