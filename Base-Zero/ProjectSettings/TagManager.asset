@@ -33,6 +33,7 @@ TagManager:
   - pistol
   - shopmanager
   - questobj
+  - Enemy
   layers:
   - Default
   - TransparentFX

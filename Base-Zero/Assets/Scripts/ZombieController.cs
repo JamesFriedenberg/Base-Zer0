@@ -27,6 +27,7 @@ public class ZombieController : MonoBehaviour {
 
     private void Start()
     {
+        wanderRadius = 50f;
         wanderTime = wanderTimer;
         player = GameObject.FindWithTag("Player");
         zombie.stoppingDistance = 2f;
