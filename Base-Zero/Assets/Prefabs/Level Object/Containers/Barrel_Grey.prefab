@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4284285293944722}
   - component: {fileID: 33463445634543692}
   - component: {fileID: 23539045209700560}
-  - component: {fileID: 64126781842798120}
   - component: {fileID: 208486716476605608}
+  - component: {fileID: 64931152382945040}
   m_Layer: 0
   m_Name: Barrel_Grey
   m_TagString: Untagged
@@ -36,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456479451005846}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.12, y: -3.0884864, z: 16.18}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.22801682, z: -0, w: 0.97365725}
+  m_LocalPosition: {x: -33.424, y: 2.218, z: -40.697}
+  m_LocalScale: {x: 0.74352, y: 0.74351996, z: 0.74352}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -26.361002, z: 0}
 --- !u!23 &23539045209700560
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -85,7 +85,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1456479451005846}
   m_Mesh: {fileID: 4300000, guid: d972d134488cd3b47ac94bb9f69c2a26, type: 3}
---- !u!64 &64126781842798120
+--- !u!64 &64931152382945040
 MeshCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
