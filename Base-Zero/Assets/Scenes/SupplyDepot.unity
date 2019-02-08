@@ -51506,15 +51506,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52148bc98f1bcf645ac95e804b1df7b0, type: 3}
       propertyPath: m_LocalScale.x
-      value: 30.21519
+      value: 0.8182905
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52148bc98f1bcf645ac95e804b1df7b0, type: 3}
       propertyPath: m_LocalScale.y
-      value: 135.43294
+      value: 3.6678066
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52148bc98f1bcf645ac95e804b1df7b0, type: 3}
       propertyPath: m_LocalScale.z
-      value: 30.21519
+      value: 0.8182905
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 52148bc98f1bcf645ac95e804b1df7b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
