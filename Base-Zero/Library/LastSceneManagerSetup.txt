@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/VehicleDepot.unity
-  isLoaded: 1
-  isActive: 1
