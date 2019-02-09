@@ -69,21 +69,7 @@ public class QuestManager : MonoBehaviour {
         }
 
         currentQuests[questIndex].SetActive(true);
-        string curQuestStatus;
-        if (currentQuests[questIndex].GetComponent<Quest>() == null)
-        {
-            curQuestStatus = currentQuests[questIndex].GetComponent<DefendQuest>().getQuestStatus();
-        }
-        else
-        {
-            curQuestStatus = currentQuests[questIndex].GetComponent<Quest>().getQuestStatus();
-        }
-        //if(curQuestStatus == null)
-        //{
-        //    curQuestStatus = currentQuests[questIndex].GetComponent<DefendQuest>().getQuestStatus();
-
-        //}
-
+        string curQuestStatus = currentQuests[questIndex].GetComponent<Quest>().getQuestStatus();
         if (curQuestStatus == "Completed")
         {
             currentQuests[questIndex].SetActive(false);
@@ -103,16 +89,7 @@ public class QuestManager : MonoBehaviour {
     }
     public string sendCurQuestLocation()
     {
-        string s; 
-        if(currentQuests[questIndex].GetComponent<Quest>() == null)
-        {
-            s = currentQuests[questIndex].GetComponent<DefendQuest>().location;
-        }
-        else
-        {
-            s = currentQuests[questIndex].GetComponent<Quest>().location;
-        }
-        return s;
+        return currentQuests[questIndex].GetComponent<Quest>().location;
     }
     public GameObject returnQuestGO(string tag)
     {
@@ -150,7 +127,6 @@ public class QuestManager : MonoBehaviour {
         }
         return null;
     }
-  
     private void generateQuests(string[] questPopulatedArr)
     {
         currentQuests[5] = questDatabase[14];
@@ -158,68 +134,60 @@ public class QuestManager : MonoBehaviour {
         {
             string cur = questPopulatedArr[i];
 
-            if(i == 0)
+        
+
+            switch (cur)
             {
-                currentQuests[i] = questDatabase[15];
-                break;
+                case "heli1":
+                    currentQuests[i] = questDatabase[0];
+                    break;
+                case "heli2":
+                    currentQuests[i] = questDatabase[1];
+                    break;
+                case "heli3":
+                    currentQuests[i] = questDatabase[2];
+                    break;
+                case "heli4":
+                    currentQuests[i] = questDatabase[3];
+                    break;
+                case "heli5":
+                    currentQuests[i] = questDatabase[4];
+                    break;
+                case "nuke1":
+                    currentQuests[i] = questDatabase[5];
+                    break;
+                case "nuke2":
+                    currentQuests[i] = questDatabase[6];
+                    break;
+                case "nuke3":
+                    currentQuests[i] = questDatabase[7];
+                    break;
+                case "nuke4":
+                    currentQuests[i] = questDatabase[8];
+                    break;
+                case "nuke5":
+                    currentQuests[i] = questDatabase[9];
+                    break;
+                case "misc1":
+                    currentQuests[i] = questDatabase[10];
+                    break;
+                case "misc2":
+                    currentQuests[i] = questDatabase[11];
+                    break;
+                case "misc3":
+                    currentQuests[i] = questDatabase[12];
+                    break;
+                case "misc4":
+                    currentQuests[i] = questDatabase[13];
+                    break;
+                
+
+
+
+                default:
+                    break;
+
             }
-            else
-            {
-                switch (cur)
-                {
-                    case "heli1":
-                        currentQuests[i] = questDatabase[0];
-                        break;
-                    case "heli2":
-                        currentQuests[i] = questDatabase[1];
-                        break;
-                    case "heli3":
-                        currentQuests[i] = questDatabase[2];
-                        break;
-                    case "heli4":
-                        currentQuests[i] = questDatabase[3];
-                        break;
-                    case "heli5":
-                        currentQuests[i] = questDatabase[4];
-                        break;
-                    case "nuke1":
-                        currentQuests[i] = questDatabase[5];
-                        break;
-                    case "nuke2":
-                        currentQuests[i] = questDatabase[6];
-                        break;
-                    case "nuke3":
-                        currentQuests[i] = questDatabase[7];
-                        break;
-                    case "nuke4":
-                        currentQuests[i] = questDatabase[8];
-                        break;
-                    case "nuke5":
-                        currentQuests[i] = questDatabase[9];
-                        break;
-                    case "misc1":
-                        currentQuests[i] = questDatabase[10];
-                        break;
-                    case "misc2":
-                        currentQuests[i] = questDatabase[11];
-                        break;
-                    case "misc3":
-                        currentQuests[i] = questDatabase[12];
-                        break;
-                    case "misc4":
-                        currentQuests[i] = questDatabase[13];
-                        break;
-
-
-
-
-                    default:
-                        break;
-
-                }
-            }
-
-            
         }
     }
 }

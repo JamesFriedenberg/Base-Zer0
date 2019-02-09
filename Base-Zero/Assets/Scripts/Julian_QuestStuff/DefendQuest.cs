@@ -33,22 +33,16 @@ public class DefendQuest : MonoBehaviour {
         this.transform.gameObject.SetActive(true);
 
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Vector3.Distance(defenseTargetObj.transform.position, GameObject.FindGameObjectWithTag("Player").transform.position));
         UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
-        if (questStatus == "getToTarget")
+        if (questStatus == "InProgress")
         {
             UITextRef.text = questText;
-            if(Vector3.Distance(defenseTargetObj.transform.position,GameObject.FindGameObjectWithTag("Player").transform.position) <= 20f)
-            {
-                questStatus = "defend";
-            }
 
         }
-
         else if (questStatus == "Completed")
         {
             UITextRef.text = "Quest Completed, Return to HQ";
