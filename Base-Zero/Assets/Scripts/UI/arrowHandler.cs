@@ -25,7 +25,7 @@ public class arrowHandler : MonoBehaviour
 
     void Update()
     {
-        if(!goTarget) return;
+        //if(!goTarget) return;
         
         //if (flag)
         //{
