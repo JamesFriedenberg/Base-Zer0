@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33445923198750502}
   - component: {fileID: 23464573999827586}
   - component: {fileID: 65308121017922400}
+  - component: {fileID: 208931345523194326}
   m_Layer: 0
   m_Name: Jersey_Barricade_Tall
   m_TagString: Untagged
@@ -35,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1879417937902052}
-  m_LocalRotation: {x: -0, y: -0.5927252, z: -0, w: 0.8054047}
-  m_LocalPosition: {x: 110.772194, y: 2.8740819, z: 326.29}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.06024411, z: -0, w: 0.9981837}
+  m_LocalPosition: {x: 189.91, y: 2.76, z: 43.36}
+  m_LocalScale: {x: 1.5455523, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -72.701004, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -6.9080005, z: 0}
 --- !u!23 &23464573999827586
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -96,3 +97,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6103482, y: 5.755488, z: 0.99429226}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &208931345523194326
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1879417937902052}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.8050001, y: 2.878, z: 0.497}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

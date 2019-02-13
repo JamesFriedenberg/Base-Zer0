@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 33790676239342642}
   - component: {fileID: 23996786591434914}
   - component: {fileID: 64789618698289230}
+  - component: {fileID: 208126727695742850}
   m_Layer: 0
   m_Name: Silo
   m_TagString: Untagged
@@ -244,3 +245,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 52148bc98f1bcf645ac95e804b1df7b0, type: 3}
+--- !u!208 &208126727695742850
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1927282351035922}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 18.5, y: 9.97, z: 18.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

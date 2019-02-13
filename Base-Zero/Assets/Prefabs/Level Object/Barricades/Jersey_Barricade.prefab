@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33037429471640328}
   - component: {fileID: 23898878426494560}
   - component: {fileID: 65745315219533822}
+  - component: {fileID: 208098296607407230}
   m_Layer: 0
   m_Name: Jersey_Barricade
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1287063252172672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4541016, y: 3.35074, z: -11.099976}
+  m_LocalPosition: {x: 155.48, y: 0.94, z: 59.596}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,3 +97,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.2203617, y: 2.0423057, z: 0.64242554}
   m_Center: {x: 0, y: 0, z: 0.016433716}
+--- !u!208 &208098296607407230
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1287063252172672}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.1100001, y: 1.021, z: 0.497}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
