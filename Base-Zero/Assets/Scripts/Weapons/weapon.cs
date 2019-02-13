@@ -22,6 +22,7 @@ public class weapon : MonoBehaviour
     public float recoil = 1.5f;
     public int bulletCount = 1;
     public bool semiAuto = false;
+    public bool projectile = false;
     public string fireAnimation = "firing";
 
     private float currentAccuracy = 1.0f;
@@ -36,6 +37,7 @@ public class weapon : MonoBehaviour
     public Camera fpsCam;
     public GameObject fpsController;
     public GameObject gameManager;
+    public GameObject projObj;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
     public GameObject blood;
@@ -72,6 +74,7 @@ public class weapon : MonoBehaviour
     */
     void Start()
     {
+        if(projectile) semiAuto = true;
         FindStats(this.gameObject);
 
         crossHairs = GameObject.FindGameObjectsWithTag("crossHair");
@@ -257,6 +260,11 @@ public class weapon : MonoBehaviour
         //fpsCam.transform.Rotate(fpsCam.transform.right, 5.0f);
         fireSound.GetComponent<AudioSource>().Play(0);
         currentAmmoCount--;
+        if(projectile){
+            DoProjectile();
+            return;
+        }
+
         RaycastHit hit;
 
         for(int i = 0; i < bulletCount; i++){
@@ -272,6 +280,12 @@ public class weapon : MonoBehaviour
                 DoBullet(hit);
             }
         }
+    }
+    void DoProjectile(){
+        if(!projObj || projObj == null) return;
+        Quaternion projectileDirection = Quaternion.identity;
+        projectileDirection.SetLookRotation(fpsCam.transform.forward);
+        Instantiate(projObj,this.transform.position + fpsCam.transform.forward * 2, projectileDirection);
     }
     void DoBullet(RaycastHit hit){
             Target target = hit.transform.GetComponent<Target>();
