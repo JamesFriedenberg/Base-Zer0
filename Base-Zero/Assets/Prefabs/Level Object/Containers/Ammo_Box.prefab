@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 33854631246258908}
   - component: {fileID: 23844592964852216}
   - component: {fileID: 65878961849088580}
+  - component: {fileID: 208977595428635702}
   m_Layer: 0
   m_Name: Ammo_Box
   m_TagString: Untagged
@@ -125,8 +126,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1602482548642388}
-  m_LocalRotation: {x: -0.012422082, y: 0.026732879, z: -0.4571541, w: 0.8888989}
-  m_LocalPosition: {x: 109.295, y: 1.266, z: 105.22}
+  m_LocalRotation: {x: -0, y: -0.69167185, z: -0, w: 0.72221196}
+  m_LocalPosition: {x: 110.317, y: 1.3067393, z: 103.448}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4278817056180294}
@@ -134,7 +135,7 @@ Transform:
   - {fileID: 4191690086330848}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0.135, y: 3.3760002, z: -54.429}
+  m_LocalEulerAnglesHint: {x: 0.135, y: -87.525, z: -54.429}
 --- !u!23 &23444272850837742
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -315,3 +316,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.34360743, y: 0.5722043, z: 1.0045314}
   m_Center: {x: -0.0000038141463, y: -0.016956719, z: -0.000000029865518}
+--- !u!208 &208977595428635702
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1602482548642388}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.172, y: 0.286, z: 0.50200003}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.017, z: 0}
+  m_TimeToStationary: 0.5

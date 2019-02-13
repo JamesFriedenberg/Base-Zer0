@@ -197,6 +197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4633258939595386}
+  - component: {fileID: 208785629655276166}
   m_Layer: 0
   m_Name: GuardTower
   m_TagString: Untagged
@@ -675,8 +676,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1491743008122250}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 259.76953, y: 12.016852, z: 24.343262}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 114.36, y: 11.39, z: 91.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4393034630733376}
@@ -2139,3 +2140,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &208785629655276166
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1491743008122250}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 4.24, y: 6.795, z: 3.995}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 1.89, y: -3.5, z: -2.49}
+  m_TimeToStationary: 0.5
