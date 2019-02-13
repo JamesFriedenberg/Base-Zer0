@@ -255,6 +255,7 @@
     <Compile Include="Assets\Scripts\Weapons\barrel.cs" />
     <Compile Include="Assets\Scripts\Weapons\body.cs" />
     <Compile Include="Assets\Scripts\Weapons\magazine.cs" />
+    <Compile Include="Assets\Scripts\Weapons\projectile.cs" />
     <Compile Include="Assets\Scripts\Weapons\scope.cs" />
     <Compile Include="Assets\Scripts\Weapons\stock.cs" />
     <Compile Include="Assets\Scripts\Weapons\weapon.cs" />
