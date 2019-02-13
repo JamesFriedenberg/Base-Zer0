@@ -58,6 +58,7 @@ public class weapon : MonoBehaviour
 
     private int myIterations = 0;
 
+    //
     private bool[] myUpgrades = {false, false, false, false};
 
     //TODO:
@@ -74,13 +75,24 @@ public class weapon : MonoBehaviour
     */
     void Start()
     {
+        gameManager = GameObject.FindGameObjectWithTag("gm");
+
+        ShopSystemHandler shopHandle = gameManager.GetComponent<ShopSystemHandler>();
+        for(int i = 0; i < shopHandle.weaponsList.Length; i++){
+            if(shopHandle.weaponsList[i].objName == this.gameObject.name){
+                myUpgrades[0] = shopHandle.weaponsList[i].stockUpgraded;
+                myUpgrades[3] = shopHandle.weaponsList[i].barrelUpgraded;
+                myUpgrades[2] = shopHandle.weaponsList[i].scopeUpgraded;
+                myUpgrades[1] = shopHandle.weaponsList[i].magazineUpgraded;
+            }
+        }
+
         if(projectile) semiAuto = true;
         FindStats(this.gameObject);
 
         crossHairs = GameObject.FindGameObjectsWithTag("crossHair");
 
         if(currentAmmoCount > magSize) currentAmmoCount = magSize;
-        gameManager = GameObject.FindGameObjectWithTag("gm");
 /*
         ShopWeapon myWeapon;
         for(int i = 0; i < gameManager.weapons.length; i++){
@@ -98,6 +110,10 @@ public class weapon : MonoBehaviour
             }
         }
         currentAccuracy = accuracy;
+        GameManager gm = gameManager.GetComponent<GameManager>();
+        if(gm.ammoInWeapons != null && gm.ammoInWeapons.Length > 0){
+            currentAmmoCount = gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]];
+        }
     }
     void FindStats(GameObject objToSearch){
         if(myIterations > 30) return;
@@ -108,7 +124,6 @@ public class weapon : MonoBehaviour
         for(int i = 0; i < children.Length; i++){
             if(children[i].GetComponent<stock>() != null){
                 if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
-                    print("upgraded");
                     accuracy += children[i].GetComponent<stock>().accuracy;
                     recoil *= children[i].GetComponent<stock>().recoil;
                 }else if(children[i].GetComponent<stock>().upgrade){
@@ -116,13 +131,11 @@ public class weapon : MonoBehaviour
                 }
 
                 if(!children[i].GetComponent<stock>().upgrade && !myUpgrades[0]){
-                    print("unUpgraded");
                 }else if(!children[i].GetComponent<stock>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
             }else if(children[i].GetComponent<magazine>() != null){
                 if(children[i].GetComponent<magazine>().upgrade && myUpgrades[1]){
-                    print("upgraded");
                     magSize += children[i].GetComponent<magazine>().magSize;
                     reloadTime *= children[i].GetComponent<magazine>().reloadTime;
                 }else if(children[i].GetComponent<magazine>().upgrade){
@@ -130,13 +143,11 @@ public class weapon : MonoBehaviour
                 }
 
                 if(!children[i].GetComponent<magazine>().upgrade && !myUpgrades[1]){
-                    print("unUpgraded");
                 }else if(!children[i].GetComponent<magazine>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
             }else if(children[i].GetComponent<scope>() != null){
                 if(children[i].GetComponent<scope>().upgrade && myUpgrades[2]){
-                    print("upgraded");
                     scopeName = children[i].GetComponent<scope>().scopeImage;
                     adsZoom = children[i].GetComponent<scope>().fov;
                 }else if(children[i].GetComponent<scope>().upgrade){
@@ -144,20 +155,17 @@ public class weapon : MonoBehaviour
                 }
 
                 if(!children[i].GetComponent<scope>().upgrade && !myUpgrades[2]){
-                    print("unUpgraded");
                 }else if(!children[i].GetComponent<scope>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
             }else if(children[i].GetComponent<barrel>() != null){
                 if(children[i].GetComponent<barrel>().upgrade && myUpgrades[3]){
-                    print("upgraded");
                     accuracy += children[i].GetComponent<barrel>().accuracy;
                 }else if(children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
 
                 if(!children[i].GetComponent<barrel>().upgrade && !myUpgrades[3]){
-                    print("unUpgraded");
                 }else if(!children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
@@ -260,6 +268,11 @@ public class weapon : MonoBehaviour
         //fpsCam.transform.Rotate(fpsCam.transform.right, 5.0f);
         fireSound.GetComponent<AudioSource>().Play(0);
         currentAmmoCount--;
+        GameManager gm = gameManager.GetComponent<GameManager>();
+
+        //update current ammo count in specific weapon in gamemanager so it will remain
+        //consistent through scenes
+        gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]] = currentAmmoCount;
         if(projectile){
             DoProjectile();
             return;

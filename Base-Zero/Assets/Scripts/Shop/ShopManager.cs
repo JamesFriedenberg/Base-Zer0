@@ -15,13 +15,16 @@ public class ShopManager : MonoBehaviour {
     public int cash;
     public int scrap;
     public GameObject currentWeapon;
-    public GameObject[] equippedWeapons;
+    public int[] equippedWeapons;
     public GameObject[] equipSlots;
 	// Use this for initialization
 	void Start () {
 
         categoryScreen.SetActive(true);
         assaultRifleScreen.SetActive(false);
+
+        GameManager gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
+        equippedWeapons = gm.playerWeapons;
 	}
 	
 	// Update is called once per frame
@@ -87,14 +90,17 @@ public class ShopManager : MonoBehaviour {
     {
         if(currentWeapon.tag == "pistol")
         {
-            if(equippedWeapons[0] == null || currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[0].GetComponent<WeaponInfo>().name)
+            if(weaponRefArray[equippedWeapons[0]] == null || currentWeapon.GetComponent<WeaponInfo>().name != weaponRefArray[equippedWeapons[0]].GetComponent<WeaponInfo>().name)
             {
                 equipSlots[0].SetActive(true);
             }
         } else
         {
             //currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[1].GetComponent<WeaponInfo>().name && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[2].GetComponent<WeaponInfo>().name
-            if ((equippedWeapons[1] == null && equippedWeapons[2] == null) || (equippedWeapons[1] == null && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[2].GetComponent<WeaponInfo>().name) || (equippedWeapons[2] == null && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[1].GetComponent<WeaponInfo>().name) || currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[1].GetComponent<WeaponInfo>().name && currentWeapon.GetComponent<WeaponInfo>().name != equippedWeapons[2].GetComponent<WeaponInfo>().name)
+            if ((equippedWeapons[1] == -1 && equippedWeapons[2] == -1) || 
+            (equippedWeapons[1] == -1 && currentWeapon.GetComponent<WeaponInfo>().name != weaponRefArray[equippedWeapons[2]].GetComponent<WeaponInfo>().name) || 
+            (equippedWeapons[2] == -1 && currentWeapon.GetComponent<WeaponInfo>().name != weaponRefArray[equippedWeapons[1]].GetComponent<WeaponInfo>().name) || 
+            currentWeapon.GetComponent<WeaponInfo>().name != weaponRefArray[equippedWeapons[1]].GetComponent<WeaponInfo>().name && currentWeapon.GetComponent<WeaponInfo>().name != weaponRefArray[equippedWeapons[2]].GetComponent<WeaponInfo>().name)
             {
                 equipSlots[1].SetActive(true);
                 equipSlots[2].SetActive(true);

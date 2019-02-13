@@ -30,9 +30,9 @@ public class sceneSwitcher : MonoBehaviour {
             {
                 if(this.gameObject.tag == "HQtoTrainyard")
                 {
-                    SceneManager.LoadScene(2);
+                    SceneManager.LoadScene(6);
                    // arrowScr.onObjectiveChange();
-                    SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("Player"), SceneManager.GetSceneByBuildIndex(2));
+                    //SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("gm"), SceneManager.GetSceneByBuildIndex(6));
 
                 }
             }
@@ -42,7 +42,7 @@ public class sceneSwitcher : MonoBehaviour {
                 {
                     SceneManager.LoadScene(1);
                     //arrowScr.onObjectiveChange();
-                    SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("Player"), SceneManager.GetSceneByBuildIndex(1));
+                    //SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("gm"), SceneManager.GetSceneByBuildIndex(1));
                 }
             }
         }
