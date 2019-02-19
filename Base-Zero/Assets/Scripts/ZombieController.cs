@@ -9,6 +9,7 @@ using UnityEngine.AI;
 
 public class ZombieController : MonoBehaviour {
 
+    private GameObject gm;
     public GameObject player;
     public NavMeshAgent zombie;
 
@@ -27,6 +28,7 @@ public class ZombieController : MonoBehaviour {
 
     private void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("gm");
         wanderRadius = 50f;
         wanderTime = wanderTimer;
         player = GameObject.FindWithTag("Player");
@@ -87,10 +89,24 @@ public class ZombieController : MonoBehaviour {
         }
        // player.GetComponent<PlayerHandler>().TakeDamage(100f);    
        
-        if(distanceToPlayer > distanceToSeekPlayer)
+        if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].tag == "q_defense")
         {
 
-           if(wanderTime >= wanderTimer)
+            if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
+            {
+                distanceToSeekPlayer = 90f;
+                Debug.Log("Zombies inc");
+            }
+        }
+        else
+        {
+            distanceToSeekPlayer = 20f;
+        }
+
+        if (distanceToPlayer > distanceToSeekPlayer)
+        {
+
+            if (wanderTime >= wanderTimer)
             {
 
                 Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
@@ -98,13 +114,15 @@ public class ZombieController : MonoBehaviour {
                 wanderTime = 0;
             }
         }
-        else if(distanceToPlayer < distanceToSeekPlayer)
+        else if (distanceToPlayer < distanceToSeekPlayer)
         {
 
             zombie.SetDestination(player.transform.localPosition);
         }
-        
-	}
+
+
+
+    }
     private void Attack()
     {
         if(player.GetComponent<PlayerHandler>().GetHealth() > 0)

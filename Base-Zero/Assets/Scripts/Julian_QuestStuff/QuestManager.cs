@@ -49,10 +49,10 @@ public class QuestManager : MonoBehaviour {
        // currentQuests[0].SetActive(true);
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-       
+
+    // Update is called once per frame
+    void Update() {
+
         navArrow = GameObject.FindGameObjectWithTag("Arrow");
         if (questsWereAdded)
         {
@@ -69,7 +69,15 @@ public class QuestManager : MonoBehaviour {
         }
 
         currentQuests[questIndex].SetActive(true);
-        string curQuestStatus = currentQuests[questIndex].GetComponent<Quest>().getQuestStatus();
+        string curQuestStatus;
+        if (currentQuests[questIndex].tag == "q_defense")
+        {
+            curQuestStatus = currentQuests[questIndex].GetComponent<DefendQuest>().getQuestStatus();
+        }
+        else
+        {
+            curQuestStatus = currentQuests[questIndex].GetComponent<Quest>().getQuestStatus();
+        }
         if (curQuestStatus == "Completed")
         {
             currentQuests[questIndex].SetActive(false);
@@ -89,7 +97,15 @@ public class QuestManager : MonoBehaviour {
     }
     public string sendCurQuestLocation()
     {
-        return currentQuests[questIndex].GetComponent<Quest>().location;
+
+        if (currentQuests[questIndex].tag == "q_defense")
+        {
+            return currentQuests[questIndex].GetComponent<DefendQuest>().location;
+        }
+        else
+        {
+            return currentQuests[questIndex].GetComponent<Quest>().location;
+        }
     }
     public GameObject returnQuestGO(string tag)
     {
