@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33934151572919830}
   - component: {fileID: 23106267190768770}
   - component: {fileID: 64301959914647550}
+  - component: {fileID: 208265715739641384}
   m_Layer: 0
   m_Name: Barrel_Brown
   m_TagString: Untagged
@@ -35,9 +36,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1348010954922972}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 424.45, y: 1.397, z: 140.82}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 151.832, y: 1.07, z: 94.391}
+  m_LocalScale: {x: 0.78378, y: 0.78378, z: 0.78378}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -98,3 +99,18 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 3bdb26e80262d4043979702fa0ac1956, type: 3}
+--- !u!208 &208265715739641384
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348010954922972}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 0.98, y: 2.38, z: 0.98}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

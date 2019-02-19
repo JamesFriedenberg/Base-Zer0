@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33318578859094852}
   - component: {fileID: 23029217814488688}
   - component: {fileID: 65886679120699658}
+  - component: {fileID: 208715728921252192}
   m_Layer: 0
   m_Name: Concrete_Wall 1
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1458210891663108}
   m_LocalRotation: {x: -0, y: -0.7070136, z: -0, w: 0.7072}
-  m_LocalPosition: {x: 432.8811, y: 2.8600006, z: 396.068}
+  m_LocalPosition: {x: 11.987289, y: -0.5100002, z: 0.01999998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -96,3 +97,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29262137, y: 6.0771313, z: 7.2633576}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &208715728921252192
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1458210891663108}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.14600001, y: 3.039, z: 3.6320002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

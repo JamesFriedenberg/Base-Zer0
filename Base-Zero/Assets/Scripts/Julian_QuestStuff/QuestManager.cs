@@ -57,7 +57,6 @@ public class QuestManager : MonoBehaviour {
         if (questsWereAdded)
         {
             generateQuests(qp.getQuestNames());
-            Debug.Log("Here");
             questsWereAdded = false;
         }
         if (Input.GetKeyDown(KeyCode.CapsLock))

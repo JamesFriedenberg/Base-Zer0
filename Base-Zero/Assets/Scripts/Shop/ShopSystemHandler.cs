@@ -14,6 +14,7 @@ public class ShopSystemHandler : MonoBehaviour {
         public bool magazineUpgraded;
         public bool purchased;
         public string name;
+        public string objName;
     }
 
     public ShopManager shopRef;
@@ -23,9 +24,10 @@ public class ShopSystemHandler : MonoBehaviour {
     public GameObject canvas;
     public GameObject questObj;
 
+    private GameManager gm;
 
     // Use this for initialization
-    void Awake () {        
+    void Awake () {    
         player = GameObject.FindGameObjectWithTag("Player");
         canvas = GameObject.FindGameObjectWithTag("Canvas");
         questObj = GameObject.FindGameObjectWithTag("questobj");
@@ -35,7 +37,10 @@ public class ShopSystemHandler : MonoBehaviour {
             
             updateWeapons();
         }
-	}
+    }
+    void Start(){
+        gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -50,7 +55,9 @@ public class ShopSystemHandler : MonoBehaviour {
             Cursor.lockState = CursorLockMode.None;
             gameObject.GetComponent<QuestManager>().enabled = false;
             questObj.SetActive(false);
-            canvas.SetActive(false);
+            if(canvas){
+                canvas.SetActive(false);
+            }
             if (player)
             {
                 player.SetActive(false);
@@ -65,7 +72,9 @@ public class ShopSystemHandler : MonoBehaviour {
             {
                 player.SetActive(true);
             }
-            canvas.SetActive(true);
+            if(canvas){
+                canvas.SetActive(true);
+            }
         }
 	}
 
@@ -119,14 +128,29 @@ public class ShopSystemHandler : MonoBehaviour {
         for(int i =0; i < weaponsList.Length; i++)
         {
             weaponsList[i].name = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().name;
+            weaponsList[i].objName = shopRef.weaponRefArray[i].name;
+
+            //temporay to fill in the gaps where these weapons aren't active on the player
+            //TODO: Add these weapons to the player and remove this switch statement
+            switch(shopRef.weaponRefArray[i].name){
+                case "Heavy_SMG":
+                    weaponsList[i].objName = "MAG_LMG";
+                    break;
+                case "AR_Rifle":
+                    weaponsList[i].objName = "AK_Rifle";
+                    break;
+                default:
+                    break;
+            }
             weaponsList[i].magazineUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded;
             weaponsList[i].scopeUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded;
             weaponsList[i].stockUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgraded;
             weaponsList[i].barrelUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgraded;
         }
         for(int j = 0; j < 3; j++){
-            if(shopRef.equippedWeapons[j] != null){
-                 equippedWeapons[j] = shopRef.equippedWeapons[j].GetComponent<WeaponInfo>().wepIndex;
+            if(shopRef.equippedWeapons[j] != -1){
+                 equippedWeapons[j] = shopRef.equippedWeapons[j];
+                 gm.playerWeapons[j] = equippedWeapons[j];
             }
            
         }

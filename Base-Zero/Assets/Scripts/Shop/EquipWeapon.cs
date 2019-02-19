@@ -19,7 +19,13 @@ public class EquipWeapon : MonoBehaviour {
 
     public void equipWeapon()
     {        
-        shopManager.equippedWeapons[wepIndex] = shopManager.currentWeapon;
+        for(int i = 0; i < shopManager.weaponRefArray.Length; i++){
+            if(shopManager.weaponRefArray[i].name == shopManager.currentWeapon.name){
+                shopManager.equippedWeapons[wepIndex] = i;
+                break;
+            }
+        }
+        //shopManager.equippedWeapons[wepIndex] = shopManager.currentWeapon;
         weaponSlot.GetComponentInChildren<Text>().text = shopManager.currentWeapon.GetComponent<WeaponInfo>().name;
         shopManager.ToggleEquips();
     }

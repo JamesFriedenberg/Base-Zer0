@@ -21,29 +21,11 @@ public class UIHandler : MonoBehaviour {
 
     public static UIHandler instance;
 
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);
-    }
-
     // Use this for initialization
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         gameManager = GameObject.FindGameObjectWithTag("gm");
-        resourceMenuBackground.SetActive(false);
-        
-
-        //DontDestroyOnLoad(this.gameObject);
-        
+        resourceMenuBackground.SetActive(false);    
 
     }
 
@@ -58,7 +40,7 @@ public class UIHandler : MonoBehaviour {
         else
         {
             resourceMenuBackground.SetActive(false);
-        }
+        }        
         PlayerHandler playerHandler = player.GetComponent<PlayerHandler>();
         playerAmmo = gameManager.GetComponent<GameManager>().CheckAmmo("AR");
         playerHealth = playerHandler.GetHealth();

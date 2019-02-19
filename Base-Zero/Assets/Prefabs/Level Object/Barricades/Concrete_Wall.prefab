@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33191241920153432}
   - component: {fileID: 23073838266647404}
   - component: {fileID: 65081668376334406}
+  - component: {fileID: 208937610957769866}
   m_Layer: 0
   m_Name: Concrete_Wall
   m_TagString: Untagged
@@ -35,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439600338377710}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 321.3585, y: -139.56789, z: 239.2075}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0.33226013, y: -0.07115126, z: 1.4655304}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!23 &23073838266647404
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -96,3 +97,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29262137, y: 6.0771313, z: 7.2633576}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &208937610957769866
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1439600338377710}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.14600001, y: 3.039, z: 3.6320002}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
