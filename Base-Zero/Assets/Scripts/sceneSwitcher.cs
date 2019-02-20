@@ -30,7 +30,7 @@ public class sceneSwitcher : MonoBehaviour {
             {
                 if(this.gameObject.tag == "HQtoTrainyard")
                 {
-                    SceneManager.LoadScene(6);
+                    SceneManager.LoadScene(2);
                    // arrowScr.onObjectiveChange();
                     //SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("gm"), SceneManager.GetSceneByBuildIndex(6));
 

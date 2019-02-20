@@ -35,6 +35,7 @@ TagManager:
   - questobj
   - Enemy
   - q_defense
+  - Vehicle2
   layers:
   - Default
   - TransparentFX

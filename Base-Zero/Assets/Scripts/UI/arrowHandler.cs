@@ -32,7 +32,6 @@ public class arrowHandler : MonoBehaviour
             onObjectiveChange();
         //    flag = false;
         //}
-
         //goTarget = GameObject.FindGameObjectWithTag("Heli2");
         Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
 
@@ -83,6 +82,10 @@ public class arrowHandler : MonoBehaviour
 
                     case "Escape":
                         goTarget = GameObject.FindGameObjectWithTag("Escape");
+                        break;
+
+                    case "DefenseTest":
+                        goTarget = GameObject.Find(qm.currentQuests[qm.questIndex].GetComponent<DefendQuest>().sendCurQuestObject().name);
                         break;
 
                     default:
@@ -139,6 +142,24 @@ public class arrowHandler : MonoBehaviour
             else if (qm.sendCurQuestLocation() == "HQ")
             {
                 goTarget = GameObject.FindGameObjectWithTag("TrainyardtoHQ");
+            }
+        }
+        else if (sceneName == "VehicleDepot")
+        {
+            switch (qm.sendCurQuestName())
+            {
+                case "Vehicle1":
+                    goTarget = GameObject.Find(qm.currentQuests[qm.questIndex].GetComponent<DefendQuest>().sendCurQuestObject().name);
+                    break;
+
+                case "Vehicle2":
+                    goTarget = GameObject.FindGameObjectWithTag("Vehicle2");
+                    break;
+
+
+                default:
+                    break;
+
             }
         }
     }

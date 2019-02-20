@@ -31,6 +31,7 @@ public class DefendQuest : MonoBehaviour {
     {
         player = GameObject.FindGameObjectWithTag("Player");
         Instantiate(defenseTargetObj, (defenseTargetLocation), Quaternion.identity);
+        defenseTargetObj = GameObject.Find(defenseTargetObj.name + "(Clone)");
         questStatus = "InProgress";
         //Instantiate()
         this.transform.gameObject.SetActive(true);
@@ -96,5 +97,9 @@ public class DefendQuest : MonoBehaviour {
             yield return new WaitForSeconds(1);
             timer--;
         }
+    }
+    public GameObject sendCurQuestObject()
+    {
+        return defenseTargetObj;
     }
 }

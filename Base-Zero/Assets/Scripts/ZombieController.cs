@@ -84,7 +84,7 @@ public class ZombieController : MonoBehaviour {
         {
 
             Attack();
-            Debug.Log("Zombie Attack");
+            
             timer = 0f;
         }
        // player.GetComponent<PlayerHandler>().TakeDamage(100f);    
@@ -95,7 +95,7 @@ public class ZombieController : MonoBehaviour {
             if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
             {
                 distanceToSeekPlayer = 90f;
-                Debug.Log("Zombies inc");
+               
             }
         }
         else

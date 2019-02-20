@@ -2411,7 +2411,7 @@ MonoBehaviour:
   timeBetweenAttacks: 1
   attackDamage: 200
   playerInRange: 0
-  distanceToSeekPlayer: 50
+  distanceToSeekPlayer: 80
 --- !u!114 &114779054050871670
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -138,6 +138,8 @@ public class QuestManager : MonoBehaviour {
                 return questDatabase[12];
             case "Misc4":
                 return questDatabase[13];
+            case "Vehicle2":
+                return questDatabase[15];
          
         }
         return null;
