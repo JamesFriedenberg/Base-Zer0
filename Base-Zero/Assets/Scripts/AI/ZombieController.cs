@@ -25,9 +25,10 @@ public class ZombieController : MonoBehaviour {
 
     public float distanceToSeekPlayer = 20f;
     
-
+  
     private void Start()
     {
+   
         gm = GameObject.FindGameObjectWithTag("gm");
         wanderRadius = 50f;
         wanderTime = wanderTimer;

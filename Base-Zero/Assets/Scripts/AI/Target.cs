@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Target : MonoBehaviour {
 
@@ -9,8 +10,21 @@ public class Target : MonoBehaviour {
     private GameObject player;
     private GameManager gm;
 
+    private bool flag = true;
+
+    private void setKinematic(bool val)
+    {
+        Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();
+        foreach (Rigidbody rb in rbs)
+        {
+            rb.isKinematic = val;
+           
+            
+        }
+    }
     void Start()
     {
+        setKinematic(true);
         player = GameObject.FindGameObjectWithTag("gm");
         gm = player.GetComponent<GameManager>();
     }
@@ -18,10 +32,21 @@ public class Target : MonoBehaviour {
     public void TakeDamage(float amount){
         health -= amount;
 
-        if(health <= 0){
-            gm.AddScraps(Random.Range(20, 30));
-            gm.AddCash(Random.Range(20, 60));
-            Destroy(gameObject);
+        if (flag)
+        {
+            if (health <= 0)
+            {
+                Die();
+                flag = false;
+            }
         }
+        
+    }
+    private void Die()
+    {
+        this.GetComponent<NavMeshAgent>().speed = 0f;
+        setKinematic(false);
+        GetComponentInChildren<Animator>().enabled = false;
+        Destroy(gameObject, 5);
     }
 }

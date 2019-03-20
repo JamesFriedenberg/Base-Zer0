@@ -45,14 +45,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -0, y: -0.88487434, z: -0, w: 0.46582973}
-  m_LocalPosition: {x: 126.72, y: 2.26, z: 201.29}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 196.1, y: 2.26, z: 68.3}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_Children:
   - {fileID: 400002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!4 &400002
 Transform:
   m_ObjectHideFlags: 1
@@ -66,6 +66,7 @@ Transform:
   - {fileID: 4786489663846096}
   - {fileID: 4531629499367046}
   - {fileID: 4199348247873690}
+  - {fileID: 4549601012036700}
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -117,12 +118,12 @@ Rigidbody:
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 2
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!81 &8100000
 AudioListener:
@@ -238,9 +239,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_WalkSpeed: 8
+  m_WalkSpeed: 14
   m_RunSpeed: 14
-  m_RunstepLenghten: 0.7
+  m_RunstepLenghten: 1
   m_JumpSpeed: 0
   m_StickToGroundForce: 10
   m_GravityMultiplier: 2
@@ -296,14 +297,14 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: 1.4969074
+        outSlope: 1.4969074
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.17363344
       - serializedVersion: 3
-        time: 0.75
+        time: 1
         value: 1
         inSlope: 0
         outSlope: 0
@@ -314,29 +315,29 @@ MonoBehaviour:
       - serializedVersion: 3
         time: 1.5
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: -3.0248458
+        outSlope: -3.0248458
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0.26045012
+        outWeight: 0.29260445
       - serializedVersion: 3
-        time: 2.25
+        time: 2
         value: -1
-        inSlope: 0
-        outSlope: 0
+        inSlope: -0.17277758
+        outSlope: -0.17277758
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.33333334
+        outWeight: 0.28938913
       - serializedVersion: 3
         time: 3
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: 1.6277368
+        outSlope: 1.6277368
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.33333334
+        inWeight: 0.16398716
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -351,6 +352,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
+  isReloading: 0
+  isFiring: 0
 --- !u!124 &12474086
 Behaviour:
   m_ObjectHideFlags: 1
@@ -973,6 +976,22 @@ GameObject:
   - component: {fileID: 23471696358494362}
   m_Layer: 0
   m_Name: Body
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1258461897627116
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4549601012036700}
+  - component: {fileID: 108797202233634196}
+  m_Layer: 0
+  m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4175,6 +4194,19 @@ Transform:
   m_Father: {fileID: 4676051106916922}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4549601012036700
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258461897627116}
+  m_LocalRotation: {x: 0.027000839, y: 0.027000988, z: 0.70659095, w: 0.7065912}
+  m_LocalPosition: {x: -0.62800956, y: -0.51111114, z: -0.6807454}
+  m_LocalScale: {x: 0.5555555, y: 0.5555555, z: 0.55555546}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 4.3770003, z: 90.00001}
 --- !u!4 &4561778218555680
 Transform:
   m_ObjectHideFlags: 1
@@ -10202,6 +10234,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!108 &108797202233634196
+Light:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1258461897627116}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 2.5
+  m_Range: 25
+  m_SpotAngle: 90
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!114 &114110845255105928
 MonoBehaviour:
   m_ObjectHideFlags: 1
