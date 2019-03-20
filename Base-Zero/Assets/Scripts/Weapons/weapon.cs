@@ -51,8 +51,13 @@ public class weapon : MonoBehaviour
 
     private float fireTimer = 100f;
     private float reloadTimer = 100f;
+    private float walkTimer = 100f;
 
-    private Vector3 localPos = new Vector3();
+    private Vector3 localPos;
+    private float swayAmount = .08f;
+    private float maxSwayAmount = .1f;
+    private float smoothSwayAmount = 2f;
+
     private Quaternion localRot = new Quaternion();
     private GameObject[] crossHairs;
 
@@ -71,10 +76,10 @@ public class weapon : MonoBehaviour
     * Varying muzzle flash animations
     * Improved animations
     * Weapon Sway
-    * No running while ADS or shooting
     */
     void Start()
     {
+        localPos = transform.localPosition;
         gameManager = GameObject.FindGameObjectWithTag("gm");
 
         ShopSystemHandler shopHandle = gameManager.GetComponent<ShopSystemHandler>();
@@ -175,6 +180,14 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float movementX = Input.GetAxis("Mouse X") * -swayAmount;
+        float movementY = Input.GetAxis("Mouse Y") * -swayAmount;
+        movementX = Mathf.Clamp(movementX, -maxSwayAmount, maxSwayAmount);
+        movementY = Mathf.Clamp(movementY, -maxSwayAmount, maxSwayAmount);
+
+        Vector3 finalPosition = new Vector3(movementX, movementY,0);
+        transform.localPosition = Vector3.Lerp(transform.localPosition, finalPosition + localPos, Time.deltaTime * smoothSwayAmount);
+
         Scene curScene = SceneManager.GetActiveScene();
         string sceneName = curScene.name;
 
@@ -188,7 +201,13 @@ public class weapon : MonoBehaviour
         }
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
+        walkTimer += Time.deltaTime;
 
+        if(walkTimer < .3f){
+            fpsController.GetComponent<FirstPersonController>().isFiring = true;
+        }else{
+            fpsController.GetComponent<FirstPersonController>().isFiring = false;
+        }
         if (fireTimer >= 1 / (fireRate * 2))
         {
             secondMotionAnimator.SetBool(fireAnimation, false);
@@ -199,11 +218,13 @@ public class weapon : MonoBehaviour
             float myFOV = fpsCam.GetComponent<Camera>().fieldOfView;
             animator.SetBool("ads", false);
             fpsCam.GetComponent<Camera>().fieldOfView = Mathf.Lerp(myFOV, 60, .2f);
+            fpsController.GetComponent<FirstPersonController>().isReloading = true;
             return;
         }
         else if(!Input.GetButton("Fire2")){
             hasReloaded = true;
         }
+        fpsController.GetComponent<FirstPersonController>().isReloading = false;
         animator.SetBool("reloading", false);
         if (Input.GetKey(KeyCode.R))
         {
@@ -258,6 +279,7 @@ public class weapon : MonoBehaviour
     void Shoot()
     {
         if (currentAmmoCount <= 0) return;
+        walkTimer = 0;
         hasFired = true;
         willReset1 = false;
         willReset2 = false;
