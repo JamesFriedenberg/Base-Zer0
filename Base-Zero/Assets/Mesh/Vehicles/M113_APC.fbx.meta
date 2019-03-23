@@ -1,0 +1,344 @@
+fileFormatVersion: 2
+guid: 4e0fde03d184fca459280cdf1afd2e3f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: M113_Ammo_Box
+    100002: M113_Ammo_Holder
+    100004: //RootNode
+    100006: M113_Bed_Seat_Left
+    100008: M113_Bed_Seat_Right
+    100010: M113_Body
+    100012: M113_Body 1
+    100014: M113_Charging_Cover
+    100016: M113_Charging_Port
+    100018: M113_Cover
+    100020: M113_Driver_Viewport_1
+    100022: M113_Driver_Viewport_2
+    100024: M113_Driver_Viewport_3
+    100026: M113_Driver_Viewport_4
+    100028: M113_Driver_Viewport_5
+    100030: M113_Feeder_Cover
+    100032: M113_Gun_Mount
+    100034: M113_Gun_Shield
+    100036: M113_Hatch_Driver
+    100038: M113_Hatch_Gunner
+    100040: M113_Jerry_Can_Green_Left
+    100042: M113_Jerry_Can_Green_Right
+    100044: M113_Left_Cable
+    100046: M113_M2HB
+    100048: M113_Port_Cover
+    100050: M113_Rear_Door
+    100052: M113_Right_Cable
+    100054: M113_Sight
+    100056: M113_Sight_Pin
+    100058: M113_Top_Door
+    100060: M113_Track
+    100062: M113_Track 1
+    100064: M113_Tread_Left
+    100066: M113_Tread_Right
+    100068: M113_Turret
+    100070: M113_Turret_Viewport_1
+    100072: M113_Turret_Viewport_2
+    100074: M113_Turret_Viewport_3
+    100076: M113_Turret_Viewport_4
+    100078: M113_Wheel_2
+    100080: M113_Wheel_2 1
+    100082: M113_Wheel_3
+    100084: M113_Wheel_3 1
+    100086: M113_Wheel_4
+    100088: M113_Wheel_4 1
+    100090: M113_Wheel_5
+    100092: M113_Wheel_5 1
+    100094: M113_Wheel_6
+    100096: M113_Wheel_6 1
+    100098: M113_Wheel_Small_1
+    100100: M113_Wheel_Small_1 1
+    100102: M113_Wheel_Small_2
+    100104: M113_Wheel_Small_2 1
+    400000: M113_Ammo_Box
+    400002: M113_Ammo_Holder
+    400004: //RootNode
+    400006: M113_Bed_Seat_Left
+    400008: M113_Bed_Seat_Right
+    400010: M113_Body
+    400012: M113_Body 1
+    400014: M113_Charging_Cover
+    400016: M113_Charging_Port
+    400018: M113_Cover
+    400020: M113_Driver_Viewport_1
+    400022: M113_Driver_Viewport_2
+    400024: M113_Driver_Viewport_3
+    400026: M113_Driver_Viewport_4
+    400028: M113_Driver_Viewport_5
+    400030: M113_Feeder_Cover
+    400032: M113_Gun_Mount
+    400034: M113_Gun_Shield
+    400036: M113_Hatch_Driver
+    400038: M113_Hatch_Gunner
+    400040: M113_Jerry_Can_Green_Left
+    400042: M113_Jerry_Can_Green_Right
+    400044: M113_Left_Cable
+    400046: M113_M2HB
+    400048: M113_Port_Cover
+    400050: M113_Rear_Door
+    400052: M113_Right_Cable
+    400054: M113_Sight
+    400056: M113_Sight_Pin
+    400058: M113_Top_Door
+    400060: M113_Track
+    400062: M113_Track 1
+    400064: M113_Tread_Left
+    400066: M113_Tread_Right
+    400068: M113_Turret
+    400070: M113_Turret_Viewport_1
+    400072: M113_Turret_Viewport_2
+    400074: M113_Turret_Viewport_3
+    400076: M113_Turret_Viewport_4
+    400078: M113_Wheel_2
+    400080: M113_Wheel_2 1
+    400082: M113_Wheel_3
+    400084: M113_Wheel_3 1
+    400086: M113_Wheel_4
+    400088: M113_Wheel_4 1
+    400090: M113_Wheel_5
+    400092: M113_Wheel_5 1
+    400094: M113_Wheel_6
+    400096: M113_Wheel_6 1
+    400098: M113_Wheel_Small_1
+    400100: M113_Wheel_Small_1 1
+    400102: M113_Wheel_Small_2
+    400104: M113_Wheel_Small_2 1
+    2100000: M113_mat
+    2100002: Supply_Props_mat
+    2100004: M2HB_mat
+    2300000: M113_Ammo_Box
+    2300002: M113_Ammo_Holder
+    2300004: M113_Bed_Seat_Left
+    2300006: M113_Bed_Seat_Right
+    2300008: M113_Body
+    2300010: M113_Body 1
+    2300012: M113_Charging_Cover
+    2300014: M113_Charging_Port
+    2300016: M113_Cover
+    2300018: M113_Driver_Viewport_1
+    2300020: M113_Driver_Viewport_2
+    2300022: M113_Driver_Viewport_3
+    2300024: M113_Driver_Viewport_4
+    2300026: M113_Driver_Viewport_5
+    2300028: M113_Feeder_Cover
+    2300030: M113_Gun_Mount
+    2300032: M113_Gun_Shield
+    2300034: M113_Hatch_Driver
+    2300036: M113_Hatch_Gunner
+    2300038: M113_Jerry_Can_Green_Left
+    2300040: M113_Jerry_Can_Green_Right
+    2300042: M113_Left_Cable
+    2300044: M113_Port_Cover
+    2300046: M113_Rear_Door
+    2300048: M113_Right_Cable
+    2300050: M113_Sight
+    2300052: M113_Sight_Pin
+    2300054: M113_Top_Door
+    2300056: M113_Track
+    2300058: M113_Track 1
+    2300060: M113_Turret
+    2300062: M113_Turret_Viewport_1
+    2300064: M113_Turret_Viewport_2
+    2300066: M113_Turret_Viewport_3
+    2300068: M113_Turret_Viewport_4
+    2300070: M113_Wheel_2
+    2300072: M113_Wheel_2 1
+    2300074: M113_Wheel_3
+    2300076: M113_Wheel_3 1
+    2300078: M113_Wheel_4
+    2300080: M113_Wheel_4 1
+    2300082: M113_Wheel_5
+    2300084: M113_Wheel_5 1
+    2300086: M113_Wheel_6
+    2300088: M113_Wheel_6 1
+    2300090: M113_Wheel_Small_1
+    2300092: M113_Wheel_Small_1 1
+    2300094: M113_Wheel_Small_2
+    2300096: M113_Wheel_Small_2 1
+    3300000: M113_Ammo_Box
+    3300002: M113_Ammo_Holder
+    3300004: M113_Bed_Seat_Left
+    3300006: M113_Bed_Seat_Right
+    3300008: M113_Body
+    3300010: M113_Body 1
+    3300012: M113_Charging_Cover
+    3300014: M113_Charging_Port
+    3300016: M113_Cover
+    3300018: M113_Driver_Viewport_1
+    3300020: M113_Driver_Viewport_2
+    3300022: M113_Driver_Viewport_3
+    3300024: M113_Driver_Viewport_4
+    3300026: M113_Driver_Viewport_5
+    3300028: M113_Feeder_Cover
+    3300030: M113_Gun_Mount
+    3300032: M113_Gun_Shield
+    3300034: M113_Hatch_Driver
+    3300036: M113_Hatch_Gunner
+    3300038: M113_Jerry_Can_Green_Left
+    3300040: M113_Jerry_Can_Green_Right
+    3300042: M113_Left_Cable
+    3300044: M113_Port_Cover
+    3300046: M113_Rear_Door
+    3300048: M113_Right_Cable
+    3300050: M113_Sight
+    3300052: M113_Sight_Pin
+    3300054: M113_Top_Door
+    3300056: M113_Track
+    3300058: M113_Track 1
+    3300060: M113_Turret
+    3300062: M113_Turret_Viewport_1
+    3300064: M113_Turret_Viewport_2
+    3300066: M113_Turret_Viewport_3
+    3300068: M113_Turret_Viewport_4
+    3300070: M113_Wheel_2
+    3300072: M113_Wheel_2 1
+    3300074: M113_Wheel_3
+    3300076: M113_Wheel_3 1
+    3300078: M113_Wheel_4
+    3300080: M113_Wheel_4 1
+    3300082: M113_Wheel_5
+    3300084: M113_Wheel_5 1
+    3300086: M113_Wheel_6
+    3300088: M113_Wheel_6 1
+    3300090: M113_Wheel_Small_1
+    3300092: M113_Wheel_Small_1 1
+    3300094: M113_Wheel_Small_2
+    3300096: M113_Wheel_Small_2 1
+    4300000: M113_Body
+    4300002: M113_Hatch_Driver
+    4300004: M113_Driver_Viewport_1
+    4300006: M113_Driver_Viewport_2
+    4300008: M113_Driver_Viewport_3
+    4300010: M113_Driver_Viewport_4
+    4300012: M113_Driver_Viewport_5
+    4300014: M113_Left_Cable
+    4300016: M113_Jerry_Can_Green_Left
+    4300018: M113_Right_Cable
+    4300020: M113_Jerry_Can_Green_Right
+    4300022: M113_Turret
+    4300024: M113_Hatch_Gunner
+    4300026: M113_Turret_Viewport_1
+    4300028: M113_Turret_Viewport_2
+    4300030: M113_Turret_Viewport_3
+    4300032: M113_Turret_Viewport_4
+    4300034: M113_Gun_Mount
+    4300036: M113_Gun_Shield
+    4300038: M113_Body
+    4300040: M113_Charging_Port
+    4300042: M113_Charging_Cover
+    4300044: M113_Port_Cover
+    4300046: M113_Feeder_Cover
+    4300048: M113_Ammo_Box
+    4300050: M113_Ammo_Holder
+    4300052: M113_Sight_Pin
+    4300054: M113_Sight
+    4300056: M113_Cover
+    4300058: M113_Bed_Seat_Left
+    4300060: M113_Bed_Seat_Right
+    4300062: M113_Top_Door
+    4300064: M113_Track
+    4300066: M113_Wheel_Small_1
+    4300068: M113_Wheel_2
+    4300070: M113_Wheel_3
+    4300072: M113_Wheel_4
+    4300074: M113_Wheel_5
+    4300076: M113_Wheel_6
+    4300078: M113_Wheel_Small_2
+    4300080: M113_Track
+    4300082: M113_Wheel_Small_1
+    4300084: M113_Wheel_2
+    4300086: M113_Wheel_3
+    4300088: M113_Wheel_4
+    4300090: M113_Wheel_5
+    4300092: M113_Wheel_6
+    4300094: M113_Wheel_Small_2
+    4300096: M113_Rear_Door
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

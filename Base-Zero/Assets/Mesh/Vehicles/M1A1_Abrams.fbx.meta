@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 47addc2f2e25f6c4bb5d0603cd6b49be
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: M1A1_Ammo_Box
+    100004: M1A1_Ammo_Holder
+    100006: M1A1_Body
+    100008: M1A1_Body 1
+    100010: M1A1_Cannon
+    100012: M1A1_Charging_Cover
+    100014: M1A1_Charging_Port
+    100016: M1A1_Cover
+    100018: M1A1_Driver_Viewport_1
+    100020: M1A1_Feeder_Cover
+    100022: M1A1_Gun_Mount
+    100024: M1A1_Hatch_Driver
+    100026: M1A1_Hatch_Gunner
+    100028: M1A1_M2HB
+    100030: M1A1_Port_Cover
+    100032: M1A1_Sight
+    100034: M1A1_Sight_Pin
+    100036: M1A1_Track
+    100038: M1A1_Track 1
+    100040: M1A1_Treads_Left
+    100042: M1A1_Treads_Right
+    100044: M1A1_Turret
+    100046: M1A1_Turret_Top
+    100048: M1A1_Turret_Viewport_1
+    100050: M1A1_Turret_Viewport_2
+    100052: M1A1_Turret_Viewport_3
+    100054: M1A1_Turret_Viewport_4
+    100056: M1A1_Wheel_1
+    100058: M1A1_Wheel_1 1
+    100060: M1A1_Wheel_2
+    100062: M1A1_Wheel_2 1
+    100064: M1A1_Wheel_3
+    100066: M1A1_Wheel_3 1
+    100068: M1A1_Wheel_4
+    100070: M1A1_Wheel_4 1
+    100072: M1A1_Wheel_5
+    100074: M1A1_Wheel_5 1
+    100076: M1A1_Wheel_6
+    100078: M1A1_Wheel_6 1
+    100080: M1A1_Wheel_7
+    100082: M1A1_Wheel_7 1
+    100084: M1A1_Wheel_Small_1
+    100086: M1A1_Wheel_Small_1 1
+    100088: M1A1_Wheel_Small_2
+    100090: M1A1_Wheel_Small_2 1
+    400000: //RootNode
+    400002: M1A1_Ammo_Box
+    400004: M1A1_Ammo_Holder
+    400006: M1A1_Body
+    400008: M1A1_Body 1
+    400010: M1A1_Cannon
+    400012: M1A1_Charging_Cover
+    400014: M1A1_Charging_Port
+    400016: M1A1_Cover
+    400018: M1A1_Driver_Viewport_1
+    400020: M1A1_Feeder_Cover
+    400022: M1A1_Gun_Mount
+    400024: M1A1_Hatch_Driver
+    400026: M1A1_Hatch_Gunner
+    400028: M1A1_M2HB
+    400030: M1A1_Port_Cover
+    400032: M1A1_Sight
+    400034: M1A1_Sight_Pin
+    400036: M1A1_Track
+    400038: M1A1_Track 1
+    400040: M1A1_Treads_Left
+    400042: M1A1_Treads_Right
+    400044: M1A1_Turret
+    400046: M1A1_Turret_Top
+    400048: M1A1_Turret_Viewport_1
+    400050: M1A1_Turret_Viewport_2
+    400052: M1A1_Turret_Viewport_3
+    400054: M1A1_Turret_Viewport_4
+    400056: M1A1_Wheel_1
+    400058: M1A1_Wheel_1 1
+    400060: M1A1_Wheel_2
+    400062: M1A1_Wheel_2 1
+    400064: M1A1_Wheel_3
+    400066: M1A1_Wheel_3 1
+    400068: M1A1_Wheel_4
+    400070: M1A1_Wheel_4 1
+    400072: M1A1_Wheel_5
+    400074: M1A1_Wheel_5 1
+    400076: M1A1_Wheel_6
+    400078: M1A1_Wheel_6 1
+    400080: M1A1_Wheel_7
+    400082: M1A1_Wheel_7 1
+    400084: M1A1_Wheel_Small_1
+    400086: M1A1_Wheel_Small_1 1
+    400088: M1A1_Wheel_Small_2
+    400090: M1A1_Wheel_Small_2 1
+    2100000: M1A1_Abrams_mat
+    2100002: M2HB_mat
+    2300000: M1A1_Ammo_Box
+    2300002: M1A1_Ammo_Holder
+    2300004: M1A1_Body
+    2300006: M1A1_Body 1
+    2300008: M1A1_Cannon
+    2300010: M1A1_Charging_Cover
+    2300012: M1A1_Charging_Port
+    2300014: M1A1_Cover
+    2300016: M1A1_Driver_Viewport_1
+    2300018: M1A1_Feeder_Cover
+    2300020: M1A1_Gun_Mount
+    2300022: M1A1_Hatch_Driver
+    2300024: M1A1_Hatch_Gunner
+    2300026: M1A1_Port_Cover
+    2300028: M1A1_Sight
+    2300030: M1A1_Sight_Pin
+    2300032: M1A1_Track
+    2300034: M1A1_Track 1
+    2300036: M1A1_Turret
+    2300038: M1A1_Turret_Top
+    2300040: M1A1_Turret_Viewport_1
+    2300042: M1A1_Turret_Viewport_2
+    2300044: M1A1_Turret_Viewport_3
+    2300046: M1A1_Turret_Viewport_4
+    2300048: M1A1_Wheel_1
+    2300050: M1A1_Wheel_1 1
+    2300052: M1A1_Wheel_2
+    2300054: M1A1_Wheel_2 1
+    2300056: M1A1_Wheel_3
+    2300058: M1A1_Wheel_3 1
+    2300060: M1A1_Wheel_4
+    2300062: M1A1_Wheel_4 1
+    2300064: M1A1_Wheel_5
+    2300066: M1A1_Wheel_5 1
+    2300068: M1A1_Wheel_6
+    2300070: M1A1_Wheel_6 1
+    2300072: M1A1_Wheel_7
+    2300074: M1A1_Wheel_7 1
+    2300076: M1A1_Wheel_Small_1
+    2300078: M1A1_Wheel_Small_1 1
+    2300080: M1A1_Wheel_Small_2
+    2300082: M1A1_Wheel_Small_2 1
+    3300000: M1A1_Ammo_Box
+    3300002: M1A1_Ammo_Holder
+    3300004: M1A1_Body
+    3300006: M1A1_Body 1
+    3300008: M1A1_Cannon
+    3300010: M1A1_Charging_Cover
+    3300012: M1A1_Charging_Port
+    3300014: M1A1_Cover
+    3300016: M1A1_Driver_Viewport_1
+    3300018: M1A1_Feeder_Cover
+    3300020: M1A1_Gun_Mount
+    3300022: M1A1_Hatch_Driver
+    3300024: M1A1_Hatch_Gunner
+    3300026: M1A1_Port_Cover
+    3300028: M1A1_Sight
+    3300030: M1A1_Sight_Pin
+    3300032: M1A1_Track
+    3300034: M1A1_Track 1
+    3300036: M1A1_Turret
+    3300038: M1A1_Turret_Top
+    3300040: M1A1_Turret_Viewport_1
+    3300042: M1A1_Turret_Viewport_2
+    3300044: M1A1_Turret_Viewport_3
+    3300046: M1A1_Turret_Viewport_4
+    3300048: M1A1_Wheel_1
+    3300050: M1A1_Wheel_1 1
+    3300052: M1A1_Wheel_2
+    3300054: M1A1_Wheel_2 1
+    3300056: M1A1_Wheel_3
+    3300058: M1A1_Wheel_3 1
+    3300060: M1A1_Wheel_4
+    3300062: M1A1_Wheel_4 1
+    3300064: M1A1_Wheel_5
+    3300066: M1A1_Wheel_5 1
+    3300068: M1A1_Wheel_6
+    3300070: M1A1_Wheel_6 1
+    3300072: M1A1_Wheel_7
+    3300074: M1A1_Wheel_7 1
+    3300076: M1A1_Wheel_Small_1
+    3300078: M1A1_Wheel_Small_1 1
+    3300080: M1A1_Wheel_Small_2
+    3300082: M1A1_Wheel_Small_2 1
+    4300000: M1A1_Body
+    4300002: M1A1_Wheel_Small_1
+    4300004: M1A1_Wheel_1
+    4300006: M1A1_Wheel_2
+    4300008: M1A1_Wheel_3
+    4300010: M1A1_Wheel_4
+    4300012: M1A1_Wheel_5
+    4300014: M1A1_Wheel_6
+    4300016: M1A1_Wheel_7
+    4300018: M1A1_Wheel_Small_2
+    4300020: M1A1_Track
+    4300022: M1A1_Wheel_Small_1
+    4300024: M1A1_Wheel_1
+    4300026: M1A1_Wheel_2
+    4300028: M1A1_Wheel_3
+    4300030: M1A1_Wheel_4
+    4300032: M1A1_Wheel_5
+    4300034: M1A1_Wheel_6
+    4300036: M1A1_Wheel_7
+    4300038: M1A1_Wheel_Small_2
+    4300040: M1A1_Track
+    4300042: M1A1_Turret_Top
+    4300044: M1A1_Cannon
+    4300046: M1A1_Hatch_Driver
+    4300048: M1A1_Driver_Viewport_1
+    4300050: M1A1_Turret
+    4300052: M1A1_Hatch_Gunner
+    4300054: M1A1_Gun_Mount
+    4300056: M1A1_Body
+    4300058: M1A1_Charging_Port
+    4300060: M1A1_Charging_Cover
+    4300062: M1A1_Port_Cover
+    4300064: M1A1_Feeder_Cover
+    4300066: M1A1_Ammo_Box
+    4300068: M1A1_Ammo_Holder
+    4300070: M1A1_Sight_Pin
+    4300072: M1A1_Sight
+    4300074: M1A1_Cover
+    4300076: M1A1_Turret_Viewport_1
+    4300078: M1A1_Turret_Viewport_2
+    4300080: M1A1_Turret_Viewport_3
+    4300082: M1A1_Turret_Viewport_4
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

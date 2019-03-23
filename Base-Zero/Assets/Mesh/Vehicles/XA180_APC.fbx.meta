@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: c16d9ef93c015ea44bd4a2675cf53ed3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: XA180_Axle
+    100004: XA180_Axle 1
+    100006: XA180_Axle 2
+    100008: XA180_Body
+    100010: XA180_Cover
+    100012: XA180_Door_Left
+    100014: XA180_Door_Right
+    100016: XA180_Hatch_Driver
+    100018: XA180_Hatch_Passenger
+    100020: XA180_Light_1
+    100022: XA180_Light_1 1
+    100024: XA180_Light_2
+    100026: XA180_Light_2 1
+    100028: XA180_Light_Holder_Left
+    100030: XA180_Light_Holder_Right
+    100032: XA180_Rack
+    100034: XA180_Wheel_Left
+    100036: XA180_Wheel_Left 1
+    100038: XA180_Wheel_Left 2
+    100040: XA180_Wheel_Right
+    100042: XA180_Wheel_Right 1
+    100044: XA180_Wheel_Right 2
+    100046: XA180_Wheel_well
+    100048: XA180_Wheel_well 1
+    100050: XA180_Wheel_well 2
+    100052: XA180_Wheels_Front
+    100054: XA180_Wheels_Front1
+    100056: XA180_Wheels_Front2
+    400000: //RootNode
+    400002: XA180_Axle
+    400004: XA180_Axle 1
+    400006: XA180_Axle 2
+    400008: XA180_Body
+    400010: XA180_Cover
+    400012: XA180_Door_Left
+    400014: XA180_Door_Right
+    400016: XA180_Hatch_Driver
+    400018: XA180_Hatch_Passenger
+    400020: XA180_Light_1
+    400022: XA180_Light_1 1
+    400024: XA180_Light_2
+    400026: XA180_Light_2 1
+    400028: XA180_Light_Holder_Left
+    400030: XA180_Light_Holder_Right
+    400032: XA180_Rack
+    400034: XA180_Wheel_Left
+    400036: XA180_Wheel_Left 1
+    400038: XA180_Wheel_Left 2
+    400040: XA180_Wheel_Right
+    400042: XA180_Wheel_Right 1
+    400044: XA180_Wheel_Right 2
+    400046: XA180_Wheel_well
+    400048: XA180_Wheel_well 1
+    400050: XA180_Wheel_well 2
+    400052: XA180_Wheels_Front
+    400054: XA180_Wheels_Front1
+    400056: XA180_Wheels_Front2
+    2100000: XA_180_mat
+    2300000: XA180_Axle
+    2300002: XA180_Axle 1
+    2300004: XA180_Axle 2
+    2300006: XA180_Body
+    2300008: XA180_Cover
+    2300010: XA180_Door_Left
+    2300012: XA180_Door_Right
+    2300014: XA180_Hatch_Driver
+    2300016: XA180_Hatch_Passenger
+    2300018: XA180_Light_1
+    2300020: XA180_Light_1 1
+    2300022: XA180_Light_2
+    2300024: XA180_Light_2 1
+    2300026: XA180_Light_Holder_Left
+    2300028: XA180_Light_Holder_Right
+    2300030: XA180_Rack
+    2300032: XA180_Wheel_Left
+    2300034: XA180_Wheel_Left 1
+    2300036: XA180_Wheel_Left 2
+    2300038: XA180_Wheel_Right
+    2300040: XA180_Wheel_Right 1
+    2300042: XA180_Wheel_Right 2
+    2300044: XA180_Wheel_well
+    2300046: XA180_Wheel_well 1
+    2300048: XA180_Wheel_well 2
+    3300000: XA180_Axle
+    3300002: XA180_Axle 1
+    3300004: XA180_Axle 2
+    3300006: XA180_Body
+    3300008: XA180_Cover
+    3300010: XA180_Door_Left
+    3300012: XA180_Door_Right
+    3300014: XA180_Hatch_Driver
+    3300016: XA180_Hatch_Passenger
+    3300018: XA180_Light_1
+    3300020: XA180_Light_1 1
+    3300022: XA180_Light_2
+    3300024: XA180_Light_2 1
+    3300026: XA180_Light_Holder_Left
+    3300028: XA180_Light_Holder_Right
+    3300030: XA180_Rack
+    3300032: XA180_Wheel_Left
+    3300034: XA180_Wheel_Left 1
+    3300036: XA180_Wheel_Left 2
+    3300038: XA180_Wheel_Right
+    3300040: XA180_Wheel_Right 1
+    3300042: XA180_Wheel_Right 2
+    3300044: XA180_Wheel_well
+    3300046: XA180_Wheel_well 1
+    3300048: XA180_Wheel_well 2
+    4300000: XA180_Body
+    4300002: XA180_Rack
+    4300004: XA180_Door_Left
+    4300006: XA180_Door_Right
+    4300008: XA180_Cover
+    4300010: XA180_Light_Holder_Left
+    4300012: XA180_Light_1
+    4300014: XA180_Light_2
+    4300016: XA180_Light_Holder_Right
+    4300018: XA180_Light_1
+    4300020: XA180_Light_2
+    4300022: XA180_Hatch_Driver
+    4300024: XA180_Hatch_Passenger
+    4300026: XA180_Wheel_well
+    4300028: XA180_Axle
+    4300030: XA180_Wheel_Left
+    4300032: XA180_Wheel_Right
+    4300034: XA180_Wheel_well
+    4300036: XA180_Axle
+    4300038: XA180_Wheel_Left
+    4300040: XA180_Wheel_Right
+    4300042: XA180_Wheel_well
+    4300044: XA180_Axle
+    4300046: XA180_Wheel_Left
+    4300048: XA180_Wheel_Right
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

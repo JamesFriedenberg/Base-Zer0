@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: c1769d47c807fda4bad3db19e51b531f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: HMMWV_Ammo_Box
+    100002: HMMWV_Ammo_Holder
+    100004: HMMWV_Axle_Front
+    100006: HMMWV_Axle_Rear
+    100008: HMMWV_Body
+    100010: HMMWV_Body 1
+    100012: HMMWV_Bumper
+    100014: HMMWV_Charging_Cover
+    100016: HMMWV_Charging_Port
+    100018: HMMWV_Cover
+    100020: HMMWV_Door_Front_Left
+    100022: HMMWV_Door_Front_Right
+    100024: HMMWV_Door_Rear_Left
+    100026: HMMWV_Door_Rear_Right
+    100028: HMMWV_Feeder_Cover
+    100030: HMMWV_Gun_Mount
+    100032: HMMWV_HMMWV_Gun_Shield
+    100034: HMMWV_M2HB
+    100036: HMMWV_Port_Cover
+    100038: HMMWV_Seat_Back_Left
+    100040: HMMWV_Seat_Back_Right
+    100042: HMMWV_Seat_Front_Left
+    100044: HMMWV_Seat_Front_Right
+    100046: HMMWV_Sight
+    100048: HMMWV_Sight_Pin
+    100050: HMMWV_Steering_Wheel
+    100052: HMMWV_Trunk_Left
+    100054: HMMWV_Trunk_Lower
+    100056: HMMWV_Trunk_Right
+    100058: HMMWV_Trunk_Upper
+    100060: HMMWV_Trunk_Upper 1
+    100062: HMMWV_Turret_Cover_Left
+    100064: HMMWV_Turret_Cover_right
+    100066: HMMWV_Turret_Ring
+    100068: HMMWV_Wheel_Back_Left
+    100070: HMMWV_Wheel_Back_Right
+    100072: HMMWV_Wheel_Front_Left
+    100074: HMMWV_Wheel_Front_Right
+    100076: HMMWV_Window_Left
+    100078: HMMWV_Window_Right
+    100080: //RootNode
+    400000: HMMWV_Ammo_Box
+    400002: HMMWV_Ammo_Holder
+    400004: HMMWV_Axle_Front
+    400006: HMMWV_Axle_Rear
+    400008: HMMWV_Body
+    400010: HMMWV_Body 1
+    400012: HMMWV_Bumper
+    400014: HMMWV_Charging_Cover
+    400016: HMMWV_Charging_Port
+    400018: HMMWV_Cover
+    400020: HMMWV_Door_Front_Left
+    400022: HMMWV_Door_Front_Right
+    400024: HMMWV_Door_Rear_Left
+    400026: HMMWV_Door_Rear_Right
+    400028: HMMWV_Feeder_Cover
+    400030: HMMWV_Gun_Mount
+    400032: HMMWV_HMMWV_Gun_Shield
+    400034: HMMWV_M2HB
+    400036: HMMWV_Port_Cover
+    400038: HMMWV_Seat_Back_Left
+    400040: HMMWV_Seat_Back_Right
+    400042: HMMWV_Seat_Front_Left
+    400044: HMMWV_Seat_Front_Right
+    400046: HMMWV_Sight
+    400048: HMMWV_Sight_Pin
+    400050: HMMWV_Steering_Wheel
+    400052: HMMWV_Trunk_Left
+    400054: HMMWV_Trunk_Lower
+    400056: HMMWV_Trunk_Right
+    400058: HMMWV_Trunk_Upper
+    400060: HMMWV_Trunk_Upper 1
+    400062: HMMWV_Turret_Cover_Left
+    400064: HMMWV_Turret_Cover_right
+    400066: HMMWV_Turret_Ring
+    400068: HMMWV_Wheel_Back_Left
+    400070: HMMWV_Wheel_Back_Right
+    400072: HMMWV_Wheel_Front_Left
+    400074: HMMWV_Wheel_Front_Right
+    400076: HMMWV_Window_Left
+    400078: HMMWV_Window_Right
+    400080: //RootNode
+    2100000: HMMWV_mat
+    2100002: M2HB_mat
+    2300000: HMMWV_Ammo_Box
+    2300002: HMMWV_Ammo_Holder
+    2300004: HMMWV_Axle_Front
+    2300006: HMMWV_Axle_Rear
+    2300008: HMMWV_Body
+    2300010: HMMWV_Body 1
+    2300012: HMMWV_Bumper
+    2300014: HMMWV_Charging_Cover
+    2300016: HMMWV_Charging_Port
+    2300018: HMMWV_Cover
+    2300020: HMMWV_Door_Front_Left
+    2300022: HMMWV_Door_Front_Right
+    2300024: HMMWV_Door_Rear_Left
+    2300026: HMMWV_Door_Rear_Right
+    2300028: HMMWV_Feeder_Cover
+    2300030: HMMWV_Gun_Mount
+    2300032: HMMWV_HMMWV_Gun_Shield
+    2300034: HMMWV_Port_Cover
+    2300036: HMMWV_Seat_Back_Left
+    2300038: HMMWV_Seat_Back_Right
+    2300040: HMMWV_Seat_Front_Left
+    2300042: HMMWV_Seat_Front_Right
+    2300044: HMMWV_Sight
+    2300046: HMMWV_Sight_Pin
+    2300048: HMMWV_Steering_Wheel
+    2300050: HMMWV_Trunk_Left
+    2300052: HMMWV_Trunk_Lower
+    2300054: HMMWV_Trunk_Right
+    2300056: HMMWV_Trunk_Upper 1
+    2300058: HMMWV_Turret_Cover_Left
+    2300060: HMMWV_Turret_Cover_right
+    2300062: HMMWV_Turret_Ring
+    2300064: HMMWV_Wheel_Back_Left
+    2300066: HMMWV_Wheel_Back_Right
+    2300068: HMMWV_Wheel_Front_Left
+    2300070: HMMWV_Wheel_Front_Right
+    2300072: HMMWV_Window_Left
+    2300074: HMMWV_Window_Right
+    3300000: HMMWV_Ammo_Box
+    3300002: HMMWV_Ammo_Holder
+    3300004: HMMWV_Axle_Front
+    3300006: HMMWV_Axle_Rear
+    3300008: HMMWV_Body
+    3300010: HMMWV_Body 1
+    3300012: HMMWV_Bumper
+    3300014: HMMWV_Charging_Cover
+    3300016: HMMWV_Charging_Port
+    3300018: HMMWV_Cover
+    3300020: HMMWV_Door_Front_Left
+    3300022: HMMWV_Door_Front_Right
+    3300024: HMMWV_Door_Rear_Left
+    3300026: HMMWV_Door_Rear_Right
+    3300028: HMMWV_Feeder_Cover
+    3300030: HMMWV_Gun_Mount
+    3300032: HMMWV_HMMWV_Gun_Shield
+    3300034: HMMWV_Port_Cover
+    3300036: HMMWV_Seat_Back_Left
+    3300038: HMMWV_Seat_Back_Right
+    3300040: HMMWV_Seat_Front_Left
+    3300042: HMMWV_Seat_Front_Right
+    3300044: HMMWV_Sight
+    3300046: HMMWV_Sight_Pin
+    3300048: HMMWV_Steering_Wheel
+    3300050: HMMWV_Trunk_Left
+    3300052: HMMWV_Trunk_Lower
+    3300054: HMMWV_Trunk_Right
+    3300056: HMMWV_Trunk_Upper 1
+    3300058: HMMWV_Turret_Cover_Left
+    3300060: HMMWV_Turret_Cover_right
+    3300062: HMMWV_Turret_Ring
+    3300064: HMMWV_Wheel_Back_Left
+    3300066: HMMWV_Wheel_Back_Right
+    3300068: HMMWV_Wheel_Front_Left
+    3300070: HMMWV_Wheel_Front_Right
+    3300072: HMMWV_Window_Left
+    3300074: HMMWV_Window_Right
+    4300000: HMMWV_Trunk_Lower
+    4300002: HMMWV_Turret_Ring
+    4300004: HMMWV_Body
+    4300006: HMMWV_Charging_Port
+    4300008: HMMWV_Charging_Cover
+    4300010: HMMWV_Port_Cover
+    4300012: HMMWV_Feeder_Cover
+    4300014: HMMWV_Ammo_Box
+    4300016: HMMWV_Ammo_Holder
+    4300018: HMMWV_Sight_Pin
+    4300020: HMMWV_Sight
+    4300022: HMMWV_Cover
+    4300024: HMMWV_HMMWV_Gun_Shield
+    4300026: HMMWV_Gun_Mount
+    4300028: HMMWV_Turret_Cover_right
+    4300030: HMMWV_Turret_Cover_Left
+    4300032: HMMWV_Axle_Front
+    4300034: HMMWV_Bumper
+    4300036: HMMWV_Steering_Wheel
+    4300038: HMMWV_Body
+    4300040: HMMWV_Seat_Front_Right
+    4300042: HMMWV_Seat_Back_Left
+    4300044: HMMWV_Seat_Back_Right
+    4300046: HMMWV_Seat_Front_Left
+    4300048: HMMWV_Axle_Rear
+    4300050: HMMWV_Window_Left
+    4300052: HMMWV_Window_Right
+    4300054: HMMWV_Door_Front_Right
+    4300056: HMMWV_Door_Rear_Right
+    4300058: HMMWV_Door_Rear_Left
+    4300060: HMMWV_Door_Front_Left
+    4300062: HMMWV_Wheel_Front_Right
+    4300064: HMMWV_Wheel_Back_Left
+    4300066: HMMWV_Wheel_Back_Right
+    4300068: HMMWV_Wheel_Front_Left
+    4300070: HMMWV_Trunk_Left
+    4300072: HMMWV_Trunk_Upper
+    4300074: HMMWV_Trunk_Right
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 65
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

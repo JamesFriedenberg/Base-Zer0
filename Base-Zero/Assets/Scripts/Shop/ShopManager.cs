@@ -23,8 +23,8 @@ public class ShopManager : MonoBehaviour {
         categoryScreen.SetActive(true);
         assaultRifleScreen.SetActive(false);
 
-        GameManager gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
-        equippedWeapons = gm.playerWeapons;
+        //GameManager gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
+        //equippedWeapons = gm.playerWeapons;
 	}
 	
 	// Update is called once per frame

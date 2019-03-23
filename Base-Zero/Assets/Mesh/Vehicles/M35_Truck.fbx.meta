@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: ff2dde046e39e464aa9ae91cb7a1682f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Deuce_TruckAxle_Bar_Back_One
+    100002: Deuce_TruckAxle_Bar_Front
+    100004: Deuce_TruckAxle_Bar_Front_Two
+    100006: Deuce_TruckAxle_Mount
+    100008: Deuce_TruckBed_Seat_Left
+    100010: Deuce_TruckBed_Seat_Right
+    100012: Deuce_TruckBody
+    100014: Deuce_TruckCanvas_Top
+    100016: Deuce_TruckFuel_Tank_Left
+    100018: Deuce_TruckFuel_Tank_Right
+    100020: Deuce_TruckTrunk
+    100022: Deuce_TruckWheel_Back_Left_One
+    100024: Deuce_TruckWheel_Back_Left_Two
+    100026: Deuce_TruckWheel_Back_Right_One
+    100028: Deuce_TruckWheel_Back_Right_Two
+    100030: Deuce_TruckWheel_Front_Left
+    100032: Deuce_TruckWheel_Front_Right
+    100034: Deuce_TruckWood_Bed_Back
+    100036: Deuce_TruckWood_Bed_Left
+    100038: Deuce_TruckWood_Bed_Right
+    100040: //RootNode
+    400000: Deuce_TruckAxle_Bar_Back_One
+    400002: Deuce_TruckAxle_Bar_Front
+    400004: Deuce_TruckAxle_Bar_Front_Two
+    400006: Deuce_TruckAxle_Mount
+    400008: Deuce_TruckBed_Seat_Left
+    400010: Deuce_TruckBed_Seat_Right
+    400012: Deuce_TruckBody
+    400014: Deuce_TruckCanvas_Top
+    400016: Deuce_TruckFuel_Tank_Left
+    400018: Deuce_TruckFuel_Tank_Right
+    400020: Deuce_TruckTrunk
+    400022: Deuce_TruckWheel_Back_Left_One
+    400024: Deuce_TruckWheel_Back_Left_Two
+    400026: Deuce_TruckWheel_Back_Right_One
+    400028: Deuce_TruckWheel_Back_Right_Two
+    400030: Deuce_TruckWheel_Front_Left
+    400032: Deuce_TruckWheel_Front_Right
+    400034: Deuce_TruckWood_Bed_Back
+    400036: Deuce_TruckWood_Bed_Left
+    400038: Deuce_TruckWood_Bed_Right
+    400040: //RootNode
+    2100000: Deuce_Truck_mat
+    2300000: Deuce_TruckAxle_Bar_Back_One
+    2300002: Deuce_TruckAxle_Bar_Front
+    2300004: Deuce_TruckAxle_Bar_Front_Two
+    2300006: Deuce_TruckAxle_Mount
+    2300008: Deuce_TruckBed_Seat_Left
+    2300010: Deuce_TruckBed_Seat_Right
+    2300012: Deuce_TruckBody
+    2300014: Deuce_TruckCanvas_Top
+    2300016: Deuce_TruckFuel_Tank_Left
+    2300018: Deuce_TruckFuel_Tank_Right
+    2300020: Deuce_TruckTrunk
+    2300022: Deuce_TruckWheel_Back_Left_One
+    2300024: Deuce_TruckWheel_Back_Left_Two
+    2300026: Deuce_TruckWheel_Back_Right_One
+    2300028: Deuce_TruckWheel_Back_Right_Two
+    2300030: Deuce_TruckWheel_Front_Left
+    2300032: Deuce_TruckWheel_Front_Right
+    2300034: Deuce_TruckWood_Bed_Back
+    2300036: Deuce_TruckWood_Bed_Left
+    2300038: Deuce_TruckWood_Bed_Right
+    3300000: Deuce_TruckAxle_Bar_Back_One
+    3300002: Deuce_TruckAxle_Bar_Front
+    3300004: Deuce_TruckAxle_Bar_Front_Two
+    3300006: Deuce_TruckAxle_Mount
+    3300008: Deuce_TruckBed_Seat_Left
+    3300010: Deuce_TruckBed_Seat_Right
+    3300012: Deuce_TruckBody
+    3300014: Deuce_TruckCanvas_Top
+    3300016: Deuce_TruckFuel_Tank_Left
+    3300018: Deuce_TruckFuel_Tank_Right
+    3300020: Deuce_TruckTrunk
+    3300022: Deuce_TruckWheel_Back_Left_One
+    3300024: Deuce_TruckWheel_Back_Left_Two
+    3300026: Deuce_TruckWheel_Back_Right_One
+    3300028: Deuce_TruckWheel_Back_Right_Two
+    3300030: Deuce_TruckWheel_Front_Left
+    3300032: Deuce_TruckWheel_Front_Right
+    3300034: Deuce_TruckWood_Bed_Back
+    3300036: Deuce_TruckWood_Bed_Left
+    3300038: Deuce_TruckWood_Bed_Right
+    4300000: Deuce_TruckBody
+    4300002: Deuce_TruckAxle_Mount
+    4300004: Deuce_TruckCanvas_Top
+    4300006: Deuce_TruckTrunk
+    4300008: Deuce_TruckAxle_Bar_Front
+    4300010: Deuce_TruckAxle_Bar_Back_One
+    4300012: Deuce_TruckAxle_Bar_Front_Two
+    4300014: Deuce_TruckWheel_Front_Left
+    4300016: Deuce_TruckWheel_Front_Right
+    4300018: Deuce_TruckWheel_Back_Left_One
+    4300020: Deuce_TruckWheel_Back_Left_Two
+    4300022: Deuce_TruckWheel_Back_Right_Two
+    4300024: Deuce_TruckWheel_Back_Right_One
+    4300026: Deuce_TruckFuel_Tank_Left
+    4300028: Deuce_TruckFuel_Tank_Right
+    4300030: Deuce_TruckWood_Bed_Left
+    4300032: Deuce_TruckWood_Bed_Right
+    4300034: Deuce_TruckWood_Bed_Back
+    4300036: Deuce_TruckBed_Seat_Left
+    4300038: Deuce_TruckBed_Seat_Right
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Deuce_Truck_mat
+    second: {fileID: 2100000, guid: 350760322df21d14a8a6a08e31ab569f, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 125
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
