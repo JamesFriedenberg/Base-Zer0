@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Quest : MonoBehaviour
@@ -13,13 +14,33 @@ public class Quest : MonoBehaviour
     public string questText;
     public Text UITextRef;
 
+    public GameObject questItemPrefab;
+    public Vector3 locationOfObject;
+
     // Use this for initialization
     void Start()
     {
-        
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
         questStatus = "InProgress";
        
         this.transform.gameObject.SetActive(true);
+
+        if(SceneManager.GetActiveScene().name == location)
+        {
+            Instantiate(questItemPrefab, (locationOfObject), Quaternion.identity);
+        }
+
+
+        
+
+    }
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (SceneManager.GetActiveScene().name == location)
+        {
+            Instantiate(questItemPrefab, (locationOfObject), Quaternion.identity);
+        }
 
     }
 
