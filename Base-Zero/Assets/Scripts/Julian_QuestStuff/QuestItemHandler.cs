@@ -31,16 +31,15 @@ public class QuestItemHandler : MonoBehaviour {
 	}
     private void OnTriggerEnter(Collider other)
     {
-        if(this.gameObject.tag == qm.sendCurQuestName())
-        {
+      
             if (other.gameObject.tag == "Player")
             {
-                associatedQuestObject.GetComponent<Quest>().changeQuestStatus("Completed");
+                qm.currentQuests[qm.questIndex].GetComponent<Quest>().changeQuestStatus("Completed");
                 Destroy(this.gameObject);
                 findAssociatedGameObject();
             }
 
-        }
+        
        
     }
     public void findAssociatedGameObject()
