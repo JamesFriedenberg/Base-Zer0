@@ -5,18 +5,19 @@ using UnityEngine;
 
 public class sceneSwitcher : MonoBehaviour {
 
-    private GameObject arrow;
-    private arrowHandler arrowScr;
+   
+    //private GameObject arrow;
+    //private arrowHandler arrowScr;
 	// Use this for initialization
 	void Start () {
-        arrow = GameObject.FindGameObjectWithTag("Arrow");
-        arrowScr = arrow.GetComponent<arrowHandler>();
+        //arrow = GameObject.FindGameObjectWithTag("Arrow");
+        //arrowScr = arrow.GetComponent<arrowHandler>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        arrow = GameObject.FindGameObjectWithTag("Arrow");
-        arrowScr = arrow.GetComponent<arrowHandler>();
+        //arrow = GameObject.FindGameObjectWithTag("Arrow");
+        //arrowScr = arrow.GetComponent<arrowHandler>();
     }
     private void OnTriggerEnter(Collider other)
     {
