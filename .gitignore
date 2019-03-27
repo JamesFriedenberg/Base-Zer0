@@ -1,9 +1,9 @@
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
+Base-Zero/[Ll]ibrary/
+Base-Zero/[Tt]emp/
+Base-Zero/[Oo]bj/
+Base-Zero/[Bb]uild/
+Base-Zero/[Bb]uilds/
+Base-Zero/[Ll]ogs/
 
 # Never ignore Asset meta data
 ![Aa]ssets/**/*.meta
