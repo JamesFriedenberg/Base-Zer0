@@ -14,4 +14,7 @@ public class scope : MonoBehaviour
 
     //the sensitivity of the player while ADS
     public float sensativity;
+
+    //changes the position of the gun in case of tall site
+    public Vector3 newTransform = Vector3.zero;
 }

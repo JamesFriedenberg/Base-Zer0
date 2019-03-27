@@ -158,6 +158,7 @@ public class weapon : MonoBehaviour
                 if(children[i].GetComponent<scope>().upgrade && myUpgrades[2]){
                     scopeName = children[i].GetComponent<scope>().scopeImage;
                     adsZoom = children[i].GetComponent<scope>().fov;
+                    this.transform.localPosition += children[i].GetComponent<scope>().newTransform;
                 }else if(children[i].GetComponent<scope>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
@@ -187,8 +188,12 @@ public class weapon : MonoBehaviour
         float movementY = Input.GetAxis("Mouse Y") * -swayAmount;
         movementX = Mathf.Clamp(movementX, -maxSwayAmount, maxSwayAmount);
         movementY = Mathf.Clamp(movementY, -maxSwayAmount, maxSwayAmount);
-
-        Vector3 finalPosition = new Vector3(movementX, movementY,0);
+        Vector3 finalPosition = Vector3.zero;
+        if(Input.GetButton("Fire2")){
+            finalPosition = new Vector3(movementX, 0, 0);
+        }else{
+            finalPosition = new Vector3(movementX, movementY, 0);
+        }
         transform.localPosition = Vector3.Lerp(transform.localPosition, finalPosition + localPos, Time.deltaTime * smoothSwayAmount);
 
         Scene curScene = SceneManager.GetActiveScene();
