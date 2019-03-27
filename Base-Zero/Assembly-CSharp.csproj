@@ -82,6 +82,7 @@
      <Compile Include="Assets\Scripts\sceneSwitcher.cs" />
      <Compile Include="Assets\Scripts\Shop\BarStats.cs" />
      <Compile Include="Assets\Scripts\Shop\BuyEquipButton.cs" />
+     <Compile Include="Assets\Scripts\Shop\CatagoryToggler.cs" />
      <Compile Include="Assets\Scripts\Shop\EquipWeapon.cs" />
      <Compile Include="Assets\Scripts\Shop\Exit.cs" />
      <Compile Include="Assets\Scripts\Shop\flavorTextHandler.cs" />
