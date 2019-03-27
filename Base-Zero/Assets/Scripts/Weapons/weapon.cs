@@ -52,6 +52,9 @@ public class weapon : MonoBehaviour
     private float fireTimer = 100f;
     private float reloadTimer = 100f;
     private float walkTimer = 100f;
+    private float willFireTimer = 100f;
+
+    private bool willFire = false;
 
     private Vector3 localPos;
     private float swayAmount = .08f;
@@ -202,8 +205,9 @@ public class weapon : MonoBehaviour
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
         walkTimer += Time.deltaTime;
+        willFireTimer += Time.deltaTime;
 
-        if(walkTimer < .3f){
+        if(walkTimer < .5f){
             fpsController.GetComponent<FirstPersonController>().isFiring = true;
         }else{
             fpsController.GetComponent<FirstPersonController>().isFiring = false;
@@ -231,11 +235,16 @@ public class weapon : MonoBehaviour
             Reload();
             return;
         }
-        if (Input.GetButton("Fire1") && fireTimer >= 1 / fireRate && reloadTimer > reloadTime + 0.3f)
-        {
-            if(semiAuto && hasFired) return;
-            Shoot();
-            fireTimer = 0;
+        if(fireTimer >= 1 / fireRate && reloadTimer > reloadTime + 0.3f){
+            if(Input.GetButton("Fire1") && !willFire && fpsController.GetComponent<FirstPersonController>().IsRunning()){
+                willFire = true;
+                walkTimer = 0;
+                StartCoroutine(WillShoot());
+            }else if(Input.GetButton("Fire1") && !willFire){
+                if(semiAuto && hasFired) return;
+                Shoot();
+                fireTimer = 0;
+            }
         }
         if( fireTimer >= 1 / fireRate){
             willReset1 = true;
@@ -245,6 +254,17 @@ public class weapon : MonoBehaviour
         }
         if(willReset1 && willReset2) hasFired = false;
         if(hasReloaded) ADS();
+    }
+    IEnumerator WillShoot()
+    {
+
+        yield return new WaitForSeconds(.2f);
+        willFire = false;
+        if(!(semiAuto && hasFired)){ 
+            Shoot();
+            fireTimer = 0;
+        }
+        
     }
     void ADS()
     {
@@ -279,7 +299,6 @@ public class weapon : MonoBehaviour
     void Shoot()
     {
         if (currentAmmoCount <= 0) return;
-        walkTimer = 0;
         hasFired = true;
         willReset1 = false;
         willReset2 = false;
