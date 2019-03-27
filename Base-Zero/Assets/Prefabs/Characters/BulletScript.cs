@@ -9,7 +9,7 @@ public class BulletScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
-        speed = 10f;
+      
         Vector3 playerPos = new Vector3(player.transform.position.x, player.transform.position.y  -1 , player.transform.position.z);
         transform.rotation = Quaternion.LookRotation(playerPos);
         transform.LookAt(player.transform.position);
@@ -19,5 +19,13 @@ public class BulletScript : MonoBehaviour {
 	void Update () {
         this.transform.LookAt(player.transform.position);
         this.transform.position += transform.forward * speed * Time.deltaTime;
-	}   
+	}
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            player.GetComponent<PlayerHandler>().TakeDamage(100);
+            Destroy(this.gameObject);
+        }
+    }
 }

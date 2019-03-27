@@ -24,15 +24,17 @@ public class DroneController : MonoBehaviour
     public int attackDamage = 200;
     public bool playerInRange;
 
-    public float distanceToSeekPlayer = 50f;
+    public float distanceToSeekPlayer = 70f;
     public float height = 70f;
+    private float firingRange = 30f;
 
     public bool shootFlag = true;
-
+    private float offsetTimer = 1.5f;
+    private float offsetValue = 2f;
     private void Start()
     {
         gm = GameObject.FindGameObjectWithTag("gm");
-        wanderRadius = 50f;
+        wanderRadius = 80f;
         wanderTime = wanderTimer;
         player = GameObject.FindWithTag("Player");
         zombie.stoppingDistance = 2f;
@@ -60,47 +62,34 @@ public class DroneController : MonoBehaviour
     }
     void Update()
     {
-
-        float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
-        int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
-
         wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
 
-        if (playerInRange)
+        
+        offsetTimer -= Time.deltaTime;
+
+        zombie.baseOffset += offsetValue * Time.deltaTime;
+        if(offsetTimer <= 0f)
         {
-            player.GetComponent<FirstPersonController>().m_WalkSpeed = 2.5f;
-            player.GetComponent<FirstPersonController>().m_RunSpeed = 5f;
-
-        }
-        else
-        {
-            player.GetComponent<FirstPersonController>().m_WalkSpeed = 5f;
-            player.GetComponent<FirstPersonController>().m_RunSpeed = 10f;
-        }
-        if (timer >= timeBetweenAttacks && playerInRange && playerHealth > 0)
-        {
-
-            Attack();
-
-            timer = 0f;
-        }
-        // player.GetComponent<PlayerHandler>().TakeDamage(100f);    
-
-        if (gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].tag == "q_defense")
-        {
-
-            if (gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
+            if(Random.Range(0.0f,1.0f) > 0.5f)
             {
-                distanceToSeekPlayer = 90f;
+                offsetValue = -(Random.Range(7f, 9f));
+                offsetTimer = 2f;
+            }
+            else
+            {
+                offsetValue = (Random.Range(7f, 9f));
+                offsetTimer = 2f;
 
             }
         }
-        else
-        {
-            distanceToSeekPlayer = 70f;
-        }
 
+       
+     
+        float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
+        int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
+        Debug.Log(distanceToPlayer);
+        //zombie.SetDestination(player.transform.localPosition);
         if (distanceToPlayer > distanceToSeekPlayer)
         {
 
@@ -112,41 +101,28 @@ public class DroneController : MonoBehaviour
                 wanderTime = 0;
             }
         }
-        else if (distanceToPlayer < distanceToSeekPlayer)
+        if(distanceToPlayer < distanceToSeekPlayer)
         {
 
             zombie.SetDestination(player.transform.localPosition);
-
-            if (shootFlag)
+            if (distanceToPlayer < 50f)
             {
-                shootFlag = false;
-                StartCoroutine(shoot());
-
+                if (shootFlag)
+                {
+                    StartCoroutine(shoot());
+                    shootFlag = false;
+                }
             }
         }
 
-
-
     }
-    private void Attack()
-    {
-        if (player.GetComponent<PlayerHandler>().GetHealth() > 0)
-        {
-            //Vector3 playerPosition = player.GetComponent<Transform>().position;
-            //Vector3 zombiePosition = this.gameObject.GetComponent<Transform>().position;
-            //player.GetComponent<Rigidbody>().AddForce(Vector3.Normalize(playerPosition - zombiePosition) * 1500);
-            //this.gameObject.GetComponent<AudioSource>().Play();
 
-            //player.GetComponent<PlayerHandler>().TakeDamage(attackDamage);
-
-        }
-    }
     IEnumerator shoot()
     {
         if (player.GetComponent<PlayerHandler>().GetHealth() > 0)
         {
             Instantiate(bullet, this.transform.position, this.transform.rotation);
-            yield return new WaitForSeconds(10f);
+            yield return new WaitForSeconds(3f);
             shootFlag = true;
         }
     }

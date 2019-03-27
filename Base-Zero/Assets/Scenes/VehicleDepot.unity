@@ -715,6 +715,31 @@ Prefab:
       propertyPath: m_BaseOffset
       value: 50.9
       objectReference: {fileID: 0}
+    - target: {fileID: 114089430152620224, guid: 2ab231858bc7aab4da23a2433aeaba2c,
+        type: 2}
+      propertyPath: wanderTimer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114089430152620224, guid: 2ab231858bc7aab4da23a2433aeaba2c,
+        type: 2}
+      propertyPath: wanderRadius
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 195394613996509886, guid: 2ab231858bc7aab4da23a2433aeaba2c,
+        type: 2}
+      propertyPath: m_WalkableMask
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 195394613996509886, guid: 2ab231858bc7aab4da23a2433aeaba2c,
+        type: 2}
+      propertyPath: m_AutoRepath
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 195394613996509886, guid: 2ab231858bc7aab4da23a2433aeaba2c,
+        type: 2}
+      propertyPath: m_Speed
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2ab231858bc7aab4da23a2433aeaba2c, type: 2}
   m_IsPrefabAsset: 0
@@ -977,6 +1002,8 @@ MonoBehaviour:
   location: HQ
   questText: Find the helicopter flight manual in the headquarters.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &62854017
 Prefab:
   m_ObjectHideFlags: 0
@@ -7017,6 +7044,8 @@ MonoBehaviour:
   location: HQ
   questText: Find the GPS Beacon in the headquarters.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &423503936
 Prefab:
   m_ObjectHideFlags: 0
@@ -8787,6 +8816,8 @@ MonoBehaviour:
   location: HQ
   questText: Destroy the security bypass terminal in the headquarters.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &522244216
 Prefab:
   m_ObjectHideFlags: 0
@@ -12107,6 +12138,8 @@ MonoBehaviour:
   location: Trainyard
   questText: 'Find the silver key in the trainyard. '
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &723154712
 Prefab:
   m_ObjectHideFlags: 0
@@ -14118,6 +14151,8 @@ MonoBehaviour:
   location: HQ
   questText: Disable automated anti-aircraft weaponry in the headquarters.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &847455321
 Prefab:
   m_ObjectHideFlags: 0
@@ -15044,6 +15079,107 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f4bc71e114ef68248a8a9d35d3ab0767, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &885541820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885541825}
+  - component: {fileID: 885541824}
+  - component: {fileID: 885541823}
+  - component: {fileID: 885541822}
+  - component: {fileID: 885541821}
+  m_Layer: 0
+  m_Name: Cube (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!208 &885541821
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885541820}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &885541822
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885541820}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &885541823
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885541820}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &885541824
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885541820}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &885541825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 885541820}
+  m_LocalRotation: {x: -0, y: -0.9999951, z: -0, w: -0.0031212317}
+  m_LocalPosition: {x: 101, y: 4.4, z: 280}
+  m_LocalScale: {x: 607.68445, y: 0.59276, z: 117.44323}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 120
+  m_LocalEulerAnglesHint: {x: 0, y: -180.35799, z: 0}
 --- !u!1001 &888184799
 Prefab:
   m_ObjectHideFlags: 0
@@ -15442,6 +15578,8 @@ MonoBehaviour:
   location: Trainyard
   questText: Find the toolbox to fix the helicopter engine in the Trainyard.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1 &899037694
 GameObject:
   m_ObjectHideFlags: 0
@@ -15475,6 +15613,8 @@ MonoBehaviour:
   location: HQ
   questText: Missions completed! Get to the helicopter in the HQ to escape!
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!4 &899037696
 Transform:
   m_ObjectHideFlags: 0
@@ -17082,6 +17222,8 @@ MonoBehaviour:
   location: Trainyard
   questText: Restore power to the train tracks in the trainyard.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1 &986124906
 GameObject:
   m_ObjectHideFlags: 0
@@ -17483,6 +17625,8 @@ MonoBehaviour:
   location: HQ
   questText: Find the launch code paper in the headquarters.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &1008222715
 Prefab:
   m_ObjectHideFlags: 0
@@ -24378,6 +24522,8 @@ MonoBehaviour:
   location: Trainyard
   questText: Repair missile silo opening mechanism in the Trainyard.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &1333574122
 Prefab:
   m_ObjectHideFlags: 0
@@ -25417,6 +25563,8 @@ MonoBehaviour:
   location: Trainyard
   questText: 'Find the radiation medication in the trainyard. '
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &1384765538
 Prefab:
   m_ObjectHideFlags: 0
@@ -26496,6 +26644,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4161193985671682, guid: 7cb5a478561644842b5bb2f3f70f320d,
     type: 2}
   m_PrefabInternal: {fileID: 1450714952}
+--- !u!1 &1451721763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451721768}
+  - component: {fileID: 1451721767}
+  - component: {fileID: 1451721766}
+  - component: {fileID: 1451721765}
+  - component: {fileID: 1451721764}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!208 &1451721764
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451721763}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &1451721765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451721763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1451721766
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451721763}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1451721767
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451721763}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1451721768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1451721763}
+  m_LocalRotation: {x: -0, y: -0.705398, z: -0, w: 0.70881146}
+  m_LocalPosition: {x: 307, y: 4.4, z: 60}
+  m_LocalScale: {x: 607.68445, y: 0.59276, z: 117.44323}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 119
+  m_LocalEulerAnglesHint: {x: 0, y: -89.72301, z: 0}
 --- !u!1001 &1452790560
 Prefab:
   m_ObjectHideFlags: 0
@@ -28130,7 +28379,7 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 3
   m_TerrainData: {fileID: 15600000, guid: 16bd6cbc635ccce47b9bdfda1dd3a609, type: 2}
-  m_TreeDistance: 5000
+  m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
@@ -29496,6 +29745,8 @@ MonoBehaviour:
   location: HQ
   questText: Find the crate of food in the headquarters.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &1632305176
 Prefab:
   m_ObjectHideFlags: 0
@@ -30618,6 +30869,8 @@ MonoBehaviour:
   location: Trainyard
   questText: Retrieve the fuel from the Trainyard.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &1696119299
 Prefab:
   m_ObjectHideFlags: 0
@@ -31006,6 +31259,8 @@ MonoBehaviour:
   location: Vehicle
   questText: Get the medicle supplies from the top of the watchtower!
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &1731934281
 Prefab:
   m_ObjectHideFlags: 0
@@ -34819,6 +35074,8 @@ MonoBehaviour:
   location: HQ
   questText: Find the note at the top of the watchtower in the headquarters.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &2016557125
 Prefab:
   m_ObjectHideFlags: 0
@@ -35481,6 +35738,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4348331438755870, guid: f4bc71e114ef68248a8a9d35d3ab0767,
     type: 2}
   m_PrefabInternal: {fileID: 2008177092}
+--- !u!1 &2045236572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2045236577}
+  - component: {fileID: 2045236576}
+  - component: {fileID: 2045236575}
+  - component: {fileID: 2045236574}
+  - component: {fileID: 2045236573}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!208 &2045236573
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045236572}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &2045236574
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045236572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2045236575
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045236572}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2045236576
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045236572}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2045236577
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045236572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 124.1, y: 4.4, z: -100}
+  m_LocalScale: {x: 607.68445, y: 0.59276, z: 117.44323}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 118
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2047463985
 GameObject:
   m_ObjectHideFlags: 0
@@ -36133,6 +36491,8 @@ MonoBehaviour:
   location: Trainyard
   questText: Find the supply cache in the trainyard.
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 0}
+  locationOfObject: {x: 0, y: 0, z: 0}
 --- !u!1001 &2096307722
 Prefab:
   m_ObjectHideFlags: 0
@@ -36188,6 +36548,107 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4638473975675708, guid: 68a24161dc6df3a4c9e3318f45583ebd,
     type: 2}
   m_PrefabInternal: {fileID: 2096307722}
+--- !u!1 &2096810763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096810768}
+  - component: {fileID: 2096810767}
+  - component: {fileID: 2096810766}
+  - component: {fileID: 2096810765}
+  - component: {fileID: 2096810764}
+  m_Layer: 0
+  m_Name: Cube (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!208 &2096810764
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096810763}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!65 &2096810765
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096810763}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2096810766
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096810763}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &2096810767
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096810763}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2096810768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096810763}
+  m_LocalRotation: {x: -0, y: -0.71272564, z: -0, w: -0.701443}
+  m_LocalPosition: {x: -111, y: 4.4, z: 101}
+  m_LocalScale: {x: 607.68445, y: 0.59276, z: 117.44323}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 121
+  m_LocalEulerAnglesHint: {x: 0, y: -269.086, z: 0}
 --- !u!1001 &2099530251
 Prefab:
   m_ObjectHideFlags: 0
