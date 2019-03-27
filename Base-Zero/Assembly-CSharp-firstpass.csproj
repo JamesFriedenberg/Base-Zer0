@@ -104,14 +104,14 @@
  <Reference Include="Unity.PackageManagerUI.Editor">
  <HintPath>C:/Users/Noah Wil5on/Documents/RIT Work/4_02/Base-Zer0/Base-Zero/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.TextMeshPro">
+ <HintPath>C:/Users/Noah Wil5on/Documents/RIT Work/4_02/Base-Zer0/Base-Zero/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Postprocessing.Editor">
  <HintPath>C:/Users/Noah Wil5on/Documents/RIT Work/4_02/Base-Zer0/Base-Zero/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Postprocessing.Runtime">
  <HintPath>C:/Users/Noah Wil5on/Documents/RIT Work/4_02/Base-Zer0/Base-Zero/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/Noah Wil5on/Documents/RIT Work/4_02/Base-Zer0/Base-Zero/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

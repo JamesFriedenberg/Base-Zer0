@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scenes/VehicleDepot.unity
-=======
 - path: Assets/Scenes/Old Scenes/ShopRedirection.unity
->>>>>>> 073a7f773fd8eddb807a4c777a074308cacf2144
-=======
-- path: Assets/Scenes/HQ.unity
->>>>>>> weapon-sway
   isLoaded: 1
   isActive: 1
