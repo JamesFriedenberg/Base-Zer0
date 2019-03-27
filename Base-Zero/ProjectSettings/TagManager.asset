@@ -21,6 +21,7 @@ TagManager:
   - Enemy
   - q_defense
   - Vehicle2
+  - target
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - PostProcessing
   - 
   - 
   - 

@@ -16,6 +16,7 @@ namespace UnityStandardAssets.Utility
 
         private float m_CyclePositionX;
         private float m_CyclePositionY;
+        private float m_lastY;
         private float m_BobBaseInterval;
         private Vector3 m_OriginalCameraPosition;
         private float m_Time;
@@ -38,6 +39,8 @@ namespace UnityStandardAssets.Utility
 
             m_CyclePositionX += (speed*Time.deltaTime)/m_BobBaseInterval;
             m_CyclePositionY += ((speed*Time.deltaTime)/m_BobBaseInterval)*VerticaltoHorizontalRatio;
+            // Debug.Log((m_CyclePositionY - m_LastCyclePositionY).ToString());
+            // Debug.Log((yPos - m_lastY).ToString());
 
             if (m_CyclePositionX > m_Time)
             {
@@ -47,6 +50,7 @@ namespace UnityStandardAssets.Utility
             {
                 m_CyclePositionY = m_CyclePositionY - m_Time;
             }
+            m_lastY = yPos;
 
             return new Vector3(xPos, yPos, 0f);
         }
