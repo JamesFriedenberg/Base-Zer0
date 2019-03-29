@@ -48,6 +48,7 @@ public class weapon : MonoBehaviour
     public AudioSource fireSound;
     public Animator animator;
     public Animator secondMotionAnimator;
+	public Animator weaponAnimator;
 
     private float fireTimer = 100f;
     private float reloadTimer = 100f;
@@ -184,17 +185,17 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float movementX = Input.GetAxis("Mouse X") * -swayAmount;
-        float movementY = Input.GetAxis("Mouse Y") * -swayAmount;
-        movementX = Mathf.Clamp(movementX, -maxSwayAmount, maxSwayAmount);
-        movementY = Mathf.Clamp(movementY, -maxSwayAmount, maxSwayAmount);
-        Vector3 finalPosition = Vector3.zero;
-        if(Input.GetButton("Fire2")){
-            finalPosition = new Vector3(movementX, 0, 0);
-        }else{
-            finalPosition = new Vector3(movementX, movementY, 0);
-        }
-        transform.localPosition = Vector3.Lerp(transform.localPosition, finalPosition + localPos, Time.deltaTime * smoothSwayAmount);
+        //float movementX = Input.GetAxis("Mouse X") * -swayAmount;
+        //float movementY = Input.GetAxis("Mouse Y") * -swayAmount;
+        //movementX = Mathf.Clamp(movementX, -maxSwayAmount, maxSwayAmount);
+        //movementY = Mathf.Clamp(movementY, -maxSwayAmount, maxSwayAmount);
+        //Vector3 finalPosition = Vector3.zero;
+        //if(Input.GetButton("Fire2")){
+        //    finalPosition = new Vector3(movementX, 0, 0);
+        //}else{
+        //    finalPosition = new Vector3(movementX, movementY, 0);
+        //}
+        //transform.localPosition = Vector3.Lerp(transform.localPosition, finalPosition + localPos, Time.deltaTime * smoothSwayAmount);
 
         Scene curScene = SceneManager.GetActiveScene();
         string sceneName = curScene.name;
@@ -220,6 +221,8 @@ public class weapon : MonoBehaviour
         if (fireTimer >= 1 / (fireRate * 2))
         {
             secondMotionAnimator.SetBool(fireAnimation, false);
+			weaponAnimator.SetBool("Fire", false);
+
         }
         if (reloadTimer < reloadTime)
         {
@@ -234,7 +237,9 @@ public class weapon : MonoBehaviour
             hasReloaded = true;
         }
         fpsController.GetComponent<FirstPersonController>().isReloading = false;
-        animator.SetBool("reloading", false);
+        //animator.SetBool("reloading", false);
+		weaponAnimator.SetBool("Reload", false);
+		//weaponAnimator.applyRootMotion = true;
         if (Input.GetKey(KeyCode.R))
         {
             Reload();
@@ -308,7 +313,7 @@ public class weapon : MonoBehaviour
         willReset1 = false;
         willReset2 = false;
         secondMotionAnimator.SetBool(fireAnimation, true);
-
+		weaponAnimator.SetBool("Fire", true);
         muzzleFlash.Play();
         fpsController.GetComponent<FirstPersonController>().m_MouseLook.m_CameraTargetRot *= Quaternion.Euler (-recoil, 0f, 0f);
         //fpsCam.transform.Rotate(fpsCam.transform.right, 5.0f);
@@ -377,7 +382,8 @@ public class weapon : MonoBehaviour
             weaponCamera.SetActive(true);
         }
 
-        animator.SetBool("reloading", true);
+		weaponAnimator.SetBool("Reload", true);
+		//weaponAnimator.applyRootMotion = false;
 
         int ammoChange = Mathf.Min((magSize - currentAmmoCount), ammoCount);
         currentAmmoCount += ammoChange;

@@ -106,6 +106,7 @@
      <Compile Include="Assets\Scripts\Weapons\scope.cs" />
      <Compile Include="Assets\Scripts\Weapons\stock.cs" />
      <Compile Include="Assets\Scripts\Weapons\weapon.cs" />
+     <Compile Include="Assets\Scripts\Weapons\WeaponSway.cs" />
      <None Include="Assets\Possible Useful Assets\EasyPolyMap\Demos\OtherDemoData\BunnyIsland.txt" />
      <None Include="Assets\Imports\Materials\defualt.txt" />
      <None Include="Assets\Materials\defualt.txt" />

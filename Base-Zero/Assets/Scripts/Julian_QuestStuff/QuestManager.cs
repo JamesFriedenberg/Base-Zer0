@@ -56,6 +56,9 @@ public class QuestManager : MonoBehaviour {
         navArrow = GameObject.FindGameObjectWithTag("Arrow");
         if (questsWereAdded)
         {
+			if (qp == null) {
+				return;
+			}
             generateQuests(qp.getQuestNames());
             questsWereAdded = false;
         }
