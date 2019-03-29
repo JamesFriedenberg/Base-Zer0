@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CatagoryToggler : MonoBehaviour {
-	GameObject[] weapons;
+	public GameObject[] weapons;
 	// Use this for initialization
 	void Start () {
 		
@@ -14,11 +14,15 @@ public class CatagoryToggler : MonoBehaviour {
 		
 	}
 
-	void ToggleActiveWeapons(int index){
+	public void ToggleActiveWeapons(int index){
 		for (int i = 0; i < weapons.Length; i+= 2) {
 			if (i != index) {
-				weapons [i].SetActive (false);
-				weapons [i + 1].SetActive (false);
+				if (weapons [i] != null) {
+					weapons [i].SetActive (false);
+				}
+				if (weapons [i+1] != null) {
+					weapons [i+1].SetActive (false);
+				}					
 			}
 		}
 
