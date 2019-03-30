@@ -8,4 +8,7 @@ public class barrel : MonoBehaviour
     
     //how much does the accuracy change? Number is added to the weapons current accuracy. Bigger numbers are more accuracte
     public int accuracy = 0;
+
+    //seperate muzzle flash for upgrade (optional)
+    public ParticleSystem muzzleFlash; 
 }

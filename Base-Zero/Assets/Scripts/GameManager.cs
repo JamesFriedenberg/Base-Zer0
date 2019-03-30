@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour {
     public int currentWeapon = 0;
     public int[] ammoInWeapons;
 
+    public Vector3 startPosition = Vector3.zero;
+
     //list of weapon indices from player weapon array
     public int[] playerWeapons = new int[3];
 

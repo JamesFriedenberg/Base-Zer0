@@ -2244,7 +2244,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1351187042072464}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -2424,6 +2424,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  ammo: []
+  scraps: {fileID: 1605623762745990, guid: 92938bc8886a9d245bdf92fbe77b551b, type: 2}
 --- !u!136 &136146949409777530
 CapsuleCollider:
   m_ObjectHideFlags: 1

@@ -30,6 +30,9 @@ public class PlayerHandler : MonoBehaviour
         startingPlayerHealth = gm.startingPlayerHealth;
         currentPlayerHealth = gm.currentPlayerHealth;
         weaponsFromGM = gm.playerWeapons;
+        if(!gm.GetComponent<GameManager>().startPosition.Equals(Vector3.zero)){
+            this.transform.position = gm.GetComponent<GameManager>().startPosition;
+        }
 
         if(gm.ammoInWeapons == null || gm.ammoInWeapons.Length == 0){
             gm.ammoInWeapons = new int[allWeapons.Count];

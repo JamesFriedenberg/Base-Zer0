@@ -126,6 +126,7 @@ public class ZombieController : MonoBehaviour {
     }
     private void Attack()
     {
+        if(gameObject.GetComponent<Target>().health <= 0) return;
         if(player.GetComponent<PlayerHandler>().GetHealth() > 0)
         {
             Vector3 playerPosition = player.GetComponent<Transform>().position;

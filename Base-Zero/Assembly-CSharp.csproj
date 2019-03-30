@@ -76,6 +76,7 @@
      <Compile Include="Assets\Scripts\Julian_QuestStuff\QuestItemHandler.cs" />
      <Compile Include="Assets\Scripts\Julian_QuestStuff\QuestManager.cs" />
      <Compile Include="Assets\Scripts\Julian_QuestStuff\QuestPopulator.cs" />
+     <Compile Include="Assets\Scripts\Management\Scene Switcher.cs" />
      <Compile Include="Assets\Scripts\PickupHandler.cs" />
      <Compile Include="Assets\Scripts\PlayerHandler.cs" />
      <Compile Include="Assets\Scripts\SceneLoad.cs" />
