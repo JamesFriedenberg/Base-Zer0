@@ -23,7 +23,7 @@ public class ZombieController : MonoBehaviour {
     public int attackDamage = 200;
     public bool playerInRange;
 
-    public float distanceToSeekPlayer = 20f;
+    public float distanceToSeekPlayer = 100f;
     
   
     private void Start()
@@ -95,13 +95,13 @@ public class ZombieController : MonoBehaviour {
 
             if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
             {
-                distanceToSeekPlayer = 90f;
+                distanceToSeekPlayer = 140f;
                
             }
         }
         else
         {
-            distanceToSeekPlayer = 20f;
+            distanceToSeekPlayer = 100f;
         }
 
         if (distanceToPlayer > distanceToSeekPlayer)

@@ -47,7 +47,6 @@ public class Quest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.FindWithTag("ObjectiveText") == null) return;
         UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
         if (questStatus == "InProgress")
         {

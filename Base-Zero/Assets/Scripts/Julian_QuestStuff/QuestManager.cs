@@ -36,9 +36,7 @@ public class QuestManager : MonoBehaviour {
     void Start () {
 
         DontDestroyOnLoad(this.gameObject);
-        if(arrowHandler != null){
-            arrowHandler = navArrow.GetComponent<arrowHandler>();
-        }
+        arrowHandler = navArrow.GetComponent<arrowHandler>();
         qp = this.GetComponent<QuestPopulator>();
         //for(int i = 0; i < 3; i++)
         //{
@@ -114,7 +112,7 @@ public class QuestManager : MonoBehaviour {
     }
     public string sendCurQuestLocation()
     {
-        if(currentQuests[questIndex] == null) return "Quest location not found";
+
         if (currentQuests[questIndex].tag == "q_defense")
         {
             return currentQuests[questIndex].GetComponent<DefendQuest>().location;
