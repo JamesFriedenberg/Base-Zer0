@@ -5,13 +5,16 @@ using UnityEngine;
 
 public class sceneSwitcher : MonoBehaviour {
 
-   
+   public string goToSceneName;
+   public Vector3 spawnPosition;
+
+   private GameObject gm;
+
     //private GameObject arrow;
     //private arrowHandler arrowScr;
 	// Use this for initialization
 	void Start () {
-        //arrow = GameObject.FindGameObjectWithTag("Arrow");
-        //arrowScr = arrow.GetComponent<arrowHandler>();
+        gm = GameObject.FindGameObjectWithTag("gm");
 	}
 	
 	// Update is called once per frame
@@ -23,29 +26,8 @@ public class sceneSwitcher : MonoBehaviour {
     {
         if(other.gameObject.tag == "Player")
         {
-            Scene curScene = SceneManager.GetActiveScene();
-            string sceneName = curScene.name;
-
-
-            if(sceneName == "HQ")
-            {
-                if(this.gameObject.tag == "HQtoTrainyard")
-                {
-                    SceneManager.LoadScene(2);
-                   // arrowScr.onObjectiveChange();
-                    //SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("gm"), SceneManager.GetSceneByBuildIndex(6));
-
-                }
-            }
-            else if(sceneName == "Trainyard")
-            {
-                if (this.gameObject.tag == "TrainyardtoHQ")
-                {
-                    SceneManager.LoadScene(1);
-                    //arrowScr.onObjectiveChange();
-                    //SceneManager.MoveGameObjectToScene(GameObject.FindGameObjectWithTag("gm"), SceneManager.GetSceneByBuildIndex(1));
-                }
-            }
+            gm.GetComponent<GameManager>().startPosition = spawnPosition;
+            SceneManager.LoadScene(goToSceneName);
         }
     }
 }

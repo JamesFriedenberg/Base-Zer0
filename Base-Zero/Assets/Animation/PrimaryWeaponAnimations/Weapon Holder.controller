@@ -262,7 +262,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Weapon Run
-  m_Speed: 0.6
+  m_Speed: 0.8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101101333701912058}
@@ -275,7 +275,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6e4a196913e34c648a8820b05550ce9b, type: 2}
+  m_Motion: {fileID: 7400000, guid: 670bc9318c918c84a8a267aa8fc96963, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

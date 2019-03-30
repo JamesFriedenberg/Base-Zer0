@@ -129,7 +129,7 @@ public class weapon : MonoBehaviour
 
         myIterations++;
         Transform[] children = this.GetComponentsInChildren<Transform>();
-
+    myUpgrades[3] = true;
         for(int i = 0; i < children.Length; i++){
             if(children[i].GetComponent<stock>() != null){
                 if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
@@ -171,6 +171,9 @@ public class weapon : MonoBehaviour
             }else if(children[i].GetComponent<barrel>() != null){
                 if(children[i].GetComponent<barrel>().upgrade && myUpgrades[3]){
                     accuracy += children[i].GetComponent<barrel>().accuracy;
+                    if(muzzleFlash != null){
+                        this.muzzleFlash = children[i].GetComponent<barrel>().muzzleFlash;
+                    }
                 }else if(children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
@@ -246,11 +249,13 @@ public class weapon : MonoBehaviour
             return;
         }
         if(fireTimer >= 1 / fireRate && reloadTimer > reloadTime + 0.3f){
-            if(Input.GetButton("Fire1") && !willFire && fpsController.GetComponent<FirstPersonController>().IsRunning()){
+            // fpsController.GetComponent<FirstPersonController>().IsRunning()
+            if(Input.GetButton("Fire1") && !willFire && animator.GetBool("run")){
                 willFire = true;
                 walkTimer = 0;
                 StartCoroutine(WillShoot());
             }else if(Input.GetButton("Fire1") && !willFire){
+                walkTimer = 0;
                 if(semiAuto && hasFired) return;
                 Shoot();
                 fireTimer = 0;
