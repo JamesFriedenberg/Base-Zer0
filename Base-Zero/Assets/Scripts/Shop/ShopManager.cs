@@ -7,9 +7,8 @@ using UnityEngine;
 public class ShopManager : MonoBehaviour {
 
     //Main Shop Screen Array
-    public GameObject categoryScreen;
     public GameObject[] weaponRefArray;
-    public GameObject assaultRifleScreen;
+
     public GameObject cashText;
     public GameObject scrapText;
     public int cash;
@@ -19,10 +18,6 @@ public class ShopManager : MonoBehaviour {
     public GameObject[] equipSlots;
 	// Use this for initialization
 	void Start () {
-
-        categoryScreen.SetActive(true);
-        assaultRifleScreen.SetActive(false);
-
         //GameManager gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
         //equippedWeapons = gm.playerWeapons;
 	}
@@ -42,19 +37,7 @@ public class ShopManager : MonoBehaviour {
     {
         screenToUnhide.SetActive(true);
     }
-    public void hideAllWeapons()
-    {
-        for(int i = 0; i < weaponRefArray.Length; i++)
-        {
-            if (weaponRefArray[i].GetComponent<WeaponInfo>().WeaponComponents != null)
-            {
-                weaponRefArray[i].GetComponent<WeaponInfo>().WeaponComponents.SetActive(false);
-            }
-            
-            weaponRefArray[i].SetActive(false);
 
-        }
-    }
 
     public void UpdateCashScrap()
     {

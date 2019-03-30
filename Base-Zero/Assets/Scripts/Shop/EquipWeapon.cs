@@ -20,7 +20,7 @@ public class EquipWeapon : MonoBehaviour {
     public void equipWeapon()
     {        
         for(int i = 0; i < shopManager.weaponRefArray.Length; i++){
-            if(shopManager.weaponRefArray[i].name == shopManager.currentWeapon.name){
+			if(shopManager.weaponRefArray[i] != null && shopManager.weaponRefArray[i].name == shopManager.currentWeapon.name){
                 shopManager.equippedWeapons[wepIndex] = i;
                 break;
             }

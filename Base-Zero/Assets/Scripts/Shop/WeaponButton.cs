@@ -1,13 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WeaponButton : MonoBehaviour {
     public int upgradeVal;
     public GameObject shopManager;
-    // Use this for initialization
-    void Start () {
-		
+	public WeaponInfo gunInfo;
+	// Use this for initialization
+	void Start () {
+		switch (upgradeVal) {
+		case 1:
+			GetComponentInChildren<Text> ().text += "\n" + gunInfo.stockCost.ToString () + " Scrap";
+			break;
+		case 2:
+			GetComponentInChildren<Text> ().text += "\n" + gunInfo.scopeCost.ToString () + " Scrap";
+			break;
+		case 3:
+			GetComponentInChildren<Text> ().text += "\n" + gunInfo.barrelCost.ToString () + " Scrap";
+			break;
+		case 4:
+			GetComponentInChildren<Text> ().text += "\n" + gunInfo.magazineCost.ToString () + " Scrap";
+			break;
+		default:
+			break;
+		}
 	}
 	
 	// Update is called once per frame

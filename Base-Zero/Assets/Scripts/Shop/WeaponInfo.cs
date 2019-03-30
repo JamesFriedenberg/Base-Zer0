@@ -18,7 +18,7 @@ public class WeaponInfo : MonoBehaviour {
     public GameObject scopeButton;
     public GameObject barrelButton;
     public GameObject magazineButton;
-    public GameObject WeaponComponents;
+
     public GameObject WeaponAttachments;
     public GameObject purchaseButton;
     public bool stockUpgraded = false;
@@ -33,6 +33,14 @@ public class WeaponInfo : MonoBehaviour {
     public bool purchased = false;
     public string name;
     public int wepIndex;
+	public int damage;
+	public int firerate;
+	public int accuracy;
+	public int recoil;
+	public int magazinesize;
+	public int magsizeUpgraded;
+	public int accUp;
+	public int recUp;
     // Use this for initialization
     void Start () {
     }

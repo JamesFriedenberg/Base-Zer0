@@ -6,9 +6,10 @@ using UnityEngine.UI;
 public class BuyEquipButton : MonoBehaviour {
     public GameObject attachmentList;
     public GameObject shopManager;
+	public WeaponInfo gunInfo;
 	// Use this for initialization
 	void Start () {
-		
+		GetComponentInChildren<Text> ().text = "$" + gunInfo.weaponCost.ToString();
 	}
 	
 	// Update is called once per frame
