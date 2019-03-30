@@ -213,7 +213,7 @@ public class weapon : MonoBehaviour
         walkTimer += Time.deltaTime;
         willFireTimer += Time.deltaTime;
 
-        if(walkTimer < .5f){
+        if(walkTimer < 1f){
             fpsController.GetComponent<FirstPersonController>().isFiring = true;
         }else{
             fpsController.GetComponent<FirstPersonController>().isFiring = false;

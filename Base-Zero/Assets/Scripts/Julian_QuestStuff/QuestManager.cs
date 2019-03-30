@@ -36,7 +36,9 @@ public class QuestManager : MonoBehaviour {
     void Start () {
 
         DontDestroyOnLoad(this.gameObject);
-        arrowHandler = navArrow.GetComponent<arrowHandler>();
+        if(arrowHandler != null){
+            arrowHandler = navArrow.GetComponent<arrowHandler>();
+        }
         qp = this.GetComponent<QuestPopulator>();
         //for(int i = 0; i < 3; i++)
         //{
@@ -59,7 +61,7 @@ public class QuestManager : MonoBehaviour {
 			if (qp == null) {
 				return;
 			}
-            generateQuests(qp.getQuestNames());
+            generateQuests();
             questsWereAdded = false;
         }
         if (Input.GetKeyDown(KeyCode.CapsLock))
@@ -112,7 +114,7 @@ public class QuestManager : MonoBehaviour {
     }
     public string sendCurQuestLocation()
     {
-
+        if(currentQuests[questIndex] == null) return "Quest location not found";
         if (currentQuests[questIndex].tag == "q_defense")
         {
             return currentQuests[questIndex].GetComponent<DefendQuest>().location;
@@ -160,67 +162,96 @@ public class QuestManager : MonoBehaviour {
         }
         return null;
     }
-    private void generateQuests(string[] questPopulatedArr)
+    private void generateQuests()
     {
-        currentQuests[5] = questDatabase[14];
-        for(int i = 0; i < questPopulatedArr.Length; i++)
-        {
-            string cur = questPopulatedArr[i];
 
-        
 
-            switch (cur)
-            {
-                case "heli1":
-                    currentQuests[i] = questDatabase[0];
-                    break;
-                case "heli2":
-                    currentQuests[i] = questDatabase[1];
-                    break;
-                case "heli3":
-                    currentQuests[i] = questDatabase[2];
-                    break;
-                case "heli4":
-                    currentQuests[i] = questDatabase[3];
-                    break;
-                case "heli5":
-                    currentQuests[i] = questDatabase[4];
-                    break;
-                case "nuke1":
-                    currentQuests[i] = questDatabase[5];
-                    break;
-                case "nuke2":
-                    currentQuests[i] = questDatabase[6];
-                    break;
-                case "nuke3":
-                    currentQuests[i] = questDatabase[7];
-                    break;
-                case "nuke4":
-                    currentQuests[i] = questDatabase[8];
-                    break;
-                case "nuke5":
-                    currentQuests[i] = questDatabase[9];
-                    break;
-                case "misc1":
-                    currentQuests[i] = questDatabase[10];
-                    break;
-                case "misc2":
-                    currentQuests[i] = questDatabase[11];
-                    break;
-                case "misc3":
-                    currentQuests[i] = questDatabase[12];
-                    break;
-                case "misc4":
-                    currentQuests[i] = questDatabase[13];
-                    break;
-                
+        currentQuests[0] = questDatabase[0];
+        currentQuests[1] = questDatabase[1];
+        currentQuests[2] = questDatabase[2];
+        currentQuests[3] = questDatabase[3];
+        currentQuests[4] = questDatabase[4];
+        currentQuests[5] = questDatabase[5];
+        //List<int> takeout = new List<int>();
+        ////rentQuests[currentQuests.Length] = questDatabase[questDatabase.Length];
+
+        //currentQuests[currentQuests.Length - 1] = questDatabase[questDatabase.Length - 1];
+        //for(int i = 0; i < currentQuests.Length - 1; i++)
+        //{
+
+        //    int val = Random.Range(0, questDatabase.Length-1);
+        //    while (takeout.Contains(val))
+        //    {
+        //        val = Random.Range(0, questDatabase.Length-1);
+
+        //    }
+
+        //    takeout.Add(val);
+        //    currentQuests[i] = questDatabase[val];
+        //}
 
 
 
-                default:
-                    break;
 
-            }
-        }
+        //currentQuests[5] = questDatabase[13];
+        //for(int i = 0; i < questPopulatedArr.Length; i++)
+        //{
+        //    string cur = questPopulatedArr[i];
+
+
+
+        //    switch (cur)
+        //    {
+        //        case "heli1":
+        //            currentQuests[i] = questDatabase[0];
+        //            break;
+        //        case "heli2":
+        //            currentQuests[i] = questDatabase[1];
+        //            break;
+        //        case "heli3":
+        //            currentQuests[i] = questDatabase[2];
+        //            break;
+        //        case "heli4":
+        //            currentQuests[i] = questDatabase[3];
+        //            break;
+        //        case "heli5":
+        //            currentQuests[i] = questDatabase[4];
+        //            break;
+        //        case "nuke1":
+        //            currentQuests[i] = questDatabase[5];
+        //            break;
+        //        case "nuke2":
+        //            currentQuests[i] = questDatabase[6];
+        //            break;
+        //        case "nuke3":
+        //            currentQuests[i] = questDatabase[7];
+        //            break;
+        //        case "nuke4":
+        //            currentQuests[i] = questDatabase[8];
+        //            break;
+        //        case "nuke5":
+        //            currentQuests[i] = questDatabase[9];
+        //            break;
+        //        case "misc1":
+        //            currentQuests[i] = questDatabase[10];
+        //            break;
+        //        case "misc2":
+        //            currentQuests[i] = questDatabase[11];
+        //            break;
+        //        case "misc3":
+        //            currentQuests[i] = questDatabase[12];
+        //            break;
+        //        case "misc4":
+        //            currentQuests[i] = questDatabase[13];
+        //            break;
+
+
+
+
+        //        default:
+        //            break;
+
+        //    }
+        //}
     }
 }
