@@ -41,9 +41,13 @@ public class SpawnHandler : MonoBehaviour {
     }
     IEnumerator Spawn()
     {
-       
 
-            if(Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
+
+        if(Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < 150f)
+        {
+
+
+            if (Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
             {
                 Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
                 yield return new WaitForSeconds(timeBetweenSpawns);
@@ -56,21 +60,34 @@ public class SpawnHandler : MonoBehaviour {
                 coroutineFired = false;
 
             }
+
+
+
+        }
+       
+
+            
         
        
     }
     IEnumerator SpawnLimited()
     {
-        
-        for(int i = 0; i < enemiesToSpawn; i++)
-        {
 
-            Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
-            yield return new WaitForSeconds(timeBetweenSpawns);
-            //Debug.Log("3hunnit");
-        }
-        
-            
+        if (Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < 150f)
+        {
+            for (int i = 0; i < enemiesToSpawn; i++)
+            {
+
+                if (Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
+                {
+                    Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
+                    yield return new WaitForSeconds(timeBetweenSpawns);
+
+                }
+                //Debug.Log("3hunnit");
+            }
+
+        }     
         
     }
 }
