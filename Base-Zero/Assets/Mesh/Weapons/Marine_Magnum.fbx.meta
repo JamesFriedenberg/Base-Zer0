@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: 290cbb91a0405b6418bfb7537d1bfa1f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Remington_870_Barrel_Extended_Heavy
+    100004: Remington_870_Barrel_Standard_Heavy
+    100006: Remington_870_Body_Default
+    100008: Remington_870_Pump_Heavy
+    100010: Remington_870_Shell_Rack
+    100012: Remington_870_Shell_Shotgun_1
+    100014: Remington_870_Shell_Shotgun_2
+    100016: Remington_870_Shell_Shotgun_3
+    100018: Remington_870_Shell_Shotgun_4
+    100020: Remington_870_Shell_Shotgun_5
+    100022: Remington_870_Shell_Shotgun_6
+    100024: Remington_870_Shell_Shotgun_Ejector
+    100026: Remington_870_Shell_Shotgun_Reload
+    100028: Remington_870_Sights
+    100030: Remington_870_Stock_Full
+    100032: Remington_870_Stock_Sawed_Off
+    100034: Remington_870_Trigger
+    400000: //RootNode
+    400002: Remington_870_Barrel_Extended_Heavy
+    400004: Remington_870_Barrel_Standard_Heavy
+    400006: Remington_870_Body_Default
+    400008: Remington_870_Pump_Heavy
+    400010: Remington_870_Shell_Rack
+    400012: Remington_870_Shell_Shotgun_1
+    400014: Remington_870_Shell_Shotgun_2
+    400016: Remington_870_Shell_Shotgun_3
+    400018: Remington_870_Shell_Shotgun_4
+    400020: Remington_870_Shell_Shotgun_5
+    400022: Remington_870_Shell_Shotgun_6
+    400024: Remington_870_Shell_Shotgun_Ejector
+    400026: Remington_870_Shell_Shotgun_Reload
+    400028: Remington_870_Sights
+    400030: Remington_870_Stock_Full
+    400032: Remington_870_Stock_Sawed_Off
+    400034: Remington_870_Trigger
+    2100000: Remington_870_mat
+    2100002: shotguns_redesign_Ammo_Bullets_mat
+    2300000: Remington_870_Barrel_Extended_Heavy
+    2300002: Remington_870_Barrel_Standard_Heavy
+    2300004: Remington_870_Body_Default
+    2300006: Remington_870_Pump_Heavy
+    2300008: Remington_870_Shell_Rack
+    2300010: Remington_870_Shell_Shotgun_1
+    2300012: Remington_870_Shell_Shotgun_2
+    2300014: Remington_870_Shell_Shotgun_3
+    2300016: Remington_870_Shell_Shotgun_4
+    2300018: Remington_870_Shell_Shotgun_5
+    2300020: Remington_870_Shell_Shotgun_6
+    2300022: Remington_870_Shell_Shotgun_Ejector
+    2300024: Remington_870_Shell_Shotgun_Reload
+    2300026: Remington_870_Sights
+    2300028: Remington_870_Stock_Full
+    2300030: Remington_870_Stock_Sawed_Off
+    2300032: Remington_870_Trigger
+    3300000: Remington_870_Barrel_Extended_Heavy
+    3300002: Remington_870_Barrel_Standard_Heavy
+    3300004: Remington_870_Body_Default
+    3300006: Remington_870_Pump_Heavy
+    3300008: Remington_870_Shell_Rack
+    3300010: Remington_870_Shell_Shotgun_1
+    3300012: Remington_870_Shell_Shotgun_2
+    3300014: Remington_870_Shell_Shotgun_3
+    3300016: Remington_870_Shell_Shotgun_4
+    3300018: Remington_870_Shell_Shotgun_5
+    3300020: Remington_870_Shell_Shotgun_6
+    3300022: Remington_870_Shell_Shotgun_Ejector
+    3300024: Remington_870_Shell_Shotgun_Reload
+    3300026: Remington_870_Sights
+    3300028: Remington_870_Stock_Full
+    3300030: Remington_870_Stock_Sawed_Off
+    3300032: Remington_870_Trigger
+    4300000: Remington_870_Pump_Heavy
+    4300002: Remington_870_Body_Default
+    4300004: Remington_870_Trigger
+    4300006: Remington_870_Barrel_Standard_Heavy
+    4300008: Remington_870_Stock_Sawed_Off
+    4300010: Remington_870_Stock_Full
+    4300012: Remington_870_Barrel_Extended_Heavy
+    4300014: Remington_870_Sights
+    4300016: Remington_870_Shell_Shotgun_Reload
+    4300018: Remington_870_Shell_Shotgun_Ejector
+    4300020: Remington_870_Shell_Rack
+    4300022: Remington_870_Shell_Shotgun_6
+    4300024: Remington_870_Shell_Shotgun_5
+    4300026: Remington_870_Shell_Shotgun_4
+    4300028: Remington_870_Shell_Shotgun_3
+    4300030: Remington_870_Shell_Shotgun_2
+    4300032: Remington_870_Shell_Shotgun_1
+    7400000: Static
+    7400002: Reload_Shell
+    7400004: Reload_End
+    7400006: Reload_Begin
+    7400008: Fire
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Static
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reload_Shell
+      takeName: Take 001
+      firstFrame: 27
+      lastFrame: 38
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reload_End
+      takeName: Take 001
+      firstFrame: 39
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Reload_Begin
+      takeName: Take 001
+      firstFrame: 12
+      lastFrame: 26
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fire
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 35
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.35
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

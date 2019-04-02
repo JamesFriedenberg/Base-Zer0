@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: cee16ce7855f356488a02f1ba09747d3
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: M1A_ACOG_Low
+    100004: M1A_Barrel_Long
+    100006: M1A_Barrel_Short
+    100008: M1A_Body
+    100010: M1A_Body_Green
+    100012: M1A_Body_Wrap
+    100014: M1A_Body_Wrap 1
+    100016: M1A_Bolt
+    100018: M1A_CCO_Scope_Low
+    100020: M1A_Cover
+    100022: M1A_Magazine
+    100024: M1A_Magazine 1
+    100026: M1A_Magazine_Dual
+    100028: M1A_Magazine_Short
+    100030: M1A_Rear_Sight
+    100032: M1A_Rifle_Scope_Sniper
+    100034: M1A_Scope_Mount
+    100036: M1A_Sights
+    100038: M1A_Stock
+    100040: M1A_Stock_green
+    100042: M1A_Tape_1
+    100044: M1A_Tape_2
+    100046: M1A_Trigger
+    100048: Suppressor_Cloth
+    400000: //RootNode
+    400002: M1A_ACOG_Low
+    400004: M1A_Barrel_Long
+    400006: M1A_Barrel_Short
+    400008: M1A_Body
+    400010: M1A_Body_Green
+    400012: M1A_Body_Wrap
+    400014: M1A_Body_Wrap 1
+    400016: M1A_Bolt
+    400018: M1A_CCO_Scope_Low
+    400020: M1A_Cover
+    400022: M1A_Magazine
+    400024: M1A_Magazine 1
+    400026: M1A_Magazine_Dual
+    400028: M1A_Magazine_Short
+    400030: M1A_Rear_Sight
+    400032: M1A_Rifle_Scope_Sniper
+    400034: M1A_Scope_Mount
+    400036: M1A_Sights
+    400038: M1A_Stock
+    400040: M1A_Stock_green
+    400042: M1A_Tape_1
+    400044: M1A_Tape_2
+    400046: M1A_Trigger
+    400048: Suppressor_Cloth
+    2100000: M1A_mat
+    2100002: AK_Platform_Accesories_mat1
+    2100004: AR_Platform_Accesories_mat
+    2100006: M21_mat
+    2300000: M1A_ACOG_Low
+    2300002: M1A_Barrel_Long
+    2300004: M1A_Barrel_Short
+    2300006: M1A_Body
+    2300008: M1A_Body_Green
+    2300010: M1A_Body_Wrap
+    2300012: M1A_Body_Wrap 1
+    2300014: M1A_Bolt
+    2300016: M1A_CCO_Scope_Low
+    2300018: M1A_Cover
+    2300020: M1A_Magazine 1
+    2300022: M1A_Magazine_Dual
+    2300024: M1A_Magazine_Short
+    2300026: M1A_Rear_Sight
+    2300028: M1A_Rifle_Scope_Sniper
+    2300030: M1A_Scope_Mount
+    2300032: M1A_Stock
+    2300034: M1A_Stock_green
+    2300036: M1A_Tape_1
+    2300038: M1A_Tape_2
+    2300040: M1A_Trigger
+    2300042: Suppressor_Cloth
+    3300000: M1A_ACOG_Low
+    3300002: M1A_Barrel_Long
+    3300004: M1A_Barrel_Short
+    3300006: M1A_Body
+    3300008: M1A_Body_Green
+    3300010: M1A_Body_Wrap
+    3300012: M1A_Body_Wrap 1
+    3300014: M1A_Bolt
+    3300016: M1A_CCO_Scope_Low
+    3300018: M1A_Cover
+    3300020: M1A_Magazine 1
+    3300022: M1A_Magazine_Dual
+    3300024: M1A_Magazine_Short
+    3300026: M1A_Rear_Sight
+    3300028: M1A_Rifle_Scope_Sniper
+    3300030: M1A_Scope_Mount
+    3300032: M1A_Stock
+    3300034: M1A_Stock_green
+    3300036: M1A_Tape_1
+    3300038: M1A_Tape_2
+    3300040: M1A_Trigger
+    3300042: Suppressor_Cloth
+    4300000: M1A_Scope_Mount
+    4300002: M1A_Barrel_Long
+    4300004: M1A_Body
+    4300006: M1A_Stock
+    4300008: M1A_Body_Wrap
+    4300010: M1A_Rear_Sight
+    4300012: M1A_Trigger
+    4300014: M1A_Barrel_Short
+    4300016: Suppressor_Cloth
+    4300018: M1A_Cover
+    4300020: M1A_Bolt
+    4300022: M1A_Magazine
+    4300024: M1A_Tape_2
+    4300026: M1A_Tape_1
+    4300028: M1A_Magazine_Dual
+    4300030: M1A_Magazine_Short
+    4300032: M1A_Rifle_Scope_Sniper
+    4300034: M1A_ACOG_Low
+    4300036: M1A_CCO_Scope_Low
+    4300038: M1A_Body_Green
+    4300040: M1A_Stock_green
+    4300042: M1A_Body_Wrap
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 13
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.125
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

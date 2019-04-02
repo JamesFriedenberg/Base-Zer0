@@ -20,7 +20,8 @@ public class ShopManager : MonoBehaviour {
 	void Start () {
         //GameManager gm = GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>();
         //equippedWeapons = gm.playerWeapons;
-	}
+        UpdateCashScrap();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -71,9 +72,13 @@ public class ShopManager : MonoBehaviour {
 
     public void EnableEquipSlots()
     {
+        if(currentWeapon == null)
+        {
+            return;
+        }
         if(currentWeapon.tag == "pistol")
         {
-            if(weaponRefArray[equippedWeapons[0]] == null || currentWeapon.GetComponent<WeaponInfo>().name != weaponRefArray[equippedWeapons[0]].GetComponent<WeaponInfo>().name)
+            if(equippedWeapons[0] == -1 || weaponRefArray[equippedWeapons[0]] == null || currentWeapon.GetComponent<WeaponInfo>().name != weaponRefArray[equippedWeapons[0]].GetComponent<WeaponInfo>().name)
             {
                 equipSlots[0].SetActive(true);
             }

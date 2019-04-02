@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: 5d72575b64ee9cb4387e41947bdb2293
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrel
+    100002: Barrel_Short
+    100004: Barrel_Shroud
+    100006: Body
+    100008: Bolt
+    100010: Mag_Guard
+    100012: Magazine
+    100014: Magazine 1
+    100016: Magazine_Short
+    100018: //RootNode
+    100020: Red_Dot
+    100022: Stock
+    100024: Trigger
+    400000: Barrel
+    400002: Barrel_Short
+    400004: Barrel_Shroud
+    400006: Body
+    400008: Bolt
+    400010: Mag_Guard
+    400012: Magazine
+    400014: Magazine 1
+    400016: Magazine_Short
+    400018: //RootNode
+    400020: Red_Dot
+    400022: Stock
+    400024: Trigger
+    2100000: AR_accessories_mat
+    2100002: Mat_49_mat
+    2300000: Barrel
+    2300002: Barrel_Short
+    2300004: Barrel_Shroud
+    2300006: Body
+    2300008: Bolt
+    2300010: Mag_Guard
+    2300012: Magazine 1
+    2300014: Magazine_Short
+    2300016: Red_Dot
+    2300018: Stock
+    2300020: Trigger
+    3300000: Barrel
+    3300002: Barrel_Short
+    3300004: Barrel_Shroud
+    3300006: Body
+    3300008: Bolt
+    3300010: Mag_Guard
+    3300012: Magazine 1
+    3300014: Magazine_Short
+    3300016: Red_Dot
+    3300018: Stock
+    3300020: Trigger
+    4300000: Red_Dot
+    4300002: Trigger
+    4300004: Body
+    4300006: Bolt
+    4300008: Barrel_Short
+    4300010: Barrel
+    4300012: Barrel_Shroud
+    4300014: Mag_Guard
+    4300016: Stock
+    4300018: Magazine_Short
+    4300020: Magazine
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.29999998
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

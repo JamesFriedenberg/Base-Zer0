@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CatagoryToggler : MonoBehaviour {
 	public GameObject[] weapons;
+    public GameObject[] catagories;
 	// Use this for initialization
 	void Start () {
 		
@@ -25,8 +26,31 @@ public class CatagoryToggler : MonoBehaviour {
 				}					
 			}
 		}
-
-		weapons [index].SetActive (true);
-		weapons [index + 1].SetActive (true);
+        if(index != -1)
+        {
+            weapons[index].SetActive(true);
+            weapons[index + 1].SetActive(true);
+        }
+		
 	}
+
+    public void ToggleCatagories(int index)
+    {
+        for (int i = 0; i < catagories.Length; i++)
+        {
+            if (i != index)
+            {
+                if (catagories[i] != null)
+                {
+                    catagories[i].GetComponent<CatagoryToggler>().ToggleActiveWeapons(-1);
+                    catagories[i].SetActive(false);
+                }
+            }
+        }
+
+        if (index != -1 && catagories[index] != null)
+        {
+            catagories[index].SetActive(true);
+        }
+    }
 }

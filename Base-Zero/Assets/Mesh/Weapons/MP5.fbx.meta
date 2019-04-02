@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 86feb9acbfefc44429a935361d8383fa
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: CCO_Scope
+    100004: Charging_Handle
+    100006: Front_Sight
+    100008: Guard
+    100010: Guard_Flashlight
+    100012: Guards
+    100014: Magazine
+    100016: Magazine 1
+    100018: //RootNode
+    100020: Rear_Sight
+    100022: Sight_Mount
+    100024: Stock_Collapsable
+    100026: Stock_Collapsable_Bar
+    100028: Stock_Collapsable_Bar1
+    100030: Stock_Collapsable_End
+    100032: Stock_Solid
+    100034: Stocks
+    100036: Suppresed
+    100038: Trigger
+    400000: Body
+    400002: CCO_Scope
+    400004: Charging_Handle
+    400006: Front_Sight
+    400008: Guard
+    400010: Guard_Flashlight
+    400012: Guards
+    400014: Magazine
+    400016: Magazine 1
+    400018: //RootNode
+    400020: Rear_Sight
+    400022: Sight_Mount
+    400024: Stock_Collapsable
+    400026: Stock_Collapsable_Bar
+    400028: Stock_Collapsable_Bar1
+    400030: Stock_Collapsable_End
+    400032: Stock_Solid
+    400034: Stocks
+    400036: Suppresed
+    400038: Trigger
+    2100000: MP5_mat
+    2100002: AR_Platform_Accesories_mat
+    2300000: Body
+    2300002: CCO_Scope
+    2300004: Charging_Handle
+    2300006: Front_Sight
+    2300008: Guard
+    2300010: Guard_Flashlight
+    2300012: Magazine 1
+    2300014: Rear_Sight
+    2300016: Sight_Mount
+    2300018: Stock_Collapsable
+    2300020: Stock_Collapsable_Bar
+    2300022: Stock_Collapsable_Bar1
+    2300024: Stock_Collapsable_End
+    2300026: Stock_Solid
+    2300028: Suppresed
+    2300030: Trigger
+    3300000: Body
+    3300002: CCO_Scope
+    3300004: Charging_Handle
+    3300006: Front_Sight
+    3300008: Guard
+    3300010: Guard_Flashlight
+    3300012: Magazine 1
+    3300014: Rear_Sight
+    3300016: Sight_Mount
+    3300018: Stock_Collapsable
+    3300020: Stock_Collapsable_Bar
+    3300022: Stock_Collapsable_Bar1
+    3300024: Stock_Collapsable_End
+    3300026: Stock_Solid
+    3300028: Suppresed
+    3300030: Trigger
+    4300000: Stock_Solid
+    4300002: Stock_Collapsable
+    4300004: Stock_Collapsable_End
+    4300006: Stock_Collapsable_Bar1
+    4300008: Stock_Collapsable_Bar
+    4300010: Suppresed
+    4300012: Guard_Flashlight
+    4300014: Guard
+    4300016: Sight_Mount
+    4300018: CCO_Scope
+    4300020: Body
+    4300022: Charging_Handle
+    4300024: Rear_Sight
+    4300026: Front_Sight
+    4300028: Trigger
+    4300030: Magazine
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 10
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.14999999
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

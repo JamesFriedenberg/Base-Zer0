@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: 47ed500ef89793a4a9bcee69a586283b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrel
+    100002: Barrel_Short
+    100004: Body
+    100006: Bolt
+    100008: ForeGrip
+    100010: Lower_Barrel
+    100012: Lower_Barrel 1
+    100014: //RootNode
+    100016: Red_Dot
+    100018: Shell_Rack
+    100020: Shell_Shotgun_1
+    100022: Shell_Shotgun_2
+    100024: Shell_Shotgun_3
+    100026: Shell_Shotgun_4
+    100028: Shell_Shotgun_5
+    100030: Shell_Shotgun_6
+    100032: Shell_Shotgun_Reload
+    100034: Sights
+    100036: Stock
+    100038: Stock_Collapsed
+    100040: Stock_Pad
+    100042: Stock_Pad 1
+    100044: Trigger
+    400000: Barrel
+    400002: Barrel_Short
+    400004: Body
+    400006: Bolt
+    400008: ForeGrip
+    400010: Lower_Barrel
+    400012: Lower_Barrel 1
+    400014: //RootNode
+    400016: Red_Dot
+    400018: Shell_Rack
+    400020: Shell_Shotgun_1
+    400022: Shell_Shotgun_2
+    400024: Shell_Shotgun_3
+    400026: Shell_Shotgun_4
+    400028: Shell_Shotgun_5
+    400030: Shell_Shotgun_6
+    400032: Shell_Shotgun_Reload
+    400034: Sights
+    400036: Stock
+    400038: Stock_Collapsed
+    400040: Stock_Pad
+    400042: Stock_Pad 1
+    400044: Trigger
+    2100000: M1014_mat
+    2100002: aa12_0002_AR_Platform_Accesories_mat
+    2100004: Ammo_Bullets_mat
+    2300000: Barrel
+    2300002: Barrel_Short
+    2300004: Body
+    2300006: Bolt
+    2300008: ForeGrip
+    2300010: Lower_Barrel
+    2300012: Lower_Barrel 1
+    2300014: Red_Dot
+    2300016: Shell_Rack
+    2300018: Shell_Shotgun_1
+    2300020: Shell_Shotgun_2
+    2300022: Shell_Shotgun_3
+    2300024: Shell_Shotgun_4
+    2300026: Shell_Shotgun_5
+    2300028: Shell_Shotgun_6
+    2300030: Shell_Shotgun_Reload
+    2300032: Sights
+    2300034: Stock
+    2300036: Stock_Collapsed
+    2300038: Stock_Pad
+    2300040: Stock_Pad 1
+    2300042: Trigger
+    3300000: Barrel
+    3300002: Barrel_Short
+    3300004: Body
+    3300006: Bolt
+    3300008: ForeGrip
+    3300010: Lower_Barrel
+    3300012: Lower_Barrel 1
+    3300014: Red_Dot
+    3300016: Shell_Rack
+    3300018: Shell_Shotgun_1
+    3300020: Shell_Shotgun_2
+    3300022: Shell_Shotgun_3
+    3300024: Shell_Shotgun_4
+    3300026: Shell_Shotgun_5
+    3300028: Shell_Shotgun_6
+    3300030: Shell_Shotgun_Reload
+    3300032: Sights
+    3300034: Stock
+    3300036: Stock_Collapsed
+    3300038: Stock_Pad
+    3300040: Stock_Pad 1
+    3300042: Trigger
+    4300000: Trigger
+    4300002: Sights
+    4300004: Bolt
+    4300006: ForeGrip
+    4300008: Barrel
+    4300010: Lower_Barrel
+    4300012: Stock
+    4300014: Stock_Pad
+    4300016: Body
+    4300018: Red_Dot
+    4300020: Shell_Shotgun_Reload
+    4300022: Shell_Rack
+    4300024: Shell_Shotgun_6
+    4300026: Shell_Shotgun_5
+    4300028: Shell_Shotgun_4
+    4300030: Shell_Shotgun_3
+    4300032: Shell_Shotgun_2
+    4300034: Shell_Shotgun_1
+    4300036: Barrel_Short
+    4300038: Lower_Barrel
+    4300040: Stock_Collapsed
+    4300042: Stock_Pad
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 8
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.099999994
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -27,7 +27,11 @@ public class BuyEquipButton : MonoBehaviour {
             {
                 shopManager.GetComponent<ShopManager>().cash -= weaponRef.weaponCost;
                 weaponRef.purchased = true;
-                attachmentList.SetActive(true);
+                if(weapon.tag != "pistol")
+                {
+                    attachmentList.SetActive(true);
+                }
+                
                 shopManager.GetComponent<ShopManager>().UpdateCashScrap();
                 shopManager.GetComponent<ShopManager>().EnableEquipSlots();
                 Destroy(gameObject);
