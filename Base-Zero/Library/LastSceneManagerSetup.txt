@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Old Scenes/ShopRedirection.unity
+- path: Assets/Scenes/VehicleDepot.unity
   isLoaded: 1
   isActive: 1
