@@ -43,7 +43,7 @@ public class SpawnHandler : MonoBehaviour {
     {
 
 
-        if(Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < 150f)
+        if(Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < 230f)
         {
 
 
