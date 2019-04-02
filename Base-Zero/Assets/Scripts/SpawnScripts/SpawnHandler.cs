@@ -13,6 +13,9 @@ public class SpawnHandler : MonoBehaviour {
 
     public bool spawnLimitedEnemies = false;
     public int enemiesToSpawn;
+
+    public float minSpawnDistance = 50f;
+    public float maxSpawnDistance = 250f;
 	// Use this for initialization
 	void Start () {
 
@@ -43,23 +46,22 @@ public class SpawnHandler : MonoBehaviour {
     {
 
 
-        if(Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < 230f)
+        if(Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < maxSpawnDistance && Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) > minSpawnDistance)
         {
 
 
-            if (Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
-            {
+           
                 Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
                 yield return new WaitForSeconds(timeBetweenSpawns);
                 Debug.Log("lalalala");
                 coroutineFired = false;
-            }
-            else
-            {
+            
+            
+            
                 Debug.Log("FACING!!!");
                 coroutineFired = false;
 
-            }
+            
 
 
 
@@ -73,7 +75,7 @@ public class SpawnHandler : MonoBehaviour {
     IEnumerator SpawnLimited()
     {
 
-        if (Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < 150f)
+        if (Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < maxSpawnDistance && Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) > minSpawnDistance)
         {
             for (int i = 0; i < enemiesToSpawn; i++)
             {

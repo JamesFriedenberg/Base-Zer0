@@ -22,6 +22,20 @@ TagManager:
   - q_defense
   - Vehicle2
   - target
+  - Misc4
+  - Misc5
+  - Heli2
+  - Heli5
+  - Heli4
+  - Misc2
+  - Misc1
+  - Misc3
+  - Nuke4
+  - Nuke2
+  - Heli3
+  - Nuke5
+  - Heli1
+  - pickupText
   layers:
   - Default
   - TransparentFX
