@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4352782480855238}
   - component: {fileID: 33600122662471678}
   - component: {fileID: 23585681354953204}
+  - component: {fileID: 114570456985601138}
+  - component: {fileID: 65605508037829848}
   m_Layer: 0
   m_Name: Crate_Food
   m_TagString: Untagged
@@ -65,7 +67,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220466231720738}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 173.3, y: 0.95, z: 37.2}
+  m_LocalPosition: {x: 275.7907, y: 1.15, z: 74.84503}
   m_LocalScale: {x: 19.194, y: 19.194, z: 19.194}
   m_Children:
   - {fileID: 4001055138121042}
@@ -156,3 +158,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1220466231720738}
   m_Mesh: {fileID: 4300000, guid: ff8fb117d9a78ff4e880a3ff8400360c, type: 3}
+--- !u!65 &65605508037829848
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1220466231720738}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2538871, y: 0.08447839, z: 0.16055436}
+  m_Center: {x: -0.00019078207, y: 0.0037242346, z: -0.0032510585}
+--- !u!114 &114570456985601138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1220466231720738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478300f26d01f7c45b6fe0e793236b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

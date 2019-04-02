@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561558958390196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.37866, y: 11.89, z: 33.83747}
+  m_LocalPosition: {x: 145.37866, y: 0.84, z: 33.83747}
   m_LocalScale: {x: 1.5732, y: 0.15809064, z: 1.5732}
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,8 +100,8 @@ MonoBehaviour:
   player: {fileID: 0}
   zombie: {fileID: 195394613996509886}
   bullet: {fileID: 1689033640012044, guid: d0ae1af3819b6834c8337739ad827325, type: 2}
-  wanderRadius: 0
-  wanderTimer: 0
+  wanderRadius: 90
+  wanderTimer: 2
   timeBetweenAttacks: 0.5
   attackDamage: 200
   playerInRange: 0
@@ -130,7 +130,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 30
+  m_Speed: 40
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -139,6 +139,6 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 496.73
+  m_BaseOffset: 50.9
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4

@@ -43,86 +43,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1 &1165372238365256
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4933765172561216}
-  - component: {fileID: 114027330045250244}
-  m_Layer: 0
-  m_Name: Nuke5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1169853548492978
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4277833876185180}
-  - component: {fileID: 114604223460827694}
-  m_Layer: 0
-  m_Name: Misc3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1202054222327936
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4670422575775096}
-  - component: {fileID: 114529520372750768}
-  m_Layer: 0
-  m_Name: Nuke3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1243630274216376
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4441012519859504}
-  - component: {fileID: 114652871604374598}
-  m_Layer: 0
-  m_Name: Heli5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1472280456865630
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4333634140887216}
-  - component: {fileID: 114210625837707066}
-  m_Layer: 0
-  m_Name: Nuke4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &1697396823726886
 GameObject:
   m_ObjectHideFlags: 1
@@ -133,7 +53,7 @@ GameObject:
   - component: {fileID: 4906200457812752}
   - component: {fileID: 114657950321583106}
   m_Layer: 0
-  m_Name: Misc4
+  m_Name: Escape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,7 +69,8 @@ GameObject:
   - component: {fileID: 4112974312554988}
   - component: {fileID: 114962164922942536}
   - component: {fileID: 114960966042902766}
-  - component: {fileID: 114665986543738014}
+  - component: {fileID: 114259025649514706}
+  - component: {fileID: 114478327494606626}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: gm
@@ -157,22 +78,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1787756246652188
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4999177137518280}
-  - component: {fileID: 114361155470136928}
-  m_Layer: 0
-  m_Name: Nuke1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &1794984680873816
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +88,7 @@ GameObject:
   - component: {fileID: 4470268307279768}
   m_Layer: 0
   m_Name: ObjectiveOBJs
-  m_TagString: Untagged
+  m_TagString: questobj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -199,38 +104,6 @@ GameObject:
   - component: {fileID: 114367827827389022}
   m_Layer: 0
   m_Name: Misc2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1829654555854264
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4038108460104952}
-  - component: {fileID: 114265823048109744}
-  m_Layer: 0
-  m_Name: Nuke2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1903967736083102
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4127205395289286}
-  - component: {fileID: 114990676718712132}
-  m_Layer: 0
-  m_Name: Misc5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,48 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!1 &1975023312074896
-GameObject:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4000598377732334}
-  - component: {fileID: 114652849522228198}
-  m_Layer: 0
-  m_Name: Heli4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4000598377732334
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1975023312074896}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4038108460104952
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1829654555854264}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4112974312554988
 Transform:
   m_ObjectHideFlags: 1
@@ -324,19 +155,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4127205395289286
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1903967736083102}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4178672300598104
 Transform:
   m_ObjectHideFlags: 1
@@ -349,45 +167,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4470268307279768}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4277833876185180
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169853548492978}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4333634140887216
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1472280456865630}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4441012519859504
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1243630274216376}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4470268307279768
 Transform:
@@ -402,18 +181,9 @@ Transform:
   - {fileID: 4954986516074654}
   - {fileID: 4178672300598104}
   - {fileID: 4637603877247094}
-  - {fileID: 4000598377732334}
-  - {fileID: 4441012519859504}
-  - {fileID: 4999177137518280}
-  - {fileID: 4038108460104952}
-  - {fileID: 4670422575775096}
-  - {fileID: 4333634140887216}
-  - {fileID: 4933765172561216}
   - {fileID: 4594963015066432}
   - {fileID: 4866874069733846}
-  - {fileID: 4277833876185180}
   - {fileID: 4906200457812752}
-  - {fileID: 4127205395289286}
   m_Father: {fileID: 4112974312554988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -428,7 +198,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 10
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4637603877247094
 Transform:
@@ -443,19 +213,6 @@ Transform:
   m_Father: {fileID: 4470268307279768}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4670422575775096
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1202054222327936}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4866874069733846
 Transform:
   m_ObjectHideFlags: 1
@@ -467,7 +224,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 11
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4906200457812752
 Transform:
@@ -480,20 +237,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4933765172561216
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1165372238365256}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 9
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4954986516074654
 Transform:
@@ -508,34 +252,6 @@ Transform:
   m_Father: {fileID: 4470268307279768}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4999177137518280
-Transform:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787756246652188}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4470268307279768}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114027330045250244
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1165372238365256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: repair hull
-  location: Trainyard
-  questText: Repair missile silo opening mechanism in the headuqarters.
-  UITextRef: {fileID: 0}
 --- !u!114 &114125436219222520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -547,25 +263,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Disable AA
-  location: HQ
-  questText: Disable automated anti-aircraft weaponry in the headquarters.
+  questName: Find Tools
+  location: ShippingYard
+  questText: Find the tools to fix the helicopter in the Shipping Yard.
   UITextRef: {fileID: 0}
---- !u!114 &114210625837707066
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1472280456865630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: Radiation Pills
-  location: Trainyard
-  questText: 'Find the radiation medication in the trainyard. '
-  UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 1713987864555940, guid: f773edae16fa545478c94d842ef8e879,
+    type: 2}
+  locationOfObject: {x: 173.9265, y: 1.3, z: 257.8211}
 --- !u!114 &114213352833005016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -578,24 +282,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questName: Get Fuel
-  location: Trainyard
-  questText: Retrieve the fuel from the Trainyard.
+  location: VehicleDepot
+  questText: Retrieve the fuel from the Vehicle Depot.
   UITextRef: {fileID: 0}
---- !u!114 &114265823048109744
+  questItemPrefab: {fileID: 1432385583515308, guid: 2a139bfb8a6a413488141d7d9051ce79,
+    type: 2}
+  locationOfObject: {x: 137.97, y: 1.24, z: 40.869}
+--- !u!114 &114259025649514706
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1829654555854264}
+  m_GameObject: {fileID: 1777527644985298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Script: {fileID: 11500000, guid: b6b595a8a5e57f845885f61e4f100d17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Silver Key
-  location: Trainyard
-  questText: 'Find the silver key in the trainyard. '
-  UITextRef: {fileID: 0}
 --- !u!114 &114328948902251686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -607,25 +310,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Train power
-  location: Trainyard
-  questText: Restore powers to the train tracks in the trainyard.
+  questName: Supply
+  location: RailPath
+  questText: 'Find the supply cache along the railroad. '
   UITextRef: {fileID: 0}
---- !u!114 &114361155470136928
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1787756246652188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: Launch Codes
-  location: HQ
-  questText: Find the launch code paper in the headquarters.
-  UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 1023684938594244, guid: efac3a1a5e084464880ce909e6c511fa,
+    type: 2}
+  locationOfObject: {x: 279.13, y: 1.66, z: 67.61}
 --- !u!114 &114367827827389022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -637,70 +328,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Food
-  location: HQ
-  questText: Find the crate of food in the headquarters.
+  questName: GPS Beacon
+  location: SupplyDepot
+  questText: Find the GPS Beacon for the helicopter in the Supply Depot.
   UITextRef: {fileID: 0}
---- !u!114 &114529520372750768
+  questItemPrefab: {fileID: 1865687490872334, guid: 9a6fa980521ebeb41880ea5102713ecb,
+    type: 2}
+  locationOfObject: {x: 421.29, y: 1.29, z: 134.56}
+--- !u!114 &114478327494606626
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1202054222327936}
+  m_GameObject: {fileID: 1777527644985298}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Script: {fileID: 11500000, guid: f3184aa85addf7149a29bf2f0c1093ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Security Bypass
-  location: HQ
-  questText: 'Override the security measures on the headquarters '
-  UITextRef: {fileID: 0}
---- !u!114 &114604223460827694
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1169853548492978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: Supply
-  location: Trainyard
-  questText: Find the supply cache in the trainyard.
-  UITextRef: {fileID: 0}
---- !u!114 &114652849522228198
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1975023312074896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: Find GPS Beacon
-  location: HQ
-  questText: Find the GPS Beacon in the headquarters.
-  UITextRef: {fileID: 0}
---- !u!114 &114652871604374598
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1243630274216376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: Flight manual
-  location: HQ
-  questText: Find the helicopter flight manual in the headquarters.
-  UITextRef: {fileID: 0}
+  shopRef: {fileID: 0}
+  equippedWeapons: 0000000002000000ffffffff
+  canvas: {fileID: 0}
+  questObj: {fileID: 0}
 --- !u!114 &114657950321583106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -712,21 +361,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Message
-  location: HQ
-  questText: Find the note at the top of the watchtower in the headquarters.
+  questName: Escape
+  location: SupplyDepot
+  questText: Missions completed! Get to the helicopter in the HQ to escape!
   UITextRef: {fileID: 0}
---- !u!114 &114665986543738014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1777527644985298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6b595a8a5e57f845885f61e4f100d17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  questItemPrefab: {fileID: 1764893209333128, guid: 185dfaefdf8f6b145ac594b0e93e115f,
+    type: 2}
+  locationOfObject: {x: 374.01, y: 14.12, z: 360.1}
 --- !u!114 &114794098760788078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -738,10 +379,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Find Starter
-  location: Trainyard
-  questText: Find spare engine starter in the trainyard.
+  questName: FindFood
+  location: ShippingYard
+  questText: Find the food crate in the ShippingYard
   UITextRef: {fileID: 0}
+  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+    type: 2}
+  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
 --- !u!114 &114960966042902766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -756,17 +400,9 @@ MonoBehaviour:
   questDatabase:
   - {fileID: 1920386060801812}
   - {fileID: 1947509206174484}
-  - {fileID: 1047052621817082}
-  - {fileID: 1975023312074896}
-  - {fileID: 1243630274216376}
-  - {fileID: 1787756246652188}
-  - {fileID: 1829654555854264}
-  - {fileID: 1202054222327936}
-  - {fileID: 1472280456865630}
-  - {fileID: 1165372238365256}
-  - {fileID: 1056959577428260}
   - {fileID: 1802151753979166}
-  - {fileID: 1169853548492978}
+  - {fileID: 1056959577428260}
+  - {fileID: 1047052621817082}
   - {fileID: 1697396823726886}
   currentQuests:
   - {fileID: 0}
@@ -774,6 +410,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  questIndex: 0
   navArrow: {fileID: 0}
 --- !u!114 &114962164922942536
 MonoBehaviour:
@@ -786,19 +424,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6568916fd9fc8414d882f50c4a3a0b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCash: 0
+  playerScraps: 0
   startingAmmo: 500
---- !u!114 &114990676718712132
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1903967736083102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questName: Medicine
-  location: HQ
-  questText: Find the stockpile of medicine in the headquarters.
-  UITextRef: {fileID: 0}
+  startingPlayerHealth: 1000
+  currentPlayerHealth: 1000
+  currentWeapon: 0
+  ammoInWeapons: 
+  startPosition: {x: 0, y: 0, z: 0}
+  playerWeapons: 0000000002000000ffffffff

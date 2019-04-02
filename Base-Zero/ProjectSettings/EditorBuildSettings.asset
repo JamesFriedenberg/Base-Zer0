@@ -15,10 +15,10 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/HQ.unity
+    path: Assets/Scenes/SupplyDepot.unity
     guid: 91a73ff9051c40747aa7ae0140ae1f4a
   - enabled: 1
-    path: Assets/Scenes/Rail_Path.unity
+    path: Assets/Scenes/RailPath.unity
     guid: 1687921844fdf584f924baeba2e4540f
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShippingYard.unity
     guid: 38148454ef2036e40b6f7e0fb56c0654
+  - enabled: 1
+    path: Assets/Scenes/VehicleDepot.unity
+    guid: f54cffdb5e6a8c849b1e3e81a1c25f41
   m_configObjects: {}

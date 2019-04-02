@@ -66,7 +66,7 @@ public class arrowHandler : MonoBehaviour
             {
                 renderer.enabled = true;
             }
-            goTarget = qm.sendQuestItem();
+            goTarget = GameObject.Find(qm.sendQuestItem().name + "(Clone)");
 
         }
         //if (sceneName == "HQ")
