@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4399364435778906}
   - component: {fileID: 82791366309968038}
   - component: {fileID: 65876920903282402}
+  - component: {fileID: 114853853428478202}
   m_Layer: 0
   m_Name: Gate Main
   m_TagString: Untagged
@@ -68,15 +69,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655506234174082}
-  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
-  m_LocalPosition: {x: 102.24, y: 5.2073965, z: 200.38266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 534.07, y: 5.16, z: 307.63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4859832937085484}
   - {fileID: 4582558259424134}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4582558259424134
 Transform:
   m_ObjectHideFlags: 1
@@ -194,11 +195,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655506234174082}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.77, y: 8.84, z: 31.31}
-  m_Center: {x: -0.66, y: -0.79, z: -0.2}
+  m_Size: {x: 2.0217528, y: 8.84, z: 31.31}
+  m_Center: {x: -0.7858765, y: -0.78999996, z: -0.19999981}
 --- !u!82 &82791366309968038
 AudioSource:
   m_ObjectHideFlags: 1
@@ -208,8 +209,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 1728ae1b2b63d6d4ab9e62e54d2f1676, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -294,3 +295,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114853853428478202
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1655506234174082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90f89413391e51a449c51f49e42a575c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goToSceneName: RailPath
+  spawnPosition: {x: 19.5565, y: 0.71, z: 65.04}

@@ -24,6 +24,7 @@ public class sceneSwitcher : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider other)
     {
+        this.GetComponent<AudioSource>().Play();
         if(other.gameObject.tag == "Player")
         {
             gm.GetComponent<GameManager>().startPosition = spawnPosition;
