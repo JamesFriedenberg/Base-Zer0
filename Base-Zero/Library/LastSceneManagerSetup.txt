@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/ShippingYard.unity
-  isLoaded: 1
-  isActive: 1
