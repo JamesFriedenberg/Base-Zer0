@@ -57,8 +57,7 @@ public class SpawnHandler : MonoBehaviour {
 
 
 
-            Debug.Log("FACING!!!");
-            coroutineFired = false;
+            
 
 
 
@@ -73,17 +72,18 @@ public class SpawnHandler : MonoBehaviour {
     IEnumerator SpawnLimited()
     {
 
+        
         //if (Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < maxSpawnDistance && Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) > minSpawnDistance)
         //{
             for (int i = 0; i < enemiesToSpawn; i++)
             {
 
-                if (Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
-                {
+                //if (Vector3.Dot(playerRef.transform.forward, (this.transform.position - playerRef.transform.position).normalized) < 0f)
+                //{
                     Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
                     yield return new WaitForSeconds(timeBetweenSpawns);
 
-                }
+               // }
                 //Debug.Log("3hunnit");
             }
 
