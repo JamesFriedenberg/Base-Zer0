@@ -33,9 +33,9 @@ public class arrowHandler : MonoBehaviour
         //    flag = false;
         //}
         //goTarget = GameObject.FindGameObjectWithTag("Heli2");
+    
 
-
-        if (qm.sendCurQuestLocation() == SceneManager.GetActiveScene().name)
+        if (qm.sendCurQuestLocation() == SceneManager.GetActiveScene().name || GameObject.Find(qm.sendCurQuestLocation() + "Gate") != null)
         {
             Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
 
@@ -43,7 +43,7 @@ public class arrowHandler : MonoBehaviour
             angtoTar += 180.0f;
             this.transform.localEulerAngles = new Vector3(90, angtoTar, 0);
         }
-  
+
     }
     public void onObjectiveChange()
     {
@@ -52,10 +52,24 @@ public class arrowHandler : MonoBehaviour
 
         if(qm.sendCurQuestLocation() != sceneName)
         {
-            foreach (Renderer renderer in gameObject.GetComponentsInChildren(typeof(Renderer)))
+            //if(qm.questIndex == 1 && sceneName == "SupplyDe)
+            if(GameObject.Find(qm.sendCurQuestLocation() + "Gate") != null)
             {
-                renderer.enabled = false;
+                Debug.Log(qm.sendCurQuestLocation() + "Gate");
+                goTarget = GameObject.Find(qm.sendCurQuestLocation() + "Gate");
+                foreach (Renderer renderer in gameObject.GetComponentsInChildren(typeof(Renderer)))
+                {
+                    renderer.enabled = true;
+                }
             }
+            else
+            {
+                foreach (Renderer renderer in gameObject.GetComponentsInChildren(typeof(Renderer)))
+                {
+                    renderer.enabled = false;
+                }
+            }
+            
             //this.gameObject.GetComponentInChildren<MeshRenderer>().enabled = false;
             //this.gameObject.GetComponent<MeshRenderer>().enabled = false;
 

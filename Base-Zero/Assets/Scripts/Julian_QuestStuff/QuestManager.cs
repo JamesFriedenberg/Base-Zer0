@@ -97,6 +97,7 @@ public class QuestManager : MonoBehaviour {
     }
     public GameObject sendQuestItem()
     {
+    
         if(currentQuests[questIndex].GetComponent<Quest>() != null)
         {
             return currentQuests[questIndex].GetComponent<Quest>().questItemPrefab;

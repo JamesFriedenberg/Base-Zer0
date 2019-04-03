@@ -14,7 +14,7 @@ public class SpawnHandler : MonoBehaviour {
     public bool spawnLimitedEnemies = false;
     public int enemiesToSpawn;
 
-    public float minSpawnDistance = 50f;
+    public float minSpawnDistance = 15f;
     public float maxSpawnDistance = 250f;
 	// Use this for initialization
 	void Start () {
