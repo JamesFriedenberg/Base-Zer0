@@ -18,7 +18,7 @@ public class Exit : MonoBehaviour {
     public void exitShop()
     {
         GameObject.FindGameObjectWithTag("gm").GetComponent<ShopSystemHandler>().updateWeapons();
-        SceneManager.LoadScene("HQ");
+        SceneManager.LoadScene("Default");
 
     }
 }

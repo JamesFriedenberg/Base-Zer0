@@ -25383,7 +25383,7 @@ MonoBehaviour:
   cash: 9000
   scrap: 8000
   currentWeapon: {fileID: 0}
-  equippedWeapons: 00000000ffffffffffffffff
+  equippedWeapons: 01000000ffffffffffffffff
   equipSlots:
   - {fileID: 1515087087}
   - {fileID: 1615385008}

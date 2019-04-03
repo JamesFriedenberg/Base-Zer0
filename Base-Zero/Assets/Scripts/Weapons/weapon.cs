@@ -68,7 +68,7 @@ public class weapon : MonoBehaviour
     private int myIterations = 0;
 
     //
-    private bool[] myUpgrades = {false, false, false, false};
+    public bool[] myUpgrades = {false, false, false, false};
 
     //TODO:
     /*
@@ -86,15 +86,7 @@ public class weapon : MonoBehaviour
         localPos = transform.localPosition;
         gameManager = GameObject.FindGameObjectWithTag("gm");
 
-        ShopSystemHandler shopHandle = gameManager.GetComponent<ShopSystemHandler>();
-        for(int i = 0; i < shopHandle.weaponsList.Length; i++){
-            if(shopHandle.weaponsList[i].objName == this.gameObject.name){
-                myUpgrades[0] = shopHandle.weaponsList[i].stockUpgraded;
-                myUpgrades[3] = shopHandle.weaponsList[i].barrelUpgraded;
-                myUpgrades[2] = shopHandle.weaponsList[i].scopeUpgraded;
-                myUpgrades[1] = shopHandle.weaponsList[i].magazineUpgraded;
-            }
-        }
+       
 
         if(projectile) semiAuto = true;
         FindStats(this.gameObject);
@@ -124,12 +116,11 @@ public class weapon : MonoBehaviour
             currentAmmoCount = gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]];
         }
     }
-    void FindStats(GameObject objToSearch){
+    public void FindStats(GameObject objToSearch){
         if(myIterations > 30) return;
 
         myIterations++;
         Transform[] children = this.GetComponentsInChildren<Transform>();
-    myUpgrades[3] = true;
         for(int i = 0; i < children.Length; i++){
             if(children[i].GetComponent<stock>() != null){
                 if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
@@ -171,7 +162,7 @@ public class weapon : MonoBehaviour
             }else if(children[i].GetComponent<barrel>() != null){
                 if(children[i].GetComponent<barrel>().upgrade && myUpgrades[3]){
                     accuracy += children[i].GetComponent<barrel>().accuracy;
-                    if(muzzleFlash != null){
+					if(children[i].GetComponent<barrel>().muzzleFlash != null){
                         this.muzzleFlash = children[i].GetComponent<barrel>().muzzleFlash;
                     }
                 }else if(children[i].GetComponent<barrel>().upgrade){

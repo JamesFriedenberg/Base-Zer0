@@ -4,6 +4,15 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
+	public struct ShopWeapon
+	{
+		public bool stockUpgraded;
+		public bool scopeUpgraded;
+		public bool barrelUpgraded;
+		public bool magazineUpgraded;
+		public bool purchased;
+		public string name;
+	}
 
     private Dictionary<string, int> weaponAmmo = new Dictionary<string, int>();
     public int playerCash = 0;
@@ -14,7 +23,7 @@ public class GameManager : MonoBehaviour {
     public int currentPlayerHealth = 1000;
     public int currentWeapon = 0;
     public int[] ammoInWeapons;
-
+	public bool[] stockList = new bool[44];
     public Vector3 startPosition = Vector3.zero;
 
     //list of weapon indices from player weapon array
@@ -25,6 +34,7 @@ public class GameManager : MonoBehaviour {
     void Start(){
         weaponAmmo.Add("LMG", startingAmmo);
         weaponAmmo.Add("AR", startingAmmo);
+		//updateWeapons ();
     }
     void Awake()
     {
@@ -36,12 +46,42 @@ public class GameManager : MonoBehaviour {
         {
             DestroyImmediate(gameObject);
         }
+
     }
     void Update(){
         if(Input.GetKeyDown(KeyCode.P)){
-            SceneManager.LoadScene(5);
+            //SceneManager.LoadScene("Shop");
         }
     }
+
+	void updateWeapons(){
+		for (int i = 0; i < 44; i++) {
+			stockList [i] = false;
+			//weaponsList [i].scopeUpgraded = false;
+			//weaponsList [i].barrelUpgraded = false;
+			//weaponsList [i].magazineUpgraded = false;
+			//weaponsList[i].purchased =false;
+		}
+		//weaponsList [1].purchased = true;
+	}
+
+	void fromSceneWeapons(){
+		if (GameObject.FindGameObjectWithTag ("Player") == null) {
+			return;
+		}
+
+		PlayerHandler playerGuns = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerHandler> ();
+			for (int i = 0; i < 44; i++) {
+			if (playerGuns.allWeapons [i] == null) {
+				continue;
+			}
+			//playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[2] = weaponsList [i].scopeUpgraded;
+			//playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[3] = weaponsList [i].barrelUpgraded;
+			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[0] = stockList [i];
+			playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().FindStats (playerGuns.allWeapons [i]);
+			}
+
+	}
 
     public int GetPlayerCash(){
         return playerCash;

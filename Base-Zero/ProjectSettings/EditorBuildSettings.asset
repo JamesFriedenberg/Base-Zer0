@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VehicleDepot.unity
     guid: f54cffdb5e6a8c849b1e3e81a1c25f41
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: ad98ffc2cff93c3458cedaf52c895bab
   m_configObjects: {}

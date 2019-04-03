@@ -22,7 +22,7 @@ public class PlayerHandler : MonoBehaviour
 
     void Start()
     {
-		Debug.Log ("1");
+		//Debug.Log ("1");
         //take stats from gm at start of scene
         gameManager = GameObject.FindGameObjectWithTag("gm");
         gm = gameManager.GetComponent<GameManager>();
@@ -37,10 +37,14 @@ public class PlayerHandler : MonoBehaviour
         if(gm.ammoInWeapons == null || gm.ammoInWeapons.Length == 0){
             gm.ammoInWeapons = new int[allWeapons.Count];
             for(int i = 0; i < gm.ammoInWeapons.Length; i++){
+				if (allWeapons [i] == null) {
+					continue;
+				}
+
                 gm.ammoInWeapons[i] = allWeapons[i].GetComponentInChildren<weapon>().currentAmmoCount;
             }
         }
-		Debug.Log ("2");
+		//Debug.Log ("2");
 
         if(weaponsFromGM[0] != -1){
             playerWeapons[0] = allWeapons[weaponsFromGM[0]];
@@ -51,13 +55,13 @@ public class PlayerHandler : MonoBehaviour
         if(weaponsFromGM[2] != -1){
             playerWeapons[2] = allWeapons[weaponsFromGM[2]];
         }
-		Debug.Log ("3");
+		//Debug.Log ("3");
         for (int i = 0; i < playerWeapons.Length; i++)
         {
             if (!playerWeapons[i]) continue;
             playerWeapons[i].SetActive(false);
         }
-		Debug.Log ("4");
+		//Debug.Log ("4");
         playerWeapons[currentWeapon].SetActive(true);
 		Debug.Log (playerWeapons [currentWeapon].name);
     }
@@ -84,7 +88,6 @@ public class PlayerHandler : MonoBehaviour
 		
 		if (currentWeapon == weaponNumber ||
 		          !playerWeapons [weaponNumber]) {
-			Debug.Log ("here");
 			return;
 		}
 
