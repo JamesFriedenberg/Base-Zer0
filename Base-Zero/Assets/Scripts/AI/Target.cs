@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class Target : MonoBehaviour {
 
 	public float health = 50f;
-
+    public GameObject zombie;
     private GameObject player;
     private GameManager gm;
 
@@ -47,13 +47,18 @@ public class Target : MonoBehaviour {
     }
     private void Die()
     {
+        Debug.Log(zombie.GetComponent<Transform>().position);
+        Debug.Log("here");
         this.GetComponent<NavMeshAgent>().speed = 0f;
-        setKinematic(false);
-        GetComponentInChildren<Animator>().enabled = false;
+        zombie.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, -0.7f, zombie.GetComponent<Transform>().localPosition.z);
+        Debug.Log(zombie.GetComponent<Transform>().position);
+        //setKinematic(false);
+        GetComponentInChildren<Animator>().SetInteger("death", (int)Random.Range(1, 6));
         CapsuleCollider capCollider = this.GetComponent<CapsuleCollider>();
         if(capCollider != null){
             capCollider.enabled = false;
         }
+
         SpawnResource();
         Destroy(gameObject, 5);
     }

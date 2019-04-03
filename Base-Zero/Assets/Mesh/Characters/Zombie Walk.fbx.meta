@@ -307,7 +307,7 @@ ModelImporter:
     4300116: Pants_Long_Gray
     4300118: Pants_Long_Woodland
     4300120: Pants_Long_Black
-    7400000: mixamo.com
+    7400000: Zombie_Slow_Walk
     9500000: //RootNode
     13700000: Ammopouch_Left
     13700002: Ammopouch_Left1
@@ -397,11 +397,39 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Zombie_Slow_Walk
+      takeName: mixamo.com
+      firstFrame: 0
+      lastFrame: 242
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2.25
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -421,7 +449,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.022499999
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
