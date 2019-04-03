@@ -27,9 +27,6 @@ EditorBuildSettings:
     path: Assets/Scenes/YouWin.unity
     guid: c8255e696ded27d44bf37a59eb2f2a27
   - enabled: 1
-    path: Assets/Scenes/Shop.unity
-    guid: ad98ffc2cff93c3458cedaf52c895bab
-  - enabled: 1
     path: Assets/Scenes/Old Scenes/Shoptest.unity
     guid: ecf26c73b2d13674d9ad1e2eee36659f
   - enabled: 1

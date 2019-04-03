@@ -54,6 +54,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4399364435778906}
   - component: {fileID: 82791366309968038}
+  - component: {fileID: 65876920903282402}
   m_Layer: 0
   m_Name: Gate Main
   m_TagString: Untagged
@@ -67,15 +68,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655506234174082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 300.67, y: 4.88, z: 70.11}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 102.24, y: 5.2073965, z: 200.38266}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4859832937085484}
   - {fileID: 4582558259424134}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!4 &4582558259424134
 Transform:
   m_ObjectHideFlags: 1
@@ -186,6 +187,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1265626164547198}
   m_Mesh: {fileID: 4300000, guid: 273029ac595e46f4989d24813cba03a7, type: 3}
+--- !u!65 &65876920903282402
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1655506234174082}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.77, y: 8.84, z: 31.31}
+  m_Center: {x: -0.66, y: -0.79, z: -0.2}
 --- !u!82 &82791366309968038
 AudioSource:
   m_ObjectHideFlags: 1

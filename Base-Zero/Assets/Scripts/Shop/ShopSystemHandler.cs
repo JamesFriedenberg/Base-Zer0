@@ -46,7 +46,7 @@ public class ShopSystemHandler : MonoBehaviour {
 	void Update () {
         player = GameObject.FindGameObjectWithTag("Player");
         //print(SceneManager.GetActiveScene().name);
-        if (SceneManager.GetActiveScene().name == "Shop")
+        if (SceneManager.GetActiveScene().name == "Shoptest")
         {
             if(!Cursor.visible){
                 Cursor.visible = true;

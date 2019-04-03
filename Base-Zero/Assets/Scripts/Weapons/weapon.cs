@@ -188,8 +188,6 @@ public class weapon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (!weaponAnimator)
-			return;
         //float movementX = Input.GetAxis("Mouse X") * -swayAmount;
         //float movementY = Input.GetAxis("Mouse Y") * -swayAmount;
         //movementX = Mathf.Clamp(movementX, -maxSwayAmount, maxSwayAmount);
@@ -257,7 +255,6 @@ public class weapon : MonoBehaviour
                 walkTimer = 0;
                 StartCoroutine(WillShoot());
             }else if(Input.GetButton("Fire1") && !willFire){
-				
                 walkTimer = 0;
                 if(semiAuto && hasFired) return;
                 Shoot();
