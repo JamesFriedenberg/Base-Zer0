@@ -45,38 +45,36 @@ public class SpawnHandler : MonoBehaviour {
     IEnumerator Spawn()
     {
 
-
-        if(Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < maxSpawnDistance && Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) > minSpawnDistance)
-        {
-
-
-           
-                Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
-                yield return new WaitForSeconds(timeBetweenSpawns);
-                Debug.Log("lalalala");
-                coroutineFired = false;
-            
-            
-            
-                Debug.Log("FACING!!!");
-                coroutineFired = false;
-
-            
+        //if (Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < maxSpawnDistance && Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) > minSpawnDistance)
+        //{
 
 
 
-        }
-       
+            Instantiate(enemyType, transform.position + transform.forward, transform.rotation);
+            yield return new WaitForSeconds(timeBetweenSpawns);
+            Debug.Log("lalalala");
+            coroutineFired = false;
 
-            
-        
-       
+
+
+            Debug.Log("FACING!!!");
+            coroutineFired = false;
+
+
+
+
+
+        //}
+
+
+
+
     }
     IEnumerator SpawnLimited()
     {
 
-        if (Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < maxSpawnDistance && Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) > minSpawnDistance)
-        {
+        //if (Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) < maxSpawnDistance && Vector3.Distance(playerRef.transform.position, this.gameObject.transform.position) > minSpawnDistance)
+        //{
             for (int i = 0; i < enemiesToSpawn; i++)
             {
 
@@ -89,7 +87,7 @@ public class SpawnHandler : MonoBehaviour {
                 //Debug.Log("3hunnit");
             }
 
-        }     
+        //}     
         
     }
 }

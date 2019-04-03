@@ -35,7 +35,7 @@ public class arrowHandler : MonoBehaviour
         //goTarget = GameObject.FindGameObjectWithTag("Heli2");
     
 
-        if (qm.sendCurQuestLocation() == SceneManager.GetActiveScene().name || GameObject.Find(qm.sendCurQuestLocation() + "Gate") != null)
+        if (qm.sendCurQuestLocation() == SceneManager.GetActiveScene().name || GameObject.Find(qm.sendCurQuestLocation() + "Gate") != null || qm.questIndex == 1)
         {
             Vector3 tmpVec = controller.transform.InverseTransformPoint(goTarget.transform.position);
 
@@ -52,8 +52,11 @@ public class arrowHandler : MonoBehaviour
 
         if(qm.sendCurQuestLocation() != sceneName)
         {
-            //if(qm.questIndex == 1 && sceneName == "SupplyDe)
-            if(GameObject.Find(qm.sendCurQuestLocation() + "Gate") != null)
+            if(qm.questIndex == 1 && sceneName == "SupplyDepot")
+            {
+                goTarget = GameObject.Find("RailPathGate");
+            }
+            else if(GameObject.Find(qm.sendCurQuestLocation() + "Gate") != null)
             {
                 Debug.Log(qm.sendCurQuestLocation() + "Gate");
                 goTarget = GameObject.Find(qm.sendCurQuestLocation() + "Gate");

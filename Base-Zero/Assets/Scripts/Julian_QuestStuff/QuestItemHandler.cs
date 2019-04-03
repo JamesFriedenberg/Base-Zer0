@@ -40,7 +40,18 @@ public class QuestItemHandler : MonoBehaviour {
 	}
     private void OnTriggerEnter(Collider other)
     {
-        pickupText.text = "Press E To Pickup The Item";
+
+        if (qm.currentQuests[qm.questIndex].GetComponent<Quest>() != null)
+        {
+            pickupText.text = "Press E To Pickup The Item";
+
+
+        }
+        else
+        {
+            
+
+        }
 
         
 
@@ -49,19 +60,31 @@ public class QuestItemHandler : MonoBehaviour {
     }
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.E))
-        {
 
-            if (other.gameObject.tag == "Player")
+
+        if (qm.currentQuests[qm.questIndex].GetComponent<Quest>() != null)
+        {
+            if (Input.GetKey(KeyCode.E))
             {
-                qm.currentQuests[qm.questIndex].GetComponent<Quest>().changeQuestStatus("Completed");
-                pickupText.text = "";
-                Destroy(this.gameObject);
-                findAssociatedGameObject();
+
+                if (other.gameObject.tag == "Player")
+                {
+                    qm.currentQuests[qm.questIndex].GetComponent<Quest>().changeQuestStatus("Completed");
+                    pickupText.text = "";
+                    Destroy(this.gameObject);
+                    findAssociatedGameObject();
+                }
+
+
             }
+
+        }
+        else
+        {
 
 
         }
+       
     }
     private void OnTriggerExit(Collider other)
     {
