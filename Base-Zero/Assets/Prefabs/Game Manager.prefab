@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shopRef: {fileID: 0}
-  equippedWeapons: 0000000002000000ffffffff
+  equippedWeapons: 010000001000000013000000
   canvas: {fileID: 0}
   questObj: {fileID: 0}
 --- !u!114 &114646930057043772
@@ -438,5 +438,6 @@ MonoBehaviour:
   currentPlayerHealth: 1000
   currentWeapon: 0
   ammoInWeapons: 
+  stockList: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   startPosition: {x: 0, y: 0, z: 0}
-  playerWeapons: 0100000014000000ffffffff
+  playerWeapons: 010000001000000013000000

@@ -18460,9 +18460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 20
   range: 200
-  fireRate: 5
+  fireRate: 7
   impactForce: 200
   magSize: 30
   currentAmmoCount: 30
@@ -18491,7 +18491,7 @@ MonoBehaviour:
   animator: {fileID: 95157026132800044}
   secondMotionAnimator: {fileID: 95687607047680366}
   weaponAnimator: {fileID: 95335709145936292}
-  myUpgrades: 00000000
+  myUpgrades: 01010101
 --- !u!114 &114050953885571138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19717,7 +19717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   range: 200
-  fireRate: 5
+  fireRate: 8
   impactForce: 200
   magSize: 30
   currentAmmoCount: 30

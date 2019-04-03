@@ -101,7 +101,7 @@ public class ZombieController : MonoBehaviour {
         }
         else
         {
-            distanceToSeekPlayer = 160f;
+            distanceToSeekPlayer = 180f;
         }
 
         if (distanceToPlayer > distanceToSeekPlayer)
