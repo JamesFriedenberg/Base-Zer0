@@ -51,10 +51,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4906200457812752}
-  - component: {fileID: 114657950321583106}
+  - component: {fileID: 114646930057043772}
   m_Layer: 0
   m_Name: Escape
-  m_TagString: Untagged
+  m_TagString: q_defense
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
   equippedWeapons: 0000000002000000ffffffff
   canvas: {fileID: 0}
   questObj: {fileID: 0}
---- !u!114 &114657950321583106
+--- !u!114 &114646930057043772
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -358,16 +358,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1697396823726886}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
+  m_Script: {fileID: 11500000, guid: 54ac4cd56e2a30f46b2cd2be5f3f17d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Escape
+  player: {fileID: 0}
+  questName: DefendHeli
   location: SupplyDepot
-  questText: Missions completed! Get to the helicopter in the HQ to escape!
+  questText: Defend the heli
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1764893209333128, guid: 185dfaefdf8f6b145ac594b0e93e115f,
+  getToSite: 0
+  getToSiteText: Defend the helicopter
+  defenseTargetObj: {fileID: 1764893209333128, guid: 185dfaefdf8f6b145ac594b0e93e115f,
     type: 2}
-  locationOfObject: {x: 374.01, y: 14.12, z: 360.1}
+  defenseTargetLocation: {x: 374.01, y: 14.12, z: 360.1}
+  defendTarget: 0
+  defendTargetText: Defend the helicopter!
+  destroyDefendTargetonFinish: 0
+  timer: 60
 --- !u!114 &114794098760788078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -432,4 +439,4 @@ MonoBehaviour:
   currentWeapon: 0
   ammoInWeapons: 
   startPosition: {x: 0, y: 0, z: 0}
-  playerWeapons: 0000000002000000ffffffff
+  playerWeapons: 0100000014000000ffffffff

@@ -363,7 +363,8 @@ MonoBehaviour:
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
   isReloading: 0
   isFiring: 0
-  animator: {fileID: 95024038889937208}
+  weaponAnimator: {fileID: 95157026132800044}
+  pistolAnimator: {fileID: 95024038889937208}
 --- !u!124 &12474086
 Behaviour:
   m_ObjectHideFlags: 1
