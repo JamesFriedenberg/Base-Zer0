@@ -70,6 +70,7 @@
     <Compile Include="Assets\Possible Useful Assets\EasyMainMenu\Scripts\Main Menu Scripts\Editor\MainMenuControllerEditor.cs" />
     <Compile Include="Assets\Possible Useful Assets\EasyPolyMap\Editor\EPMDrawMapWindow.cs" />
     <Compile Include="Assets\Possible Useful Assets\EasyPolyMap\Editor\EPMPolyTerrainCreatorInspector.cs" />
+    <Compile Include="Assets\Scripts\Editor\SnapToGround.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/james/Documents/Base-Zer0/Base-Zero/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
