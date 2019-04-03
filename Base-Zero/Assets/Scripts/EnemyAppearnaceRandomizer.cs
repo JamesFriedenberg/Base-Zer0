@@ -16,7 +16,7 @@ public class EnemyAppearnaceRandomizer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*if (Input.GetKeyDown (KeyCode.F)) {
+		if (Input.GetKeyDown (KeyCode.F)) {
 			Debug.Log ("works");
 			foreach(GameObject g in torsoItems){
 				g.SetActive (false);
@@ -31,7 +31,7 @@ public class EnemyAppearnaceRandomizer : MonoBehaviour {
 				k.SetActive (false);
 			}
 			TorsoChoice ();
-		}*/
+		}
 	}
 
 	void TorsoChoice(){

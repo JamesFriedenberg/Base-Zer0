@@ -31,7 +31,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public bool isReloading;
         public bool isFiring;
 
-        public Animator animator;
+        public Animator weaponAnimator;
+        public Animator pistolAnimator;
+
         private float lastY;
         private float lastChange;
 
@@ -203,14 +205,17 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 // change = m_Camera.transform.localPosition.y - lastY;
                 // lastY = m_Camera.transform.localPosition.y;
                 if(m_IsWalking){
-                    animator.SetBool("run", false);
+                    weaponAnimator.SetBool("run", false);
+                    pistolAnimator.SetBool("run", false);
                 }else{
-                    animator.SetBool("run", true);
+                    weaponAnimator.SetBool("run", true);
+                    pistolAnimator.SetBool("run", true);
                 }
             }
             else
             {
-                animator.SetBool("run", false);
+                weaponAnimator.SetBool("run", false);
+                pistolAnimator.SetBool("run", false);
                 newCameraPosition = m_Camera.transform.localPosition;
                 newCameraPosition.y = m_OriginalCameraPosition.y - m_JumpBob.Offset();
             }
@@ -257,7 +262,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 #endif
             if(m_IsWalking){
-                animator.SetBool("run", false);
+                weaponAnimator.SetBool("run", false);
+                pistolAnimator.SetBool("run", false);
             }
             // set the desired speed to be walking or running
             speed = m_IsWalking ? 6 : 12;

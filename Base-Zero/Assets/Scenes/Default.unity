@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17973259, g: 0.17973259, b: 0.17973259, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -145,6 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &30366815
@@ -261,6 +262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &33974317
@@ -377,6 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &67243280
@@ -660,6 +663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &193633087
@@ -899,6 +903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &374889568
@@ -1070,7 +1075,7 @@ Transform:
   - {fileID: 1318644346}
   - {fileID: 1892259416}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &459268785
 Prefab:
@@ -1205,6 +1210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &562760588
@@ -1321,6 +1327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &564258394
@@ -1502,7 +1509,7 @@ Transform:
   m_LocalScale: {x: 3.9721, y: 3.9721, z: 3.9721}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &589432972
 GameObject:
@@ -1536,6 +1543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &589432974
@@ -1674,48 +1682,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02cc42de27e23844897a3efe79b373df, type: 3}
   m_IsPrefabAsset: 0
---- !u!1001 &606126905
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.72551
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 6.76
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 31.61
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4546937216229652, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2188bb66a93b95c4989a041730e63521, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!4 &648584788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 60189f5c4402b1644ae202ecda62b6d1,
@@ -1753,6 +1719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &650467507
@@ -1884,7 +1851,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4112974312554988, guid: e7837f307fc4d4b40bc5e260a3fb5a8b, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114478327494606626, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
@@ -1941,6 +1908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &793249490
@@ -2111,6 +2079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &913878160
@@ -2281,6 +2250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &985088930
@@ -2397,6 +2367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1026652778
@@ -2513,6 +2484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1029591584
@@ -2648,6 +2620,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1033652338
@@ -2769,6 +2742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1083031011
@@ -2936,6 +2910,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1214758587
@@ -3079,7 +3054,7 @@ Transform:
   - {fileID: 1214758591}
   - {fileID: 1033652342}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1262085273 stripped
 Transform:
@@ -3146,7 +3121,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1298692912
 GameObject:
@@ -3249,6 +3224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1307308064
@@ -3370,6 +3346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1339072571
@@ -3486,6 +3463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1389346277
@@ -3833,6 +3811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1519161403
@@ -3954,6 +3933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1581475805
@@ -4166,6 +4146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1706510512
@@ -4406,6 +4387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1798982463
@@ -4591,6 +4573,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &1957772824
@@ -4707,6 +4690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &2029591399
@@ -4879,7 +4863,7 @@ RectTransform:
   - {fileID: 334288848}
   - {fileID: 1298692913}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4972,6 +4956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &2116472538
@@ -5088,6 +5073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  zombie: {fileID: 0}
   ammo: []
   scraps: {fileID: 0}
 --- !u!54 &2118055753
