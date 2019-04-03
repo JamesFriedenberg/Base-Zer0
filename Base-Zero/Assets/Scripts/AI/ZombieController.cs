@@ -28,7 +28,7 @@ public class ZombieController : MonoBehaviour {
   
     private void Start()
     {
-   
+        this.GetComponent<NavMeshAgent>().speed = Random.Range(3, 6);
         gm = GameObject.FindGameObjectWithTag("gm");
         wanderRadius = 50f;
         wanderTime = wanderTimer;
