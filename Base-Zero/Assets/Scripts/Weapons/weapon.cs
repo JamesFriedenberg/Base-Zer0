@@ -89,7 +89,7 @@ public class weapon : MonoBehaviour
        
 
         if(projectile) semiAuto = true;
-        FindStats(this.gameObject);
+        //FindStats(this.gameObject);
 
         crossHairs = GameObject.FindGameObjectsWithTag("crossHair");
 
@@ -117,15 +117,16 @@ public class weapon : MonoBehaviour
         }
     }
     public void FindStats(GameObject objToSearch){
-        if(myIterations > 30) return;
+		
 
-        myIterations++;
         Transform[] children = this.GetComponentsInChildren<Transform>();
         for(int i = 0; i < children.Length; i++){
             if(children[i].GetComponent<stock>() != null){
+				Debug.Log (i+ ":" + gameObject.name + ":" + children[i].name + ":" + children[i].GetComponent<stock>().upgrade + " " + myUpgrades[0]);
                 if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
                     accuracy += children[i].GetComponent<stock>().accuracy;
                     recoil *= children[i].GetComponent<stock>().recoil;
+					children[i].gameObject.SetActive(true);
                 }else if(children[i].GetComponent<stock>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
@@ -134,10 +135,12 @@ public class weapon : MonoBehaviour
                 }else if(!children[i].GetComponent<stock>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
-            }else if(children[i].GetComponent<magazine>() != null){
+            }
+			if(children[i].GetComponent<magazine>() != null){
                 if(children[i].GetComponent<magazine>().upgrade && myUpgrades[1]){
                     magSize += children[i].GetComponent<magazine>().magSize;
                     reloadTime *= children[i].GetComponent<magazine>().reloadTime;
+					children[i].gameObject.SetActive(true);
                 }else if(children[i].GetComponent<magazine>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
@@ -146,10 +149,12 @@ public class weapon : MonoBehaviour
                 }else if(!children[i].GetComponent<magazine>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
-            }else if(children[i].GetComponent<scope>() != null){
+            }
+			if(children[i].GetComponent<scope>() != null){
                 if(children[i].GetComponent<scope>().upgrade && myUpgrades[2]){
                     scopeName = children[i].GetComponent<scope>().scopeImage;
                     adsZoom = children[i].GetComponent<scope>().fov;
+					children[i].gameObject.SetActive(true);
                     this.transform.localPosition += children[i].GetComponent<scope>().newTransform;
                 }else if(children[i].GetComponent<scope>().upgrade){
                     children[i].gameObject.SetActive(false);
@@ -159,9 +164,11 @@ public class weapon : MonoBehaviour
                 }else if(!children[i].GetComponent<scope>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
-            }else if(children[i].GetComponent<barrel>() != null){
+            }
+			if(children[i].GetComponent<barrel>() != null){
                 if(children[i].GetComponent<barrel>().upgrade && myUpgrades[3]){
                     accuracy += children[i].GetComponent<barrel>().accuracy;
+					children[i].gameObject.SetActive(true);
 					if(children[i].GetComponent<barrel>().muzzleFlash != null){
                         this.muzzleFlash = children[i].GetComponent<barrel>().muzzleFlash;
                     }

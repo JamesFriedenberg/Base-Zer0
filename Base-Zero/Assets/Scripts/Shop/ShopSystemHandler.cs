@@ -16,7 +16,7 @@ public class ShopSystemHandler : MonoBehaviour {
         public string name;
         public string objName;
     }
-
+	int timesAwoken = 0;
     public ShopManager shopRef;
     public int[] equippedWeapons = new int[3];
     public ShopWeapon[] weaponsList = new ShopWeapon[44];
@@ -27,7 +27,9 @@ public class ShopSystemHandler : MonoBehaviour {
     private GameManager gm;
 
     // Use this for initialization
-    void Awake () {    
+    void Awake () {
+		timesAwoken++;
+		Debug.Log ("ss" + timesAwoken);
 		if(SceneManager.GetActiveScene().name == "Shop")
         {
             shopRef = GameObject.FindGameObjectWithTag("shopmanager").GetComponent<ShopManager>();
@@ -59,71 +61,109 @@ public class ShopSystemHandler : MonoBehaviour {
         }
 	}
 
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		Debug.Log("Level Loaded");
+		Debug.Log(scene.name);
+		Debug.Log(mode);
+		if(SceneManager.GetActiveScene().name == "Shop")
+		{
+			shopRef = GameObject.FindGameObjectWithTag("shopmanager").GetComponent<ShopManager>();
+
+			updateShop();
+		}
+	}
+
     public void updateShop()
     {
-		/*for(int i = 0; i < gm.weaponsList.Length; i++)
+		for(int j = 0; j < 3; j++){
+			shopRef.equippedWeapons [j] = gm.playerWeapons [j];
+		}
+
+		for(int i = 0; i < gm.weaponsList.Length; i++)
         {
 			if (gm.weaponsList[i].purchased)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().purchased = true;
-                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().WeaponAttachments.SetActive(true);
+				if (shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().WeaponAttachments != null) {
+					shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().WeaponAttachments.SetActive(true);
+				}
+                
                 if(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().purchaseButton != null)
                 {
                     Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().purchaseButton);
                 }
                 
             }
+			if (shopRef.weaponRefArray [i] == null || shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().WeaponAttachments == null) {
+				continue;
+			}
 			if (gm.weaponsList[i].stockUpgraded)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgraded = true;
-                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stock.SetActive(false);
+				if (shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().stock != null) {
+					shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stock.SetActive(false);
+				}    
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockButton);
             }
 			if (gm.weaponsList[i].scopeUpgraded)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded = true;
-                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scope.SetActive(false);
+				if (shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scope != null) {
+					shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scope.SetActive(false);
+				}                
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeButton);
             }
 			if (gm.weaponsList[i].magazineUpgraded)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded = true;
-                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazine.SetActive(false);
+				if (shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().magazine != null) {
+					shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazine.SetActive(false);
+				}    
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineButton);
             }
 			if (gm.weaponsList[i].barrelUpgraded)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgraded = true;
-                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrel.SetActive(false);
+				if (shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().barrel != null) {
+					shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrel.SetActive(false);
+				}    
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelButton);
             }
-        }*/
+        }
     }
 
     public void updateWeapons()
     {
-		for(int i =0; i <gm.stockList.Length; i++)
+		for(int i =0; i <gm.weaponsList.Length; i++)
         {
 			if (i != 1 && i != 10 && i != 16 && i != 18 && i != 19 && i != 20 && i != 21 && i != 35) {
 				continue;
 			}
 
-			//gm.weaponsList[i].purchased = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().purchased;
-			//gm.weaponsList[i].magazineUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded;
-			//gm.weaponsList[i].scopeUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded;
-			//gm.stockList[i] = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgraded;
-			//gm.weaponsList[i].barrelUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgraded;
+			gm.weaponsList[i].purchased = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().purchased;
+			gm.weaponsList[i].magazineUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded;
+			gm.weaponsList[i].scopeUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded;
+			gm.weaponsList[i].stockUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgraded;
+			gm.weaponsList[i].barrelUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgraded;
         }
         for(int j = 0; j < 3; j++){
-            if(shopRef.equippedWeapons[j] != -1){
-                 equippedWeapons[j] = shopRef.equippedWeapons[j];
-                 gm.playerWeapons[j] = equippedWeapons[j];
-            }
-           
+			equippedWeapons[j] = shopRef.equippedWeapons[j];
+			gm.playerWeapons[j] = equippedWeapons[j];
         }
     }
 }

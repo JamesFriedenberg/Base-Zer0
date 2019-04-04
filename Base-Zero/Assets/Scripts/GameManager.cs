@@ -23,8 +23,9 @@ public class GameManager : MonoBehaviour {
     public int currentPlayerHealth = 1000;
     public int currentWeapon = 0;
     public int[] ammoInWeapons;
-	public bool[] stockList = new bool[44];
+	public ShopWeapon[] weaponsList = new ShopWeapon[44];
     public Vector3 startPosition = Vector3.zero;
+	int timesAwoken = 0;
 
     //list of weapon indices from player weapon array
     public int[] playerWeapons = new int[3];
@@ -38,6 +39,10 @@ public class GameManager : MonoBehaviour {
     }
     void Awake()
     {
+		timesAwoken++;
+		Debug.Log (timesAwoken);
+
+		//fromSceneWeapons ();
         if(instance == null)
         {
             instance = this;
@@ -47,37 +52,59 @@ public class GameManager : MonoBehaviour {
             DestroyImmediate(gameObject);
         }
 
+
+
     }
+
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		Debug.Log("Level Loaded");
+		Debug.Log(scene.name);
+		Debug.Log(mode);
+		//fromSceneWeapons ();
+	}
+		
     void Update(){
         if(Input.GetKeyDown(KeyCode.P)){
-            //SceneManager.LoadScene("Shop");
+            SceneManager.LoadScene("Shop");
         }
     }
 
 	void updateWeapons(){
 		for (int i = 0; i < 44; i++) {
-			stockList [i] = false;
-			//weaponsList [i].scopeUpgraded = false;
-			//weaponsList [i].barrelUpgraded = false;
-			//weaponsList [i].magazineUpgraded = false;
-			//weaponsList[i].purchased =false;
+			weaponsList[i].stockUpgraded = false;
+			weaponsList [i].scopeUpgraded = false;
+			weaponsList [i].barrelUpgraded = false;
+			weaponsList [i].magazineUpgraded = false;
+			weaponsList[i].purchased =false;
 		}
-		//weaponsList [1].purchased = true;
+		weaponsList [1].purchased = true;
 	}
 
-	void fromSceneWeapons(){
+	public void fromSceneWeapons(){
 		if (GameObject.FindGameObjectWithTag ("Player") == null) {
 			return;
 		}
-
 		PlayerHandler playerGuns = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerHandler> ();
 			for (int i = 0; i < 44; i++) {
 			if (playerGuns.allWeapons [i] == null) {
 				continue;
 			}
-			//playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[2] = weaponsList [i].scopeUpgraded;
-			//playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[3] = weaponsList [i].barrelUpgraded;
-			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[0] = stockList [i];
+
+			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[2] = weaponsList [i].scopeUpgraded;
+			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[3] = weaponsList [i].barrelUpgraded;
+			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[0] = weaponsList [i].stockUpgraded;
+			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[1] = weaponsList [i].magazineUpgraded;
 			playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().FindStats (playerGuns.allWeapons [i]);
 			}
 

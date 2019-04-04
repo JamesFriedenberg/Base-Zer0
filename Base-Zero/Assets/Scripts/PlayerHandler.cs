@@ -63,7 +63,7 @@ public class PlayerHandler : MonoBehaviour
         }
 		//Debug.Log ("4");
         playerWeapons[currentWeapon].SetActive(true);
-		Debug.Log (playerWeapons [currentWeapon].name);
+		//Debug.Log (playerWeapons [currentWeapon].name);
     }
     void Update()
     {
@@ -97,6 +97,25 @@ public class PlayerHandler : MonoBehaviour
         playerWeapons[currentWeapon].SetActive(true);
 
     }
+
+	void OnEnable()
+	{
+		SceneManager.sceneLoaded += OnLevelFinishedLoading;
+	}
+
+	void OnDisable()
+	{
+		SceneManager.sceneLoaded -= OnLevelFinishedLoading;
+	}
+
+	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
+	{
+		Debug.Log("Level Loaded");
+		Debug.Log(scene.name);
+		//Debug.Log(mode);
+		GameObject.FindGameObjectWithTag("gm").GetComponent<GameManager>().fromSceneWeapons ();
+	}
+
     public int GetHealth()
     {
         return currentPlayerHealth;
