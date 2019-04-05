@@ -17,7 +17,9 @@ public class WeaponButton : MonoBehaviour {
                 upgradeText.text += "\n" + gunInfo.stockCost.ToString () + " Scrap";
 			break;
 		case 2:
-                //upgradeText.text += "\n" + gunInfo.scopeCost.ToString () + " Scrap";
+			if (scopeNum != 0) {
+				GetComponentInChildren<Text> ().text = ScopeNames [scopeNum] + " : " + gunInfo.scopeCost [scopeNum].ToString () + " Scrap";
+			}
 			break;
 		case 3:
                 upgradeText.text += "\n" + gunInfo.barrelCost.ToString () + " Scrap";
@@ -28,6 +30,8 @@ public class WeaponButton : MonoBehaviour {
 		default:
 			break;
 		}
+
+		 
 	}
 	
 	// Update is called once per frame
@@ -140,10 +144,10 @@ public class WeaponButton : MonoBehaviour {
     {
         WeaponInfo weaponRef = weapon.GetComponent<WeaponInfo>();
         Debug.Log(weaponRef.scopeCost.Length);
-        Debug.Log(scopeNum);
         if (!weaponRef.scopeUpgraded[scopeNum] &&  shopManager.GetComponent<ShopManager>().scrap >= weaponRef.scopeCost[scopeNum])
         {
             shopManager.GetComponent<ShopManager>().scrap -= weaponRef.scopeCost[scopeNum];
+			shopManager.GetComponent<ShopManager>().UpdateCashScrap();
             weaponRef.scopeUpgraded[scopeNum] = true;
             GetComponentInChildren<Text>().text = ScopeNames[scopeNum];
         }
@@ -172,4 +176,11 @@ public class WeaponButton : MonoBehaviour {
             }
         }
     }
+
+	public void ToggleWindow(GameObject window){
+		if (window.activeSelf) {
+			window.SetActive (false);
+		}
+	}
+		
 }
