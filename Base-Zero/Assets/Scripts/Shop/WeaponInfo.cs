@@ -7,26 +7,26 @@ public class WeaponInfo : MonoBehaviour {
 
 
     public GameObject stock;
-    public GameObject scope;
+    public GameObject[] scope;
     public GameObject barrel;
     public GameObject magazine;
     public GameObject stockUpgrade;
-    public GameObject scopeUpgrade;
     public GameObject barrelUpgrade;
     public GameObject magazineUpgrade;
     public GameObject stockButton;
-    public GameObject scopeButton;
+    public GameObject[] scopeButton;
     public GameObject barrelButton;
     public GameObject magazineButton;
+    public GameObject upgrades;
 
     public GameObject WeaponAttachments;
     public GameObject purchaseButton;
     public bool stockUpgraded = false;
-    public bool scopeUpgraded = false;
+    public bool[] scopeUpgraded;
     public bool barrelUpgraded = false;
     public bool magazineUpgraded = false;
     public int stockCost = 150;
-    public int scopeCost = 250;
+    public int[] scopeCost;
     public int barrelCost = 150;
     public int magazineCost = 300;
     public int weaponCost = 1200;

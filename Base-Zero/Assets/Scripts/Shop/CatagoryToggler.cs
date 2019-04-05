@@ -5,6 +5,7 @@ using UnityEngine;
 public class CatagoryToggler : MonoBehaviour {
 	public GameObject[] weapons;
     public GameObject[] catagories;
+    public GameObject[] equips;
 	// Use this for initialization
 	void Start () {
 		
@@ -51,6 +52,14 @@ public class CatagoryToggler : MonoBehaviour {
         if (index != -1 && catagories[index] != null)
         {
             catagories[index].SetActive(true);
+        }
+    }
+
+    public void ResetEquips()
+    {
+        foreach(GameObject g in equips)
+        {
+            g.SetActive(false);
         }
     }
 }

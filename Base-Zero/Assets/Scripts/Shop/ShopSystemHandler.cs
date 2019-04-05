@@ -117,7 +117,7 @@ public class ShopSystemHandler : MonoBehaviour {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockButton);
             }
-			if (gm.weaponsList[i].scopeUpgraded)
+			/*if (gm.weaponsList[i].scopeUpgraded)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded = true;
 				if (shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scope != null) {
@@ -125,7 +125,7 @@ public class ShopSystemHandler : MonoBehaviour {
 				}                
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeButton);
-            }
+            }*/
 			if (gm.weaponsList[i].magazineUpgraded)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded = true;
@@ -157,7 +157,7 @@ public class ShopSystemHandler : MonoBehaviour {
 
 			gm.weaponsList[i].purchased = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().purchased;
 			gm.weaponsList[i].magazineUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded;
-			gm.weaponsList[i].scopeUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded;
+			//gm.weaponsList[i].scopeUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded;
 			gm.weaponsList[i].stockUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgraded;
 			gm.weaponsList[i].barrelUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgraded;
         }
