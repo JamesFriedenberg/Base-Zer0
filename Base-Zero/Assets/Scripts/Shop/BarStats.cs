@@ -48,5 +48,8 @@ public class BarStats : MonoBehaviour {
 		if(statNum == 4 && !recUp && guninfo.stockUpgraded){
 			statBar.fillAmount = (1.0f * ((guninfo.recoil + guninfo.recUp) / 100.0f));
 		}
+		if(statNum == 4 && !recUp && guninfo.stockUpgraded){
+			statBar.fillAmount = (1.0f * ((guninfo.recoil + guninfo.recUp) / 100.0f));
+		}
 	}
 }

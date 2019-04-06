@@ -10,6 +10,8 @@ public class WeaponButton : MonoBehaviour {
     public Text upgradeText;
     public int scopeNum;
     public string[] ScopeNames;
+	public int receiverNum;
+	public string[] receiverNames;
 	// Use this for initialization
 	void Start () {
 		switch (upgradeVal) {
@@ -135,6 +137,9 @@ public class WeaponButton : MonoBehaviour {
         if(purchaseComplete)
         {
             shopManager.GetComponent<ShopManager>().UpdateCashScrap();
+			if (upgradeText != null) {
+				Destroy (upgradeText);
+			}
             Destroy(gameObject);
         }
        
@@ -143,29 +148,26 @@ public class WeaponButton : MonoBehaviour {
     public void PurchaseScope(GameObject weapon)
     {
         WeaponInfo weaponRef = weapon.GetComponent<WeaponInfo>();
-        Debug.Log(weaponRef.scopeCost.Length);
-        if (!weaponRef.scopeUpgraded[scopeNum] &&  shopManager.GetComponent<ShopManager>().scrap >= weaponRef.scopeCost[scopeNum])
+        if (!weaponRef.receiverUpgraded[receiverNum] &&  shopManager.GetComponent<ShopManager>().scrap >= weaponRef.receiverCost[receiverNum])
         {
-            shopManager.GetComponent<ShopManager>().scrap -= weaponRef.scopeCost[scopeNum];
+			shopManager.GetComponent<ShopManager>().scrap -= weaponRef.receiverCost[receiverNum];
 			shopManager.GetComponent<ShopManager>().UpdateCashScrap();
-            weaponRef.scopeUpgraded[scopeNum] = true;
-            GetComponentInChildren<Text>().text = ScopeNames[scopeNum];
+			weaponRef.receiverUpgraded[receiverNum] = true;
+			GetComponentInChildren<Text>().text = receiverNames[receiverNum];
         }
 
-        if (weaponRef.scopeUpgraded[scopeNum])
+		if (weaponRef.receiverUpgraded[receiverNum])
         {
-            for (int i = 0; i < weaponRef.scope.Length; i++)
+            for (int i = 0; i < weaponRef.receiverUpgraded.Length; i++)
             {
                 if (weaponRef.scope != null)
                 {
-                    if (i == scopeNum)
+                    if (i == receiverNum)
                     {
-                        weaponRef.scope[i].SetActive(true);
                         GetComponentInChildren<Text>().text = ScopeNames[scopeNum] + " :Selected";
                     }
                     else
                     {
-                        weaponRef.scope[i].SetActive(false);
                         if(weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected") > -1)
                         {
                             weaponRef.scopeButton[i].GetComponentInChildren<Text>().text = weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.Substring(0, weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected"));
@@ -175,7 +177,47 @@ public class WeaponButton : MonoBehaviour {
                 }
             }
         }
+
+		if (receiverNum == 1) {
+			
+		}
     }
+
+	public void PurchaseReceiver(GameObject weapon)
+	{
+		WeaponInfo weaponRef = weapon.GetComponent<WeaponInfo>();
+		if (!weaponRef.scopeUpgraded[scopeNum] &&  shopManager.GetComponent<ShopManager>().scrap >= weaponRef.scopeCost[scopeNum])
+		{
+			shopManager.GetComponent<ShopManager>().scrap -= weaponRef.scopeCost[scopeNum];
+			shopManager.GetComponent<ShopManager>().UpdateCashScrap();
+			weaponRef.scopeUpgraded[scopeNum] = true;
+			GetComponentInChildren<Text>().text = ScopeNames[scopeNum];
+		}
+
+		if (weaponRef.scopeUpgraded[scopeNum])
+		{
+			for (int i = 0; i < weaponRef.scope.Length; i++)
+			{
+				if (weaponRef.scope != null)
+				{
+					if (i == scopeNum)
+					{
+						weaponRef.scope[i].SetActive(true);
+						GetComponentInChildren<Text>().text = ScopeNames[scopeNum] + " :Selected";
+					}
+					else
+					{
+						weaponRef.scope[i].SetActive(false);
+						if(weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected") > -1)
+						{
+							weaponRef.scopeButton[i].GetComponentInChildren<Text>().text = weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.Substring(0, weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected"));
+						}
+					}
+
+				}
+			}
+		}
+	}
 
 	public void ToggleWindow(GameObject window){
 		if (window.activeSelf) {

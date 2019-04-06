@@ -1276,6 +1276,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &29732729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1592,6 +1594,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &37583741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,6 +2288,7 @@ MonoBehaviour:
   - {fileID: 797724337}
   barrelButton: {fileID: 663685840}
   magazineButton: {fileID: 1464101781}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1358413078}
   purchaseButton: {fileID: 373214918}
@@ -2307,6 +2312,12 @@ MonoBehaviour:
   magsizeUpgraded: 45
   accUp: 5
   recUp: 5
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &56591216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,6 +2888,8 @@ MonoBehaviour:
   upgradeText: {fileID: 1935097008}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &63273018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3548,6 +3561,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &72248545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4194,6 +4209,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &80023253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4414,6 +4431,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &82130805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6301,6 +6320,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &105956570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7053,6 +7074,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &148017820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8395,6 +8418,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &168379748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9633,6 +9658,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &193123896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10218,6 +10245,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &203643405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11057,6 +11086,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &215276750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12762,6 +12793,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &248663310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12906,6 +12939,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &249496812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13080,6 +13115,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &251104998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14273,6 +14310,175 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 0ea6d4916fea2244f8c6555661841111,
     type: 3}
   m_PrefabInternal: {fileID: 419904941}
+--- !u!1 &279729250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 279729251}
+  - component: {fileID: 279729255}
+  - component: {fileID: 279729254}
+  - component: {fileID: 279729253}
+  - component: {fileID: 279729252}
+  m_Layer: 5
+  m_Name: MidOptic_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &279729251
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279729250}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 592565788}
+  m_Father: {fileID: 785655298}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000028869947, y: 59.157597}
+  m_SizeDelta: {x: 191.64, y: 72.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &279729252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279729250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bcf7549fbf056e428c91ca207a645bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeVal: 5
+  shopManager: {fileID: 561850943}
+  gunInfo: {fileID: 55224672}
+  upgradeText: {fileID: 0}
+  scopeNum: 2
+  ScopeNames:
+  - None
+  - 1.25X zoom Red dot sight
+  - 2x Zoom CCO Sight
+  - 4x Zoom Acog Sight
+  receiverNum: 0
+  receiverNames: []
+--- !u!114 &279729253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279729250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 279729254}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 279729252}
+        m_MethodName: PurchaseScope
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 55224670}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 279729252}
+        m_MethodName: ToggleWindow
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 785655297}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 279729252}
+        m_MethodName: unHideElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1682314229}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &279729254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279729250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.69312924, g: 0.74120075, b: 0.8301887, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 276bbead5b0581242b9357247a4865e8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &279729255
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 279729250}
+  m_CullTransparentMesh: 0
 --- !u!1 &279817772
 GameObject:
   m_ObjectHideFlags: 0
@@ -14955,6 +15161,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &286966519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18065,6 +18273,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &349934325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18683,6 +18893,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &364717127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19141,6 +19353,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &367900820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20110,6 +20324,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &374274830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20401,6 +20617,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &380483207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20614,6 +20832,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 1507706472}
   magazineButton: {fileID: 1461067477}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 2010185845}
   purchaseButton: {fileID: 1085306181}
@@ -20637,6 +20856,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &383049401
 GameObject:
   m_ObjectHideFlags: 0
@@ -21073,6 +21298,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &389950049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23689,6 +23916,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &450944631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24277,6 +24506,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &456019767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25359,6 +25590,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 912392934}
@@ -25382,6 +25614,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &481920001
 GameObject:
   m_ObjectHideFlags: 0
@@ -25909,6 +26147,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 2133726956}
   magazineButton: {fileID: 2099068810}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1969779498}
   purchaseButton: {fileID: 1055123064}
@@ -25932,6 +26171,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!95 &493374630
 Animator:
   serializedVersion: 3
@@ -26907,6 +27152,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &517125632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28167,6 +28414,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &537610636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28474,6 +28723,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 2068281107}
   magazineButton: {fileID: 1680857629}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 2118243492}
   purchaseButton: {fileID: 1690949780}
@@ -28497,6 +28747,12 @@ MonoBehaviour:
   magsizeUpgraded: 45
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &545573533 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100004, guid: 37e16a5fc21c63548b971a9e36f95fab,
@@ -28529,6 +28785,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 1851559400}
@@ -28552,6 +28809,12 @@ MonoBehaviour:
   magsizeUpgraded: 1
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &546906848
 GameObject:
   m_ObjectHideFlags: 0
@@ -29329,6 +29592,7 @@ RectTransform:
   - {fileID: 363121257}
   - {fileID: 1795570055}
   - {fileID: 1205888}
+  - {fileID: 785655298}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -29859,6 +30123,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &575921021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30672,6 +30938,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 592505466}
   m_CullTransparentMesh: 0
+--- !u!1 &592565787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 592565788}
+  - component: {fileID: 592565790}
+  - component: {fileID: 592565789}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &592565788
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592565787}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.8047402, z: 1}
+  m_Children: []
+  m_Father: {fileID: 279729251}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.00036239624}
+  m_SizeDelta: {x: 0, y: -57.942}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &592565789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592565787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 09448d2f334666b4e89cfd85adcf41d8, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Powerful Receiver: Dam + Rec+'
+--- !u!222 &592565790
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592565787}
+  m_CullTransparentMesh: 0
 --- !u!1 &595206221
 GameObject:
   m_ObjectHideFlags: 0
@@ -31338,6 +31679,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &613217690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31508,6 +31851,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &614486599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 614486600}
+  - component: {fileID: 614486602}
+  - component: {fileID: 614486601}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &614486600
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614486599}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.804753, z: 1}
+  m_Children: []
+  m_Father: {fileID: 785655298}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000030517578, y: 144.45769}
+  m_SizeDelta: {x: 0, y: -350.42}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &614486601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614486599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 09448d2f334666b4e89cfd85adcf41d8, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Receiver Mods
+--- !u!222 &614486602
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614486599}
+  m_CullTransparentMesh: 0
 --- !u!1 &621074169
 GameObject:
   m_ObjectHideFlags: 0
@@ -32548,6 +32966,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &639353944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33434,7 +33854,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 464, y: -586}
+  m_AnchoredPosition: {x: -530, y: -28}
   m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652525018
@@ -33454,6 +33874,8 @@ MonoBehaviour:
   upgradeText: {fileID: 1249658531}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &652525019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33980,6 +34402,8 @@ MonoBehaviour:
   upgradeText: {fileID: 416043727}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &663685843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35115,6 +35539,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &686782529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36009,6 +36435,8 @@ MonoBehaviour:
   upgradeText: {fileID: 1399087309}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &710518712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37586,6 +38014,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &759388365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38060,6 +38490,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 1930533598}
   magazineButton: {fileID: 992692131}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1372788848}
   purchaseButton: {fileID: 1429291768}
@@ -38083,6 +38514,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!4 &778805259
 Transform:
   m_ObjectHideFlags: 0
@@ -38670,6 +39107,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &784600929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38863,6 +39302,81 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 785534228}
   m_CullTransparentMesh: 0
+--- !u!1 &785655297
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 785655298}
+  - component: {fileID: 785655300}
+  - component: {fileID: 785655299}
+  m_Layer: 5
+  m_Name: Mods_Background_M16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &785655298
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 785655297}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0570707, y: 0.26282912, z: 0.9999998}
+  m_Children:
+  - {fileID: 1546217123}
+  - {fileID: 1902483356}
+  - {fileID: 614486600}
+  - {fileID: 279729251}
+  - {fileID: 903616922}
+  - {fileID: 1942491356}
+  m_Father: {fileID: 561850948}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 285.70007, y: 91.9}
+  m_SizeDelta: {x: 214.54, y: 372.42}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &785655299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 785655297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: b3b3ee1d87505b2459f2f8ad7ce2c9e0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &785655300
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 785655297}
+  m_CullTransparentMesh: 0
 --- !u!1 &791796376
 GameObject:
   m_ObjectHideFlags: 0
@@ -39035,6 +39549,8 @@ MonoBehaviour:
   - 1.25X zoom Red dot sight
   - 2x Zoom CCO Sight
   - 4x Zoom Acog Sight
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &797724340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39584,6 +40100,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 506042022}
@@ -39607,6 +40124,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &803963220
 GameObject:
   m_ObjectHideFlags: 0
@@ -40304,6 +40827,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &812236694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42539,6 +43064,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &857846197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42980,6 +43507,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &862586828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43307,6 +43836,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &864696794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43588,6 +44119,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 0}
@@ -43611,6 +44143,12 @@ MonoBehaviour:
   magsizeUpgraded: 0
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &867791518
 GameObject:
   m_ObjectHideFlags: 0
@@ -43873,6 +44411,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &874611236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44703,6 +45243,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &898582323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45058,6 +45600,175 @@ Transform:
   m_Father: {fileID: 52774801}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &903616921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903616922}
+  - component: {fileID: 903616926}
+  - component: {fileID: 903616925}
+  - component: {fileID: 903616924}
+  - component: {fileID: 903616923}
+  m_Layer: 5
+  m_Name: LongOptic_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &903616922
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903616921}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1457278109}
+  m_Father: {fileID: 785655298}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0002598295, y: -30.842358}
+  m_SizeDelta: {x: 191.64, y: 72.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &903616923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903616921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bcf7549fbf056e428c91ca207a645bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeVal: 2
+  shopManager: {fileID: 561850943}
+  gunInfo: {fileID: 55224672}
+  upgradeText: {fileID: 0}
+  scopeNum: 3
+  ScopeNames:
+  - None
+  - 1.25X zoom Red dot sight
+  - 2x Zoom CCO Sight
+  - 4x Zoom Acog Sight
+  receiverNum: 0
+  receiverNames: []
+--- !u!114 &903616924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903616921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 903616925}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 903616923}
+        m_MethodName: PurchaseScope
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 55224670}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 903616923}
+        m_MethodName: ToggleWindow
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 785655297}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 903616923}
+        m_MethodName: unHideElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1682314229}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &903616925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903616921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.69312924, g: 0.74120075, b: 0.8301887, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 276bbead5b0581242b9357247a4865e8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &903616926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 903616921}
+  m_CullTransparentMesh: 0
 --- !u!1 &903617929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 042bd4d17f599134c9df7ce1d1b1e0ef,
@@ -46455,6 +47166,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &938861218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48291,6 +49004,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &972683275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49078,6 +49793,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &992692133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49326,75 +50043,6 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 994157920}
-  m_CullTransparentMesh: 0
---- !u!1 &994820436
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 994820437}
-  - component: {fileID: 994820439}
-  - component: {fileID: 994820438}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &994820437
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994820436}
-  m_LocalRotation: {x: 0, y: 0, z: -0.53729963, w: 0.8433914}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1415871627}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -65}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 208, y: -76}
-  m_SizeDelta: {x: 934.7, y: 29.1}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &994820438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994820436}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 6d1421c13bab0b349bb0af7385595ea6, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &994820439
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 994820436}
   m_CullTransparentMesh: 0
 --- !u!1 &994880466
 GameObject:
@@ -50715,6 +51363,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1024100809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52235,6 +52885,8 @@ MonoBehaviour:
   upgradeText: {fileID: 953186127}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1045795187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52653,6 +53305,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1058112242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53041,6 +53695,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 2138921559}
   magazineButton: {fileID: 2062143561}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 767428763}
   purchaseButton: {fileID: 76404514}
@@ -53064,6 +53719,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &1066501845
 GameObject:
   m_ObjectHideFlags: 0
@@ -56716,6 +57377,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1142868047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58855,6 +59518,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1189678844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60360,6 +61025,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1212840481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61607,7 +62274,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -326, y: 422}
+  m_AnchoredPosition: {x: -187, y: -226}
   m_SizeDelta: {x: 49, y: 12}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1251356924
@@ -63795,6 +64462,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1297864987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63970,6 +64639,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 286966516}
   magazineButton: {fileID: 1663224529}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 144195351}
   purchaseButton: {fileID: 1739636463}
@@ -63993,6 +64663,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &1299380494
 GameObject:
   m_ObjectHideFlags: 0
@@ -68538,6 +69214,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 380483205}
   magazineButton: {fileID: 686782527}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1311539266}
   purchaseButton: {fileID: 2087467624}
@@ -68561,6 +69238,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &1380136271
 GameObject:
   m_ObjectHideFlags: 0
@@ -68699,6 +69382,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1380614333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70652,14 +71337,13 @@ RectTransform:
   m_Children:
   - {fileID: 1249658533}
   - {fileID: 652525017}
-  - {fileID: 994820437}
   m_Father: {fileID: 1358413079}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -719.4153, y: -519.38824}
-  m_SizeDelta: {x: 1780.393, y: 1345.146}
+  m_AnchoredPosition: {x: -718.24255, y: -520.17523}
+  m_SizeDelta: {x: 1356.9838, y: 833.4954}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415871628
 MonoBehaviour:
@@ -72350,6 +73034,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1445668343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73022,6 +73708,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 1962050459}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 532867098}
   purchaseButton: {fileID: 1672992163}
@@ -73045,6 +73732,87 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
+--- !u!1 &1455950443
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1455950444}
+  - component: {fileID: 1455950446}
+  - component: {fileID: 1455950445}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1455950444
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455950443}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.8047402, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1942491356}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.00036239624}
+  m_SizeDelta: {x: 0, y: -57.942}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1455950445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455950443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 09448d2f334666b4e89cfd85adcf41d8, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: None :Selected
+--- !u!222 &1455950446
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1455950443}
+  m_CullTransparentMesh: 0
 --- !u!1 &1456644588
 GameObject:
   m_ObjectHideFlags: 0
@@ -73121,6 +73889,81 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1456644588}
   m_Mesh: {fileID: 4300042, guid: cee16ce7855f356488a02f1ba09747d3, type: 3}
+--- !u!1 &1457278108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1457278109}
+  - component: {fileID: 1457278111}
+  - component: {fileID: 1457278110}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1457278109
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457278108}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.8047402, z: 1}
+  m_Children: []
+  m_Father: {fileID: 903616922}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000015258789, y: 0.00036239624}
+  m_SizeDelta: {x: 0, y: -57.942}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1457278110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457278108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 09448d2f334666b4e89cfd85adcf41d8, type: 3}
+    m_FontSize: 12
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Quick Receiver: Fire Rate+ Acc-'
+--- !u!222 &1457278111
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1457278108}
+  m_CullTransparentMesh: 0
 --- !u!1 &1457282530
 GameObject:
   m_ObjectHideFlags: 0
@@ -73302,6 +74145,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1461067479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73461,6 +74306,8 @@ MonoBehaviour:
   upgradeText: {fileID: 466370829}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1464101784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74249,6 +75096,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 0}
@@ -74272,6 +75120,12 @@ MonoBehaviour:
   magsizeUpgraded: 0
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &1474713197
 GameObject:
   m_ObjectHideFlags: 0
@@ -74843,6 +75697,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1478769690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75763,6 +76619,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 972683273}
   magazineButton: {fileID: 2044581748}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1287232131}
   purchaseButton: {fileID: 1449534456}
@@ -75786,6 +76643,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &1495232955
 GameObject:
   m_ObjectHideFlags: 0
@@ -76133,6 +76996,8 @@ MonoBehaviour:
   - 1.25X zoom Red dot sight
   - 2x Zoom CCO Sight
   - 4x Zoom Acog Sight
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1501061317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76735,6 +77600,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1507706474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76985,6 +77852,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1513814946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77457,6 +78326,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1516684091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78843,6 +79714,81 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100014, guid: fe1be5b069123034a858de1bfe2ec335,
     type: 3}
   m_PrefabInternal: {fileID: 1819286757}
+--- !u!1 &1546217122
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1546217123}
+  - component: {fileID: 1546217125}
+  - component: {fileID: 1546217124}
+  m_Layer: 5
+  m_Name: blocker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1546217123
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546217122}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 3.804753, z: 1}
+  m_Children: []
+  m_Father: {fileID: 785655298}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -272.74997, y: -344.04233}
+  m_SizeDelta: {x: 545.49994, y: 81.67999}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1546217124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546217122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 09448d2f334666b4e89cfd85adcf41d8, type: 3}
+    m_FontSize: 16
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 300
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1546217125
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1546217122}
+  m_CullTransparentMesh: 0
 --- !u!1 &1547639603
 GameObject:
   m_ObjectHideFlags: 0
@@ -79573,6 +80519,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1566292622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80622,6 +81570,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 0}
@@ -80645,6 +81594,12 @@ MonoBehaviour:
   magsizeUpgraded: 0
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1001 &1587120928
 Prefab:
   m_ObjectHideFlags: 0
@@ -81536,6 +82491,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!1 &1606608307
 GameObject:
   m_ObjectHideFlags: 0
@@ -81674,6 +82631,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1608292233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83546,6 +84505,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1646504630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83873,6 +84834,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1654475497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84180,6 +85143,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1663224532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85411,6 +86376,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1680857632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85608,7 +86575,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -718.89374, y: -519.34955}
+  m_AnchoredPosition: {x: -718.8731, y: -519.1845}
   m_SizeDelta: {x: 743.1702, y: 883.1023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1682314231
@@ -86359,6 +87326,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 0}
@@ -86382,6 +87350,12 @@ MonoBehaviour:
   magsizeUpgraded: 0
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!4 &1710725710 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: cbb80c11be7487b4ea2dc60fca04842f,
@@ -87581,6 +88555,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1734214644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88207,6 +89183,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 0}
@@ -88230,6 +89207,12 @@ MonoBehaviour:
   magsizeUpgraded: 0
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!4 &1742561475
 Transform:
   m_ObjectHideFlags: 0
@@ -88733,6 +89716,8 @@ MonoBehaviour:
   - 1.25X zoom Red dot sight
   - 2x Zoom CCO Sight
   - 4x Zoom Acog Sight
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1758686605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89759,6 +90744,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 2028811543}
   magazineButton: {fileID: 575921019}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 902874372}
   purchaseButton: {fileID: 1903405410}
@@ -89782,6 +90768,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!95 &1782816841
 Animator:
   serializedVersion: 3
@@ -93205,6 +94197,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 105956567}
   magazineButton: {fileID: 2143840284}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1130897051}
   purchaseButton: {fileID: 1010011583}
@@ -93228,6 +94221,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!4 &1845011157 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400014, guid: 47ed500ef89793a4a9bcee69a586283b,
@@ -93269,6 +94268,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1845900812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94345,6 +95346,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1871061578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94648,6 +95651,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1881934273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95398,6 +96403,75 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 47ed500ef89793a4a9bcee69a586283b,
     type: 3}
   m_PrefabInternal: {fileID: 1013122182}
+--- !u!1 &1902483355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1902483356}
+  - component: {fileID: 1902483358}
+  - component: {fileID: 1902483357}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1902483356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1902483355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.94601035, y: 3.804753, z: 1}
+  m_Children: []
+  m_Father: {fileID: 785655298}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -270.27524, y: -343.94974}
+  m_SizeDelta: {x: 800, y: 453}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1902483357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1902483355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.18867922, g: 0.18867922, b: 0.18867922, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 7e4c2307a7ed3fd4d9a027a2fbc240cf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1902483358
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1902483355}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1903173130
 Prefab:
   m_ObjectHideFlags: 0
@@ -96257,6 +97331,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1917729685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96754,6 +97830,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1927377954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97087,6 +98165,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1928239625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97297,6 +98377,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1930533601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98091,6 +99173,175 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1942125444}
   m_Mesh: {fileID: 4300000, guid: 6521a2e08c9e3fe489f7b19ef093df2e, type: 3}
+--- !u!1 &1942491355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942491356}
+  - component: {fileID: 1942491360}
+  - component: {fileID: 1942491359}
+  - component: {fileID: 1942491358}
+  - component: {fileID: 1942491357}
+  m_Layer: 5
+  m_Name: None_Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1942491356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942491355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1455950444}
+  m_Father: {fileID: 785655298}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0002598295, y: -120.842384}
+  m_SizeDelta: {x: 191.64, y: 72.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1942491357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942491355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bcf7549fbf056e428c91ca207a645bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeVal: 2
+  shopManager: {fileID: 561850943}
+  gunInfo: {fileID: 55224672}
+  upgradeText: {fileID: 0}
+  scopeNum: 0
+  ScopeNames:
+  - None
+  - 1.25X zoom Red dot sight
+  - 2x Zoom CCO Sight
+  - 4x Zoom Acog Sight
+  receiverNum: 0
+  receiverNames: []
+--- !u!114 &1942491358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942491355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1942491359}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1942491357}
+        m_MethodName: PurchaseScope
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 55224670}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1942491357}
+        m_MethodName: ToggleWindow
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 785655297}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1942491357}
+        m_MethodName: unHideElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1682314229}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1942491359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942491355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.69312924, g: 0.74120075, b: 0.8301887, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 276bbead5b0581242b9357247a4865e8, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1942491360
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942491355}
+  m_CullTransparentMesh: 0
 --- !u!1 &1943414545
 GameObject:
   m_ObjectHideFlags: 0
@@ -98932,6 +100183,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1962050461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99598,6 +100851,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1975593229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99923,6 +101178,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1978085358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101287,6 +102544,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &1994472472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102169,6 +103428,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 0}
@@ -102192,6 +103452,12 @@ MonoBehaviour:
   magsizeUpgraded: 0
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &2008130936
 GameObject:
   m_ObjectHideFlags: 0
@@ -103045,6 +104311,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2020474231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103783,6 +105051,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2028811545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104416,6 +105686,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!1 &2035769862
 GameObject:
   m_ObjectHideFlags: 0
@@ -104850,6 +106122,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2044581750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105357,6 +106631,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2049628423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106289,6 +107565,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2062143564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106935,6 +108213,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2068281110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108073,6 +109353,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 639353942}
   magazineButton: {fileID: 1646504628}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1522116115}
   purchaseButton: {fileID: 575276645}
@@ -108096,6 +109377,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!95 &2090065223
 Animator:
   serializedVersion: 3
@@ -108586,6 +109873,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2099068812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109918,6 +111207,7 @@ MonoBehaviour:
   scopeButton: []
   barrelButton: {fileID: 0}
   magazineButton: {fileID: 0}
+  receiverButton: []
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 0}
   purchaseButton: {fileID: 0}
@@ -109941,6 +111231,12 @@ MonoBehaviour:
   magsizeUpgraded: 60
   accUp: 0
   recUp: 0
+  receiverAccVal: 0
+  receiverRecVal: 0
+  receiverDamVal: 0
+  receiverFireRateVal: 0
+  receiverUpgraded: 
+  receiverCost: 
 --- !u!1 &2126576397
 GameObject:
   m_ObjectHideFlags: 0
@@ -110261,6 +111557,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2133726958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110425,6 +111723,8 @@ MonoBehaviour:
   - 1.25X zoom Red dot sight
   - 2x Zoom CCO Sight
   - 4x Zoom Acog Sight
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2134895572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110588,6 +111888,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2138921562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110820,6 +112122,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2140986591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111049,6 +112353,8 @@ MonoBehaviour:
   upgradeText: {fileID: 0}
   scopeNum: 0
   ScopeNames: []
+  receiverNum: 0
+  receiverNames: []
 --- !u!114 &2143840286
 MonoBehaviour:
   m_ObjectHideFlags: 0

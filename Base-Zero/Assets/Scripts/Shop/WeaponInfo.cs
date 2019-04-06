@@ -17,6 +17,7 @@ public class WeaponInfo : MonoBehaviour {
     public GameObject[] scopeButton;
     public GameObject barrelButton;
     public GameObject magazineButton;
+	public GameObject[] receiverButton;
     public GameObject upgrades;
 
     public GameObject WeaponAttachments;
@@ -41,6 +42,15 @@ public class WeaponInfo : MonoBehaviour {
 	public int magsizeUpgraded;
 	public int accUp;
 	public int recUp;
+	public int receiverAccVal;
+	public int receiverRecVal;
+	public int receiverDamVal;
+	public int receiverFireRateVal;
+
+	public bool[] receiverUpgraded;
+	public int[] receiverCost;
+
+
     // Use this for initialization
     void Start () {
     }
