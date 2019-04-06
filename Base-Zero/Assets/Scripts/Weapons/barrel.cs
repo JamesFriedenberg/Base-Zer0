@@ -10,5 +10,5 @@ public class barrel : MonoBehaviour
     public int accuracy = 0;
 
     //seperate muzzle flash for upgrade (optional)
-    public ParticleSystem muzzleFlash; 
+    public GameObject particleController; 
 }

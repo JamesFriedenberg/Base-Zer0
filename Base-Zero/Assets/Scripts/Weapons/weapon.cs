@@ -36,9 +36,9 @@ public class weapon : MonoBehaviour
 
     public Camera fpsCam;
     public GameObject fpsController;
-    public GameObject gameManager;
+    private GameObject gameManager;
     public GameObject projObj;
-    public ParticleSystem muzzleFlash;
+    public GameObject particleController;
     public GameObject impactEffect;
     public GameObject blood;
     public GameObject bulletHole;
@@ -169,8 +169,8 @@ public class weapon : MonoBehaviour
                 if(children[i].GetComponent<barrel>().upgrade && myUpgrades[3]){
                     accuracy += children[i].GetComponent<barrel>().accuracy;
 					children[i].gameObject.SetActive(true);
-					if(children[i].GetComponent<barrel>().muzzleFlash != null){
-                        this.muzzleFlash = children[i].GetComponent<barrel>().muzzleFlash;
+					if(children[i].GetComponent<barrel>().particleController != null){
+                        this.particleController = children[i].GetComponent<barrel>().particleController;
                     }
                 }else if(children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
@@ -320,7 +320,21 @@ public class weapon : MonoBehaviour
         willReset2 = false;
         secondMotionAnimator.SetBool(fireAnimation, true);
 		weaponAnimator.SetBool("Fire", true);
-        muzzleFlash.Play();
+
+        //get quaternion direction of bullet
+        Quaternion projectileDirection = Quaternion.identity;
+        projectileDirection.SetLookRotation(fpsCam.transform.forward);
+
+        //play muzzle flash and tracer particle system
+        if(particleController){
+            particleController.GetComponent<ParticleController>().PlayFlash();
+            particleController.GetComponent<ParticleController>().PlayTracer(
+                particleController.transform.position + fpsCam.transform.forward * 2,
+                projectileDirection);
+        }else{
+            Debug.Log("No particle controller on weapon");
+        }
+
         fpsController.GetComponent<FirstPersonController>().m_MouseLook.m_CameraTargetRot *= Quaternion.Euler (-recoil, 0f, 0f);
         //fpsCam.transform.Rotate(fpsCam.transform.right, 5.0f);
         fireSound.GetComponent<AudioSource>().Play(0);

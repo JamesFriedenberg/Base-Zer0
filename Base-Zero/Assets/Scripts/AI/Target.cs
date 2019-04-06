@@ -47,6 +47,7 @@ public class Target : MonoBehaviour {
     }
     private void Die()
     {
+        if(zombie == null) return;
         Debug.Log(zombie.GetComponent<Transform>().position);
         Debug.Log("here");
         this.GetComponent<NavMeshAgent>().speed = 0f;
