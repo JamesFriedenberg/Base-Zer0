@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 1205890}
   - component: {fileID: 1205889}
   m_Layer: 5
-  m_Name: Upgrade_Background_M16
+  m_Name: Scope_Background_M16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1278,6 +1278,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &29732729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1596,6 +1597,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &37583741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2288,12 +2290,16 @@ MonoBehaviour:
   - {fileID: 797724337}
   barrelButton: {fileID: 663685840}
   magazineButton: {fileID: 1464101781}
-  receiverButton: []
+  receiverButton:
+  - {fileID: 1942491355}
+  - {fileID: 903616921}
+  - {fileID: 279729250}
   upgrades: {fileID: 0}
   WeaponAttachments: {fileID: 1358413078}
   purchaseButton: {fileID: 373214918}
   stockUpgraded: 0
   scopeUpgraded: 01000000
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 150
@@ -2312,12 +2318,13 @@ MonoBehaviour:
   magsizeUpgraded: 45
   accUp: 5
   recUp: 5
-  receiverAccVal: 0
-  receiverRecVal: 0
-  receiverDamVal: 0
-  receiverFireRateVal: 0
-  receiverUpgraded: 
-  receiverCost: 
+  receiverAccVal: 5
+  receiverRecVal: 5
+  receiverDamVal: 5
+  receiverFireRateVal: 10
+  receiverSelected: 0
+  receiverUpgraded: 010000
+  receiverCost: 00000000fa0000002c010000
 --- !u!1 &56591216
 GameObject:
   m_ObjectHideFlags: 0
@@ -2890,6 +2897,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 416818431}
 --- !u!114 &63273018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3563,6 +3571,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &72248545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4211,6 +4220,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &80023253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4433,6 +4443,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &82130805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6322,6 +6333,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &105956570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7076,6 +7088,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &148017820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8420,6 +8433,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &168379748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9660,6 +9674,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &193123896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10247,6 +10262,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &203643405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11088,6 +11104,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &215276750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12795,6 +12812,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &248663310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12941,6 +12959,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &249496812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13117,6 +13136,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &251104998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14323,7 +14343,7 @@ GameObject:
   - component: {fileID: 279729253}
   - component: {fileID: 279729252}
   m_Layer: 5
-  m_Name: MidOptic_Button
+  m_Name: DamRec_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14359,18 +14379,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcf7549fbf056e428c91ca207a645bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeVal: 5
+  upgradeVal: -1
   shopManager: {fileID: 561850943}
   gunInfo: {fileID: 55224672}
   upgradeText: {fileID: 0}
-  scopeNum: 2
-  ScopeNames:
+  scopeNum: 0
+  ScopeNames: []
+  receiverNum: 2
+  receiverNames:
   - None
-  - 1.25X zoom Red dot sight
-  - 2x Zoom CCO Sight
-  - 4x Zoom Acog Sight
-  receiverNum: 0
-  receiverNames: []
+  - 'Quick Receiver: Fire Rate+ Acc-'
+  - 'Powerful Receiver: Dam + Rec+'
+  statParent: {fileID: 416818431}
 --- !u!114 &279729253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14411,7 +14431,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 279729252}
-        m_MethodName: PurchaseScope
+        m_MethodName: PurchaseReceiver
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 55224670}
@@ -14436,7 +14456,7 @@ MonoBehaviour:
         m_MethodName: unHideElement
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1682314229}
+          m_ObjectArgument: {fileID: 1415871626}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -15163,6 +15183,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &286966519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18275,6 +18296,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &349934325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18895,6 +18917,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &364717127
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19355,6 +19378,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &367900820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20326,6 +20350,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &374274830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20619,6 +20644,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &380483207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20838,6 +20864,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1085306181}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -20860,6 +20887,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &383049401
@@ -21300,6 +21328,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &389950049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23918,6 +23947,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &450944631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24508,6 +24538,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &456019767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25596,6 +25627,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 912392934}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -25618,6 +25650,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &481920001
@@ -26153,6 +26186,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1055123064}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -26175,6 +26209,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!95 &493374630
@@ -27154,6 +27189,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &517125632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28416,6 +28452,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &537610636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28729,6 +28766,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1690949780}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -28751,6 +28789,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &545573533 stripped
@@ -28791,6 +28830,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1851559400}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -28813,6 +28853,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &546906848
@@ -30125,6 +30166,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &575921021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31681,6 +31723,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &613217690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32968,6 +33011,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &639353944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33833,7 +33877,7 @@ GameObject:
   - component: {fileID: 652525019}
   - component: {fileID: 652525018}
   m_Layer: 5
-  m_Name: Scope_Button
+  m_Name: Receiver_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33868,7 +33912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcf7549fbf056e428c91ca207a645bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeVal: 2
+  upgradeVal: -1
   shopManager: {fileID: 561850943}
   gunInfo: {fileID: 55224672}
   upgradeText: {fileID: 1249658531}
@@ -33876,6 +33920,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 416818431}
 --- !u!114 &652525019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33916,10 +33961,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 652525018}
-        m_MethodName: purchaseUpgrade
+        m_MethodName: ToggleWindow
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 55224670}
+          m_ObjectArgument: {fileID: 1415871626}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 652525018}
+        m_MethodName: unHideElement
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 785655297}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -34404,6 +34460,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 416818431}
 --- !u!114 &663685843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35541,6 +35598,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &686782529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36437,6 +36495,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 416818431}
 --- !u!114 &710518712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38016,6 +38075,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &759388365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38496,6 +38556,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1429291768}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -38518,6 +38579,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!4 &778805259
@@ -39109,6 +39171,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &784600929
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39318,7 +39381,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &785655298
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39551,6 +39614,7 @@ MonoBehaviour:
   - 4x Zoom Acog Sight
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &797724340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40106,6 +40170,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 506042022}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -40128,6 +40193,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &803963220
@@ -40829,6 +40895,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &812236694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43066,6 +43133,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &857846197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43509,6 +43577,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &862586828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43838,6 +43907,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &864696794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44125,6 +44195,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 0}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 0
@@ -44147,6 +44218,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &867791518
@@ -44413,6 +44485,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &874611236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45245,6 +45318,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &898582323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45613,7 +45687,7 @@ GameObject:
   - component: {fileID: 903616924}
   - component: {fileID: 903616923}
   m_Layer: 5
-  m_Name: LongOptic_Button
+  m_Name: FirRec_Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45649,18 +45723,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcf7549fbf056e428c91ca207a645bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeVal: 2
+  upgradeVal: -1
   shopManager: {fileID: 561850943}
   gunInfo: {fileID: 55224672}
   upgradeText: {fileID: 0}
-  scopeNum: 3
-  ScopeNames:
+  scopeNum: 0
+  ScopeNames: []
+  receiverNum: 1
+  receiverNames:
   - None
-  - 1.25X zoom Red dot sight
-  - 2x Zoom CCO Sight
-  - 4x Zoom Acog Sight
-  receiverNum: 0
-  receiverNames: []
+  - 'Quick Receiver: Fire Rate+ Acc-'
+  - 'Powerful Receiver: Dam + Rec+'
+  statParent: {fileID: 416818431}
 --- !u!114 &903616924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45701,7 +45775,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 903616923}
-        m_MethodName: PurchaseScope
+        m_MethodName: PurchaseReceiver
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 55224670}
@@ -45726,7 +45800,7 @@ MonoBehaviour:
         m_MethodName: unHideElement
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1682314229}
+          m_ObjectArgument: {fileID: 1415871626}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -47168,6 +47242,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &938861218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49006,6 +49081,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &972683275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49795,6 +49871,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &992692133
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51365,6 +51442,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1024100809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52887,6 +52965,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1045795187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53307,6 +53386,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1058112242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53701,6 +53781,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 76404514}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -53723,6 +53804,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &1066501845
@@ -57379,6 +57461,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1142868047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59520,6 +59603,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1189678844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61027,6 +61111,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1212840481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64464,6 +64549,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1297864987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64645,6 +64731,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1739636463}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 150
@@ -64667,6 +64754,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &1299380494
@@ -67597,7 +67685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1358413079
 Transform:
   m_ObjectHideFlags: 0
@@ -69220,6 +69308,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 2087467624}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -69242,6 +69331,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &1380136271
@@ -69384,6 +69474,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1380614333
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73036,6 +73127,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1445668343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73714,6 +73806,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1672992163}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -73736,6 +73829,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &1455950443
@@ -74147,6 +74241,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1461067479
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74308,6 +74403,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 416818431}
 --- !u!114 &1464101784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75102,6 +75198,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 0}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 150
@@ -75124,6 +75221,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &1474713197
@@ -75699,6 +75797,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1478769690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76625,6 +76724,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1449534456}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -76647,6 +76747,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &1495232955
@@ -76998,6 +77099,7 @@ MonoBehaviour:
   - 4x Zoom Acog Sight
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1501061317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77602,6 +77704,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1507706474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77854,6 +77957,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1513814946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78328,6 +78432,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1516684091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79730,7 +79835,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1546217123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -80521,6 +80626,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1566292622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81576,6 +81682,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 0}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 200
@@ -81598,6 +81705,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1001 &1587120928
@@ -82493,6 +82601,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!1 &1606608307
 GameObject:
   m_ObjectHideFlags: 0
@@ -82633,6 +82742,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1608292233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84507,6 +84617,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1646504630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -84836,6 +84947,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1654475497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85145,6 +85257,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1663224532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85245,7 +85358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1663354336
 Transform:
   m_ObjectHideFlags: 0
@@ -86378,6 +86491,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1680857632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87332,6 +87446,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 0}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 250
@@ -87354,6 +87469,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!4 &1710725710 stripped
@@ -88557,6 +88673,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1734214644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89189,6 +89306,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 0}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 150
@@ -89211,6 +89329,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!4 &1742561475
@@ -89718,6 +89837,7 @@ MonoBehaviour:
   - 4x Zoom Acog Sight
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1758686605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90750,6 +90870,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1903405410}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -90772,6 +90893,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!95 &1782816841
@@ -94203,6 +94325,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 1010011583}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -94225,6 +94348,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!4 &1845011157 stripped
@@ -94270,6 +94394,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1845900812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95348,6 +95473,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1871061578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95653,6 +95779,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1881934273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97333,6 +97460,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1917729685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97832,6 +97960,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1927377954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98167,6 +98296,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1928239625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98379,6 +98509,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1930533601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99222,18 +99353,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcf7549fbf056e428c91ca207a645bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeVal: 2
+  upgradeVal: -1
   shopManager: {fileID: 561850943}
   gunInfo: {fileID: 55224672}
   upgradeText: {fileID: 0}
   scopeNum: 0
-  ScopeNames:
-  - None
-  - 1.25X zoom Red dot sight
-  - 2x Zoom CCO Sight
-  - 4x Zoom Acog Sight
+  ScopeNames: []
   receiverNum: 0
-  receiverNames: []
+  receiverNames:
+  - None
+  - 'Quick Receiver: Fire Rate+ Acc-'
+  - 'Powerful Receiver: Dam + Rec+'
+  statParent: {fileID: 416818431}
 --- !u!114 &1942491358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99274,7 +99405,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1942491357}
-        m_MethodName: PurchaseScope
+        m_MethodName: PurchaseReceiver
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 55224670}
@@ -99299,7 +99430,7 @@ MonoBehaviour:
         m_MethodName: unHideElement
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1682314229}
+          m_ObjectArgument: {fileID: 1415871626}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -100185,6 +100316,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1962050461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -100853,6 +100985,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1975593229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101180,6 +101313,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1978085358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102546,6 +102680,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &1994472472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103434,6 +103569,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 0}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -103456,6 +103592,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &2008130936
@@ -104313,6 +104450,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2020474231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105053,6 +105191,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2028811545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105688,6 +105827,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!1 &2035769862
 GameObject:
   m_ObjectHideFlags: 0
@@ -106124,6 +106264,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2044581750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106633,6 +106774,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2049628423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107567,6 +107709,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2062143564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108215,6 +108358,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2068281110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109359,6 +109503,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 575276645}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -109381,6 +109526,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!95 &2090065223
@@ -109875,6 +110021,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2099068812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111213,6 +111360,7 @@ MonoBehaviour:
   purchaseButton: {fileID: 0}
   stockUpgraded: 0
   scopeUpgraded: 
+  scopeSelected: 0
   barrelUpgraded: 0
   magazineUpgraded: 0
   stockCost: 100
@@ -111235,6 +111383,7 @@ MonoBehaviour:
   receiverRecVal: 0
   receiverDamVal: 0
   receiverFireRateVal: 0
+  receiverSelected: 0
   receiverUpgraded: 
   receiverCost: 
 --- !u!1 &2126576397
@@ -111559,6 +111708,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2133726958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111725,6 +111875,7 @@ MonoBehaviour:
   - 4x Zoom Acog Sight
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2134895572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111890,6 +112041,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2138921562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112124,6 +112276,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2140986591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112355,6 +112508,7 @@ MonoBehaviour:
   ScopeNames: []
   receiverNum: 0
   receiverNames: []
+  statParent: {fileID: 0}
 --- !u!114 &2143840286
 MonoBehaviour:
   m_ObjectHideFlags: 0

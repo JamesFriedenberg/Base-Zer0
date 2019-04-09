@@ -12,6 +12,7 @@ public class WeaponButton : MonoBehaviour {
     public string[] ScopeNames;
 	public int receiverNum;
 	public string[] receiverNames;
+	public GameObject statParent;
 	// Use this for initialization
 	void Start () {
 		switch (upgradeVal) {
@@ -28,6 +29,11 @@ public class WeaponButton : MonoBehaviour {
 			break;
 		case 4:
                 upgradeText.text += "\n" + gunInfo.magazineCost.ToString () + " Scrap";
+			break;
+		case 5:
+			if (receiverNum != 0) {
+				GetComponentInChildren<Text> ().text = receiverNames [receiverNum] + " : " + gunInfo.receiverCost [receiverNum].ToString () + " Scrap";
+			}
 			break;
 		default:
 			break;
@@ -136,6 +142,9 @@ public class WeaponButton : MonoBehaviour {
         }
         if(purchaseComplete)
         {
+			foreach (BarStats b in statParent.GetComponentsInChildren<BarStats>()) {
+				b.RecalculateStats ();
+			}
             shopManager.GetComponent<ShopManager>().UpdateCashScrap();
 			if (upgradeText != null) {
 				Destroy (upgradeText);
@@ -145,7 +154,7 @@ public class WeaponButton : MonoBehaviour {
        
     }
 
-    public void PurchaseScope(GameObject weapon)
+	public void PurchaseReceiver(GameObject weapon)
     {
         WeaponInfo weaponRef = weapon.GetComponent<WeaponInfo>();
         if (!weaponRef.receiverUpgraded[receiverNum] &&  shopManager.GetComponent<ShopManager>().scrap >= weaponRef.receiverCost[receiverNum])
@@ -158,32 +167,32 @@ public class WeaponButton : MonoBehaviour {
 
 		if (weaponRef.receiverUpgraded[receiverNum])
         {
+			weaponRef.receiverSelected = receiverNum;
+			foreach (BarStats b in statParent.GetComponentsInChildren<BarStats>()) {
+				b.RecalculateStats ();
+			}
             for (int i = 0; i < weaponRef.receiverUpgraded.Length; i++)
             {
-                if (weaponRef.scope != null)
-                {
                     if (i == receiverNum)
                     {
-                        GetComponentInChildren<Text>().text = ScopeNames[scopeNum] + " :Selected";
+						GetComponentInChildren<Text>().text = receiverNames[receiverNum] + " :Selected";
+						weaponRef.receiverSelected = i;
+						
                     }
                     else
                     {
-                        if(weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected") > -1)
+						if(weaponRef.receiverButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected") > -1)
                         {
-                            weaponRef.scopeButton[i].GetComponentInChildren<Text>().text = weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.Substring(0, weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected"));
+							weaponRef.receiverButton[i].GetComponentInChildren<Text>().text = weaponRef.receiverButton[i].GetComponentInChildren<Text>().text.Substring(0, weaponRef.receiverButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected"));
                         }
                     }
 
-                }
+                
             }
         }
-
-		if (receiverNum == 1) {
-			
-		}
     }
 
-	public void PurchaseReceiver(GameObject weapon)
+	public void PurchaseScope(GameObject weapon)
 	{
 		WeaponInfo weaponRef = weapon.GetComponent<WeaponInfo>();
 		if (!weaponRef.scopeUpgraded[scopeNum] &&  shopManager.GetComponent<ShopManager>().scrap >= weaponRef.scopeCost[scopeNum])
@@ -204,6 +213,8 @@ public class WeaponButton : MonoBehaviour {
 					{
 						weaponRef.scope[i].SetActive(true);
 						GetComponentInChildren<Text>().text = ScopeNames[scopeNum] + " :Selected";
+						weaponRef.scopeSelected = i;
+
 					}
 					else
 					{

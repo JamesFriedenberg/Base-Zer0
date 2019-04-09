@@ -24,6 +24,7 @@ public class WeaponInfo : MonoBehaviour {
     public GameObject purchaseButton;
     public bool stockUpgraded = false;
     public bool[] scopeUpgraded;
+	public int scopeSelected;
     public bool barrelUpgraded = false;
     public bool magazineUpgraded = false;
     public int stockCost = 150;
@@ -46,6 +47,7 @@ public class WeaponInfo : MonoBehaviour {
 	public int receiverRecVal;
 	public int receiverDamVal;
 	public int receiverFireRateVal;
+	public int receiverSelected;
 
 	public bool[] receiverUpgraded;
 	public int[] receiverCost;

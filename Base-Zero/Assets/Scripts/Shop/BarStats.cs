@@ -32,24 +32,53 @@ public class BarStats : MonoBehaviour {
 			break;
 		default:
 			break;
-
 		}
 
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		if (magsize != null && !magUp && guninfo.magazineUpgraded) {
+	public void RecalculateStats () {
+		if (statNum == 5 && guninfo.magazineUpgraded) {
+			//Debug.Log (guninfo.magsizeUpgraded.ToString());
 			magsize.text = guninfo.magsizeUpgraded.ToString();
 		}
-		if(statNum == 3 && !accUp && guninfo.barrelUpgraded){
-			statBar.fillAmount = (1.0f * ((guninfo.accuracy + guninfo.accUp) / 100.0f));
+		if(statNum == 1){
+			float damage = guninfo.damage;
+			if (guninfo.receiverSelected == 2) {
+				damage += guninfo.receiverDamVal;
+			}
+
+			statBar.fillAmount = (1.0f * (damage / 100.0f));
 		}
-		if(statNum == 4 && !recUp && guninfo.stockUpgraded){
-			statBar.fillAmount = (1.0f * ((guninfo.recoil + guninfo.recUp) / 100.0f));
+		if(statNum == 2){
+			float firerate = guninfo.firerate;
+			if (guninfo.receiverSelected == 1) {
+				firerate += guninfo.receiverFireRateVal;
+			}
+
+			statBar.fillAmount = (1.0f * (firerate / 100.0f));
 		}
-		if(statNum == 4 && !recUp && guninfo.stockUpgraded){
-			statBar.fillAmount = (1.0f * ((guninfo.recoil + guninfo.recUp) / 100.0f));
+		if(statNum == 3){
+			float accuracy = guninfo.accuracy;
+			if (guninfo.barrelUpgraded) {
+				accuracy += (guninfo.accUp);
+			}
+			if (guninfo.receiverSelected == 1) {
+				accuracy -= guninfo.receiverAccVal;
+			}
+
+			statBar.fillAmount = (1.0f * (accuracy / 100.0f));
+		}
+		if(statNum == 4){
+			float recoil = guninfo.recoil;
+			if (guninfo.stockUpgraded) {
+				recoil -= (guninfo.recUp);
+			}
+			if (guninfo.receiverSelected == 2) {
+				recoil += guninfo.receiverRecVal;
+			}
+
+			statBar.fillAmount = (1.0f * (recoil / 100.0f));
 		}
 	}
 }
