@@ -18,7 +18,6 @@ public class WeaponInfo : MonoBehaviour {
     public GameObject barrelButton;
     public GameObject magazineButton;
 	public GameObject[] receiverButton;
-    public GameObject upgrades;
 
     public GameObject WeaponAttachments;
     public GameObject purchaseButton;
@@ -34,7 +33,6 @@ public class WeaponInfo : MonoBehaviour {
     public int weaponCost = 1200;
     public bool purchased = false;
     public string name;
-    public int wepIndex;
 	public int damage;
 	public int firerate;
 	public int accuracy;

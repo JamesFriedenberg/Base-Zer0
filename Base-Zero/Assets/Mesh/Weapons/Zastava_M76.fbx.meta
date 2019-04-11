@@ -1,0 +1,233 @@
+fileFormatVersion: 2
+guid: 9d4be5c68a72a424fbf84e90c5c131f9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Glass
+    100002: Sights
+    100004: Zastava_M68_Scope
+    100006: //RootNode
+    100008: Zastava_M76_Barrel_Extended
+    100010: Zastava_M76_Barrel_Standard
+    100012: Zastava_M76_Body
+    100014: Zastava_M76_Bolt
+    100016: Zastava_M76_Grip_Black
+    100018: Zastava_M76_Handguard_Standard
+    100020: Zastava_M76_Ironsights
+    100022: Zastava_M76_Magazine_DMR_Standad
+    100024: Zastava_M76_Magazine_Extended
+    100026: Zastava_M76_Magazines
+    100028: Zastava_M76_PSO
+    100030: Zastava_M76_PSO_3
+    100032: Zastava_M76_PSO_3_Scope
+    100034: Zastava_M76_Receiver_Magazine_Release
+    100036: Zastava_M76_Stock_full
+    100038: Zastava_M76_Stock_Sniper
+    100040: Zastava_M76_Trigger
+    100042: Zastava_Rail_Scope
+    400000: Glass
+    400002: Sights
+    400004: Zastava_M68_Scope
+    400006: //RootNode
+    400008: Zastava_M76_Barrel_Extended
+    400010: Zastava_M76_Barrel_Standard
+    400012: Zastava_M76_Body
+    400014: Zastava_M76_Bolt
+    400016: Zastava_M76_Grip_Black
+    400018: Zastava_M76_Handguard_Standard
+    400020: Zastava_M76_Ironsights
+    400022: Zastava_M76_Magazine_DMR_Standad
+    400024: Zastava_M76_Magazine_Extended
+    400026: Zastava_M76_Magazines
+    400028: Zastava_M76_PSO
+    400030: Zastava_M76_PSO_3
+    400032: Zastava_M76_PSO_3_Scope
+    400034: Zastava_M76_Receiver_Magazine_Release
+    400036: Zastava_M76_Stock_full
+    400038: Zastava_M76_Stock_Sniper
+    400040: Zastava_M76_Trigger
+    400042: Zastava_Rail_Scope
+    2100000: VZ_58_Texture
+    2100002: ak_platform_AK_Platform_Guards_mat
+    2100004: ak_platform_AK_Platforms_Magazine_mat
+    2100006: Acog_Rail_VZ_58_Texture
+    2100008: AR_Advanced_mat
+    2100010: AR_Platform_Accesories_mat
+    2100012: ak_platform_AK_Platform_Accesories_mat
+    2300000: Glass
+    2300002: Zastava_M68_Scope
+    2300004: Zastava_M76_Barrel_Extended
+    2300006: Zastava_M76_Barrel_Standard
+    2300008: Zastava_M76_Body
+    2300010: Zastava_M76_Bolt
+    2300012: Zastava_M76_Grip_Black
+    2300014: Zastava_M76_Handguard_Standard
+    2300016: Zastava_M76_Ironsights
+    2300018: Zastava_M76_Magazine_DMR_Standad
+    2300020: Zastava_M76_Magazine_Extended
+    2300022: Zastava_M76_PSO
+    2300024: Zastava_M76_PSO_3
+    2300026: Zastava_M76_PSO_3_Scope
+    2300028: Zastava_M76_Receiver_Magazine_Release
+    2300030: Zastava_M76_Stock_full
+    2300032: Zastava_M76_Stock_Sniper
+    2300034: Zastava_M76_Trigger
+    2300036: Zastava_Rail_Scope
+    3300000: Glass
+    3300002: Zastava_M68_Scope
+    3300004: Zastava_M76_Barrel_Extended
+    3300006: Zastava_M76_Barrel_Standard
+    3300008: Zastava_M76_Body
+    3300010: Zastava_M76_Bolt
+    3300012: Zastava_M76_Grip_Black
+    3300014: Zastava_M76_Handguard_Standard
+    3300016: Zastava_M76_Ironsights
+    3300018: Zastava_M76_Magazine_DMR_Standad
+    3300020: Zastava_M76_Magazine_Extended
+    3300022: Zastava_M76_PSO
+    3300024: Zastava_M76_PSO_3
+    3300026: Zastava_M76_PSO_3_Scope
+    3300028: Zastava_M76_Receiver_Magazine_Release
+    3300030: Zastava_M76_Stock_full
+    3300032: Zastava_M76_Stock_Sniper
+    3300034: Zastava_M76_Trigger
+    3300036: Zastava_Rail_Scope
+    4300000: Zastava_M76_Body
+    4300002: Zastava_M76_Bolt
+    4300004: Zastava_M76_Ironsights
+    4300006: Zastava_M76_Trigger
+    4300008: Zastava_M76_Grip_Black
+    4300010: Zastava_M76_Receiver_Magazine_Release
+    4300012: Zastava_M76_Handguard_Standard
+    4300014: Zastava_M76_Barrel_Standard
+    4300016: Zastava_M76_Stock_full
+    4300018: Zastava_M76_Stock_Sniper
+    4300020: Zastava_M76_Barrel_Extended
+    4300022: Zastava_M76_Magazine_DMR_Standad
+    4300024: Zastava_M76_Magazine_Extended
+    4300026: Zastava_Rail_Scope
+    4300028: Zastava_M68_Scope
+    4300030: Glass
+    4300032: Zastava_M76_PSO
+    4300034: Zastava_M76_PSO_3_Scope
+    4300036: Zastava_M76_PSO_3
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Advanced_mat
+    second: {fileID: 2100000, guid: c5b8322f2277cfe458755b5099b4f19b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Platform_Accesories_mat
+    second: {fileID: 2100000, guid: e61f2ea751a9a0047a95fd2b3115be87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Acog_Rail_VZ_58_Texture
+    second: {fileID: 2100000, guid: ff79b0ec7b5283f4a8c803798d125b17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VZ_58_Texture
+    second: {fileID: 2100000, guid: c88aeb8827b677a4298c652b633e12b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ak_platform_AK_Platform_Accesories_mat
+    second: {fileID: 2100000, guid: abd6a7e3cf109c947b86f27ee93b5266, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ak_platform_AK_Platform_Guards_mat
+    second: {fileID: 2100000, guid: e64219b70a3c6784cb5dc7c3444201a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ak_platform_AK_Platforms_Magazine_mat
+    second: {fileID: 2100000, guid: 35438d72fbee2784a8a7ba90c2d9ee2f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
