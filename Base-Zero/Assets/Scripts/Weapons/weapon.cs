@@ -122,7 +122,7 @@ public class weapon : MonoBehaviour
         Transform[] children = this.GetComponentsInChildren<Transform>();
         for(int i = 0; i < children.Length; i++){
             if(children[i].GetComponent<stock>() != null){
-				Debug.Log (i+ ":" + gameObject.name + ":" + children[i].name + ":" + children[i].GetComponent<stock>().upgrade + " " + myUpgrades[0]);
+				//Debug.Log (i+ ":" + gameObject.name + ":" + children[i].name + ":" + children[i].GetComponent<stock>().upgrade + " " + myUpgrades[0]);
                 if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
                     accuracy += children[i].GetComponent<stock>().accuracy;
                     recoil *= children[i].GetComponent<stock>().recoil;
