@@ -28,6 +28,10 @@ public class ZombieController : MonoBehaviour {
   
     private void Start()
     {
+        if(this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 15f)
+        {
+            Destroy(gameObject);
+        }
         this.GetComponent<NavMeshAgent>().speed = Random.Range(5, 7);
         gm = GameObject.FindGameObjectWithTag("gm");
         wanderRadius = 50f;
@@ -70,6 +74,7 @@ public class ZombieController : MonoBehaviour {
         wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
 
+        zombie.SetDestination(player.transform.localPosition);
         if (playerInRange)
         {
             player.GetComponent<FirstPersonController>().m_WalkSpeed = 2.5f;
@@ -88,38 +93,38 @@ public class ZombieController : MonoBehaviour {
             
             timer = 0f;
         }
-       // player.GetComponent<PlayerHandler>().TakeDamage(100f);    
+       //// player.GetComponent<PlayerHandler>().TakeDamage(100f);    
        
-        if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].tag == "q_defense")
-        {
+       // if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].tag == "q_defense")
+       // {
 
-            if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
-            {
-                distanceToSeekPlayer = 180f;
+       //     if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
+       //     {
+       //         distanceToSeekPlayer = 180f;
                
-            }
-        }
-        else
-        {
-            distanceToSeekPlayer = 180f;
-        }
+       //     }
+       // }
+       // else
+       // {
+       //     distanceToSeekPlayer = 180f;
+       // }
 
-        if (distanceToPlayer > distanceToSeekPlayer)
-        {
+       // if (distanceToPlayer > distanceToSeekPlayer)
+       // {
 
-            if (wanderTime >= wanderTimer)
-            {
+       //     if (wanderTime >= wanderTimer)
+       //     {
 
-                Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
-                zombie.SetDestination(newDir);
-                wanderTime = 0;
-            }
-        }
-        else if (distanceToPlayer < distanceToSeekPlayer)
-        {
+       //         Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
+       //         zombie.SetDestination(newDir);
+       //         wanderTime = 0;
+       //     }
+       // }
+       // else if (distanceToPlayer < distanceToSeekPlayer)
+       // {
 
-            zombie.SetDestination(player.transform.localPosition);
-        }
+       //     zombie.SetDestination(player.transform.localPosition);
+       // }
 
 
 
