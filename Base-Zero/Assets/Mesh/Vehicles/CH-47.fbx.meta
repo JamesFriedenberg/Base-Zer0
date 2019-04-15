@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: ebb56f3f47e9a4345ac6bab57f47c020
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Blade1
+    100002: Blade1 1
+    100004: Blade2
+    100006: Blade2 1
+    100008: Blade3
+    100010: Blade3 1
+    100012: Body
+    100014: //RootNode
+    100016: Door_Left
+    100018: Door_Right
+    100020: Rear_Door
+    100022: Rotor_Back
+    100024: Rotor_Front
+    100026: Seat_Left
+    100028: Seat_Right
+    100030: Truster_Left
+    100032: Truster_Right
+    100034: Wheel_Left_Back
+    100036: Wheel_Left_Front
+    100038: Wheel_Right_Back
+    100040: Wheel_Right_Front
+    100042: Window
+    100044: Window 1
+    100046: Window1
+    100048: Window2
+    100050: Window3
+    100052: Window4
+    100054: Window5
+    100056: Window6
+    100058: Window7
+    100060: Window8
+    100062: Windows
+    400000: Blade1
+    400002: Blade1 1
+    400004: Blade2
+    400006: Blade2 1
+    400008: Blade3
+    400010: Blade3 1
+    400012: Body
+    400014: //RootNode
+    400016: Door_Left
+    400018: Door_Right
+    400020: Rear_Door
+    400022: Rotor_Back
+    400024: Rotor_Front
+    400026: Seat_Left
+    400028: Seat_Right
+    400030: Truster_Left
+    400032: Truster_Right
+    400034: Wheel_Left_Back
+    400036: Wheel_Left_Front
+    400038: Wheel_Right_Back
+    400040: Wheel_Right_Front
+    400042: Window
+    400044: Window 1
+    400046: Window1
+    400048: Window2
+    400050: Window3
+    400052: Window4
+    400054: Window5
+    400056: Window6
+    400058: Window7
+    400060: Window8
+    400062: Windows
+    2100000: Chinook_mat
+    2300000: Blade1
+    2300002: Blade1 1
+    2300004: Blade2
+    2300006: Blade2 1
+    2300008: Blade3
+    2300010: Blade3 1
+    2300012: Body
+    2300014: Door_Left
+    2300016: Door_Right
+    2300018: Rear_Door
+    2300020: Rotor_Back
+    2300022: Rotor_Front
+    2300024: Seat_Left
+    2300026: Seat_Right
+    2300028: Truster_Left
+    2300030: Truster_Right
+    2300032: Wheel_Left_Back
+    2300034: Wheel_Left_Front
+    2300036: Wheel_Right_Back
+    2300038: Wheel_Right_Front
+    2300040: Window
+    2300042: Window 1
+    2300044: Window1
+    2300046: Window2
+    2300048: Window3
+    2300050: Window4
+    2300052: Window5
+    2300054: Window6
+    2300056: Window7
+    2300058: Window8
+    3300000: Blade1
+    3300002: Blade1 1
+    3300004: Blade2
+    3300006: Blade2 1
+    3300008: Blade3
+    3300010: Blade3 1
+    3300012: Body
+    3300014: Door_Left
+    3300016: Door_Right
+    3300018: Rear_Door
+    3300020: Rotor_Back
+    3300022: Rotor_Front
+    3300024: Seat_Left
+    3300026: Seat_Right
+    3300028: Truster_Left
+    3300030: Truster_Right
+    3300032: Wheel_Left_Back
+    3300034: Wheel_Left_Front
+    3300036: Wheel_Right_Back
+    3300038: Wheel_Right_Front
+    3300040: Window
+    3300042: Window 1
+    3300044: Window1
+    3300046: Window2
+    3300048: Window3
+    3300050: Window4
+    3300052: Window5
+    3300054: Window6
+    3300056: Window7
+    3300058: Window8
+    4300000: Body
+    4300002: Window5
+    4300004: Window6
+    4300006: Window7
+    4300008: Window8
+    4300010: Window4
+    4300012: Window3
+    4300014: Window2
+    4300016: Window1
+    4300018: Door_Left
+    4300020: Window
+    4300022: Door_Right
+    4300024: Window
+    4300026: Rotor_Front
+    4300028: Blade1
+    4300030: Blade2
+    4300032: Blade3
+    4300034: Rotor_Back
+    4300036: Blade1
+    4300038: Blade2
+    4300040: Blade3
+    4300042: Seat_Left
+    4300044: Seat_Right
+    4300046: Wheel_Right_Front
+    4300048: Wheel_Left_Front
+    4300050: Wheel_Left_Back
+    4300052: Wheel_Right_Back
+    4300054: Truster_Right
+    4300056: Truster_Left
+    4300058: Rear_Door
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 290
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
