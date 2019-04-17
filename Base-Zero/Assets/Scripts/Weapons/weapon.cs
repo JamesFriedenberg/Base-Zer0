@@ -376,8 +376,29 @@ public class weapon : MonoBehaviour
             GameObject myImpact = impactEffect;
             if (target != null)
             {
-                target.TakeDamage(damage);
-                myImpact = blood;
+                if(target.gameObject.name == "mixamorig:LeftLeg" || target.gameObject.name == "mixamorig:LeftUpLeg" || target.gameObject.name == "mixamorig:RightLeg" || target.gameObject.name == "mixamorig:RightUpLeg")
+                {
+                    target.TakeDamage(damage / 2);
+                    Debug.Log("Leg Shot");
+
+                }
+                else if(target.gameObject.name == "mixamorig:Spine")
+                {
+                    target.TakeDamage(damage);
+                    Debug.Log("Torso Shot");
+                }
+                else if(target.gameObject.name == "mixamorig:RightHand" || target.gameObject.name == "mixamorig:RightArm" || target.gameObject.name == "mixamorig:LeftArm" || target.gameObject.name == "mixamorig:LeftHand")
+                {
+                    target.TakeDamage(damage / 2);
+                    Debug.Log("Hand/Arm Shot");
+                }
+                else if(target.gameObject.name == "mixamorig:Head")
+                {
+                    target.TakeDamage(damage * 2);
+                    Debug.Log("Headshot");
+
+                }
+            myImpact = blood;
             }
             else
             {

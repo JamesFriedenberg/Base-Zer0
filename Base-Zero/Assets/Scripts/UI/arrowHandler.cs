@@ -58,7 +58,7 @@ public class arrowHandler : MonoBehaviour
             }
             else if(GameObject.Find(qm.sendCurQuestLocation() + "Gate") != null)
             {
-                Debug.Log(qm.sendCurQuestLocation() + "Gate");
+               // Debug.Log(qm.sendCurQuestLocation() + "Gate");
                 goTarget = GameObject.Find(qm.sendCurQuestLocation() + "Gate");
                 foreach (Renderer renderer in gameObject.GetComponentsInChildren(typeof(Renderer)))
                 {
