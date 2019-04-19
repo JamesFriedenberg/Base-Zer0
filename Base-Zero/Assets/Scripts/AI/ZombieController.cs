@@ -12,7 +12,7 @@ public class ZombieController : MonoBehaviour {
     private GameObject gm;
     public GameObject player;
     public NavMeshAgent zombie;
-
+    public GameObject zombieRef;
     public float wanderRadius;
     public float wanderTimer;
 
@@ -24,11 +24,12 @@ public class ZombieController : MonoBehaviour {
     public bool playerInRange;
 
     public float distanceToSeekPlayer = 180f;
-    
-  
+
+    private bool deathFlag = true;
+    public float health = 50f;
     private void Start()
     {
-        if(this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 15f)
+        if(this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 80f)
         {
             Destroy(gameObject);
         }
@@ -39,6 +40,10 @@ public class ZombieController : MonoBehaviour {
         player = GameObject.FindWithTag("Player");
         zombie.stoppingDistance = 2f;
        
+    }
+    public void takeDamage(float damage)
+    {
+        health -= damage;
     }
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
@@ -68,12 +73,14 @@ public class ZombieController : MonoBehaviour {
     }
     void Update () {
 
+
         float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
 
         wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
 
+        
         zombie.SetDestination(player.transform.localPosition);
         if (playerInRange)
         {
@@ -86,54 +93,82 @@ public class ZombieController : MonoBehaviour {
             player.GetComponent<FirstPersonController>().m_WalkSpeed = 5f;
             player.GetComponent<FirstPersonController>().m_RunSpeed = 10f;
         }
-        if (timer >= timeBetweenAttacks && playerInRange && playerHealth > 0)
+        if (/*timer >= timeBetweenAttacks && */playerInRange/* && playerHealth > 0*/)
         {
 
             Attack();
             
             timer = 0f;
         }
-       //// player.GetComponent<PlayerHandler>().TakeDamage(100f);    
-       
-       // if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].tag == "q_defense")
-       // {
 
-       //     if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
-       //     {
-       //         distanceToSeekPlayer = 180f;
-               
-       //     }
-       // }
-       // else
-       // {
-       //     distanceToSeekPlayer = 180f;
-       // }
+        if (deathFlag == true)
+        {
+            if (health <= 0f)
+            {
+                Die();
+                deathFlag = false;
+            }
+        }
+        //// player.GetComponent<PlayerHandler>().TakeDamage(100f);    
 
-       // if (distanceToPlayer > distanceToSeekPlayer)
-       // {
+        // if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].tag == "q_defense")
+        // {
 
-       //     if (wanderTime >= wanderTimer)
-       //     {
+        //     if(gm.GetComponent<QuestManager>().currentQuests[gm.GetComponent<QuestManager>().questIndex].GetComponent<DefendQuest>().getQuestStatus() == "defendTarget")
+        //     {
+        //         distanceToSeekPlayer = 180f;
 
-       //         Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
-       //         zombie.SetDestination(newDir);
-       //         wanderTime = 0;
-       //     }
-       // }
-       // else if (distanceToPlayer < distanceToSeekPlayer)
-       // {
+        //     }
+        // }
+        // else
+        // {
+        //     distanceToSeekPlayer = 180f;
+        // }
 
-       //     zombie.SetDestination(player.transform.localPosition);
-       // }
+        // if (distanceToPlayer > distanceToSeekPlayer)
+        // {
+
+        //     if (wanderTime >= wanderTimer)
+        //     {
+
+        //         Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
+        //         zombie.SetDestination(newDir);
+        //         wanderTime = 0;
+        //     }
+        // }
+        // else if (distanceToPlayer < distanceToSeekPlayer)
+        // {
+
+        //     zombie.SetDestination(player.transform.localPosition);
+        // }
 
 
 
     }
+    private void Die()
+    {
+        Debug.Log(zombie.GetComponent<Transform>().position);
+        Debug.Log("here");
+        this.GetComponent<NavMeshAgent>().speed = 0f;
+        this.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, -0.7f, zombie.GetComponent<Transform>().localPosition.z);
+        //Debug.Log(zombie.GetComponent<Transform>().position);
+        //setKinematic(false);
+        GetComponentInChildren<Animator>().SetInteger("death", (int)Random.Range(1, 6));
+        //CapsuleCollider capCollider = this.GetComponent<CapsuleCollider>();
+        //if (capCollider != null)
+        //{
+        //    capCollider.enabled = false;
+        //}
+
+        //SpawnResource();
+        Destroy(gameObject, 5);
+    }
     private void Attack()
     {
-        if(gameObject.GetComponent<Target>().health <= 0) return;
+        //if(gameObject.GetComponent<Target>().health <= 0) return;
         if(player.GetComponent<PlayerHandler>().GetHealth() > 0)
         {
+            Debug.Log("ATTACKING!!!!!!!");
             Vector3 playerPosition = player.GetComponent<Transform>().position;
             Vector3 zombiePosition = this.gameObject.GetComponent<Transform>().position;
             player.GetComponent<Rigidbody>().AddForce( Vector3.Normalize(playerPosition - zombiePosition) * 1500);

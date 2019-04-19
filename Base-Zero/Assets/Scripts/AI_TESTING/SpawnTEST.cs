@@ -24,7 +24,7 @@ public class SpawnTEST : MonoBehaviour {
 	void Update () {
 
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log(enemies.Length);
+       // Debug.Log(enemies.Length);
 
         if (flag)
         {
@@ -45,13 +45,13 @@ public class SpawnTEST : MonoBehaviour {
     IEnumerator spawnEm()
     {
 
-        if(enemies.Length < 15)
+        if(enemies.Length < maxEnemiesInScene)
         {
             Instantiate(zombiePrefab, randomPointOnCircleEdge(rad), transform.rotation);
 
             yield return new WaitForSeconds(timeBetweenSpawns);
-            flag = true;
         }
+            flag = true;
       
 
     }
