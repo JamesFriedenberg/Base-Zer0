@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class scope : MonoBehaviour
 {
-    public bool upgrade = false;
-
-    //the name of the scope (in the canvas), if there is no scope name then when you ADS no scope will appear
-    public string scopeImage;
+    //The possible scopes that can be attached
+    public enum Scope {
+        None = 0,
+        Default,
+        RedDot,
+    };
+    //The active scope
+    public Scope myScope = Scope.None;
+    private string[] scopeImages = {"", "scope_default", "scope_redDot"};
 
     //the field of view of the camera when you ADS
     public int fov = 30;
@@ -17,4 +22,9 @@ public class scope : MonoBehaviour
 
     //changes the position of the gun in case of tall site
     public Vector3 newTransform = Vector3.zero;
+
+    //get the active scope
+    public string GetScopeImage(){
+        return scopeImages[(int)myScope];
+    }
 }

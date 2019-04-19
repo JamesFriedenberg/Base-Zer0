@@ -32,7 +32,7 @@ public class weapon : MonoBehaviour
     private bool hasReloaded = true;
 
     public string currentAmmoType = "AR";
-    public string scopeName = "scope_defualt";
+    private string scopeName = "scope_defualt";
 
     public Camera fpsCam;
     public GameObject fpsController;
@@ -67,8 +67,12 @@ public class weapon : MonoBehaviour
 
     private int myIterations = 0;
 
-    //
+    //0--Stock
+    //1--Mag
+    //2--Scope
+    //3--Barrel
     public bool[] myUpgrades = {false, false, false, false};
+    public int myScope = 0;
 
     //TODO:
     /*
@@ -104,12 +108,6 @@ public class weapon : MonoBehaviour
         }
         myUpgrades = myWeapon.upgrades;
 */
-        GameObject[] scopeImages = GameObject.FindGameObjectsWithTag("scopeImage");
-        for(int i = 0; i < scopeImages.Length; i++){
-            if(scopeImages[i].name == scopeName){
-                scopeImage = scopeImages[i];
-            }
-        }
         currentAccuracy = accuracy;
         GameManager gm = gameManager.GetComponent<GameManager>();
         if(gm.ammoInWeapons != null && gm.ammoInWeapons.Length > 0){
@@ -117,8 +115,6 @@ public class weapon : MonoBehaviour
         }
     }
     public void FindStats(GameObject objToSearch){
-		
-
         Transform[] children = this.GetComponentsInChildren<Transform>();
         for(int i = 0; i < children.Length; i++){
             if(children[i].GetComponent<stock>() != null){
@@ -151,17 +147,12 @@ public class weapon : MonoBehaviour
                 }
             }
 			if(children[i].GetComponent<scope>() != null){
-                if(children[i].GetComponent<scope>().upgrade && myUpgrades[2]){
-                    scopeName = children[i].GetComponent<scope>().scopeImage;
+                if(myScope == (int)children[i].GetComponent<scope>().myScope){
+                    children[i].gameObject.SetActive(true);
+                    scopeName = children[i].GetComponent<scope>().GetScopeImage();
                     adsZoom = children[i].GetComponent<scope>().fov;
-					children[i].gameObject.SetActive(true);
                     this.transform.localPosition += children[i].GetComponent<scope>().newTransform;
-                }else if(children[i].GetComponent<scope>().upgrade){
-                    children[i].gameObject.SetActive(false);
-                }
-
-                if(!children[i].GetComponent<scope>().upgrade && !myUpgrades[2]){
-                }else if(!children[i].GetComponent<scope>().upgrade){
+                }else{
                     children[i].gameObject.SetActive(false);
                 }
             }
@@ -180,6 +171,12 @@ public class weapon : MonoBehaviour
                 }else if(!children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
+            }
+        }
+        GameObject[] scopeImages = GameObject.FindGameObjectsWithTag("scopeImage");
+        for(int i = 0; i < scopeImages.Length; i++){
+            if(scopeImages[i].name == scopeName){
+                scopeImage = scopeImages[i];
             }
         }
     }
@@ -289,6 +286,7 @@ public class weapon : MonoBehaviour
         {
             currentAccuracy = adsAccuracy;
             if(scopeImage){
+                Debug.Log("There is a scope");
                 for(int i = 0; i < crossHairs.Length; i++){
                     crossHairs[i].GetComponent<Image>().enabled = false;
                 }

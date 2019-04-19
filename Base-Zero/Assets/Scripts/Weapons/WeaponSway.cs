@@ -6,7 +6,7 @@ public class WeaponSway : MonoBehaviour {
 	private Vector3 localPos;
 	private float swayAmount = .08f;
 	private float maxSwayAmount = .1f;
-	private float smoothSwayAmount = 2f;
+	private float smoothSwayAmount = 4f;
 
 	// Use this for initialization
 	void Start () {
@@ -21,7 +21,7 @@ public class WeaponSway : MonoBehaviour {
 		movementY = Mathf.Clamp(movementY, -maxSwayAmount, maxSwayAmount);
 		Vector3 finalPosition = Vector3.zero;
 		if(Input.GetButton("Fire2")){
-			finalPosition = new Vector3(movementX, 0, 0);
+			finalPosition = new Vector3(0, 0, 0);
 		}else{
 			finalPosition = new Vector3(movementX, movementY, 0);
 		}
