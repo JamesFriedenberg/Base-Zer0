@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\AnimationStopper.cs" />
      <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshLink.cs" />
      <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifier.cs" />
      <Compile Include="Assets\NavMeshComponents\Scripts\NavMeshModifierVolume.cs" />

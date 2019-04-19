@@ -90,11 +90,12 @@ public class PlayerHandler : MonoBehaviour
 		          !playerWeapons [weaponNumber]) {
 			return;
 		}
-
+        if(playerWeapons[currentWeapon].GetComponentInChildren<weapon>().IsReloading()) return;
         playerWeapons[currentWeapon].SetActive(false);
         currentWeapon = weaponNumber;
         gm.currentWeapon = currentWeapon;
         playerWeapons[currentWeapon].SetActive(true);
+        // playerWeapons[currentWeapon].GetComponentInChildren<weapon>().doEnable();
 
     }
 

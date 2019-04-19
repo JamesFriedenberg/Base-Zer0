@@ -410,6 +410,18 @@ public class weapon : MonoBehaviour
             GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impact, 1);
     }
+    private void OnDisable() {
+        weaponAnimator.SetBool("Reload", false);
+        weaponAnimator.Rebind();
+        weaponAnimator.enabled = false;
+    }
+    private void OnEnable() {              
+        weaponAnimator.enabled = true;   
+        weaponAnimator.Rebind();  
+    }
+    public bool IsReloading(){
+        return reloadTimer < reloadTime;
+    }
     void Reload()
     {
         if (currentAmmoCount == magSize) return;
@@ -420,7 +432,6 @@ public class weapon : MonoBehaviour
             scopeImage.GetComponent<Image>().enabled = false;
             weaponCamera.SetActive(true);
         }
-        Debug.Log("reladoing");
         weaponAnimator.SetBool("Reload", true);
 		//weaponAnimator.applyRootMotion = false;
 

@@ -30,14 +30,17 @@ public class Target : MonoBehaviour {
     }
     void Start()
     {
-        zombieController = slowZombieRef.GetComponent<ZombieController>();
+        if(zombieController){
+            zombieController = slowZombieRef.GetComponent<ZombieController>();
+        }
         setKinematic(true);
         player = GameObject.FindGameObjectWithTag("gm");
         gm = player.GetComponent<GameManager>();
     }
 
     public void TakeDamage(float amount){
-        zombieController.takeDamage(amount);
+        if(!zombieController) return;
+        //zombieController.takeDamage(amount);
 
         //if (flag)
         //{
