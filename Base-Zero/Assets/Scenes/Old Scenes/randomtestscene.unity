@@ -398,6 +398,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100228, guid: 575897246e18e334086bf5e326743862, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100210, guid: 575897246e18e334086bf5e326743862, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -406,6 +410,11 @@ Prefab:
 --- !u!1 &594537884 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100064, guid: 575897246e18e334086bf5e326743862,
+    type: 3}
+  m_PrefabInternal: {fileID: 503231188}
+--- !u!1 &609783346 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100068, guid: 575897246e18e334086bf5e326743862,
     type: 3}
   m_PrefabInternal: {fileID: 503231188}
 --- !u!1 &670611919 stripped
@@ -489,6 +498,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &842514858 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100210, guid: 575897246e18e334086bf5e326743862,
+    type: 3}
+  m_PrefabInternal: {fileID: 503231188}
 --- !u!1 &852992246 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100092, guid: 575897246e18e334086bf5e326743862,
@@ -509,6 +523,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100042, guid: 575897246e18e334086bf5e326743862,
     type: 3}
   m_PrefabInternal: {fileID: 503231188}
+--- !u!1 &1392442585 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100080, guid: 575897246e18e334086bf5e326743862,
+    type: 3}
+  m_PrefabInternal: {fileID: 503231188}
 --- !u!1 &1479701979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100094, guid: 575897246e18e334086bf5e326743862,
@@ -517,6 +536,11 @@ GameObject:
 --- !u!1 &1533777037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100058, guid: 575897246e18e334086bf5e326743862,
+    type: 3}
+  m_PrefabInternal: {fileID: 503231188}
+--- !u!1 &1586601001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100082, guid: 575897246e18e334086bf5e326743862,
     type: 3}
   m_PrefabInternal: {fileID: 503231188}
 --- !u!1 &1608915850 stripped
@@ -538,6 +562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627052566}
   - component: {fileID: 1627052565}
+  - component: {fileID: 1627052567}
   m_Layer: 0
   m_Name: Zombie_Standard
   m_TagString: Untagged
@@ -551,7 +576,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1627052564}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6770f5b813c85cd4fb1b1f73e4a542d5, type: 3}
   m_Name: 
@@ -599,6 +624,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1627052567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1627052564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037fc37ae89f315478bf497815f77d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torsoItems:
+  - {fileID: 842514858}
+  - {fileID: 1753828784}
+  - {fileID: 1818405537}
+  legItems:
+  - {fileID: 267418675}
+  - {fileID: 331827309}
+  - {fileID: 670611919}
+  - {fileID: 1608915850}
+  headItems:
+  - {fileID: 1392442585}
+  - {fileID: 1586601001}
+  - {fileID: 1985685402}
+  accItems:
+  - {fileID: 1533777037}
+  - {fileID: 2010555356}
+  - {fileID: 485102956}
+  - {fileID: 609783346}
+  - {fileID: 594537884}
 --- !u!1 &1753828784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100050, guid: 575897246e18e334086bf5e326743862,
@@ -686,6 +741,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1985685402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100078, guid: 575897246e18e334086bf5e326743862,
+    type: 3}
+  m_PrefabInternal: {fileID: 503231188}
 --- !u!1 &2010555356 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100096, guid: 575897246e18e334086bf5e326743862,

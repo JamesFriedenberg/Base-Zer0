@@ -211,14 +211,19 @@ public class WeaponButton : MonoBehaviour {
 				{
 					if (i == scopeNum)
 					{
-						weaponRef.scope[i].SetActive(true);
+						if (weaponRef.scope [i] != null) {
+							weaponRef.scope[i].SetActive(true);
+						}
 						GetComponentInChildren<Text>().text = ScopeNames[scopeNum] + " :Selected";
 						weaponRef.scopeSelected = i;
 
 					}
 					else
 					{
-						weaponRef.scope[i].SetActive(false);
+						if (weaponRef.scope [i] != null) {
+							weaponRef.scope[i].SetActive(false);
+						}
+
 						if(weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected") > -1)
 						{
 							weaponRef.scopeButton[i].GetComponentInChildren<Text>().text = weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.Substring(0, weaponRef.scopeButton[i].GetComponentInChildren<Text>().text.IndexOf(" :Selected"));

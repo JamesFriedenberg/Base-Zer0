@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: 8c41b1f014459454c848a239c92d5cdb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Barrel_Short
+    100002: Barrel_Upgraded
+    100004: Barrels
+    100006: Body
+    100008: Ironsights
+    100010: Magazine_Short
+    100012: Magazine_Upgraded
+    100014: Magazines
+    100016: PSO_2
+    100018: PSO_3_Magnifier
+    100020: PSO_Sniper_3
+    100022: Sights
+    100024: //RootNode
+    100026: SKS_Glass
+    100028: SKS_M68_Scope
+    100030: SKS_Rail_Scope_1
+    100032: Slide
+    100034: Trigger
+    100036: Wrap_Stock_Upgraded
+    400000: Barrel_Short
+    400002: Barrel_Upgraded
+    400004: Barrels
+    400006: Body
+    400008: Ironsights
+    400010: Magazine_Short
+    400012: Magazine_Upgraded
+    400014: Magazines
+    400016: PSO_2
+    400018: PSO_3_Magnifier
+    400020: PSO_Sniper_3
+    400022: Sights
+    400024: //RootNode
+    400026: SKS_Glass
+    400028: SKS_M68_Scope
+    400030: SKS_Rail_Scope_1
+    400032: Slide
+    400034: Trigger
+    400036: Wrap_Stock_Upgraded
+    2100000: SKS_mat
+    2100002: AK_Platforms_Magazine_Plum_mat
+    2100004: VZ_58_Texture
+    2100006: AR_Advanced_mat
+    2100008: vz_Sniper_0005_AR_Platform_Accesories_mat
+    2100010: AK_Platform_AK_Platform_Accesories_mat
+    2100012: VZ_58_mat
+    2100014: AR_Platform_Accesories_mat
+    2300000: Barrel_Short
+    2300002: Barrel_Upgraded
+    2300004: Body
+    2300006: Ironsights
+    2300008: Magazine_Short
+    2300010: Magazine_Upgraded
+    2300012: PSO_2
+    2300014: PSO_3_Magnifier
+    2300016: PSO_Sniper_3
+    2300018: SKS_Glass
+    2300020: SKS_M68_Scope
+    2300022: SKS_Rail_Scope_1
+    2300024: Slide
+    2300026: Trigger
+    2300028: Wrap_Stock_Upgraded
+    3300000: Barrel_Short
+    3300002: Barrel_Upgraded
+    3300004: Body
+    3300006: Ironsights
+    3300008: Magazine_Short
+    3300010: Magazine_Upgraded
+    3300012: PSO_2
+    3300014: PSO_3_Magnifier
+    3300016: PSO_Sniper_3
+    3300018: SKS_Glass
+    3300020: SKS_M68_Scope
+    3300022: SKS_Rail_Scope_1
+    3300024: Slide
+    3300026: Trigger
+    3300028: Wrap_Stock_Upgraded
+    4300000: Trigger
+    4300002: Slide
+    4300004: Ironsights
+    4300006: Body
+    4300008: Wrap_Stock_Upgraded
+    4300010: Magazine_Short
+    4300012: Magazine_Upgraded
+    4300014: Barrel_Short
+    4300016: Barrel_Upgraded
+    4300018: SKS_Rail_Scope_1
+    4300020: SKS_M68_Scope
+    4300022: SKS_Glass
+    4300024: PSO_2
+    4300026: PSO_Sniper_3
+    4300028: PSO_3_Magnifier
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platform_AK_Platform_Accesories_mat
+    second: {fileID: 2100000, guid: 37affaf2c4d228e4284e2449da9c60de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platforms_Magazine_Plum_mat
+    second: {fileID: 2100000, guid: 37cc2d64448c29940bc24ad9e023f252, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Advanced_mat
+    second: {fileID: 2100000, guid: c5b8322f2277cfe458755b5099b4f19b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Platform_Accesories_mat
+    second: {fileID: 2100000, guid: 5f1cd9aaf35fe1547b2f2bb24a6085ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SKS_mat
+    second: {fileID: 2100000, guid: b433b6993ed0a834abafa97cfae557a8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VZ_58_mat
+    second: {fileID: 2100000, guid: 875be6c47941b2340ab09d0282a27aea, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.049999997
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
