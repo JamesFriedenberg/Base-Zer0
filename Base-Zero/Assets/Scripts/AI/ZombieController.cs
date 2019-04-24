@@ -35,10 +35,10 @@ public class ZombieController : MonoBehaviour {
         wanderTime = wanderTimer;
         player = GameObject.FindGameObjectWithTag("Player");
         zombie.stoppingDistance = 2f;
-        if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 80f)
-        {
-            Destroy(gameObject);
-        }
+        //if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 80f)
+        //{
+        //    Destroy(gameObject);
+        //}
     
     }
     public void takeDamage(float damage)

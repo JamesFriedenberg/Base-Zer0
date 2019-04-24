@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\AI\testSceneUI.cs" />
     <Compile Include="Assets\Scripts\AI\ZombieController.cs" />
     <Compile Include="Assets\Scripts\AI_TESTING\SpawnTEST.cs" />
+    <Compile Include="Assets\Scripts\ArmoredEnemyAppearnaceRandomizer.cs" />
     <Compile Include="Assets\Scripts\EnemyAppearnaceRandomizer.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\HealthKit.cs" />
