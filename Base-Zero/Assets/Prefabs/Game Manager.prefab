@@ -52,6 +52,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4906200457812752}
   - component: {fileID: 114646930057043772}
+  - component: {fileID: 114774804886457488}
   m_Layer: 0
   m_Name: Escape
   m_TagString: q_defense
@@ -375,6 +376,31 @@ MonoBehaviour:
   defendTargetText: Defend the helicopter!
   destroyDefendTargetonFinish: 0
   timer: 60
+--- !u!114 &114774804886457488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1697396823726886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54ac4cd56e2a30f46b2cd2be5f3f17d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  questName: DefendHeli
+  location: SupplyDepot
+  questText: Defend the heli
+  UITextRef: {fileID: 0}
+  getToSite: 0
+  getToSiteText: Defend the helicopter
+  defenseTargetObj: {fileID: 1764893209333128, guid: 185dfaefdf8f6b145ac594b0e93e115f,
+    type: 2}
+  defenseTargetLocation: {x: 374.01, y: 14.12, z: 360.1}
+  defendTarget: 0
+  defendTargetText: Defend the helicopter!
+  destroyDefendTargetonFinish: 0
+  timer: 60
 --- !u!114 &114794098760788078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -407,9 +433,9 @@ MonoBehaviour:
   questDatabase:
   - {fileID: 1920386060801812}
   - {fileID: 1947509206174484}
-  - {fileID: 1802151753979166}
-  - {fileID: 1056959577428260}
   - {fileID: 1047052621817082}
+  - {fileID: 1056959577428260}
+  - {fileID: 1802151753979166}
   - {fileID: 1697396823726886}
   currentQuests:
   - {fileID: 0}
@@ -433,11 +459,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCash: 0
   playerScraps: 0
-  startingAmmo: 500
+  startingAmmo: 10000
   startingPlayerHealth: 1000
   currentPlayerHealth: 1000
   currentWeapon: 0
   ammoInWeapons: 
-  stockList: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   startPosition: {x: 0, y: 0, z: 0}
   playerWeapons: 010000001000000013000000

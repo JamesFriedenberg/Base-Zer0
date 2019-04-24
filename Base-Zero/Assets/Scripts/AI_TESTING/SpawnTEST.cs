@@ -37,7 +37,7 @@ public class SpawnTEST : MonoBehaviour {
     public Vector3 randomPointOnCircleEdge(float radius)
     {
         // Vector3 vec = Random.insideUnitCircle.normalized * radius;
-        Vector2 randPos = Random.insideUnitCircle * radius;
+        Vector2 randPos = Random.insideUnitCircle.normalized * radius;
         Vector3 vec = player.transform.position + new Vector3(randPos.x, player.transform.position.y, randPos.y);
         
         return vec;

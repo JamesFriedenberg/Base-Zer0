@@ -50,6 +50,7 @@ public class ZombieController : MonoBehaviour {
     {
         if(other.gameObject == player)
         {
+            
             playerInRange = true;
         }
     }
@@ -95,7 +96,6 @@ public class ZombieController : MonoBehaviour {
         }
         if (/*timer >= timeBetweenAttacks && */playerInRange/* && playerHealth > 0*/)
         {
-
             Attack();
             
             timer = 0f;

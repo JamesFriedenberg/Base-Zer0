@@ -16,6 +16,9 @@ public class PlayerHandler : MonoBehaviour
     public int[] weaponsFromGM;
     public int currentWeapon = 0;
 
+
+    private float damageTimer = 0;
+    private float healthAddTimer = 0;
     private GameManager gm;
 
     public static PlayerHandler instance;
@@ -67,6 +70,7 @@ public class PlayerHandler : MonoBehaviour
     }
     void Update()
     {
+        
         if (Input.GetButton("Fire2")) return;
         if (Input.GetKeyDown("1"))
         {
@@ -80,8 +84,26 @@ public class PlayerHandler : MonoBehaviour
         {
             SwitchWeapon(2);
         }
-
+        if(Input.GetKeyDown(KeyCode.L)){
+            TakeDamage(100);
+        }
+        doHeal();
         if (currentPlayerHealth <= 0) onDeath();
+    }
+    void doHeal(){
+        damageTimer += Time.deltaTime;
+        healthAddTimer += Time.deltaTime;
+
+        if(damageTimer < 5) return;
+        if(currentPlayerHealth >= startingPlayerHealth) return;
+        if(healthAddTimer >= 1){
+            currentPlayerHealth += startingPlayerHealth / 50;
+            if(currentPlayerHealth >= startingPlayerHealth){
+                currentPlayerHealth = startingPlayerHealth;
+            }
+            gm.currentPlayerHealth = currentPlayerHealth;
+            healthAddTimer = 0;
+        }
     }
     private void SwitchWeapon(int weaponNumber)
     {
@@ -129,6 +151,7 @@ public class PlayerHandler : MonoBehaviour
     {
         currentPlayerHealth -= damageAmount;
         gm.currentPlayerHealth = currentPlayerHealth;
+        damageTimer = 0;
     }
     private void OnTriggerEnter(Collider other)
     {

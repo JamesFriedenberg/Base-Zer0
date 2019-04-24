@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class weapon : MonoBehaviour
 {
-
     public float damage = 10f;
     public float range = 200f;
     public float fireRate = 5f;
@@ -69,22 +68,16 @@ public class weapon : MonoBehaviour
 
     //0--Stock
     //1--Mag
-    //2--Scope
+    //2--Scope //TODO: Switch to body, currently upgraded scope does not do anything in this array
     //3--Barrel
     public bool[] myUpgrades = {false, false, false, false};
-    public int myScope = 0;
+    public enum Scope {
+        None = 0,
+        Default,
+        RedDot,
+    };
+    public Scope myScope = Scope.None;
 
-    //TODO:
-    /*
-    * Add in different sensativity when ADS
-    * Add in modularity of ADS accuracy on different components
-    * Different gun sounds based on modularity
-    * Different Impact force based on modularity
-    * Different bulletHole image based on modularity
-    * Varying muzzle flash animations
-    * Improved animations
-    * Weapon Sway
-    */
     void Start()
     {
         localPos = transform.localPosition;
@@ -93,21 +86,10 @@ public class weapon : MonoBehaviour
        
 
         if(projectile) semiAuto = true;
-        //FindStats(this.gameObject);
 
         crossHairs = GameObject.FindGameObjectsWithTag("crossHair");
 
         if(currentAmmoCount > magSize) currentAmmoCount = magSize;
-/*
-        ShopWeapon myWeapon;
-        for(int i = 0; i < gameManager.weapons.length; i++){
-            if(gameManager.weapons[i].name == this.gameObject.name){
-                myWeapon = gameManager.weapons[i];
-                break;
-            }
-        }
-        myUpgrades = myWeapon.upgrades;
-*/
         currentAccuracy = accuracy;
         GameManager gm = gameManager.GetComponent<GameManager>();
         if(gm.ammoInWeapons != null && gm.ammoInWeapons.Length > 0){
@@ -118,7 +100,6 @@ public class weapon : MonoBehaviour
         Transform[] children = this.GetComponentsInChildren<Transform>();
         for(int i = 0; i < children.Length; i++){
             if(children[i].GetComponent<stock>() != null){
-				//Debug.Log (i+ ":" + gameObject.name + ":" + children[i].name + ":" + children[i].GetComponent<stock>().upgrade + " " + myUpgrades[0]);
                 if(children[i].GetComponent<stock>().upgrade && myUpgrades[0]){
                     accuracy += children[i].GetComponent<stock>().accuracy;
                     recoil *= children[i].GetComponent<stock>().recoil;
@@ -147,7 +128,7 @@ public class weapon : MonoBehaviour
                 }
             }
 			if(children[i].GetComponent<scope>() != null){
-                if(myScope == (int)children[i].GetComponent<scope>().myScope){
+                if((int)myScope == (int)children[i].GetComponent<scope>().myScope){
                     children[i].gameObject.SetActive(true);
                     scopeName = children[i].GetComponent<scope>().GetScopeImage();
                     adsZoom = children[i].GetComponent<scope>().fov;
@@ -185,29 +166,8 @@ public class weapon : MonoBehaviour
     {
 		if (!weaponAnimator)
 			return;
-        //float movementX = Input.GetAxis("Mouse X") * -swayAmount;
-        //float movementY = Input.GetAxis("Mouse Y") * -swayAmount;
-        //movementX = Mathf.Clamp(movementX, -maxSwayAmount, maxSwayAmount);
-        //movementY = Mathf.Clamp(movementY, -maxSwayAmount, maxSwayAmount);
-        //Vector3 finalPosition = Vector3.zero;
-        //if(Input.GetButton("Fire2")){
-        //    finalPosition = new Vector3(movementX, 0, 0);
-        //}else{
-        //    finalPosition = new Vector3(movementX, movementY, 0);
-        //}
-        //transform.localPosition = Vector3.Lerp(transform.localPosition, finalPosition + localPos, Time.deltaTime * smoothSwayAmount);
-
         Scene curScene = SceneManager.GetActiveScene();
         string sceneName = curScene.name;
-
-        if(sceneName == "HQ")
-        {
-
-            if (Input.GetKeyDown(KeyCode.O))
-            {
-                //SceneManager.LoadScene("Shoptest");
-            }
-        }
         fireTimer += Time.deltaTime;
         reloadTimer += Time.deltaTime;
         walkTimer += Time.deltaTime;
@@ -334,7 +294,6 @@ public class weapon : MonoBehaviour
         }
 
         fpsController.GetComponent<FirstPersonController>().m_MouseLook.m_CameraTargetRot *= Quaternion.Euler (-recoil, 0f, 0f);
-        //fpsCam.transform.Rotate(fpsCam.transform.right, 5.0f);
         fireSound.GetComponent<AudioSource>().Play(0);
         currentAmmoCount--;
         GameManager gm = gameManager.GetComponent<GameManager>();
@@ -410,15 +369,6 @@ public class weapon : MonoBehaviour
             GameObject impact = Instantiate(myImpact, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impact, 1);
     }
-    private void OnDisable() {
-        weaponAnimator.SetBool("Reload", false);
-        weaponAnimator.Rebind();
-        weaponAnimator.enabled = false;
-    }
-    private void OnEnable() {              
-        weaponAnimator.enabled = true;   
-        weaponAnimator.Rebind();  
-    }
     public bool IsReloading(){
         return reloadTimer < reloadTime;
     }
@@ -433,7 +383,6 @@ public class weapon : MonoBehaviour
             weaponCamera.SetActive(true);
         }
         weaponAnimator.SetBool("Reload", true);
-		//weaponAnimator.applyRootMotion = false;
 
         int ammoChange = Mathf.Min((magSize - currentAmmoCount), ammoCount);
         currentAmmoCount += ammoChange;

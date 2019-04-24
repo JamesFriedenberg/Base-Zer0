@@ -23,16 +23,15 @@ public class Target : MonoBehaviour {
         Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();
         foreach (Rigidbody rb in rbs)
         {
-            rb.isKinematic = val;
-           
-            
+            rb.isKinematic = val;        
         }
     }
     void Start()
     {
-        if(zombieController){
+        if(slowZombieRef.GetComponent<ZombieController>()){
             zombieController = slowZombieRef.GetComponent<ZombieController>();
         }
+
         setKinematic(true);
         player = GameObject.FindGameObjectWithTag("gm");
         gm = player.GetComponent<GameManager>();
@@ -40,36 +39,9 @@ public class Target : MonoBehaviour {
 
     public void TakeDamage(float amount){
         if(!zombieController) return;
-        //zombieController.takeDamage(amount);
-
-        //if (flag)
-        //{
-        //    if (health <= 0)
-        //    {
-        //        Die();
-        //        flag = false;
-        //    }
-        //}
-        
+        zombieController.takeDamage(amount);
     }
-    //private void Die()
-    //{
-    //    if(zombie == null) return;
-    //    Debug.Log(zombie.GetComponent<Transform>().position);
-    //    Debug.Log("here");
-    //    this.GetComponent<NavMeshAgent>().speed = 0f;
-    //    zombie.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, -0.7f, zombie.GetComponent<Transform>().localPosition.z);
-    //    Debug.Log(zombie.GetComponent<Transform>().position);
-    //    //setKinematic(false);
-    //    GetComponentInChildren<Animator>().SetInteger("death", (int)Random.Range(1, 6));
-    //    CapsuleCollider capCollider = this.GetComponent<CapsuleCollider>();
-    //    if(capCollider != null){
-    //        capCollider.enabled = false;
-    //    }
 
-    //    SpawnResource();
-    //    Destroy(gameObject, 5);
-    //}
     void DoSpawn(GameObject spawn){
         if(spawn == null) return;
         Vector3 spawnPosition = this.transform.position;
