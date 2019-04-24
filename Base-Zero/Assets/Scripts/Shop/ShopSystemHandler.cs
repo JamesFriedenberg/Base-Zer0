@@ -5,21 +5,25 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ShopSystemHandler : MonoBehaviour {
-    
-    public struct ShopWeapon
-    {
-        public bool stockUpgraded;
-        public bool scopeUpgraded;
-        public bool barrelUpgraded;
-        public bool magazineUpgraded;
-        public bool purchased;
-        public string name;
-        public string objName;
-    }
+	public struct ShopWeapon
+	{
+		public bool[] scopeUpgraded;
+		public int activeScope;
+		public int scopeImageNum;
+		public bool[] receiverUpgraded;
+		public int activeReceiver;
+		public bool stockUpgraded;
+		public bool barrelUpgraded;
+		public bool magazineUpgraded;
+		public bool purchased;
+		public string name;
+		public string objName;
+	}
+
 	int timesAwoken = 0;
     public ShopManager shopRef;
     public int[] equippedWeapons = new int[3];
-    public ShopWeapon[] weaponsList = new ShopWeapon[44];
+	public ShopWeapon[] weaponsList = new ShopWeapon[44];
     private GameObject player;
     public GameObject canvas;
     public GameObject questObj;
@@ -117,15 +121,6 @@ public class ShopSystemHandler : MonoBehaviour {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockButton);
             }
-			/*if (gm.weaponsList[i].scopeUpgraded)
-            {
-                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded = true;
-				if (shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scope != null) {
-					shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scope.SetActive(false);
-				}                
-                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgrade.SetActive(true);
-                Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeButton);
-            }*/
 			if (gm.weaponsList[i].magazineUpgraded)
             {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded = true;
@@ -144,6 +139,7 @@ public class ShopSystemHandler : MonoBehaviour {
                 shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgrade.SetActive(true);
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelButton);
             }
+
         }
     }
 
@@ -151,15 +147,22 @@ public class ShopSystemHandler : MonoBehaviour {
     {
 		for(int i =0; i <gm.weaponsList.Length; i++)
         {
-			if (i != 1 && i != 10 && i != 16 && i != 18 && i != 19 && i != 20 && i != 21 && i != 35) {
+			if ( i != 21) {
 				continue;
 			}
 
 			gm.weaponsList[i].purchased = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().purchased;
 			gm.weaponsList[i].magazineUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().magazineUpgraded;
-			//gm.weaponsList[i].scopeUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeUpgraded;
 			gm.weaponsList[i].stockUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().stockUpgraded;
 			gm.weaponsList[i].barrelUpgraded = shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelUpgraded;
+
+			gm.weaponsList [i].scopeUpgraded = shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scopeUpgraded;
+			
+			gm.weaponsList [i].activeScope = shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scopeActiveNum;
+			gm.weaponsList [i].scopeImageNum = shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scopeNum [shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scopeActiveNum];
+
+			gm.weaponsList [i].receiverUpgraded = shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().receiverUpgraded;
+			gm.weaponsList [i].activeReceiver = shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().activeReceiver;
         }
         for(int j = 0; j < 3; j++){
 			equippedWeapons[j] = shopRef.equippedWeapons[j];

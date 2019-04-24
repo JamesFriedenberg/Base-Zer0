@@ -6,12 +6,17 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 	public struct ShopWeapon
 	{
+		public bool[] scopeUpgraded;
+		public int activeScope;
+		public int scopeImageNum;
+		public bool[] receiverUpgraded;
+		public int activeReceiver;
 		public bool stockUpgraded;
-		public bool scopeUpgraded;
 		public bool barrelUpgraded;
 		public bool magazineUpgraded;
 		public bool purchased;
 		public string name;
+		public string objName;
 	}
 
     private Dictionary<string, int> weaponAmmo = new Dictionary<string, int>();
@@ -83,7 +88,7 @@ public class GameManager : MonoBehaviour {
 	void updateWeapons(){
 		for (int i = 0; i < 44; i++) {
 			weaponsList[i].stockUpgraded = false;
-			weaponsList [i].scopeUpgraded = false;
+			//weaponsList [i].scopeUpgraded = false;
 			weaponsList [i].barrelUpgraded = false;
 			weaponsList [i].magazineUpgraded = false;
 			weaponsList[i].purchased =false;
@@ -101,10 +106,11 @@ public class GameManager : MonoBehaviour {
 				continue;
 			}
 
-			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[2] = weaponsList [i].scopeUpgraded;
+			//playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[2] = weaponsList [i].scopeUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[3] = weaponsList [i].barrelUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[0] = weaponsList [i].stockUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[1] = weaponsList [i].magazineUpgraded;
+			playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.HoloSight; //(weapon.Scope)weaponsList [i].scopeImageNum;
 			playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().FindStats (playerGuns.allWeapons [i]);
 			}
 

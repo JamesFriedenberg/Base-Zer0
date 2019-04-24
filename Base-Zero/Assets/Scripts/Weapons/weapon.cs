@@ -73,8 +73,13 @@ public class weapon : MonoBehaviour
     public bool[] myUpgrades = {false, false, false, false};
     public enum Scope {
         None = 0,
-        Default,
-        RedDot,
+        HoloSight,
+        KobraSight,
+		CCOSight,
+		ACOG,
+		PKA,
+		SniperScope,
+		PSO
     };
     public Scope myScope = Scope.None;
 

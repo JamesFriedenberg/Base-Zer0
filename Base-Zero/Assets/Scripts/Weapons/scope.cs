@@ -5,14 +5,19 @@ using UnityEngine;
 public class scope : MonoBehaviour
 {
     //The possible scopes that can be attached
-    public enum Scope {
-        None = 0,
-        Default,
-        RedDot,
-    };
+	public enum Scope {
+		None = 0,
+		HoloSight,
+		KobraSight,
+		CCOSight,
+		ACOG,
+		PKA,
+		SniperScope,
+		PSO
+	};
     //The active scope
     public Scope myScope = Scope.None;
-    private string[] scopeImages = {"", "scope_default", "scope_redDot"};
+	private string[] scopeImages = {"", "scope_default", "scope_redDot","scope_default","scope_default","scope_default","scope_default","scope_default"};
 
     //the field of view of the camera when you ADS
     public int fov = 30;

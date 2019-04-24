@@ -42,7 +42,7 @@ public class ShopManager : MonoBehaviour {
 
     public void UpdateCashScrap()
     {
-        cashText.GetComponent<Text>().text = "$" + cash;
+        //cashText.GetComponent<Text>().text = "$" + cash;
         scrapText.GetComponent<Text>().text = "%" + scrap;
     }
 

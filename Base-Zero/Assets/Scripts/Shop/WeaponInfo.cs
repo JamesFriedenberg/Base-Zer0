@@ -8,6 +8,8 @@ public class WeaponInfo : MonoBehaviour {
 
     public GameObject stock;
     public GameObject[] scope;
+	public int[] scopeNum;
+	public int scopeActiveNum;
     public GameObject barrel;
     public GameObject magazine;
     public GameObject stockUpgrade;
@@ -47,6 +49,7 @@ public class WeaponInfo : MonoBehaviour {
 	public int receiverFireRateVal;
 	public int receiverSelected;
 
+	public int activeReceiver;
 	public bool[] receiverUpgraded;
 	public int[] receiverCost;
 
