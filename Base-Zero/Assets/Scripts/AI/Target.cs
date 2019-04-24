@@ -17,6 +17,7 @@ public class Target : MonoBehaviour {
 
     public GameObject slowZombieRef;
     private ZombieController zombieController;
+    private DroneController droneController;
 
     private void setKinematic(bool val)
     {
@@ -30,6 +31,11 @@ public class Target : MonoBehaviour {
     {
         if(slowZombieRef.GetComponent<ZombieController>()){
             zombieController = slowZombieRef.GetComponent<ZombieController>();
+            droneController = null;
+        }
+        else if (slowZombieRef.GetComponent<DroneController>()){
+            droneController = slowZombieRef.GetComponent<DroneController>();
+            zombieController = null;
         }
 
         setKinematic(true);
@@ -38,8 +44,14 @@ public class Target : MonoBehaviour {
     }
 
     public void TakeDamage(float amount){
-        if(!zombieController) return;
-        zombieController.takeDamage(amount);
+        if (!zombieController) {
+            droneController.takeDamage(amount);
+        }
+        else if (!droneController)
+        {
+            zombieController.takeDamage(amount);
+
+        }
     }
 
     void DoSpawn(GameObject spawn){

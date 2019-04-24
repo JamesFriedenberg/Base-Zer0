@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561558958390196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.37866, y: 0.84, z: 33.83747}
+  m_LocalPosition: {x: 136.86205, y: 0.15442853, z: 45.766254}
   m_LocalScale: {x: 1.5732, y: 0.15809064, z: 1.5732}
   m_Children: []
   m_Father: {fileID: 0}
@@ -108,6 +108,7 @@ MonoBehaviour:
   distanceToSeekPlayer: 20
   height: 70
   shootFlag: 1
+  health: 50
 --- !u!136 &136194458813015524
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -115,12 +116,12 @@ CapsuleCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1561558958390196}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
+  m_Radius: 0.6511016
+  m_Height: 12.958553
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0.00000007577504, y: 0, z: 0.06170513}
 --- !u!195 &195394613996509886
 NavMeshAgent:
   m_ObjectHideFlags: 1

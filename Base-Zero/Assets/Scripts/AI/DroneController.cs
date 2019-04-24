@@ -31,6 +31,9 @@ public class DroneController : MonoBehaviour
     public bool shootFlag = true;
     private float offsetTimer = 1.5f;
     private float offsetValue = 2f;
+
+    private bool deathFlag = true;
+    public float health = 50f;
     private void Start()
     {
         gm = GameObject.FindGameObjectWithTag("gm");
@@ -49,6 +52,10 @@ public class DroneController : MonoBehaviour
     {
        
     }
+    public void takeDamage(float damage)
+    {
+        health -= damage;
+    }
     public static Vector3 randomWanderDirection(Vector3 origin, float dist, int layer)
     {
         Vector3 randDir = Random.insideUnitSphere * dist;
@@ -62,6 +69,15 @@ public class DroneController : MonoBehaviour
     }
     void Update()
     {
+
+        if (deathFlag == true)
+        {
+            if (health <= 0f)
+            {
+                Die();
+                deathFlag = false;
+            }
+        }
         wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
 
@@ -116,7 +132,11 @@ public class DroneController : MonoBehaviour
         }
 
     }
+    public void Die()
+    {
+        Destroy(gameObject, 1);
 
+    }
     IEnumerator shoot()
     {
         if (player.GetComponent<PlayerHandler>().GetHealth() > 0)
