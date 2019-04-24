@@ -97,6 +97,7 @@ ModelImporter:
     100182: Tape
     100184: Trigger
     100186: Glass
+    100188: Holographic_Sight
     400000: ACOG
     400002: ACOG_Low
     400004: Action
@@ -191,11 +192,13 @@ ModelImporter:
     400182: Tape
     400184: Trigger
     400186: Glass
+    400188: Holographic_Sight
     2100000: AR_Platform_Body_mat
     2100002: AR_Platform_Guards_mat
     2100004: AR_Advanced_mat
     2100006: AR_Platform_Accesories_mat
     2100008: AK_Platform_Accesories_mat
+    2100010: Holo_Sight_mat
     2300000: ACOG
     2300002: ACOG_Low
     2300004: Action
@@ -279,6 +282,7 @@ ModelImporter:
     2300160: Tape
     2300162: Trigger
     2300164: Glass
+    2300166: Holographic_Sight
     3300000: ACOG
     3300002: ACOG_Low
     3300004: Action
@@ -362,6 +366,7 @@ ModelImporter:
     3300160: Tape
     3300162: Trigger
     3300164: Glass
+    3300166: Holographic_Sight
     4300000: Receiver
     4300002: Action
     4300004: Trigger
@@ -445,10 +450,16 @@ ModelImporter:
     4300160: Magazine_SMG
     4300162: Magazine_Drum
     4300164: Glass
+    4300166: Holographic_Sight
     7400000: AR_Idle
     7400002: AR_Reload
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holo_Sight_mat
+    second: {fileID: 2100000, guid: 651557c53cb30bf4b8c78cc831946f22, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
