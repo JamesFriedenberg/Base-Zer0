@@ -643,7 +643,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1269791747403018
 GameObject:
   m_ObjectHideFlags: 1
@@ -2025,7 +2025,7 @@ GameObject:
   - component: {fileID: 114085440278155094}
   - component: {fileID: 195381246210259568}
   - component: {fileID: 82468553457519870}
-  - component: {fileID: 114336722831454432}
+  - component: {fileID: 114957727786992278}
   m_Layer: 0
   m_Name: ArmoredZombie
   m_TagString: Enemy
@@ -5265,7 +5265,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1651426743217196}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 145.47955, y: 0.99, z: 75.21159}
+  m_LocalPosition: {x: 204.8, y: 1.13, z: 68.20229}
   m_LocalScale: {x: 0.49699, y: 1.0177038, z: 0.49699}
   m_Children:
   - {fileID: 4959925872574090}
@@ -6358,7 +6358,7 @@ MonoBehaviour:
   attackDamage: 200
   playerInRange: 0
   distanceToSeekPlayer: 150
-  health: 50
+  health: 100
 --- !u!114 &114091699550798220
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6407,46 +6407,6 @@ MonoBehaviour:
   ammo: []
   scraps: {fileID: 0}
   slowZombieRef: {fileID: 1651426743217196}
---- !u!114 &114336722831454432
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1651426743217196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6770f5b813c85cd4fb1b1f73e4a542d5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  torsoItems:
-  - {fileID: 1383217037587864}
-  - {fileID: 1580227052214462}
-  - {fileID: 1526512384443966}
-  - {fileID: 1559179919549374}
-  - {fileID: 1786631350512380}
-  - {fileID: 1805893219722130}
-  legItems:
-  - {fileID: 1080604135315770}
-  - {fileID: 1669282660045776}
-  - {fileID: 1145655048349828}
-  - {fileID: 1777818368065090}
-  headItems:
-  - {fileID: 1366648628658468}
-  - {fileID: 1412088435685690}
-  - {fileID: 1311095694388152}
-  - {fileID: 1645330432942450}
-  - {fileID: 1661050260612190}
-  - {fileID: 1454022531495234}
-  - {fileID: 1675818836229562}
-  - {fileID: 1172409733776202}
-  - {fileID: 1985443678772776}
-  accItems:
-  - {fileID: 1844797022361542}
-  - {fileID: 1501112383956104}
-  - {fileID: 1886788995965112}
-  - {fileID: 1808402179139378}
-  - {fileID: 1645330432942450}
-  - {fileID: 1311095694388152}
 --- !u!114 &114418574306169142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6555,6 +6515,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moanSound: {fileID: 8300000, guid: e3f152ced8bbe5e44b2999edccd21d60, type: 3}
+--- !u!114 &114957727786992278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1651426743217196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 037fc37ae89f315478bf497815f77d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torsoItems:
+  - {fileID: 1969917891885206}
+  - {fileID: 1559179919549374}
+  - {fileID: 1786631350512380}
+  legItems:
+  - {fileID: 1080604135315770}
+  - {fileID: 1669282660045776}
+  - {fileID: 1145655048349828}
+  - {fileID: 1777818368065090}
+  headItems:
+  - {fileID: 1057618322153036}
+  - {fileID: 1769223267012250}
+  - {fileID: 1090300103468582}
+  accItems:
+  - {fileID: 1985443678772776}
+  - {fileID: 1311095694388152}
+  - {fileID: 1645330432942450}
+  - {fileID: 1549737887061230}
+  - {fileID: 1808402179139378}
 --- !u!136 &136246103196743192
 CapsuleCollider:
   m_ObjectHideFlags: 1

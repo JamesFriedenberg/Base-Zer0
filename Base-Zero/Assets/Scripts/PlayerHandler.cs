@@ -71,7 +71,7 @@ public class PlayerHandler : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetButton("Fire2")) return;
+        if (Input.GetButton("Fire2") || playerWeapons[currentWeapon].GetComponentInChildren<weapon>().WillFire()) return;
         if (Input.GetKeyDown("1"))
         {
             SwitchWeapon(0);
@@ -162,7 +162,7 @@ public class PlayerHandler : MonoBehaviour
         }
         else if (other.gameObject.tag == "ScrapBox")
         {
-
+            Debug.Log("Scraps Picked Up");
             gm.AddScraps(other.GetComponent<PickupHandler>().scrapBoxAmount);
             Destroy(other.gameObject);
         }

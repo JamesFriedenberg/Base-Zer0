@@ -248,6 +248,9 @@ public class weapon : MonoBehaviour
         if(willReset1 && willReset2) hasFired = false;
         if(hasReloaded) ADS();
     }
+    public bool WillFire(){
+        return willFire;
+    }
     IEnumerator WillShoot()
     {
 

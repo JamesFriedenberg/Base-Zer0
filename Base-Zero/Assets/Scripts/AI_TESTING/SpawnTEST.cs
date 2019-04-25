@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class SpawnTEST : MonoBehaviour {
@@ -23,16 +24,41 @@ public class SpawnTEST : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
+        Scene curScene = SceneManager.GetActiveScene();
+
+        if(curScene.name == "VehicleDepot")
+        {
+            rad = 75f;
+        }
+        else if(curScene.name == "RailPath")
+        {
+            rad = 105f;
+        }
+        else
+        {
+            rad = 150f;
+        }
+        
+        //Debug.Log(enemies.Length);
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
-       // Debug.Log(enemies.Length);
+        Debug.Log(enemies.Length);
 
         if (flag)
         {
-            StartCoroutine(spawnEm());
-            flag = false;
+            if (enemies.Length < maxEnemiesInScene)
+            {
+                StartCoroutine(spawnEm());
+                flag = false;
+
+
+            }
         }
-		
-	}
+       
+
+
+
+    }
 
     public Vector3 randomPointOnCircleEdge(float radius)
     {
@@ -45,13 +71,12 @@ public class SpawnTEST : MonoBehaviour {
     IEnumerator spawnEm()
     {
 
-        if(enemies.Length < maxEnemiesInScene)
-        {
+       
             Instantiate(zombiePrefab, randomPointOnCircleEdge(rad), transform.rotation);
 
             yield return new WaitForSeconds(timeBetweenSpawns);
-        }
-            flag = true;
+
+             flag = true;
       
 
     }

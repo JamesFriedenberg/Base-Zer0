@@ -16913,6 +16913,7 @@ MonoBehaviour:
   myUpgrades: 00000000
   myScope: 1
   myReciever: 0
+<<<<<<< HEAD
 --- !u!114 &114030913664120374
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16941,6 +16942,8 @@ MonoBehaviour:
   muzzleFlash: {fileID: 198882397590922274, guid: 144c5245dda51dc40b59480a54b7dd03,
     type: 2}
   tracer: {fileID: 198856127674207210, guid: 7e624651667eabf47bb154e930ba7531, type: 2}
+=======
+>>>>>>> c67189d520477926a95ccf9c2a02628d598e44a8
 --- !u!114 &114050953885571138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17694,7 +17697,11 @@ MonoBehaviour:
   myUpgrades: 00000000
   myScope: 0
   myReciever: 0
+<<<<<<< HEAD
 --- !u!114 &114450524921894326
+=======
+--- !u!114 &114449751466774904
+>>>>>>> c67189d520477926a95ccf9c2a02628d598e44a8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18524,6 +18531,7 @@ MonoBehaviour:
   myUpgrades: 00000000
   myScope: 0
   myReciever: 0
+<<<<<<< HEAD
 --- !u!114 &114823569453400148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18554,6 +18562,8 @@ MonoBehaviour:
   fov: 30
   sensativity: 0
   newTransform: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> c67189d520477926a95ccf9c2a02628d598e44a8
 --- !u!114 &114828393838723602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18579,6 +18589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b026bd06649ef243b68e53218f4c7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   upgrade: 1
   accuracy: 10
   particleController: {fileID: 1756079058484688}
@@ -18612,6 +18623,40 @@ MonoBehaviour:
   fov: 25
   sensativity: 0
   newTransform: {x: 0, y: 0, z: 0}
+=======
+  damage: 10
+  range: 200
+  fireRate: 8
+  impactForce: 200
+  magSize: 30
+  currentAmmoCount: 30
+  reloadTime: 2
+  adsZoom: 25
+  adsAccuracy: 100
+  accuracy: 80
+  recoil: 2
+  bulletCount: 1
+  semiAuto: 0
+  projectile: 0
+  fireAnimation: firing
+  currentAmmoType: AR
+  fpsCam: {fileID: 2000000}
+  fpsController: {fileID: 100000}
+  projObj: {fileID: 0}
+  particleController: {fileID: 1614521773301504}
+  impactEffect: {fileID: 1753577020451914, guid: 83f53c5a9bfdb7f4688f31ffba258ea4,
+    type: 2}
+  blood: {fileID: 1833904791764198, guid: ebc21a20ef0f2fa4cb79d7f7d56b8ec3, type: 2}
+  bulletHole: {fileID: 1916588101331330, guid: 6c8046f1dcdd5f245b02437b85e2a4e1, type: 2}
+  weaponCamera: {fileID: 1913005283399818}
+  fireSound: {fileID: 82572610403324096}
+  animator: {fileID: 95157026132800044}
+  secondMotionAnimator: {fileID: 95687607047680366}
+  weaponAnimator: {fileID: 95080466231747904}
+  myUpgrades: 00000000
+  myScope: 2
+  myReciever: 0
+>>>>>>> c67189d520477926a95ccf9c2a02628d598e44a8
 --- !u!114 &114876216163587422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18655,6 +18700,7 @@ MonoBehaviour:
   myUpgrades: 00000000
   myScope: 0
   myReciever: 0
+<<<<<<< HEAD
 --- !u!114 &114895715015055358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18670,6 +18716,9 @@ MonoBehaviour:
   magSize: 50
   reloadTime: 1
 --- !u!114 &114900272501795598
+=======
+--- !u!114 &114890789337355482
+>>>>>>> c67189d520477926a95ccf9c2a02628d598e44a8
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18708,9 +18757,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b026bd06649ef243b68e53218f4c7cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   upgrade: 1
   accuracy: 5
   particleController: {fileID: 1532063713870606}
+=======
+  damage: 10
+  range: 200
+  fireRate: 5
+  impactForce: 200
+  magSize: 30
+  currentAmmoCount: 30
+  reloadTime: 2
+  adsZoom: 25
+  adsAccuracy: 100
+  accuracy: 80
+  recoil: 2
+  bulletCount: 1
+  semiAuto: 0
+  projectile: 0
+  fireAnimation: firing
+  currentAmmoType: AR
+  fpsCam: {fileID: 2000000}
+  fpsController: {fileID: 100000}
+  projObj: {fileID: 0}
+  particleController: {fileID: 0}
+  impactEffect: {fileID: 1753577020451914, guid: 83f53c5a9bfdb7f4688f31ffba258ea4,
+    type: 2}
+  blood: {fileID: 1833904791764198, guid: ebc21a20ef0f2fa4cb79d7f7d56b8ec3, type: 2}
+  bulletHole: {fileID: 1916588101331330, guid: 6c8046f1dcdd5f245b02437b85e2a4e1, type: 2}
+  weaponCamera: {fileID: 1913005283399818}
+  fireSound: {fileID: 82572610403324096}
+  animator: {fileID: 95157026132800044}
+  secondMotionAnimator: {fileID: 95687607047680366}
+  weaponAnimator: {fileID: 95696835909009768}
+  myUpgrades: 00000000
+  myScope: 0
+  myReciever: 0
+>>>>>>> c67189d520477926a95ccf9c2a02628d598e44a8
 --- !u!114 &114924007870341006
 MonoBehaviour:
   m_ObjectHideFlags: 1
