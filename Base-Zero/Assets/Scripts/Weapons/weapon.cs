@@ -83,6 +83,13 @@ public class weapon : MonoBehaviour
     };
     public Scope myScope = Scope.None;
 
+    public enum Reciever {
+		Default = 0,
+		HigherDamage,
+        FasterFire
+	};
+    public Reciever myReciever = Reciever.Default;
+
     void Start()
     {
         localPos = transform.localPosition;
@@ -156,6 +163,14 @@ public class weapon : MonoBehaviour
                 if(!children[i].GetComponent<barrel>().upgrade && !myUpgrades[3]){
                 }else if(!children[i].GetComponent<barrel>().upgrade){
                     children[i].gameObject.SetActive(false);
+                }
+            }
+            if(children[i].GetComponent<body>() != null){
+                if((int)myReciever == (int)children[i].GetComponent<body>().myReciever){
+                    accuracy += children[i].GetComponent<body>().accuracy;
+                    damage += children[i].GetComponent<body>().damage;
+                    recoil *= children[i].GetComponent<body>().recoil;
+                    fireRate *= children[i].GetComponent<body>().fireRate;
                 }
             }
         }
