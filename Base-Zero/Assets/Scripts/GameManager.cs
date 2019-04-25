@@ -110,7 +110,49 @@ public class GameManager : MonoBehaviour {
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[3] = weaponsList [i].barrelUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[0] = weaponsList [i].stockUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[1] = weaponsList [i].magazineUpgraded;
-			playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.HoloSight; //(weapon.Scope)weaponsList [i].scopeImageNum;
+			switch (weaponsList [i].scopeImageNum) {
+			case 0:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.None;
+				break;
+			case 1:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.HoloSight;
+				break;
+			case 2:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.KobraSight;
+				break;
+			case 3:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.CCOSight;
+				break;
+			case 4:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.ACOG;
+				break;
+			case 5:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.PKA;
+				break;
+			case 6:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.SniperScope;
+				break;
+			case 7:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.PSO;
+				break;
+			default:
+				break;
+			}
+
+			switch (weaponsList [i].activeReceiver) {
+			case 0:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myReciever = weapon.Reciever.Default;
+				break;
+			case 1:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myReciever = weapon.Reciever.FasterFire;
+				break;
+			case 2:
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myReciever = weapon.Reciever.Debug.Log (i + "Purchased " );;
+				break;
+			default:
+				break;
+			}
+
 			playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().FindStats (playerGuns.allWeapons [i]);
 			}
 

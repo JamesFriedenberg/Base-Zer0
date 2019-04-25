@@ -85,8 +85,8 @@ public class weapon : MonoBehaviour
 
     public enum Reciever {
 		Default = 0,
-		HigherDamage,
-        FasterFire
+		FasterFire,
+		HigherDamage
 	};
     public Reciever myReciever = Reciever.Default;
 

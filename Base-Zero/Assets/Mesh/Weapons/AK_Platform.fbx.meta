@@ -83,6 +83,11 @@ ModelImporter:
     100154: Trigger
     100156: Wood
     100158: Wood 1
+    100160: Glass
+    100162: M68_Scope
+    100164: PKA
+    100166: PSO1
+    100168: Rail_Scope_1
     400000: //RootNode
     400002: Bakelite
     400004: Barrel_Carbine
@@ -163,12 +168,20 @@ ModelImporter:
     400154: Trigger
     400156: Wood
     400158: Wood 1
+    400160: Glass
+    400162: M68_Scope
+    400164: PKA
+    400166: PSO1
+    400168: Rail_Scope_1
     2100000: AK_Platform_Body_mat
     2100002: AK_Platform_Accesories_mat
     2100004: AK_Platforms_Magazine_mat
     2100006: AK_Platforms_Magazine_Plum_mat
     2100008: AK_Platform_Guards_mat
     2100010: AK_Platform_Guards_Plymer_mat
+    2100012: VZ_58_mat
+    2100014: AR_Advanced_mat
+    2100016: AR_Platform_Accesories_mat
     2300000: Barrel_Carbine
     2300002: Barrel_Long
     2300004: Barrel_Para
@@ -235,6 +248,11 @@ ModelImporter:
     2300126: Stock_Sniper_Polymer
     2300128: Suppressor_Cloth
     2300130: Trigger
+    2300132: Glass
+    2300134: M68_Scope
+    2300136: PKA
+    2300138: PSO1
+    2300140: Rail_Scope_1
     3300000: Barrel_Carbine
     3300002: Barrel_Long
     3300004: Barrel_Para
@@ -301,6 +319,11 @@ ModelImporter:
     3300126: Stock_Sniper_Polymer
     3300128: Suppressor_Cloth
     3300130: Trigger
+    3300132: Glass
+    3300134: M68_Scope
+    3300136: PKA
+    3300138: PSO1
+    3300140: Rail_Scope_1
     4300000: Body
     4300002: Ironsights
     4300004: Trigger
@@ -367,6 +390,11 @@ ModelImporter:
     4300126: Stock_Skeleton_Polymer
     4300128: Stock_Heavy_Polymer
     4300130: Stock_Sniper_Polymer
+    4300132: PKA
+    4300134: Rail_Scope_1
+    4300136: M68_Scope
+    4300138: Glass
+    4300140: PSO1
     7400000: AK_Idle
     7400002: Ak_Fire
     7400004: AK_Reload

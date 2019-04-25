@@ -17,6 +17,8 @@ ModelImporter:
     100022: Wrap_Scope_Front_Slant
     100024: Wrap_Scope_Rear
     100026: Wrap_Stock
+    100028: ACOG
+    100030: Sights
     400000: Barrel
     400002: Barrel_Short
     400004: Bipod
@@ -31,6 +33,8 @@ ModelImporter:
     400022: Wrap_Scope_Front_Slant
     400024: Wrap_Scope_Rear
     400026: Wrap_Stock
+    400028: ACOG
+    400030: Sights
     2100000: Model_70_mat
     2100002: AR_Platform_Accesories_mat
     2300000: Barrel
@@ -46,6 +50,7 @@ ModelImporter:
     2300020: Wrap_Scope_Front_Slant
     2300022: Wrap_Scope_Rear
     2300024: Wrap_Stock
+    2300026: ACOG
     3300000: Barrel
     3300002: Barrel_Short
     3300004: Bipod
@@ -59,6 +64,7 @@ ModelImporter:
     3300020: Wrap_Scope_Front_Slant
     3300022: Wrap_Scope_Rear
     3300024: Wrap_Stock
+    3300026: ACOG
     4300000: Magazine
     4300002: Barrel
     4300004: Wrap_Stock
@@ -72,7 +78,10 @@ ModelImporter:
     4300020: Wrap_Scope_Front_Slant
     4300022: Body
     4300024: Barrel_Short
-    7400000: Take 001
+    4300026: ACOG
+    7400000: idle
+    7400002: fire
+    7400004: reload
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -101,7 +110,91 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: fire
+      takeName: Take 001
+      firstFrame: 2
+      lastFrame: 13
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: reload
+      takeName: Take 001
+      firstFrame: 14
+      lastFrame: 75
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -125,7 +218,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.25
+    previousCalculatedGlobalScale: 0.29999998
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

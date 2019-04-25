@@ -7,8 +7,8 @@ public class body : MonoBehaviour
     //The possible recievers that can be attached
 	public enum Reciever {
 		Default = 0,
-		HigherDamage,
-        FasterFire
+		FasterFire,
+		HigherDamage
 	};
     //The active reciever
     public Reciever myReciever = Reciever.Default;

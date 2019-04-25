@@ -23,6 +23,15 @@ ModelImporter:
     100034: Stocks
     100036: Suppresed
     100038: Trigger
+    100040: Duel_Tape_1
+    100042: Duel_Tape_2
+    100044: Glass
+    100046: Holographic_Sight
+    100048: M68_Scope
+    100050: Magazine_Dual
+    100052: Magazine_Dual_Top
+    100054: Sight_01
+    100056: Sight_02
     400000: Body
     400002: CCO_Scope
     400004: Charging_Handle
@@ -43,8 +52,20 @@ ModelImporter:
     400034: Stocks
     400036: Suppresed
     400038: Trigger
+    400040: Duel_Tape_1
+    400042: Duel_Tape_2
+    400044: Glass
+    400046: Holographic_Sight
+    400048: M68_Scope
+    400050: Magazine_Dual
+    400052: Magazine_Dual_Top
+    400054: Sight_01
+    400056: Sight_02
     2100000: MP5_mat
     2100002: AR_Platform_Accesories_mat
+    2100004: AR_Platform_Body_mat
+    2100006: Holo_Sight_mat
+    2100008: AR_Platform_AR_Advanced_mat
     2300000: Body
     2300002: CCO_Scope
     2300004: Charging_Handle
@@ -61,6 +82,15 @@ ModelImporter:
     2300026: Stock_Solid
     2300028: Suppresed
     2300030: Trigger
+    2300032: Duel_Tape_1
+    2300034: Duel_Tape_2
+    2300036: Glass
+    2300038: Holographic_Sight
+    2300040: M68_Scope
+    2300042: Magazine_Dual
+    2300044: Magazine_Dual_Top
+    2300046: Sight_01
+    2300048: Sight_02
     3300000: Body
     3300002: CCO_Scope
     3300004: Charging_Handle
@@ -77,6 +107,15 @@ ModelImporter:
     3300026: Stock_Solid
     3300028: Suppresed
     3300030: Trigger
+    3300032: Duel_Tape_1
+    3300034: Duel_Tape_2
+    3300036: Glass
+    3300038: Holographic_Sight
+    3300040: M68_Scope
+    3300042: Magazine_Dual
+    3300044: Magazine_Dual_Top
+    3300046: Sight_01
+    3300048: Sight_02
     4300000: Stock_Solid
     4300002: Stock_Collapsable
     4300004: Stock_Collapsable_End
@@ -93,6 +132,15 @@ ModelImporter:
     4300026: Front_Sight
     4300028: Trigger
     4300030: Magazine
+    4300032: Magazine_Dual_Top
+    4300034: Duel_Tape_2
+    4300036: Magazine_Dual
+    4300038: Duel_Tape_1
+    4300040: Sight_01
+    4300042: Holographic_Sight
+    4300044: Sight_02
+    4300046: M68_Scope
+    4300048: Glass
     7400000: MP5_Idle
     7400002: MP5_Reload
     9500000: //RootNode
