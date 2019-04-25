@@ -1917,6 +1917,10 @@ GameObject:
   - component: {fileID: 233973844}
   - component: {fileID: 233973843}
   - component: {fileID: 233973842}
+  - component: {fileID: 233973848}
+  - component: {fileID: 233973847}
+  - component: {fileID: 233973846}
+  - component: {fileID: 233973845}
   m_Layer: 0
   m_Name: Terrain (1)
   m_TagString: Untagged
@@ -1979,6 +1983,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &233973845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233973841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2777bba7e4e7c6f4681e3ea77eef5438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 178, y: 124.35, z: 745.82}
+  m_Center: {x: 443.8, y: 1, z: 241.4}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &233973846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233973841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2777bba7e4e7c6f4681e3ea77eef5438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 875.7, y: 496.4, z: 319.8}
+  m_Center: {x: 152.2, y: 1, z: 486.4}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &233973847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233973841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2777bba7e4e7c6f4681e3ea77eef5438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 178, y: 184.5, z: 745.82}
+  m_Center: {x: -26.6, y: 1, z: 284}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
+--- !u!114 &233973848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 233973841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2777bba7e4e7c6f4681e3ea77eef5438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Size: {x: 612.5, y: 124.35, z: 300.3}
+  m_Center: {x: 210.6, y: 1, z: 0}
+  m_Area: 1
+  m_AffectedAgents: ffffffff
 --- !u!1 &241239411
 GameObject:
   m_ObjectHideFlags: 0
@@ -10281,6 +10345,10 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1519036310368918, guid: 06eaa60f975367c4385b308e665eec2f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06eaa60f975367c4385b308e665eec2f, type: 2}

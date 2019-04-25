@@ -16,6 +16,9 @@ public class ZombieController : MonoBehaviour {
     public float wanderRadius;
     public float wanderTimer;
 
+    public List<GameObject> ammo;
+    public GameObject scraps;
+
     private float wanderTime;
     private float timer;
 
@@ -31,14 +34,15 @@ public class ZombieController : MonoBehaviour {
     private void Start()
     {
         isDead = false;
-        this.GetComponent<NavMeshAgent>().speed = Random.Range(11, 12);
+        this.GetComponent<NavMeshAgent>().speed = Random.Range(9, 10);
         gm = GameObject.FindGameObjectWithTag("gm");
         wanderRadius = 50f;
         wanderTime = wanderTimer;
         player = GameObject.FindGameObjectWithTag("Player");
         zombie.stoppingDistance = 2f;
         zombie.angularSpeed = 40f;
-        if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 80f)
+        
+        if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 30f)
         {
             Destroy(gameObject);
         }
@@ -83,7 +87,7 @@ public class ZombieController : MonoBehaviour {
 
         float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
-        Debug.Log(distanceToPlayer);
+        //Debug.Log(distanceToPlayer);
         wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
 
@@ -121,6 +125,8 @@ public class ZombieController : MonoBehaviour {
             if (health <= 0f)
             {
                 Die();
+                this.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, 30f, zombie.GetComponent<Transform>().localPosition.z);
+
                 deathFlag = false;
             }
         }
@@ -166,12 +172,14 @@ public class ZombieController : MonoBehaviour {
         isDead = true;
         Debug.Log(zombie.GetComponent<Transform>().position);
         Debug.Log("here");
-        
+        SpawnResource();
         this.GetComponent<NavMeshAgent>().speed = 0f;
-        this.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, -4f, zombie.GetComponent<Transform>().localPosition.z);
+        this.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, 30f, zombie.GetComponent<Transform>().localPosition.z);
         //Debug.Log(zombie.GetComponent<Transform>().position);
         //setKinematic(false);
         GetComponentInChildren<Animator>().SetInteger("death", (int)Random.Range(1, 6));
+        this.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, 30f, zombie.GetComponent<Transform>().localPosition.z);
+
         //CapsuleCollider capCollider = this.GetComponent<CapsuleCollider>();
         //if (capCollider != null)
         //{
@@ -225,5 +233,32 @@ public class ZombieController : MonoBehaviour {
             
         }
     }
-   
+    void DoSpawn(GameObject spawn)
+    {
+        if (spawn == null) return;
+        Vector3 spawnPosition = this.transform.position;
+        spawnPosition.y -= .85f;
+        Instantiate(spawn, spawnPosition, Quaternion.identity);
+    }
+    void SpawnResource()
+    {
+        DoSpawn(scraps);
+        return;
+        int spawnState = (int)(Random.Range(0f, 3f));
+        switch (spawnState)
+        {
+            case 1:
+                if (ammo.Count == 0) return;
+                int ammoType = (int)(Random.Range(0f, (float)ammo.Count));
+                DoSpawn(ammo[ammoType]);
+                break;
+            case 2:
+                if (scraps == null) return;
+                DoSpawn(scraps);
+                break;
+            default:
+                break;
+        }
+    }
+
 }

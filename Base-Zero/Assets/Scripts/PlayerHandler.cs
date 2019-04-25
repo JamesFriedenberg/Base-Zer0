@@ -162,7 +162,7 @@ public class PlayerHandler : MonoBehaviour
         }
         else if (other.gameObject.tag == "ScrapBox")
         {
-
+            Debug.Log("Scraps Picked Up");
             gm.AddScraps(other.GetComponent<PickupHandler>().scrapBoxAmount);
             Destroy(other.gameObject);
         }
