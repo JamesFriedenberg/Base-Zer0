@@ -17886,6 +17886,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95335709145936292}
   myUpgrades: 00000000
   myScope: 1
+  myReciever: 0
 --- !u!114 &114050953885571138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18001,6 +18002,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95446723011678148}
   myUpgrades: 00000000
   myScope: 0
+  myReciever: 0
 --- !u!114 &114120587736356882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18149,6 +18151,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95628163499129414}
   myUpgrades: 00000000
   myScope: 0
+  myReciever: 0
 --- !u!114 &114238903652915356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18393,6 +18396,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95472495167351196}
   myUpgrades: 00000000
   myScope: 0
+  myReciever: 0
 --- !u!114 &114449751466774904
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -18557,6 +18561,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95743706692709452}
   myUpgrades: 00000000
   myScope: 0
+  myReciever: 0
 --- !u!114 &114537635594188802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19058,6 +19063,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95712942589848028}
   myUpgrades: 00000000
   myScope: 0
+  myReciever: 0
 --- !u!114 &114828393838723602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19114,6 +19120,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95080466231747904}
   myUpgrades: 00000000
   myScope: 2
+  myReciever: 0
 --- !u!114 &114876216163587422
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19156,6 +19163,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95023828256234792}
   myUpgrades: 00000000
   myScope: 0
+  myReciever: 0
 --- !u!114 &114890789337355482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -19226,6 +19234,7 @@ MonoBehaviour:
   weaponAnimator: {fileID: 95696835909009768}
   myUpgrades: 00000000
   myScope: 0
+  myReciever: 0
 --- !u!114 &114924007870341006
 MonoBehaviour:
   m_ObjectHideFlags: 1
