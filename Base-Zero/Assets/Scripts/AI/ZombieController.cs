@@ -18,7 +18,8 @@ public class ZombieController : MonoBehaviour {
 
     private float wanderTime;
     private float timer;
-    
+
+    private bool isDead;
     public float timeBetweenAttacks = 0.5f;
     public int attackDamage = 200;
     public bool playerInRange;
@@ -29,17 +30,19 @@ public class ZombieController : MonoBehaviour {
     public float health = 40f;
     private void Start()
     {
+        isDead = false;
         this.GetComponent<NavMeshAgent>().speed = Random.Range(11, 12);
         gm = GameObject.FindGameObjectWithTag("gm");
         wanderRadius = 50f;
         wanderTime = wanderTimer;
         player = GameObject.FindGameObjectWithTag("Player");
         zombie.stoppingDistance = 2f;
-        //if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 80f)
-        //{
-        //    Destroy(gameObject);
-        //}
-    
+        zombie.angularSpeed = 40f;
+        if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 80f)
+        {
+            Destroy(gameObject);
+        }
+
     }
     public void takeDamage(float damage)
     {
@@ -106,7 +109,7 @@ public class ZombieController : MonoBehaviour {
             player.GetComponent<FirstPersonController>().m_WalkSpeed = 5f;
             player.GetComponent<FirstPersonController>().m_RunSpeed = 10f;
         }
-        if (timer >= timeBetweenAttacks && playerInRange && playerHealth > 0)
+        if (timer >= timeBetweenAttacks && playerInRange && playerHealth > 0 && isDead == false)
         {
             Attack();
             
@@ -160,6 +163,7 @@ public class ZombieController : MonoBehaviour {
     private void Die()
 
     {
+        isDead = true;
         Debug.Log(zombie.GetComponent<Transform>().position);
         Debug.Log("here");
         
