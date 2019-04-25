@@ -14,7 +14,7 @@ public class BarStats : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		switch (statNum) {
+		/*switch (statNum) {
 		case 1:
 			statBar.fillAmount = (1.0f * (guninfo.damage / 100.0f));
 			break;
@@ -32,8 +32,8 @@ public class BarStats : MonoBehaviour {
 			break;
 		default:
 			break;
-		}
-
+		}*/
+		RecalculateStats ();
 	}
 	
 	// Update is called once per frame

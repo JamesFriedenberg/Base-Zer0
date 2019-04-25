@@ -9,9 +9,7 @@ public class ShopManager : MonoBehaviour {
     //Main Shop Screen Array
     public GameObject[] weaponRefArray;
 
-    public GameObject cashText;
     public GameObject scrapText;
-    public int cash;
     public int scrap;
     public GameObject currentWeapon;
     public int[] equippedWeapons;

@@ -23,9 +23,9 @@ public class BuyEquipButton : MonoBehaviour {
 
         if (!weaponRef.purchased)
         {
-            if (shopManager.GetComponent<ShopManager>().cash >= weaponRef.weaponCost)
+            if (shopManager.GetComponent<ShopManager>().scrap >= weaponRef.weaponCost)
             {
-                shopManager.GetComponent<ShopManager>().cash -= weaponRef.weaponCost;
+                shopManager.GetComponent<ShopManager>().scrap -= weaponRef.weaponCost;
                 weaponRef.purchased = true;
                 if(weapon.tag != "pistol" && attachmentList != null)
                 {

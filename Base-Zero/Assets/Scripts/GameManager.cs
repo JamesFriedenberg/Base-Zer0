@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour {
 
     private Dictionary<string, int> weaponAmmo = new Dictionary<string, int>();
     public int playerCash = 0;
-    public int playerScraps = 0;
+    public int playerScraps = 5000;
     public int startingAmmo = 500;
 
     public int startingPlayerHealth = 1000;

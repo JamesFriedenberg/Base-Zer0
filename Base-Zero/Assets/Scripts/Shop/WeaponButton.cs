@@ -17,21 +17,28 @@ public class WeaponButton : MonoBehaviour {
 	void Start () {
 		switch (upgradeVal) {
 		case 1:
-                upgradeText.text += "\n" + gunInfo.stockCost.ToString () + " Scrap";
+			if (!gunInfo.stockUpgraded) {
+				upgradeText.text += "\n" + gunInfo.stockCost.ToString () + " Scrap";
+			}
+
 			break;
 		case 2:
-			if (scopeNum != 0) {
+			if (scopeNum != 0 && !gunInfo.scopeUpgraded[scopeNum]) {
 				GetComponentInChildren<Text> ().text = ScopeNames [scopeNum] + " : " + gunInfo.scopeCost [scopeNum].ToString () + " Scrap";
 			}
 			break;
 		case 3:
-                upgradeText.text += "\n" + gunInfo.barrelCost.ToString () + " Scrap";
+			if (!gunInfo.barrelUpgraded) {
+				upgradeText.text += "\n" + gunInfo.barrelCost.ToString () + " Scrap";
+			}
 			break;
 		case 4:
-                upgradeText.text += "\n" + gunInfo.magazineCost.ToString () + " Scrap";
+			if (!gunInfo.magazineUpgraded) {
+				upgradeText.text += "\n" + gunInfo.magazineCost.ToString () + " Scrap";
+			}
 			break;
 		case 5:
-			if (receiverNum != 0) {
+			if (receiverNum != 0 && !gunInfo.receiverUpgraded[receiverNum]) {
 				GetComponentInChildren<Text> ().text = receiverNames [receiverNum] + " : " + gunInfo.receiverCost [receiverNum].ToString () + " Scrap";
 			}
 			break;
@@ -177,6 +184,7 @@ public class WeaponButton : MonoBehaviour {
                     {
 						GetComponentInChildren<Text>().text = receiverNames[receiverNum] + " :Selected";
 						weaponRef.receiverSelected = i;
+						weaponRef.activeReceiver = i;
 						
                     }
                     else
@@ -216,6 +224,7 @@ public class WeaponButton : MonoBehaviour {
 						}
 						GetComponentInChildren<Text>().text = ScopeNames[scopeNum] + " :Selected";
 						weaponRef.scopeSelected = i;
+						weaponRef.scopeActiveNum = i;
 
 					}
 					else
@@ -233,6 +242,58 @@ public class WeaponButton : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	public void UpdateScope(GameObject weapon, int activeScopeNum)
+	{
+		WeaponInfo weaponRef = weapon.GetComponent<WeaponInfo>();
+		Debug.Log (weaponRef.scopeUpgraded.Length);
+			for (int i = 0; i < weaponRef.scope.Length; i++)
+			{
+				if (weaponRef.scope != null)
+				{
+					if (weaponRef.scopeUpgraded [i]) {
+						weaponRef.scopeButton[i].GetComponentInChildren<Text>().text = ScopeNames [i];
+					}
+					if (i == activeScopeNum) {
+						if (weaponRef.scope [i] != null) {
+							weaponRef.scope [i].SetActive (true);
+						}
+						GetComponentInChildren<Text> ().text = ScopeNames [activeScopeNum] + " :Selected";
+						weaponRef.scopeSelected = i;
+
+					} else {
+						if (weaponRef.scope [i] != null) {
+							weaponRef.scope[i].SetActive(false);
+						}
+					}
+				}
+
+		}
+	}
+
+	public void UpdateReceiver(GameObject weapon, int activeRecNum)
+	{
+		WeaponInfo weaponRef = weapon.GetComponent<WeaponInfo>();
+
+			weaponRef.receiverSelected = activeRecNum;
+			Debug.Log (activeRecNum);
+			foreach (BarStats b in statParent.GetComponentsInChildren<BarStats>()) {
+				b.RecalculateStats ();
+			}
+			for (int i = 0; i < weaponRef.receiverUpgraded.Length; i++)
+			{
+				if (weaponRef.receiverUpgraded [i]) {
+					weaponRef.receiverButton[i].GetComponentInChildren<Text>().text = receiverNames [i];
+				}
+				if (i == activeRecNum)
+				{
+					GetComponentInChildren<Text>().text = receiverNames[activeRecNum] + " :Selected";
+					weaponRef.receiverSelected = i;
+				}
+
+			}
+
 	}
 
 	public void ToggleWindow(GameObject window){
