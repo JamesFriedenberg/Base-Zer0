@@ -6418,6 +6418,8 @@ MonoBehaviour:
   zombieRef: {fileID: 0}
   wanderRadius: 50
   wanderTimer: 3
+  ammo: []
+  scraps: {fileID: 1605623762745990, guid: 92938bc8886a9d245bdf92fbe77b551b, type: 2}
   timeBetweenAttacks: 1
   attackDamage: 100
   playerInRange: 0

@@ -126,6 +126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   normalAmmoAmount: 0
-  scrapBoxAmount: 0
+  scrapBoxAmount: 10
   smallCashAmount: 0
   ammoType: 

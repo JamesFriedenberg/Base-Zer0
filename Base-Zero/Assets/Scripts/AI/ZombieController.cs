@@ -16,6 +16,9 @@ public class ZombieController : MonoBehaviour {
     public float wanderRadius;
     public float wanderTimer;
 
+    public List<GameObject> ammo;
+    public GameObject scraps;
+
     private float wanderTime;
     private float timer;
 
@@ -169,7 +172,7 @@ public class ZombieController : MonoBehaviour {
         isDead = true;
         Debug.Log(zombie.GetComponent<Transform>().position);
         Debug.Log("here");
-        
+        SpawnResource();
         this.GetComponent<NavMeshAgent>().speed = 0f;
         this.GetComponent<Transform>().localPosition = new Vector3(zombie.GetComponent<Transform>().localPosition.x, 30f, zombie.GetComponent<Transform>().localPosition.z);
         //Debug.Log(zombie.GetComponent<Transform>().position);
@@ -230,5 +233,32 @@ public class ZombieController : MonoBehaviour {
             
         }
     }
-   
+    void DoSpawn(GameObject spawn)
+    {
+        if (spawn == null) return;
+        Vector3 spawnPosition = this.transform.position;
+        spawnPosition.y -= .85f;
+        Instantiate(spawn, spawnPosition, Quaternion.identity);
+    }
+    void SpawnResource()
+    {
+        DoSpawn(scraps);
+        return;
+        int spawnState = (int)(Random.Range(0f, 3f));
+        switch (spawnState)
+        {
+            case 1:
+                if (ammo.Count == 0) return;
+                int ammoType = (int)(Random.Range(0f, (float)ammo.Count));
+                DoSpawn(ammo[ammoType]);
+                break;
+            case 2:
+                if (scraps == null) return;
+                DoSpawn(scraps);
+                break;
+            default:
+                break;
+        }
+    }
+
 }
