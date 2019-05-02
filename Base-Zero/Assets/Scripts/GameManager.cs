@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour {
 				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myReciever = weapon.Reciever.FasterFire;
 				break;
 			case 2:
-				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myReciever = weapon.Reciever.Debug.Log (i + "Purchased " );;
+				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myReciever = weapon.Reciever.HigherDamage;
 				break;
 			default:
 				break;
