@@ -85,13 +85,19 @@ public class ZombieController : MonoBehaviour {
         return navHit.position;
     }
     void Update () {
- 
 
+        zombie.updateRotation = false;
+        transform.LookAt(player.transform);
         float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
         //Debug.Log(distanceToPlayer);
         wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
+
+        if (zombie.isPathStale)
+        {
+            Debug.Log("Path is stale");
+        }
 
     
         zombie.SetDestination(player.transform.localPosition);

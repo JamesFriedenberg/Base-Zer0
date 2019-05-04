@@ -42,7 +42,7 @@ public class SpawnTEST : MonoBehaviour {
         
         //Debug.Log(enemies.Length);
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log(enemies.Length);
+        //Debug.Log(enemies.Length);
 
         if (flag)
         {
