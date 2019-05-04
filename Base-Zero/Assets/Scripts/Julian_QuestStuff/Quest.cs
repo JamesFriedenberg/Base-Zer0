@@ -17,9 +17,11 @@ public class Quest : MonoBehaviour
     public GameObject questItemPrefab;
     public Vector3 locationOfObject;
 
+   
     // Use this for initialization
     void Start()
     {
+        UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
 
         SceneManager.sceneLoaded += OnSceneLoaded;
         questStatus = "InProgress";
@@ -31,8 +33,8 @@ public class Quest : MonoBehaviour
             Instantiate(questItemPrefab, (locationOfObject), Quaternion.identity);
         }
 
+        StartCoroutine(FadeTextToFullAlpha(1.0f, UITextRef));
 
-        
 
     }
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -49,6 +51,7 @@ public class Quest : MonoBehaviour
     {
         if(GameObject.FindWithTag("ObjectiveText") == null) return;
         UITextRef = GameObject.FindWithTag("ObjectiveText").GetComponentInChildren<Text>();
+        
         if (questStatus == "InProgress")
         {
             UITextRef.text = questText;
@@ -59,6 +62,7 @@ public class Quest : MonoBehaviour
             UITextRef.text = "Quest Completed, Return to HQ";
 
         }
+
     }
     public string getQuestStatus()
     {
@@ -67,5 +71,22 @@ public class Quest : MonoBehaviour
     public void changeQuestStatus(string newQuestStatus)
     {
         questStatus = newQuestStatus;
+    }
+    public IEnumerator FadeTextToFullAlpha(float t, Text i)
+    {
+
+        for(int l = 0; l < 3; l++)
+        {
+            i.color = new Color(i.color.r, i.color.g, i.color.b, 1);
+
+            while (i.color.a > 0f)
+            {
+                i.color = new Color(i.color.r, i.color.g, i.color.b, i.color.a - (Time.deltaTime / t));
+                yield return null;
+            }
+
+        }
+        i.color = new Color(i.color.r, i.color.g, i.color.b,1);
+
     }
 }
