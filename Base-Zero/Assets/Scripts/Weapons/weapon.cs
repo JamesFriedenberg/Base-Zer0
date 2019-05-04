@@ -336,7 +336,9 @@ public class weapon : MonoBehaviour
 
             shootDirection.Normalize();
 
-            if (Physics.Raycast(fpsCam.transform.position, shootDirection, out hit, range))
+            int layerMask = 1 << 9;
+            layerMask = ~layerMask;
+            if (Physics.Raycast(fpsCam.transform.position, shootDirection, out hit, range, layerMask))
             {
                 DoBullet(hit);
             }
