@@ -35,13 +35,15 @@ public class ZombieController : MonoBehaviour {
     {
         isDead = false;
         this.GetComponent<NavMeshAgent>().speed = Random.Range(9, 10);
+
+        zombie = this.GetComponent<NavMeshAgent>();
         gm = GameObject.FindGameObjectWithTag("gm");
         wanderRadius = 50f;
         wanderTime = wanderTimer;
         player = GameObject.FindGameObjectWithTag("Player");
         zombie.stoppingDistance = 2f;
         zombie.angularSpeed = 40f;
-        
+        zombie.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
         if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 30f)
         {
             Destroy(gameObject);
@@ -94,7 +96,17 @@ public class ZombieController : MonoBehaviour {
     
         zombie.SetDestination(player.transform.localPosition);
 
-        if(distanceToPlayer < 2f)
+        if(distanceToPlayer > 45f)
+        {
+            zombie.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
+
+        }
+        else
+        {
+            zombie.obstacleAvoidanceType = ObstacleAvoidanceType.LowQualityObstacleAvoidance;
+
+        }
+        if (distanceToPlayer < 2f)
         {
             playerInRange = true;
         }
