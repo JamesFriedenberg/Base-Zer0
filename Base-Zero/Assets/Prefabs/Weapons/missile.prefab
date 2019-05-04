@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 65362535572478216}
   - component: {fileID: 114087919733514114}
   - component: {fileID: 54772245203490848}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: missile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1745019558898242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 153.48279, y: 0.22147222, z: 61.492413}
+  m_LocalPosition: {x: 188.31842, y: -2.2984557, z: 66.6758}
   m_LocalScale: {x: 0.40321, y: 0.40321, z: 3.2549245}
   m_Children:
   - {fileID: 4825055507423240}

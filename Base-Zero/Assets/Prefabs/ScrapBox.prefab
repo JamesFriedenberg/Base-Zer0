@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1605623762745990}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.46815, y: 4.247978, z: 10.240918}
+  m_LocalPosition: {x: 190.78996, y: 0.1337086, z: 71.82936}
   m_LocalScale: {x: 0.69363576, y: 0.2747414, z: 0.3040524}
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,8 +111,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.1342752, y: 3.0289907, z: 4.1781964}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.2041695, y: 4.847855, z: 6.418631}
+  m_Center: {x: 0, y: 0.90943193, z: 0}
 --- !u!114 &114105235374138262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -126,6 +126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   normalAmmoAmount: 0
-  scrapBoxAmount: 10
+  scrapBoxAmount: 50
   smallCashAmount: 0
   ammoType: 

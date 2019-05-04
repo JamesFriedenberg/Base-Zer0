@@ -36,6 +36,7 @@ TagManager:
   - Nuke5
   - Heli1
   - pickupText
+  - ScrapBox
   layers:
   - Default
   - TransparentFX
@@ -46,8 +47,8 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - 
-  - 
+  - Zombie Collider
+  - Projectile
   - 
   - 
   - 

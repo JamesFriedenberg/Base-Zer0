@@ -1030,7 +1030,8 @@ GameObject:
   - component: {fileID: 195510215699850042}
   - component: {fileID: 82465446608594208}
   - component: {fileID: 114882737679267236}
-  m_Layer: 0
+  - component: {fileID: 136328913672032338}
+  m_Layer: 9
   m_Name: SlowZombie
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -4508,7 +4509,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1351187042072464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 486.28186, y: 1.23, z: 72.671646}
+  m_LocalPosition: {x: 192.82466, y: -1.4973364, z: 68.0439}
   m_LocalScale: {x: 0.49699, y: 1.0177038, z: 0.49699}
   m_Children:
   - {fileID: 4382299125323788}
@@ -6570,6 +6571,19 @@ CapsuleCollider:
   m_Height: 0.53388363
   m_Direction: 1
   m_Center: {x: -0.0015141281, y: 0.23370208, z: 0.1099996}
+--- !u!136 &136328913672032338
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1351187042072464}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.3561468
+  m_Height: 3.4013488
+  m_Direction: 1
+  m_Center: {x: 0.00000005996563, y: 0.7006742, z: -0.00000008994846}
 --- !u!137 &137028440420099046
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
