@@ -18,6 +18,7 @@ public class ShopSystemHandler : MonoBehaviour {
 		public bool purchased;
 		public string name;
 		public string objName;
+		public bool valid;
 	}
 
 	int timesAwoken = 0;

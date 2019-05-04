@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour {
 		public bool purchased;
 		public string name;
 		public string objName;
+		public bool valid;
 	}
 
     private Dictionary<string, int> weaponAmmo = new Dictionary<string, int>();
@@ -85,15 +86,22 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-	void updateWeapons(){
+	public void updateWeapons(){
+		Debug.Log ("Goona updaate these weapos");
+		PlayerHandler playerGuns = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerHandler> ();
 		for (int i = 0; i < 44; i++) {
-			weaponsList[i].stockUpgraded = false;
-			//weaponsList [i].scopeUpgraded = false;
-			weaponsList [i].barrelUpgraded = false;
-			weaponsList [i].magazineUpgraded = false;
-			weaponsList[i].purchased =false;
+			if (playerGuns.allWeapons [i] != null) {
+				Debug.Log ("Valid" + i);
+				weaponsList [i].stockUpgraded = false;
+				//weaponsList [i].scopeUpgraded = false;
+				weaponsList [i].barrelUpgraded = false;
+				weaponsList [i].magazineUpgraded = false;
+				weaponsList [i].purchased = false;
+				weaponsList [i].valid = true;
+				weaponsList [i].name = playerGuns.allWeapons [i].name;
+			}
 		}
-		weaponsList [1].purchased = true;
+		//weaponsList [1].purchased = true;
 	}
 
 	public void fromSceneWeapons(){
@@ -105,7 +113,7 @@ public class GameManager : MonoBehaviour {
 			if (playerGuns.allWeapons [i] == null) {
 				continue;
 			}
-
+			Debug.Log ("Updating guns");
 			//playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[2] = weaponsList [i].scopeUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[3] = weaponsList [i].barrelUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[0] = weaponsList [i].stockUpgraded;
