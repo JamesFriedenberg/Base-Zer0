@@ -41,7 +41,10 @@ public class BarStats : MonoBehaviour {
 		if (statNum == 5 && guninfo.magazineUpgraded) {
 			//Debug.Log (guninfo.magsizeUpgraded.ToString());
 			magsize.text = guninfo.magsizeUpgraded.ToString();
-		}
+		} else if (statNum == 5)
+        {
+            magsize.text = guninfo.magazinesize.ToString();
+        }
 		if(statNum == 1){
 			float damage = guninfo.damage;
 			if (guninfo.receiverSelected == 2) {

@@ -399,7 +399,52 @@ ModelImporter:
     7400002: Ak_Fire
     7400004: AK_Reload
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platform_Accesories_mat
+    second: {fileID: 2100000, guid: 37affaf2c4d228e4284e2449da9c60de, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platform_Body_mat
+    second: {fileID: 2100000, guid: 515b2a547d339504bb657e182299b22e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platform_Guards_Plymer_mat
+    second: {fileID: 2100000, guid: c4f9a938fefa7c04ba4706acbcac1c8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platform_Guards_mat
+    second: {fileID: 2100000, guid: a8fa31c4d8225a24ab3cf71df5332477, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platforms_Magazine_Plum_mat
+    second: {fileID: 2100000, guid: b4c80e82ebf5e39498fe3e7743e1053b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AK_Platforms_Magazine_mat
+    second: {fileID: 2100000, guid: 43927df2cfb33a94982c2f4933e40471, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Advanced_mat
+    second: {fileID: 2100000, guid: c5b8322f2277cfe458755b5099b4f19b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AR_Platform_Accesories_mat
+    second: {fileID: 2100000, guid: 5f1cd9aaf35fe1547b2f2bb24a6085ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VZ_58_mat
+    second: {fileID: 2100000, guid: 875be6c47941b2340ab09d0282a27aea, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

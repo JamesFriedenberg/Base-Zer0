@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: b07e37383f3f54e49a6affcd98fdbdf7
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body_Long
+    100002: Body_Short
+    100004: Bullet_Revolver_1
+    100006: Bullet_Revolver_1 1
+    100008: Bullet_Revolver_2
+    100010: Bullet_Revolver_2 1
+    100012: Bullet_Revolver_3
+    100014: Bullet_Revolver_3 1
+    100016: Bullet_Revolver_4
+    100018: Bullet_Revolver_4 1
+    100020: Bullet_Revolver_5
+    100022: Bullet_Revolver_5 1
+    100024: Bullet_Revolver_6
+    100026: Bullet_Revolver_6 1
+    100028: Bullet_Revolver_Speedloader
+    100030: Bullets
+    100032: Bullets_Cases
+    100034: Cylinder
+    100036: Cylinder_rod
+    100038: Hammer
+    100040: //RootNode
+    100042: Speedloader
+    100044: Trigger
+    400000: Body_Long
+    400002: Body_Short
+    400004: Bullet_Revolver_1
+    400006: Bullet_Revolver_1 1
+    400008: Bullet_Revolver_2
+    400010: Bullet_Revolver_2 1
+    400012: Bullet_Revolver_3
+    400014: Bullet_Revolver_3 1
+    400016: Bullet_Revolver_4
+    400018: Bullet_Revolver_4 1
+    400020: Bullet_Revolver_5
+    400022: Bullet_Revolver_5 1
+    400024: Bullet_Revolver_6
+    400026: Bullet_Revolver_6 1
+    400028: Bullet_Revolver_Speedloader
+    400030: Bullets
+    400032: Bullets_Cases
+    400034: Cylinder
+    400036: Cylinder_rod
+    400038: Hammer
+    400040: //RootNode
+    400042: Speedloader
+    400044: Trigger
+    2100000: Magnum_mat
+    2100002: Ammo_Bullet_Ammo_Bullets_mat
+    2300000: Body_Long
+    2300002: Body_Short
+    2300004: Bullet_Revolver_1
+    2300006: Bullet_Revolver_1 1
+    2300008: Bullet_Revolver_2
+    2300010: Bullet_Revolver_2 1
+    2300012: Bullet_Revolver_3
+    2300014: Bullet_Revolver_3 1
+    2300016: Bullet_Revolver_4
+    2300018: Bullet_Revolver_4 1
+    2300020: Bullet_Revolver_5
+    2300022: Bullet_Revolver_5 1
+    2300024: Bullet_Revolver_6
+    2300026: Bullet_Revolver_6 1
+    2300028: Bullet_Revolver_Speedloader
+    2300030: Cylinder
+    2300032: Cylinder_rod
+    2300034: Hammer
+    2300036: Speedloader
+    2300038: Trigger
+    3300000: Body_Long
+    3300002: Body_Short
+    3300004: Bullet_Revolver_1
+    3300006: Bullet_Revolver_1 1
+    3300008: Bullet_Revolver_2
+    3300010: Bullet_Revolver_2 1
+    3300012: Bullet_Revolver_3
+    3300014: Bullet_Revolver_3 1
+    3300016: Bullet_Revolver_4
+    3300018: Bullet_Revolver_4 1
+    3300020: Bullet_Revolver_5
+    3300022: Bullet_Revolver_5 1
+    3300024: Bullet_Revolver_6
+    3300026: Bullet_Revolver_6 1
+    3300028: Bullet_Revolver_Speedloader
+    3300030: Cylinder
+    3300032: Cylinder_rod
+    3300034: Hammer
+    3300036: Speedloader
+    3300038: Trigger
+    4300000: Speedloader
+    4300002: Bullet_Revolver_Speedloader
+    4300004: Body_Long
+    4300006: Cylinder_rod
+    4300008: Cylinder
+    4300010: Bullet_Revolver_1
+    4300012: Bullet_Revolver_2
+    4300014: Bullet_Revolver_3
+    4300016: Bullet_Revolver_4
+    4300018: Bullet_Revolver_5
+    4300020: Bullet_Revolver_6
+    4300022: Bullet_Revolver_1
+    4300024: Bullet_Revolver_2
+    4300026: Bullet_Revolver_3
+    4300028: Bullet_Revolver_4
+    4300030: Bullet_Revolver_5
+    4300032: Bullet_Revolver_6
+    4300034: Hammer
+    4300036: Trigger
+    4300038: Body_Short
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

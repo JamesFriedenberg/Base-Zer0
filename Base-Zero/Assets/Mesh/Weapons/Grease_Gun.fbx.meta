@@ -15,6 +15,10 @@ ModelImporter:
     100018: Grease_Gun_Trigger
     100020: M3A1_Magazine_Dual
     100022: M3A1_Magazine_Dual_2
+    100024: Glass
+    100026: Grease_Gun_Body_Short
+    100028: Holographic_Sight
+    100030: M68_Scope
     400000: Dual_Tape_1
     400002: Dual_Tape_2
     400004: //RootNode
@@ -27,8 +31,15 @@ ModelImporter:
     400018: Grease_Gun_Trigger
     400020: M3A1_Magazine_Dual
     400022: M3A1_Magazine_Dual_2
+    400024: Glass
+    400026: Grease_Gun_Body_Short
+    400028: Holographic_Sight
+    400030: M68_Scope
     2100000: Grease_Gun_mat
     2100002: AR_Platform_AR_Platform_Accesories_mat
+    2100004: AR_Advanced_mat
+    2100006: AR_Platform_Accesories_mat
+    2100008: Holo_Sight_mat
     2300000: Dual_Tape_1
     2300002: Dual_Tape_2
     2300004: Grease_Gun_Body
@@ -40,6 +51,10 @@ ModelImporter:
     2300016: Grease_Gun_Trigger
     2300018: M3A1_Magazine_Dual
     2300020: M3A1_Magazine_Dual_2
+    2300022: Glass
+    2300024: Grease_Gun_Body_Short
+    2300026: Holographic_Sight
+    2300028: M68_Scope
     3300000: Dual_Tape_1
     3300002: Dual_Tape_2
     3300004: Grease_Gun_Body
@@ -51,6 +66,10 @@ ModelImporter:
     3300016: Grease_Gun_Trigger
     3300018: M3A1_Magazine_Dual
     3300020: M3A1_Magazine_Dual_2
+    3300022: Glass
+    3300024: Grease_Gun_Body_Short
+    3300026: Holographic_Sight
+    3300028: M68_Scope
     4300000: Grease_Gun_Trigger
     4300002: Grease_Gun_Body
     4300004: Grease_Gun_Cover
@@ -62,6 +81,10 @@ ModelImporter:
     4300016: Dual_Tape_1
     4300018: M3A1_Magazine_Dual_2
     4300020: Dual_Tape_2
+    4300022: Grease_Gun_Body_Short
+    4300024: M68_Scope
+    4300026: Glass
+    4300028: Holographic_Sight
     7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
@@ -115,7 +138,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.02
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

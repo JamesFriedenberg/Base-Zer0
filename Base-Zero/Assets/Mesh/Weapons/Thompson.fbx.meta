@@ -1,0 +1,168 @@
+fileFormatVersion: 2
+guid: 44dd76d2127bffe43aa3f0ee2b6391c8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body_Barrel_Default
+    100002: Body_Barrel_Upgraded
+    100004: Bolt
+    100006: Glass
+    100008: Grease_Gun:Holographic_Sight
+    100010: Ironsights_Scope_0
+    100012: M68_Scope_2
+    100014: Magazine_Stick_Default
+    100016: Magazine_Stick_Dual_2
+    100018: Magazine_Stick_Dual_Upgraded
+    100020: Magazines
+    100022: Red_Dot_Scope_1
+    100024: Stock_Upgraded
+    100026: Tape
+    100028: //RootNode
+    100030: Trigger
+    400000: Body_Barrel_Default
+    400002: Body_Barrel_Upgraded
+    400004: Bolt
+    400006: Glass
+    400008: Grease_Gun:Holographic_Sight
+    400010: Ironsights_Scope_0
+    400012: M68_Scope_2
+    400014: Magazine_Stick_Default
+    400016: Magazine_Stick_Dual_2
+    400018: Magazine_Stick_Dual_Upgraded
+    400020: Magazines
+    400022: Red_Dot_Scope_1
+    400024: Stock_Upgraded
+    400026: Tape
+    400028: //RootNode
+    400030: Trigger
+    2100000: Heavy_SMG_mat
+    2100002: Grease_Gun_Holo_Sight_mat
+    2100004: AR_Platform_Accesories_mat
+    2100006: AR_Advanced_mat
+    2300000: Body_Barrel_Default
+    2300002: Body_Barrel_Upgraded
+    2300004: Bolt
+    2300006: Glass
+    2300008: Grease_Gun:Holographic_Sight
+    2300010: Ironsights_Scope_0
+    2300012: M68_Scope_2
+    2300014: Magazine_Stick_Default
+    2300016: Magazine_Stick_Dual_2
+    2300018: Magazine_Stick_Dual_Upgraded
+    2300020: Red_Dot_Scope_1
+    2300022: Stock_Upgraded
+    2300024: Tape
+    2300026: Trigger
+    3300000: Body_Barrel_Default
+    3300002: Body_Barrel_Upgraded
+    3300004: Bolt
+    3300006: Glass
+    3300008: Grease_Gun:Holographic_Sight
+    3300010: Ironsights_Scope_0
+    3300012: M68_Scope_2
+    3300014: Magazine_Stick_Default
+    3300016: Magazine_Stick_Dual_2
+    3300018: Magazine_Stick_Dual_Upgraded
+    3300020: Red_Dot_Scope_1
+    3300022: Stock_Upgraded
+    3300024: Tape
+    3300026: Trigger
+    4300000: Body_Barrel_Upgraded
+    4300002: Body_Barrel_Default
+    4300004: Ironsights_Scope_0
+    4300006: Grease_Gun:Holographic_Sight
+    4300008: Red_Dot_Scope_1
+    4300010: M68_Scope_2
+    4300012: Glass
+    4300014: Trigger
+    4300016: Bolt
+    4300018: Stock_Upgraded
+    4300020: Magazine_Stick_Default
+    4300022: Magazine_Stick_Dual_Upgraded
+    4300024: Tape
+    4300026: Magazine_Stick_Dual_2
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3.5
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.03
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
