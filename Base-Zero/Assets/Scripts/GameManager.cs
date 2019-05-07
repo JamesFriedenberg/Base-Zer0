@@ -113,11 +113,12 @@ public class GameManager : MonoBehaviour {
 			if (playerGuns.allWeapons [i] == null) {
 				continue;
 			}
-			Debug.Log ("Updating guns");
+			//Debug.Log ("Updating guns");
 			//playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[2] = weaponsList [i].scopeUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[3] = weaponsList [i].barrelUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[0] = weaponsList [i].stockUpgraded;
 			playerGuns.allWeapons[i].GetComponentInChildren<weapon>().myUpgrades[1] = weaponsList [i].magazineUpgraded;
+            Debug.Log(weaponsList[i].name + " : " + weaponsList[i].scopeImageNum);
 			switch (weaponsList [i].scopeImageNum) {
 			case 0:
 				playerGuns.allWeapons [i].GetComponentInChildren<weapon> ().myScope = weapon.Scope.None;

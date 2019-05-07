@@ -19,6 +19,8 @@ public class scope : MonoBehaviour
     public Scope myScope = Scope.None;
 	private string[] scopeImages = {"", "scope_redDot", "scope_redDot","scope_default","scope_default","scope_default","scope_default","scope_default"};
 
+    //Scope Number
+    public int activeScope;
     //the field of view of the camera when you ADS
     public int fov = 30;
 

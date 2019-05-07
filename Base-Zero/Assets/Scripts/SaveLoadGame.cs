@@ -40,6 +40,7 @@ public class SaveLoadGame : MonoBehaviour {
 		public int activeScope;
 		public bool[] receiverUpgraded;
 		public int activeReceiver;
+        public int scopeImageNum;
 		public string datapath;
 	}
 
@@ -82,7 +83,8 @@ public class SaveLoadGame : MonoBehaviour {
 				gunInfo [i].activeScope = gm.weaponsList [i].activeScope;
 				gunInfo [i].receiverUpgraded = gm.weaponsList [i].receiverUpgraded;
 				gunInfo [i].activeReceiver = gm.weaponsList [i].activeReceiver;
-				string gunString = gm.weaponsList [i].name + "Data.txt";
+                gunInfo[i].scopeImageNum = gm.weaponsList[i].scopeImageNum;
+                string gunString = gm.weaponsList [i].name + "Data.txt";
 				gunInfo[i].datapath = Path.Combine(Application.persistentDataPath, gunString);
 			}
 		}
@@ -115,7 +117,8 @@ public class SaveLoadGame : MonoBehaviour {
 				gunInfo [i].barrelUpgraded = gm.weaponsList [i].barrelUpgraded;
 				gunInfo [i].scopeUpgraded = gm.weaponsList [i].scopeUpgraded;
 				gunInfo [i].activeScope = gm.weaponsList [i].activeScope;
-				gunInfo [i].receiverUpgraded = gm.weaponsList [i].receiverUpgraded;
+                gunInfo[i].scopeImageNum = gm.weaponsList[i].scopeImageNum;
+                gunInfo [i].receiverUpgraded = gm.weaponsList [i].receiverUpgraded;
 				gunInfo [i].activeReceiver = gm.weaponsList [i].activeReceiver;
 			}
 		}
@@ -152,7 +155,8 @@ public class SaveLoadGame : MonoBehaviour {
 				gm.weaponsList [i].barrelUpgraded = gunInfo [i].barrelUpgraded;
 				gm.weaponsList [i].scopeUpgraded = gunInfo [i].scopeUpgraded;
 				gm.weaponsList [i].activeScope = gunInfo [i].activeScope;
-				gm.weaponsList [i].receiverUpgraded = gunInfo [i].receiverUpgraded;
+                gm.weaponsList[i].scopeImageNum = gunInfo[i].scopeImageNum;
+                gm.weaponsList [i].receiverUpgraded = gunInfo [i].receiverUpgraded;
 				gm.weaponsList [i].activeReceiver = gunInfo [i].activeReceiver;
 			}
 		}

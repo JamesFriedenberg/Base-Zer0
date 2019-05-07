@@ -105,7 +105,8 @@ public class weapon : MonoBehaviour
         currentAccuracy = accuracy;
         GameManager gm = gameManager.GetComponent<GameManager>();
         if(gm.ammoInWeapons != null && gm.ammoInWeapons.Length > 0){
-            currentAmmoCount = gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]];
+            //Debug.Log("Ammo" +gm.playerWeapons[gm.currentWeapon]);
+            //currentAmmoCount = gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]];
         }
     }
     public void FindStats(GameObject objToSearch){
@@ -140,6 +141,7 @@ public class weapon : MonoBehaviour
                 }
             }
 			if(children[i].GetComponent<scope>() != null){
+                Debug.Log(children[i].name);
                 if((int)myScope == (int)children[i].GetComponent<scope>().myScope){
                     children[i].gameObject.SetActive(true);
                     scopeName = children[i].GetComponent<scope>().GetScopeImage();
@@ -247,6 +249,10 @@ public class weapon : MonoBehaviour
         }
         if(willReset1 && willReset2) hasFired = false;
         if(hasReloaded) ADS();
+    }
+    public bool WillFire()
+    {
+        return willFire;
     }
     IEnumerator WillShoot()
     {

@@ -102,10 +102,10 @@ public class ShopSystemHandler : MonoBehaviour {
 		for(int i = 0; i < gm.weaponsList.Length; i++)
         {
 			
-			if ( i != 21 && i != 39 && i != 6 && i != 32 && i != 16) {
+			if ( i != 19 && i != 39 && i != 6 && i != 32 && i != 16) {
 				continue;
 			}
-			Debug.Log (i + " " + gm.weaponsList[i].purchased);
+			//Debug.Log (i + " " + gm.weaponsList[i].purchased);
 			if (gm.weaponsList[i].purchased)
             {
 				
@@ -154,10 +154,12 @@ public class ShopSystemHandler : MonoBehaviour {
                 Destroy(shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().barrelButton);
             }
 
-			/*if (gm.weaponsList [i].scopeUpgraded != null) {
+			if (gm.weaponsList [i].scopeUpgraded != null && shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeButton.Length != 0) {
 				shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scopeUpgraded = gm.weaponsList [i].scopeUpgraded;
+                Debug.Log(gm.weaponsList[i].name);
 				shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().scopeButton[gm.weaponsList[i].activeScope].GetComponent<WeaponButton>().UpdateScope(shopRef.weaponRefArray [i], gm.weaponsList[i].activeScope);
-			}*/
+                shopRef.weaponRefArray[i].GetComponent<WeaponInfo>().scopeActiveNum = gm.weaponsList[i].activeScope;
+			}
 			if (gm.weaponsList [i].receiverUpgraded != null) {
 				shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().receiverUpgraded = gm.weaponsList [i].receiverUpgraded;
 				shopRef.weaponRefArray [i].GetComponent<WeaponInfo> ().receiverButton[gm.weaponsList[i].activeReceiver].GetComponent<WeaponButton>().UpdateReceiver(shopRef.weaponRefArray [i], gm.weaponsList[i].activeReceiver);
@@ -172,7 +174,7 @@ public class ShopSystemHandler : MonoBehaviour {
 		gm.playerScraps = shopRef.scrap;
 		for(int i =0; i <gm.weaponsList.Length; i++)
         {
-			if ( i != 21 && i != 39 && i != 6 && i != 32 && i != 16) {
+			if ( i != 19 && i != 39 && i != 6 && i != 32 && i != 16) {
 				continue;
 			}
 				

@@ -71,7 +71,7 @@ public class PlayerHandler : MonoBehaviour
     void Update()
     {
         
-        //if (Input.GetButton("Fire2") || playerWeapons[currentWeapon].GetComponentInChildren<weapon>().willFire()) return;
+        if (Input.GetButton("Fire2") || playerWeapons[currentWeapon].GetComponentInChildren<weapon>().WillFire()) return;
         if(Input.mouseScrollDelta.y > 0){
             SwitchWeapon(currentWeapon + 1);
         }
