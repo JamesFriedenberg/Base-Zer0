@@ -9,6 +9,7 @@ public class QuestManager : MonoBehaviour {
 
     public GameObject[] currentQuests = new GameObject[5];
 
+    private int[] questIntArray = new int[6];
     private QuestPopulator qp;
     private bool questsWereAdded = true;
 
@@ -167,12 +168,195 @@ public class QuestManager : MonoBehaviour {
     {
 
 
-        currentQuests[0] = questDatabase[0];
-        currentQuests[1] = questDatabase[1];
-        currentQuests[2] = questDatabase[2];
-        currentQuests[3] = questDatabase[3];
-        currentQuests[4] = questDatabase[4];
-        currentQuests[5] = questDatabase[5];
+
+
+
+
+        int endingChooser = Random.Range(0, 2);
+
+        if(endingChooser == 1)
+        {
+            currentQuests[5] = questDatabase[14];
+            int playChooser = Random.Range(0, 4);
+
+            if(playChooser == 0)
+            {
+                currentQuests[0] = questDatabase[1];
+                currentQuests[1] = questDatabase[11];
+                currentQuests[2] = questDatabase[3];
+                currentQuests[3] = questDatabase[13];
+                currentQuests[4] = questDatabase[4];
+
+                questIntArray[0] = 1;
+                questIntArray[1] = 11;
+                questIntArray[2] = 3;
+                questIntArray[3] = 13;
+                questIntArray[4] = 4;
+                questIntArray[5] = 14;
+            }
+            else if(playChooser == 1)
+            {
+                currentQuests[0] = questDatabase[2];
+                currentQuests[1] = questDatabase[10];
+                currentQuests[2] = questDatabase[4];
+                currentQuests[3] = questDatabase[13];
+                currentQuests[4] = questDatabase[0];
+                questIntArray[0] = 2;
+                questIntArray[1] = 10;
+                questIntArray[2] = 4;
+                questIntArray[3] = 13;
+                questIntArray[4] = 0;
+                questIntArray[5] = 14;
+            }
+            else if(playChooser == 2)
+            {
+                currentQuests[0] = questDatabase[0];
+                currentQuests[1] = questDatabase[13];
+                currentQuests[2] = questDatabase[2];
+                currentQuests[3] = questDatabase[12];
+                currentQuests[4] = questDatabase[3];
+                questIntArray[0] = 0;
+                questIntArray[1] = 13;
+                questIntArray[2] = 2;
+                questIntArray[3] = 12;
+                questIntArray[4] = 3;
+                questIntArray[5] = 14;
+            }
+            else if (playChooser == 3)
+            {
+                currentQuests[0] = questDatabase[3];
+                currentQuests[1] = questDatabase[10];
+                currentQuests[2] = questDatabase[1];
+                currentQuests[3] = questDatabase[13];
+                currentQuests[4] = questDatabase[2];
+                questIntArray[0] = 3;
+                questIntArray[1] = 10;
+                questIntArray[2] = 1;
+                questIntArray[3] = 13;
+                questIntArray[4] = 2;
+                questIntArray[5] = 14;
+            }
+            else if(playChooser == 4)
+            {
+                currentQuests[0] = questDatabase[4];
+                currentQuests[1] = questDatabase[13];
+                currentQuests[2] = questDatabase[1];
+                currentQuests[3] = questDatabase[12];
+                currentQuests[4] = questDatabase[3];
+                questIntArray[0] = 4;
+                questIntArray[1] = 13;
+                questIntArray[2] = 1;
+                questIntArray[3] = 12;
+                questIntArray[4] = 3;
+                questIntArray[5] = 14;
+            }
+            else
+            {
+                currentQuests[0] = questDatabase[4];
+                currentQuests[1] = questDatabase[13];
+                currentQuests[2] = questDatabase[1];
+                currentQuests[3] = questDatabase[12];
+                currentQuests[4] = questDatabase[3];
+                questIntArray[0] = 4;
+                questIntArray[1] = 13;
+                questIntArray[2] = 1;
+                questIntArray[3] = 12;
+                questIntArray[4] = 3;
+                questIntArray[5] = 14;
+            }
+
+        }
+        else if(endingChooser == 0)
+        {
+            currentQuests[5] = questDatabase[15];
+            int playChooser = Random.Range(0, 4);
+
+            if (playChooser == 0)
+            {
+                currentQuests[0] = questDatabase[5];
+                currentQuests[1] = questDatabase[11];
+                currentQuests[2] = questDatabase[8];
+                currentQuests[3] = questDatabase[13];
+                currentQuests[4] = questDatabase[9];
+                questIntArray[0] = 5;
+                questIntArray[1] = 11;
+                questIntArray[2] = 8;
+                questIntArray[3] = 13;
+                questIntArray[4] = 9;
+                questIntArray[5] = 15;
+            }
+            else if (playChooser == 1)
+            {
+                currentQuests[0] = questDatabase[7];
+                currentQuests[1] = questDatabase[10];
+                currentQuests[2] = questDatabase[9];
+                currentQuests[3] = questDatabase[13];
+                currentQuests[4] = questDatabase[5];
+                questIntArray[0] = 7;
+                questIntArray[1] = 10;
+                questIntArray[2] = 9;
+                questIntArray[3] = 13;
+                questIntArray[4] = 5;
+                questIntArray[5] = 15;
+            }
+            else if (playChooser == 2)
+            {
+                currentQuests[0] = questDatabase[5];
+                currentQuests[1] = questDatabase[13];
+                currentQuests[2] = questDatabase[7];
+                currentQuests[3] = questDatabase[12];
+                currentQuests[4] = questDatabase[9];
+                questIntArray[0] = 5;
+                questIntArray[1] = 13;
+                questIntArray[2] = 7;
+                questIntArray[3] = 12;
+                questIntArray[4] = 9;
+                questIntArray[5] = 15;
+            }
+            else if (playChooser == 3)
+            {
+                currentQuests[0] = questDatabase[8];
+                currentQuests[1] = questDatabase[10];
+                currentQuests[2] = questDatabase[6];
+                currentQuests[3] = questDatabase[13];
+                currentQuests[4] = questDatabase[7];
+                questIntArray[0] = 8;
+                questIntArray[1] = 10;
+                questIntArray[2] = 6;
+                questIntArray[3] = 13;
+                questIntArray[4] = 7;
+                questIntArray[5] = 15;
+            }
+            else if (playChooser == 4)
+            {
+                currentQuests[0] = questDatabase[9];
+                currentQuests[1] = questDatabase[13];
+                currentQuests[2] = questDatabase[6];
+                currentQuests[3] = questDatabase[12];
+                currentQuests[4] = questDatabase[8];
+                questIntArray[0] = 9;
+                questIntArray[1] = 13;
+                questIntArray[2] = 6;
+                questIntArray[3] = 12;
+                questIntArray[4] = 8;
+                questIntArray[5] = 15;
+            }
+            else
+            {
+                currentQuests[0] = questDatabase[9];
+                currentQuests[1] = questDatabase[13];
+                currentQuests[2] = questDatabase[6];
+                currentQuests[3] = questDatabase[12];
+                currentQuests[4] = questDatabase[8];
+                questIntArray[0] = 9;
+                questIntArray[1] = 13;
+                questIntArray[2] = 6;
+                questIntArray[3] = 12;
+                questIntArray[4] = 8;
+                questIntArray[5] = 15;
+            }
+        }
+
         //List<int> takeout = new List<int>();
         ////rentQuests[currentQuests.Length] = questDatabase[questDatabase.Length];
 
@@ -254,5 +438,9 @@ public class QuestManager : MonoBehaviour {
 
         //    }
         //}
+    }
+    public int[] savedQuestArray()
+    {
+        return questIntArray;
     }
 }
