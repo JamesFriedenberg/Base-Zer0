@@ -402,8 +402,8 @@ public class weapon : MonoBehaviour
                     Debug.Log("Headshot");
 
                 }
-                else if(target.gameObject.name == "DroneEnemy" || target.gameObject.name == "DroneEnemy (Clone)" || target.gameObject.name == "DroneEnemy(Clone)")
-                {
+                else if(target.gameObject.name == "DroneEnemy" || target.gameObject.name == "DroneEnemy (Clone)" || target.gameObject.name == "DroneEnemy(Clone)" || target.gameObject.name == "DroneEnemy 1")
+            {
                     target.TakeDamage(damage);
                 }
             myImpact = blood;
