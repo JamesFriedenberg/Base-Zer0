@@ -17,7 +17,7 @@ public class scope : MonoBehaviour
 	};
     //The active scope
     public Scope myScope = Scope.None;
-	private string[] scopeImages = {"", "scope_redDot", "scope_redDot","scope_default","scope_default","scope_default","scope_default","scope_default"};
+	private string[] scopeImages = {"", "scope_redDot", "scope_kobra","scope_cco","scope_acog", "scope_acog", "scope_default","scope_default"};
 
     //Scope Number
     public int activeScope;

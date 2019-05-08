@@ -37,6 +37,7 @@ TagManager:
   - Heli1
   - pickupText
   - ScrapBox
+  - DroneEnemy
   layers:
   - Default
   - TransparentFX

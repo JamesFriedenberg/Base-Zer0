@@ -95,6 +95,10 @@ public class ShopSystemHandler : MonoBehaviour {
 		shopRef.scrap = gm.playerScraps;
 		shopRef.UpdateCashScrap ();
 		for(int j = 0; j < 3; j++){
+            if(gm.playerWeapons[j] == -1)
+            {
+                continue;
+            }
 			shopRef.equippedWeapons [j] = gm.playerWeapons [j];
 			shopRef.equipSlots [j].GetComponent<EquipWeapon>().weaponSlot.GetComponentInChildren<Text>().text = shopRef.weaponRefArray [shopRef.equippedWeapons [j]].GetComponent<WeaponInfo> ().name;
 		}

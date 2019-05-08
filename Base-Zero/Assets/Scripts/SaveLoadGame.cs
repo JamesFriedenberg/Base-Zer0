@@ -90,14 +90,17 @@ public class SaveLoadGame : MonoBehaviour {
 
 	void Update ()
 	{
-		if(Input.GetKeyDown (KeyCode.Alpha8))
-			SaveGame ();
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            Debug.Log("loading");
+            LoadGame();
+        }
 
-		if (Input.GetKeyDown (KeyCode.Alpha9))
-			LoadGame ();
+           
+               
 	}
 
-	void SaveGame(){
+	public void SaveGame(){
 		QuestManager qm = GetComponent<QuestManager> ();
 		questInfo.currentQuestIndex = qm.questIndex;
 
@@ -130,7 +133,7 @@ public class SaveLoadGame : MonoBehaviour {
 		}
 	}
 
-	void LoadGame(){
+	public void LoadGame(){
 		questInfo = LoadQuestData (questPath);
 		QuestManager qm = GetComponent<QuestManager> ();
 		qm.questIndex = questInfo.currentQuestIndex;

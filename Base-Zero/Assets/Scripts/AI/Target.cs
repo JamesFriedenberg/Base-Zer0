@@ -11,6 +11,7 @@ public class Target : MonoBehaviour {
     private GameManager gm;
 
     public List<GameObject> ammo;
+    public bool isDrone;
     public GameObject scraps;
 
     private bool flag = true;
@@ -38,7 +39,7 @@ public class Target : MonoBehaviour {
         }
         else if (slowZombieRef.GetComponent<DroneController>()){
             droneController = slowZombieRef.GetComponent<DroneController>();
-            Debug.Log("TAKEYH");
+            
 
             zombieController = null;
             droneIsHere = true;
@@ -50,7 +51,9 @@ public class Target : MonoBehaviour {
     }
 
     public void TakeDamage(float amount){
-        if (droneIsHere) {
+        Debug.Log("here");
+        if (isDrone) {
+            
             droneController.takeDamage(amount);
         }
         else if (zombIsHere)

@@ -75,7 +75,7 @@ public class SpawnTEST : MonoBehaviour {
 
 
         int droneChance = Random.Range(0, 20);
-        if(droneChance >= 16)
+        if(droneChance >= 18)
         {
             Instantiate(dronePrefab, randomPointOnCircleEdge(rad), transform.rotation);
 

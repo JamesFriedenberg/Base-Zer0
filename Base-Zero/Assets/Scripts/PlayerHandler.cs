@@ -33,7 +33,11 @@ public class PlayerHandler : MonoBehaviour
         startingPlayerHealth = gm.startingPlayerHealth;
         currentPlayerHealth = gm.currentPlayerHealth;
         weaponsFromGM = gm.playerWeapons;
-        if(!gm.GetComponent<GameManager>().startPosition.Equals(Vector3.zero)){
+        Scene curScene = SceneManager.GetActiveScene();
+        if(curScene.name == "Safehouse")
+        {
+            this.transform.position = new Vector3(87.2f, 21.71f, 155.56f);
+        } else if (!gm.GetComponent<GameManager>().startPosition.Equals(Vector3.zero)){
             this.transform.position = gm.GetComponent<GameManager>().startPosition;
         }
 
@@ -91,9 +95,7 @@ public class PlayerHandler : MonoBehaviour
         {
             SwitchWeapon(2);
         }
-        if(Input.GetKeyDown(KeyCode.L)){
-            TakeDamage(100);
-        }
+       
         doHeal();
         if (currentPlayerHealth <= 0) onDeath();
     }
@@ -179,6 +181,8 @@ public class PlayerHandler : MonoBehaviour
     }
     private void onDeath()
     {
-        SceneManager.LoadScene(3);
+        gameManager = GameObject.FindGameObjectWithTag("gm");
+        gm.GetComponent<SaveLoadGame>().SaveGame();
+        SceneManager.LoadScene("MainMenuMockup");
     }
 }

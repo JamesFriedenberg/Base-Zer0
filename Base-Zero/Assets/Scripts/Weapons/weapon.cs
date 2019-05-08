@@ -181,6 +181,10 @@ public class weapon : MonoBehaviour
                     damage += children[i].GetComponent<body>().damage;
                     recoil *= children[i].GetComponent<body>().recoil;
                     fireRate *= children[i].GetComponent<body>().fireRate;
+                    Debug.Log(gameObject.name + " " + fireRate);
+                } else
+                {
+                    children[i].gameObject.SetActive(false);
                 }
             }
         }
@@ -402,10 +406,11 @@ public class weapon : MonoBehaviour
                     Debug.Log("Headshot");
 
                 }
-                else if(target.gameObject.name == "DroneEnemy" || target.gameObject.name == "DroneEnemy (Clone)" || target.gameObject.name == "DroneEnemy(Clone)" || target.gameObject.name == "DroneEnemy 1")
+                else if(target.gameObject.tag == "DroneEnemy")
             {
                     target.TakeDamage(damage);
                 }
+            Debug.Log(target.gameObject.tag);
             myImpact = blood;
             }
             else
