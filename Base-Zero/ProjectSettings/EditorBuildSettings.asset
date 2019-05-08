@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ShippingYard.unity
     guid: 38148454ef2036e40b6f7e0fb56c0654
+  - enabled: 1
+    path: Assets/Scenes/Airfield.unity
+    guid: 14a92147e9c2c9844821602c281b533b
   m_configObjects: {}

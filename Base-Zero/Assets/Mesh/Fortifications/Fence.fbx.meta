@@ -38,7 +38,12 @@ ModelImporter:
     4300006: Right_Post
     4300008: Left_Post
     4300010: Barbed_Wire
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: 7865ab984aa645347b774ac797c4ca0f, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
