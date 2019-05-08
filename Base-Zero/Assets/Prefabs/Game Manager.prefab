@@ -36,7 +36,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4456092575002634}
   - component: {fileID: 114619295938893632}
-  - component: {fileID: 114774804886457488}
   m_Layer: 0
   m_Name: PlaneEnding
   m_TagString: q_defense
@@ -564,13 +563,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: GPS Beacon
+  questName: GunKit
   location: SupplyDepot
-  questText: Find the GPS Beacon for the helicopter in the Supply Depot.
+  questText: 'Find the gun maintenace kit in the Supply Depot. '
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1865687490872334, guid: 9a6fa980521ebeb41880ea5102713ecb,
+  questItemPrefab: {fileID: 1713987864555940, guid: f773edae16fa545478c94d842ef8e879,
     type: 2}
-  locationOfObject: {x: 421.29, y: 1.29, z: 134.56}
+  locationOfObject: {x: 466.2798, y: 1.281284, z: 329.3268}
 --- !u!114 &114125436219222520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -584,7 +583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questName: Find Tools
   location: ShippingYard
-  questText: Find the tools to fix the helicopter in the Shipping Yard.
+  questText: Find the tools to fix the plane in the Shipping Yard.
   UITextRef: {fileID: 0}
   questItemPrefab: {fileID: 1713987864555940, guid: f773edae16fa545478c94d842ef8e879,
     type: 2}
@@ -629,13 +628,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: Supply
+  questName: FoodCrate
   location: RailPath
-  questText: 'Find the supply cache along the railroad. '
+  questText: Find the crate of food in the Rail Path.
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1023684938594244, guid: efac3a1a5e084464880ce909e6c511fa,
+  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
     type: 2}
-  locationOfObject: {x: 279.13, y: 1.66, z: 67.61}
+  locationOfObject: {x: 255.2227, y: 1.697, z: 99.753}
 --- !u!114 &114367827827389022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -665,13 +664,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: FindFood
-  location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  questName: FindRepair
+  location: RailPath
+  questText: Find the repair wire box for the nuclear setup in the Rail Path.
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+  questItemPrefab: {fileID: 1713987864555940, guid: f773edae16fa545478c94d842ef8e879,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
+  locationOfObject: {x: 190.8962, y: 1.96798, z: 44.61246}
 --- !u!114 &114469710844259494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -683,13 +682,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: FindFood
-  location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  questName: DisableOverride
+  location: VehicleDepot
+  questText: Destroy the computer security system in the Vehicle Depot
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+  questItemPrefab: {fileID: 1161270492044694, guid: 52bf42fc6894da144a74384aedcdb47d,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
+  locationOfObject: {x: 110.6091, y: 3.5488, z: 59.25}
 --- !u!114 &114478327494606626
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -717,12 +716,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questName: FindFood
-  location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  location: Airfield
+  questText: Retrieve the radio from the airfield.
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+  questItemPrefab: {fileID: 1865687490872334, guid: 9a6fa980521ebeb41880ea5102713ecb,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
+  locationOfObject: {x: 279.7393, y: 0.986765, z: 207.769}
 --- !u!114 &114569560563488762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -734,13 +733,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: GPS Beacon
-  location: SupplyDepot
-  questText: Find the GPS Beacon for the helicopter in the Supply Depot.
+  questName: AmmoBox
+  location: Trainyard
+  questText: 'Find the ammunitions crate in the trainyard. '
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1865687490872334, guid: 9a6fa980521ebeb41880ea5102713ecb,
+  questItemPrefab: {fileID: 1023684938594244, guid: efac3a1a5e084464880ce909e6c511fa,
     type: 2}
-  locationOfObject: {x: 421.29, y: 1.29, z: 134.56}
+  locationOfObject: {x: 201.5804, y: 2.38, z: 232.0798}
 --- !u!114 &114619295938893632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -753,17 +752,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  questName: DefendHeli
-  location: SupplyDepot
-  questText: Defend the heli
+  questName: DefendPlane
+  location: Airfield
+  questText: Time to escape! Defend the C130 Plane in the Airfield.
   UITextRef: {fileID: 0}
   getToSite: 0
-  getToSiteText: Defend the helicopter
-  defenseTargetObj: {fileID: 1764893209333128, guid: 185dfaefdf8f6b145ac594b0e93e115f,
+  getToSiteText: Time to escape! Defend the C130 Plane in the Airfield.
+  defenseTargetObj: {fileID: 1109747904197566, guid: a79ec09489cd0b740819598c9f567423,
     type: 2}
-  defenseTargetLocation: {x: 374.01, y: 14.12, z: 360.1}
+  defenseTargetLocation: {x: -0.3, y: 3.88, z: -36.8}
   defendTarget: 0
-  defendTargetText: Defend the helicopter!
+  defendTargetText: Defend the plane for 60 seconds to escape!
   destroyDefendTargetonFinish: 0
   timer: 60
 --- !u!114 &114646930057043772
@@ -778,17 +777,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  questName: DefendHeli
-  location: SupplyDepot
-  questText: Defend the heli
+  questName: DefendNukeLaunch
+  location: Trainyard
+  questText: Nuclear launch detected! Defend the launch PC in the Train Yard!
   UITextRef: {fileID: 0}
   getToSite: 0
-  getToSiteText: Defend the helicopter
-  defenseTargetObj: {fileID: 1764893209333128, guid: 185dfaefdf8f6b145ac594b0e93e115f,
+  getToSiteText: Nuclear launch detected! Defend the launch PC in the Train Yard!
+  defenseTargetObj: {fileID: 1161270492044694, guid: 52bf42fc6894da144a74384aedcdb47d,
     type: 2}
-  defenseTargetLocation: {x: 374.01, y: 14.12, z: 360.1}
+  defenseTargetLocation: {x: 221.8215, y: 0.8652043, z: 254.9937}
   defendTarget: 0
-  defendTargetText: Defend the helicopter!
+  defendTargetText: 'Defend the launch console for 60 seconds! '
   destroyDefendTargetonFinish: 0
   timer: 60
 --- !u!114 &114733860594398366
@@ -802,13 +801,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: FindFood
-  location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  questName: LaunchCode
+  location: 'Airfield '
+  questText: Find the nuclear launch codes in the Airfield.
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+  questItemPrefab: {fileID: 1860320048872690, guid: 591767f4c3f734449a6515f8ff5daeca,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
+  locationOfObject: {x: 237.848, y: 2.38, z: 297.984}
 --- !u!114 &114749901802640758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -820,38 +819,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: FindFood
+  questName: FindManifest
   location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  questText: Find the train manifest in the Shipping Yard.
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+  questItemPrefab: {fileID: 1979992771052524, guid: 404d10eacdca8b24a988d88f864cb18a,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
---- !u!114 &114774804886457488
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1038896267958486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54ac4cd56e2a30f46b2cd2be5f3f17d4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  questName: DefendHeli
-  location: SupplyDepot
-  questText: Defend the heli
-  UITextRef: {fileID: 0}
-  getToSite: 0
-  getToSiteText: Defend the helicopter
-  defenseTargetObj: {fileID: 1764893209333128, guid: 185dfaefdf8f6b145ac594b0e93e115f,
-    type: 2}
-  defenseTargetLocation: {x: 374.01, y: 14.12, z: 360.1}
-  defendTarget: 0
-  defendTargetText: Defend the helicopter!
-  destroyDefendTargetonFinish: 0
-  timer: 60
+  locationOfObject: {x: 182.5877, y: 0.0611, z: 240.4447}
 --- !u!114 &114794098760788078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -863,13 +837,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ff55f048bd224d4f817e99c5e6f2b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questName: FindFood
-  location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  questName: LaunchKey
+  location: SupplyDepot
+  questText: Retreive the launch key from the Supply Depot.
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+  questItemPrefab: {fileID: 1838520414443200, guid: 9c730bcfcaa5d0a4cb2b4937f7966734,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
+  locationOfObject: {x: 213.115, y: 0.02533, z: 315.9183}
 --- !u!114 &114822854741617996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -882,12 +856,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questName: FindFood
-  location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  location: Trainyard
+  questText: Find the crate of navigation equipment in the Trainyard.
   UITextRef: {fileID: 0}
   questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
+  locationOfObject: {x: 166.9144, y: 1.543476, z: 143.8025}
 --- !u!114 &114933817050163972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -900,12 +874,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questName: FindFood
-  location: ShippingYard
-  questText: Find the food crate in the ShippingYard
+  location: SupplyDepot
+  questText: Find the flight manual in the Supply Depot.
   UITextRef: {fileID: 0}
-  questItemPrefab: {fileID: 1220466231720738, guid: 3500bb2df98f6d949b5c9fa21cf7cecb,
+  questItemPrefab: {fileID: 1979992771052524, guid: 404d10eacdca8b24a988d88f864cb18a,
     type: 2}
-  locationOfObject: {x: 500.57, y: 0.72, z: 438.31}
+  locationOfObject: {x: 325.85, y: 0.959, z: 218.6606}
 --- !u!114 &114960966042902766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -921,20 +895,19 @@ MonoBehaviour:
   - {fileID: 1920386060801812}
   - {fileID: 1947509206174484}
   - {fileID: 1763744121020172}
+  - {fileID: 1824962455606872}
+  - {fileID: 1536119310361188}
+  - {fileID: 1527805742470620}
+  - {fileID: 1030256891733440}
+  - {fileID: 1804859737781164}
+  - {fileID: 1780734427242806}
+  - {fileID: 1047052621817082}
   - {fileID: 1056959577428260}
   - {fileID: 1615706063042560}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1925025610778500}
+  - {fileID: 1925025610778500}
+  - {fileID: 1038896267958486}
+  - {fileID: 1697396823726886}
   currentQuests:
   - {fileID: 0}
   - {fileID: 0}

@@ -38,6 +38,7 @@ GameObject:
   - component: {fileID: 4771479899841874}
   - component: {fileID: 33178441457272308}
   - component: {fileID: 23667163716825984}
+  - component: {fileID: 65760591624268376}
   m_Layer: 0
   m_Name: Clipboard
   m_TagString: Untagged
@@ -52,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1860320048872690}
   m_LocalRotation: {x: -0.51219743, y: -0.4874975, z: -0.51219755, w: 0.4874975}
-  m_LocalPosition: {x: 196.1, y: 0.88, z: 105.43573}
+  m_LocalPosition: {x: 237.848, y: 2.38, z: 297.984}
   m_LocalScale: {x: 2.8464923, y: 2.8464923, z: 2.8464923}
   m_Children:
   - {fileID: 4897647890895198}
@@ -156,3 +157,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1112054234605996}
   m_Mesh: {fileID: 4300002, guid: f6d6255cb0adab04795fa0195fd0c0fb, type: 3}
+--- !u!65 &65760591624268376
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1860320048872690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1134942, y: 1.0524567, z: 0.5390967}
+  m_Center: {x: -0.05138916, y: -0.025605546, z: -0.1541053}

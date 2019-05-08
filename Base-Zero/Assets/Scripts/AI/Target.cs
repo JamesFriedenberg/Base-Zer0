@@ -19,6 +19,8 @@ public class Target : MonoBehaviour {
     private ZombieController zombieController;
     private DroneController droneController;
 
+    private bool zombIsHere = false;
+    private bool droneIsHere = false;
     private void setKinematic(bool val)
     {
         Rigidbody[] rbs = GetComponentsInChildren<Rigidbody>();
@@ -32,10 +34,14 @@ public class Target : MonoBehaviour {
         if(slowZombieRef.GetComponent<ZombieController>()){
             zombieController = slowZombieRef.GetComponent<ZombieController>();
             droneController = null;
+            zombIsHere = true;
         }
         else if (slowZombieRef.GetComponent<DroneController>()){
             droneController = slowZombieRef.GetComponent<DroneController>();
+            Debug.Log("TAKEYH");
+
             zombieController = null;
+            droneIsHere = true;
         }
 
         setKinematic(true);
@@ -44,10 +50,10 @@ public class Target : MonoBehaviour {
     }
 
     public void TakeDamage(float amount){
-        if (!zombieController) {
+        if (droneIsHere) {
             droneController.takeDamage(amount);
         }
-        else if (!droneController)
+        else if (zombIsHere)
         {
             zombieController.takeDamage(amount);
 

@@ -46,7 +46,7 @@ public class UIHandler : MonoBehaviour {
         playerHealth = playerHandler.GetHealth();
         playerScraps = gameManager.GetComponent<GameManager>().GetPlayerScraps();
         playerCash = gameManager.GetComponent<GameManager>().GetPlayerCash();
-       // string currentAmmo = playerHandler.playerWeapons[playerHandler.currentWeapon].GetComponent<weapon>().currentAmmoCount.ToString();
+       //string currentAmmo = playerHandler.playerWeapons[playerHandler.currentWeapon].GetComponent<weapon>().currentAmmoCount.ToString();
 
        // ammoUIText.text = currentAmmo + "/" + (playerAmmo).ToString();
         healthUIText.text = (playerHealth / 10).ToString();

@@ -104,7 +104,7 @@ public class DroneController : MonoBehaviour
      
         float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
-        Debug.Log(distanceToPlayer);
+
         //zombie.SetDestination(player.transform.localPosition);
         if (distanceToPlayer > distanceToSeekPlayer)
         {
