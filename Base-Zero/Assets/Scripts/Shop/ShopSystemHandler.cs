@@ -102,7 +102,7 @@ public class ShopSystemHandler : MonoBehaviour {
 		for(int i = 0; i < gm.weaponsList.Length; i++)
         {
 			
-			if ( i != 19 && i != 39 && i != 6 && i != 32 && i != 16) {
+			if ( shopRef.weaponRefArray[i] == null) {
 				continue;
 			}
 			//Debug.Log (i + " " + gm.weaponsList[i].purchased);
@@ -174,7 +174,7 @@ public class ShopSystemHandler : MonoBehaviour {
 		gm.playerScraps = shopRef.scrap;
 		for(int i =0; i <gm.weaponsList.Length; i++)
         {
-			if ( i != 19 && i != 39 && i != 6 && i != 32 && i != 16) {
+			if ( shopRef.weaponRefArray[i] == null) {
 				continue;
 			}
 				

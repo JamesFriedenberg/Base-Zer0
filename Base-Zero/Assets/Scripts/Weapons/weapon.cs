@@ -141,7 +141,6 @@ public class weapon : MonoBehaviour
                 }
             }
 			if(children[i].GetComponent<scope>() != null){
-                Debug.Log(children[i].name);
                 if((int)myScope == (int)children[i].GetComponent<scope>().myScope){
                     children[i].gameObject.SetActive(true);
                     scopeName = children[i].GetComponent<scope>().GetScopeImage();
@@ -259,7 +258,7 @@ public class weapon : MonoBehaviour
 
         yield return new WaitForSeconds(.2f);
         willFire = false;
-        if(!(semiAuto && hasFired)){ 
+        if(!(semiAuto && hasFired)){
             Shoot();
             fireTimer = 0;
         }
@@ -326,7 +325,7 @@ public class weapon : MonoBehaviour
 
         //update current ammo count in specific weapon in gamemanager so it will remain
         //consistent through scenes
-        gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]] = currentAmmoCount;
+//        gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]] = currentAmmoCount;
         if(projectile){
             DoProjectile();
             return;
