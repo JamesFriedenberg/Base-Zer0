@@ -1,0 +1,3945 @@
+fileFormatVersion: 2
+guid: 887ab57a430150b40983e0eefe26342b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ceilings
+    100002: Door_Closed
+    100004: Door_Closed 1
+    100006: Door_Closed 2
+    100008: Door_Closed 3
+    100010: Door_Closed_Left
+    100012: Door_Closed_Left 1
+    100014: Door_Closed_Left 2
+    100016: Door_Closed_Left 3
+    100018: Door_Closed_Right
+    100020: Door_Closed_Right 1
+    100022: Door_Closed_Right 2
+    100024: Door_Closed_Right 3
+    100026: Doorway_Double
+    100028: Doorway_Double 1
+    100030: Doorway_Double 2
+    100032: Doorway_Double 3
+    100034: Doorway_Double 4
+    100036: Doorway_Double 5
+    100038: Doorway_Single
+    100040: Doorway_Single 1
+    100042: Doorway_Single 2
+    100044: Doorway_Single 3
+    100046: Endcap_Left
+    100048: Endcap_Left 1
+    100050: Endcap_Left 10
+    100052: Endcap_Left 100
+    100054: Endcap_Left 101
+    100056: Endcap_Left 102
+    100058: Endcap_Left 103
+    100060: Endcap_Left 104
+    100062: Endcap_Left 105
+    100064: Endcap_Left 106
+    100066: Endcap_Left 107
+    100068: Endcap_Left 108
+    100070: Endcap_Left 109
+    100072: Endcap_Left 11
+    100074: Endcap_Left 110
+    100076: Endcap_Left 111
+    100078: Endcap_Left 112
+    100080: Endcap_Left 113
+    100082: Endcap_Left 114
+    100084: Endcap_Left 115
+    100086: Endcap_Left 116
+    100088: Endcap_Left 117
+    100090: Endcap_Left 118
+    100092: Endcap_Left 119
+    100094: Endcap_Left 12
+    100096: Endcap_Left 120
+    100098: Endcap_Left 121
+    100100: Endcap_Left 122
+    100102: Endcap_Left 123
+    100104: Endcap_Left 124
+    100106: Endcap_Left 125
+    100108: Endcap_Left 126
+    100110: Endcap_Left 127
+    100112: Endcap_Left 128
+    100114: Endcap_Left 129
+    100116: Endcap_Left 13
+    100118: Endcap_Left 130
+    100120: Endcap_Left 131
+    100122: Endcap_Left 132
+    100124: Endcap_Left 133
+    100126: Endcap_Left 134
+    100128: Endcap_Left 135
+    100130: Endcap_Left 136
+    100132: Endcap_Left 137
+    100134: Endcap_Left 138
+    100136: Endcap_Left 139
+    100138: Endcap_Left 14
+    100140: Endcap_Left 140
+    100142: Endcap_Left 141
+    100144: Endcap_Left 142
+    100146: Endcap_Left 143
+    100148: Endcap_Left 144
+    100150: Endcap_Left 145
+    100152: Endcap_Left 146
+    100154: Endcap_Left 147
+    100156: Endcap_Left 148
+    100158: Endcap_Left 149
+    100160: Endcap_Left 15
+    100162: Endcap_Left 150
+    100164: Endcap_Left 151
+    100166: Endcap_Left 152
+    100168: Endcap_Left 153
+    100170: Endcap_Left 154
+    100172: Endcap_Left 155
+    100174: Endcap_Left 156
+    100176: Endcap_Left 157
+    100178: Endcap_Left 158
+    100180: Endcap_Left 159
+    100182: Endcap_Left 16
+    100184: Endcap_Left 160
+    100186: Endcap_Left 161
+    100188: Endcap_Left 162
+    100190: Endcap_Left 17
+    100192: Endcap_Left 18
+    100194: Endcap_Left 19
+    100196: Endcap_Left 2
+    100198: Endcap_Left 20
+    100200: Endcap_Left 21
+    100202: Endcap_Left 22
+    100204: Endcap_Left 23
+    100206: Endcap_Left 24
+    100208: Endcap_Left 25
+    100210: Endcap_Left 26
+    100212: Endcap_Left 27
+    100214: Endcap_Left 28
+    100216: Endcap_Left 29
+    100218: Endcap_Left 3
+    100220: Endcap_Left 30
+    100222: Endcap_Left 31
+    100224: Endcap_Left 32
+    100226: Endcap_Left 33
+    100228: Endcap_Left 34
+    100230: Endcap_Left 35
+    100232: Endcap_Left 36
+    100234: Endcap_Left 37
+    100236: Endcap_Left 38
+    100238: Endcap_Left 39
+    100240: Endcap_Left 4
+    100242: Endcap_Left 40
+    100244: Endcap_Left 41
+    100246: Endcap_Left 42
+    100248: Endcap_Left 43
+    100250: Endcap_Left 44
+    100252: Endcap_Left 45
+    100254: Endcap_Left 46
+    100256: Endcap_Left 47
+    100258: Endcap_Left 48
+    100260: Endcap_Left 49
+    100262: Endcap_Left 5
+    100264: Endcap_Left 50
+    100266: Endcap_Left 51
+    100268: Endcap_Left 52
+    100270: Endcap_Left 53
+    100272: Endcap_Left 54
+    100274: Endcap_Left 55
+    100276: Endcap_Left 56
+    100278: Endcap_Left 57
+    100280: Endcap_Left 58
+    100282: Endcap_Left 59
+    100284: Endcap_Left 6
+    100286: Endcap_Left 60
+    100288: Endcap_Left 61
+    100290: Endcap_Left 62
+    100292: Endcap_Left 63
+    100294: Endcap_Left 64
+    100296: Endcap_Left 65
+    100298: Endcap_Left 66
+    100300: Endcap_Left 67
+    100302: Endcap_Left 68
+    100304: Endcap_Left 69
+    100306: Endcap_Left 7
+    100308: Endcap_Left 70
+    100310: Endcap_Left 71
+    100312: Endcap_Left 72
+    100314: Endcap_Left 73
+    100316: Endcap_Left 74
+    100318: Endcap_Left 75
+    100320: Endcap_Left 76
+    100322: Endcap_Left 77
+    100324: Endcap_Left 78
+    100326: Endcap_Left 79
+    100328: Endcap_Left 8
+    100330: Endcap_Left 80
+    100332: Endcap_Left 81
+    100334: Endcap_Left 82
+    100336: Endcap_Left 83
+    100338: Endcap_Left 84
+    100340: Endcap_Left 85
+    100342: Endcap_Left 86
+    100344: Endcap_Left 87
+    100346: Endcap_Left 88
+    100348: Endcap_Left 89
+    100350: Endcap_Left 9
+    100352: Endcap_Left 90
+    100354: Endcap_Left 91
+    100356: Endcap_Left 92
+    100358: Endcap_Left 93
+    100360: Endcap_Left 94
+    100362: Endcap_Left 95
+    100364: Endcap_Left 96
+    100366: Endcap_Left 97
+    100368: Endcap_Left 98
+    100370: Endcap_Left 99
+    100372: Endcap_Right
+    100374: Endcap_Right 1
+    100376: Endcap_Right 10
+    100378: Endcap_Right 100
+    100380: Endcap_Right 101
+    100382: Endcap_Right 102
+    100384: Endcap_Right 103
+    100386: Endcap_Right 104
+    100388: Endcap_Right 105
+    100390: Endcap_Right 106
+    100392: Endcap_Right 107
+    100394: Endcap_Right 108
+    100396: Endcap_Right 109
+    100398: Endcap_Right 11
+    100400: Endcap_Right 110
+    100402: Endcap_Right 111
+    100404: Endcap_Right 112
+    100406: Endcap_Right 113
+    100408: Endcap_Right 114
+    100410: Endcap_Right 115
+    100412: Endcap_Right 116
+    100414: Endcap_Right 117
+    100416: Endcap_Right 118
+    100418: Endcap_Right 119
+    100420: Endcap_Right 12
+    100422: Endcap_Right 120
+    100424: Endcap_Right 121
+    100426: Endcap_Right 122
+    100428: Endcap_Right 123
+    100430: Endcap_Right 124
+    100432: Endcap_Right 125
+    100434: Endcap_Right 126
+    100436: Endcap_Right 127
+    100438: Endcap_Right 128
+    100440: Endcap_Right 129
+    100442: Endcap_Right 13
+    100444: Endcap_Right 130
+    100446: Endcap_Right 131
+    100448: Endcap_Right 132
+    100450: Endcap_Right 133
+    100452: Endcap_Right 134
+    100454: Endcap_Right 135
+    100456: Endcap_Right 136
+    100458: Endcap_Right 137
+    100460: Endcap_Right 138
+    100462: Endcap_Right 139
+    100464: Endcap_Right 14
+    100466: Endcap_Right 140
+    100468: Endcap_Right 141
+    100470: Endcap_Right 142
+    100472: Endcap_Right 143
+    100474: Endcap_Right 144
+    100476: Endcap_Right 145
+    100478: Endcap_Right 146
+    100480: Endcap_Right 147
+    100482: Endcap_Right 148
+    100484: Endcap_Right 149
+    100486: Endcap_Right 15
+    100488: Endcap_Right 150
+    100490: Endcap_Right 151
+    100492: Endcap_Right 152
+    100494: Endcap_Right 153
+    100496: Endcap_Right 154
+    100498: Endcap_Right 155
+    100500: Endcap_Right 156
+    100502: Endcap_Right 157
+    100504: Endcap_Right 158
+    100506: Endcap_Right 159
+    100508: Endcap_Right 16
+    100510: Endcap_Right 160
+    100512: Endcap_Right 161
+    100514: Endcap_Right 162
+    100516: Endcap_Right 17
+    100518: Endcap_Right 18
+    100520: Endcap_Right 19
+    100522: Endcap_Right 2
+    100524: Endcap_Right 20
+    100526: Endcap_Right 21
+    100528: Endcap_Right 22
+    100530: Endcap_Right 23
+    100532: Endcap_Right 24
+    100534: Endcap_Right 25
+    100536: Endcap_Right 26
+    100538: Endcap_Right 27
+    100540: Endcap_Right 28
+    100542: Endcap_Right 29
+    100544: Endcap_Right 3
+    100546: Endcap_Right 30
+    100548: Endcap_Right 31
+    100550: Endcap_Right 32
+    100552: Endcap_Right 33
+    100554: Endcap_Right 34
+    100556: Endcap_Right 35
+    100558: Endcap_Right 36
+    100560: Endcap_Right 37
+    100562: Endcap_Right 38
+    100564: Endcap_Right 39
+    100566: Endcap_Right 4
+    100568: Endcap_Right 40
+    100570: Endcap_Right 41
+    100572: Endcap_Right 42
+    100574: Endcap_Right 43
+    100576: Endcap_Right 44
+    100578: Endcap_Right 45
+    100580: Endcap_Right 46
+    100582: Endcap_Right 47
+    100584: Endcap_Right 48
+    100586: Endcap_Right 49
+    100588: Endcap_Right 5
+    100590: Endcap_Right 50
+    100592: Endcap_Right 51
+    100594: Endcap_Right 52
+    100596: Endcap_Right 53
+    100598: Endcap_Right 54
+    100600: Endcap_Right 55
+    100602: Endcap_Right 56
+    100604: Endcap_Right 57
+    100606: Endcap_Right 58
+    100608: Endcap_Right 59
+    100610: Endcap_Right 6
+    100612: Endcap_Right 60
+    100614: Endcap_Right 61
+    100616: Endcap_Right 62
+    100618: Endcap_Right 63
+    100620: Endcap_Right 64
+    100622: Endcap_Right 65
+    100624: Endcap_Right 66
+    100626: Endcap_Right 67
+    100628: Endcap_Right 68
+    100630: Endcap_Right 69
+    100632: Endcap_Right 7
+    100634: Endcap_Right 70
+    100636: Endcap_Right 71
+    100638: Endcap_Right 72
+    100640: Endcap_Right 73
+    100642: Endcap_Right 74
+    100644: Endcap_Right 75
+    100646: Endcap_Right 76
+    100648: Endcap_Right 77
+    100650: Endcap_Right 78
+    100652: Endcap_Right 79
+    100654: Endcap_Right 8
+    100656: Endcap_Right 80
+    100658: Endcap_Right 81
+    100660: Endcap_Right 82
+    100662: Endcap_Right 83
+    100664: Endcap_Right 84
+    100666: Endcap_Right 85
+    100668: Endcap_Right 86
+    100670: Endcap_Right 87
+    100672: Endcap_Right 88
+    100674: Endcap_Right 89
+    100676: Endcap_Right 9
+    100678: Endcap_Right 90
+    100680: Endcap_Right 91
+    100682: Endcap_Right 92
+    100684: Endcap_Right 93
+    100686: Endcap_Right 94
+    100688: Endcap_Right 95
+    100690: Endcap_Right 96
+    100692: Endcap_Right 97
+    100694: Endcap_Right 98
+    100696: Endcap_Right 99
+    100698: Floor_Celing1
+    100700: Floor_Celing10
+    100702: Floor_Celing11
+    100704: Floor_Celing14
+    100706: Floor_Celing15
+    100708: Floor_Celing16
+    100710: Floor_Celing17
+    100712: Floor_Celing18
+    100714: Floor_Celing19
+    100716: Floor_Celing2
+    100718: Floor_Celing20
+    100720: Floor_Celing21
+    100722: Floor_Celing22
+    100724: Floor_Celing23
+    100726: Floor_Celing23 1
+    100728: Floor_Celing24
+    100730: Floor_Celing24 1
+    100732: Floor_Celing26
+    100734: Floor_Celing26 1
+    100736: Floor_Celing27
+    100738: Floor_Celing27 1
+    100740: Floor_Celing28
+    100742: Floor_Celing29
+    100744: Floor_Celing3
+    100746: Floor_Celing30
+    100748: Floor_Celing31
+    100750: Floor_Celing32
+    100752: Floor_Celing33
+    100754: Floor_Celing34
+    100756: Floor_Celing35
+    100758: Floor_Celing36
+    100760: Floor_Celing37
+    100762: Floor_Celing38
+    100764: Floor_Celing39
+    100766: Floor_Celing4
+    100768: Floor_Celing40
+    100770: Floor_Celing41
+    100772: Floor_Celing42
+    100774: Floor_Celing43
+    100776: Floor_Celing44
+    100778: Floor_Celing45
+    100780: Floor_Celing46
+    100782: Floor_Celing47
+    100784: Floor_Celing48
+    100786: Floor_Celing49
+    100788: Floor_Celing5
+    100790: Floor_Celing50
+    100792: Floor_Celing51
+    100794: Floor_Celing52
+    100796: Floor_Celing53
+    100798: Floor_Celing54
+    100800: Floor_Celing55
+    100802: Floor_Celing6
+    100804: Floor_Celing7
+    100806: Floor_Celing8
+    100808: Floor_Celing9
+    100810: Floor_Celing_Half1
+    100812: Floor_Celing_Half10
+    100814: Floor_Celing_Half11
+    100816: Floor_Celing_Half12
+    100818: Floor_Celing_Half13
+    100820: Floor_Celing_Half14
+    100822: Floor_Celing_Half2
+    100824: Floor_Celing_Half3
+    100826: Floor_Celing_Half4
+    100828: Floor_Celing_Half5
+    100830: Floor_Celing_Half5 1
+    100832: Floor_Celing_Half6
+    100834: Floor_Celing_Half6 1
+    100836: Floor_Celing_Half7
+    100838: Floor_Celing_Half8
+    100840: Floor_Celing_Half9
+    100842: Garage
+    100844: Garage1
+    100846: Garage_Door
+    100848: Garage_Door 1
+    100850: Garage_Door1
+    100852: Garage_Wall
+    100854: Roof_Overhang1
+    100856: Roof_Overhang11
+    100858: Roof_Overhang12
+    100860: Roof_Overhang2
+    100862: Roof_Overhang3
+    100864: Roof_Overhang4
+    100866: Roof_Overhang5
+    100868: Roof_Overhang6
+    100870: Roof_Overhung_Corner1
+    100872: Roof_Overhung_Corner10
+    100874: Roof_Overhung_Corner11
+    100876: Roof_Overhung_Corner12
+    100878: Roof_Overhung_Corner13
+    100880: Roof_Overhung_Corner14
+    100882: Roof_Overhung_Corner2
+    100884: Roof_Overhung_Corner3
+    100886: Roof_Overhung_Corner4
+    100888: Roof_Overhung_Corner5
+    100890: Roof_Overhung_Corner6
+    100892: Roof_Overhung_Corner7
+    100894: Roof_Overhung_Corner8
+    100896: Roof_Overhung_Corner9
+    100898: Roof_Overhung_Corner_Half1
+    100900: Roof_Overhung_Corner_Half10
+    100902: Roof_Overhung_Corner_Half11
+    100904: Roof_Overhung_Corner_Half12
+    100906: Roof_Overhung_Corner_Half2
+    100908: Roof_Overhung_Corner_Half20
+    100910: Roof_Overhung_Corner_Half21
+    100912: Roof_Overhung_Corner_Half22
+    100914: Roof_Overhung_Corner_Half23
+    100916: Roof_Overhung_Corner_Half24
+    100918: Roof_Overhung_Corner_Half25
+    100920: Roof_Overhung_Corner_Half3
+    100922: Roof_Overhung_Corner_Half4
+    100924: Roof_Overhung_Corner_Half5
+    100926: Roof_Overhung_Corner_Half6
+    100928: Roof_Overhung_Corner_Half7
+    100930: Roof_Overhung_Corner_Half8
+    100932: Roof_Overhung_Corner_Half9
+    100934: //RootNode
+    100936: shop_0001:Garage_Door
+    100938: shop_0001:Garage_Wall
+    100940: Wall_Doorway_Double_Exterior_Interior1
+    100942: Wall_Doorway_Double_Exterior_Interior2
+    100944: Wall_Doorway_Double_Exterior_Interior3
+    100946: Wall_Doorway_Double_Exterior_Interior4
+    100948: Wall_Doorway_Double_Exterior_Interior5
+    100950: Wall_Doorway_Double_Exterior_Interior6
+    100952: Wall_Doorway_Single_Exterior_Interior1
+    100954: Wall_Doorway_Single_Exterior_Interior2
+    100956: Wall_Doorway_Single_Exterior_Interior3
+    100958: Wall_Doorway_Single_Exterior_Interior4
+    100960: Wall_Exterior_Interior1
+    100962: Wall_Exterior_Interior13
+    100964: Wall_Exterior_Interior14
+    100966: Wall_Exterior_Interior15
+    100968: Wall_Exterior_Interior16
+    100970: Wall_Exterior_Interior17
+    100972: Wall_Exterior_Interior18
+    100974: Wall_Exterior_Interior19
+    100976: Wall_Exterior_Interior2
+    100978: Wall_Exterior_Interior20
+    100980: Wall_Exterior_Interior21
+    100982: Wall_Exterior_Interior22
+    100984: Wall_Exterior_Interior23
+    100986: Wall_Exterior_Interior24
+    100988: Wall_Exterior_Interior25
+    100990: Wall_Exterior_Interior26
+    100992: Wall_Exterior_Interior27
+    100994: Wall_Exterior_Interior28
+    100996: Wall_Exterior_Interior29
+    100998: Wall_Exterior_Interior3
+    101000: Wall_Exterior_Interior30
+    101002: Wall_Exterior_Interior31
+    101004: Wall_Exterior_Interior31 1
+    101006: Wall_Exterior_Interior32
+    101008: Wall_Exterior_Interior32 1
+    101010: Wall_Exterior_Interior33
+    101012: Wall_Exterior_Interior33 1
+    101014: Wall_Exterior_Interior34
+    101016: Wall_Exterior_Interior34 1
+    101018: Wall_Exterior_Interior4
+    101020: Wall_Exterior_Interior5
+    101022: Wall_Exterior_Interior6
+    101024: Wall_Exterior_Interior7
+    101026: Wall_Exterior_Interior8
+    101028: Wall_Exterior_Interior9
+    101030: Wall_Exterior_Interior_Single10
+    101032: Wall_Exterior_Interior_Single11
+    101034: Wall_Exterior_Interior_Single12
+    101036: Wall_Exterior_Interior_Single13
+    101038: Wall_Exterior_Interior_Single14
+    101040: Wall_Exterior_Interior_Single15
+    101042: Wall_Exterior_Interior_Single16
+    101044: Wall_Exterior_Interior_Single17
+    101046: Wall_Exterior_Interior_Single18
+    101048: Wall_Exterior_Interior_Single19
+    101050: Wall_Exterior_Interior_Single2
+    101052: Wall_Exterior_Interior_Single20
+    101054: Wall_Exterior_Interior_Single21
+    101056: Wall_Exterior_Interior_Single22
+    101058: Wall_Exterior_Interior_Single23
+    101060: Wall_Exterior_Interior_Single26
+    101062: Wall_Exterior_Interior_Single27
+    101064: Wall_Exterior_Interior_Single28
+    101066: Wall_Exterior_Interior_Single29
+    101068: Wall_Exterior_Interior_Single3
+    101070: Wall_Exterior_Interior_Single30
+    101072: Wall_Exterior_Interior_Single31
+    101074: Wall_Exterior_Interior_Single32
+    101076: Wall_Exterior_Interior_Single33
+    101078: Wall_Exterior_Interior_Single34
+    101080: Wall_Exterior_Interior_Single35
+    101082: Wall_Exterior_Interior_Single36
+    101084: Wall_Exterior_Interior_Single37
+    101086: Wall_Exterior_Interior_Single38
+    101088: Wall_Exterior_Interior_Single39
+    101090: Wall_Exterior_Interior_Single4
+    101092: Wall_Exterior_Interior_Single40
+    101094: Wall_Exterior_Interior_Single41
+    101096: Wall_Exterior_Interior_Single42
+    101098: Wall_Exterior_Interior_Single43
+    101100: Wall_Exterior_Interior_Single44
+    101102: Wall_Exterior_Interior_Single45
+    101104: Wall_Exterior_Interior_Single46
+    101106: Wall_Exterior_Interior_Single47
+    101108: Wall_Exterior_Interior_Single48
+    101110: Wall_Exterior_Interior_Single49
+    101112: Wall_Exterior_Interior_Single5
+    101114: Wall_Exterior_Interior_Single50
+    101116: Wall_Exterior_Interior_Single51
+    101118: Wall_Exterior_Interior_Single52
+    101120: Wall_Exterior_Interior_Single53
+    101122: Wall_Exterior_Interior_Single54
+    101124: Wall_Exterior_Interior_Single55
+    101126: Wall_Exterior_Interior_Single56
+    101128: Wall_Exterior_Interior_Single57
+    101130: Wall_Exterior_Interior_Single58
+    101132: Wall_Exterior_Interior_Single59
+    101134: Wall_Exterior_Interior_Single6
+    101136: Wall_Exterior_Interior_Single60
+    101138: Wall_Exterior_Interior_Single61
+    101140: Wall_Exterior_Interior_Single62
+    101142: Wall_Exterior_Interior_Single63
+    101144: Wall_Exterior_Interior_Single64
+    101146: Wall_Exterior_Interior_Single65
+    101148: Wall_Exterior_Interior_Single67
+    101150: Wall_Exterior_Interior_Single68
+    101152: Wall_Exterior_Interior_Single69
+    101154: Wall_Exterior_Interior_Single7
+    101156: Wall_Exterior_Interior_Single70
+    101158: Wall_Exterior_Interior_Single71
+    101160: Wall_Exterior_Interior_Single72
+    101162: Wall_Exterior_Interior_Single73
+    101164: Wall_Exterior_Interior_Single74
+    101166: Wall_Exterior_Interior_Single75
+    101168: Wall_Exterior_Interior_Single76
+    101170: Wall_Exterior_Interior_Single77
+    101172: Wall_Exterior_Interior_Single78
+    101174: Wall_Exterior_Interior_Single79
+    101176: Wall_Exterior_Interior_Single8
+    101178: Wall_Exterior_Interior_Single80
+    101180: Wall_Exterior_Interior_Single80 1
+    101182: Wall_Exterior_Interior_Single81
+    101184: Wall_Exterior_Interior_Single81 1
+    101186: Wall_Exterior_Interior_Single82
+    101188: Wall_Exterior_Interior_Single82 1
+    101190: Wall_Exterior_Interior_Single83
+    101192: Wall_Exterior_Interior_Single83 1
+    101194: Wall_Exterior_Interior_Single84
+    101196: Wall_Exterior_Interior_Single84 1
+    101198: Wall_Exterior_Interior_Single85
+    101200: Wall_Exterior_Interior_Single85 1
+    101202: Wall_Exterior_Interior_Single9
+    101204: Wall_Half_Exterior_Interior1
+    101206: Wall_Half_Exterior_Interior2
+    101208: Wall_Half_Exterior_Interior3
+    101210: Wall_Half_Exterior_Interior4
+    101212: Wall_Interior_Interior_Short1
+    101214: Wall_Interior_Interior_Short1 1
+    101216: Wall_Interior_Interior_Short10
+    101218: Wall_Interior_Interior_Short10 1
+    101220: Wall_Interior_Interior_Short11
+    101222: Wall_Interior_Interior_Short11 1
+    101224: Wall_Interior_Interior_Short12
+    101226: Wall_Interior_Interior_Short12 1
+    101228: Wall_Interior_Interior_Short13
+    101230: Wall_Interior_Interior_Short13 1
+    101232: Wall_Interior_Interior_Short14
+    101234: Wall_Interior_Interior_Short14 1
+    101236: Wall_Interior_Interior_Short15
+    101238: Wall_Interior_Interior_Short15 1
+    101240: Wall_Interior_Interior_Short16
+    101242: Wall_Interior_Interior_Short16 1
+    101244: Wall_Interior_Interior_Short17
+    101246: Wall_Interior_Interior_Short17 1
+    101248: Wall_Interior_Interior_Short18
+    101250: Wall_Interior_Interior_Short18 1
+    101252: Wall_Interior_Interior_Short19
+    101254: Wall_Interior_Interior_Short19 1
+    101256: Wall_Interior_Interior_Short2
+    101258: Wall_Interior_Interior_Short2 1
+    101260: Wall_Interior_Interior_Short20
+    101262: Wall_Interior_Interior_Short20 1
+    101264: Wall_Interior_Interior_Short21
+    101266: Wall_Interior_Interior_Short21 1
+    101268: Wall_Interior_Interior_Short22
+    101270: Wall_Interior_Interior_Short22 1
+    101272: Wall_Interior_Interior_Short23
+    101274: Wall_Interior_Interior_Short23 1
+    101276: Wall_Interior_Interior_Short24
+    101278: Wall_Interior_Interior_Short24 1
+    101280: Wall_Interior_Interior_Short25
+    101282: Wall_Interior_Interior_Short25 1
+    101284: Wall_Interior_Interior_Short26
+    101286: Wall_Interior_Interior_Short27
+    101288: Wall_Interior_Interior_Short28
+    101290: Wall_Interior_Interior_Short29
+    101292: Wall_Interior_Interior_Short3
+    101294: Wall_Interior_Interior_Short3 1
+    101296: Wall_Interior_Interior_Short30
+    101298: Wall_Interior_Interior_Short31
+    101300: Wall_Interior_Interior_Short4
+    101302: Wall_Interior_Interior_Short4 1
+    101304: Wall_Interior_Interior_Short5
+    101306: Wall_Interior_Interior_Short5 1
+    101308: Wall_Interior_Interior_Short6
+    101310: Wall_Interior_Interior_Short6 1
+    101312: Wall_Interior_Interior_Short7
+    101314: Wall_Interior_Interior_Short7 1
+    101316: Wall_Interior_Interior_Short8
+    101318: Wall_Interior_Interior_Short8 1
+    101320: Wall_Interior_Interior_Short9
+    101322: Wall_Interior_Interior_Short9 1
+    101324: Wall_Interior_Interior_Single_block1
+    101326: Wall_Interior_Interior_Single_block1 1
+    101328: Wall_Interior_Interior_Single_block10
+    101330: Wall_Interior_Interior_Single_block10 1
+    101332: Wall_Interior_Interior_Single_block11
+    101334: Wall_Interior_Interior_Single_block11 1
+    101336: Wall_Interior_Interior_Single_block12
+    101338: Wall_Interior_Interior_Single_block12 1
+    101340: Wall_Interior_Interior_Single_block13
+    101342: Wall_Interior_Interior_Single_block13 1
+    101344: Wall_Interior_Interior_Single_block14
+    101346: Wall_Interior_Interior_Single_block14 1
+    101348: Wall_Interior_Interior_Single_block15
+    101350: Wall_Interior_Interior_Single_block15 1
+    101352: Wall_Interior_Interior_Single_block16
+    101354: Wall_Interior_Interior_Single_block16 1
+    101356: Wall_Interior_Interior_Single_block17
+    101358: Wall_Interior_Interior_Single_block17 1
+    101360: Wall_Interior_Interior_Single_block18
+    101362: Wall_Interior_Interior_Single_block18 1
+    101364: Wall_Interior_Interior_Single_block19
+    101366: Wall_Interior_Interior_Single_block19 1
+    101368: Wall_Interior_Interior_Single_block2
+    101370: Wall_Interior_Interior_Single_block2 1
+    101372: Wall_Interior_Interior_Single_block20
+    101374: Wall_Interior_Interior_Single_block20 1
+    101376: Wall_Interior_Interior_Single_block21
+    101378: Wall_Interior_Interior_Single_block21 1
+    101380: Wall_Interior_Interior_Single_block22
+    101382: Wall_Interior_Interior_Single_block22 1
+    101384: Wall_Interior_Interior_Single_block23
+    101386: Wall_Interior_Interior_Single_block23 1
+    101388: Wall_Interior_Interior_Single_block24
+    101390: Wall_Interior_Interior_Single_block24 1
+    101392: Wall_Interior_Interior_Single_block25
+    101394: Wall_Interior_Interior_Single_block25 1
+    101396: Wall_Interior_Interior_Single_block26
+    101398: Wall_Interior_Interior_Single_block26 1
+    101400: Wall_Interior_Interior_Single_block27
+    101402: Wall_Interior_Interior_Single_block27 1
+    101404: Wall_Interior_Interior_Single_block28
+    101406: Wall_Interior_Interior_Single_block28 1
+    101408: Wall_Interior_Interior_Single_block29
+    101410: Wall_Interior_Interior_Single_block29 1
+    101412: Wall_Interior_Interior_Single_block3
+    101414: Wall_Interior_Interior_Single_block3 1
+    101416: Wall_Interior_Interior_Single_block30
+    101418: Wall_Interior_Interior_Single_block30 1
+    101420: Wall_Interior_Interior_Single_block31
+    101422: Wall_Interior_Interior_Single_block31 1
+    101424: Wall_Interior_Interior_Single_block32
+    101426: Wall_Interior_Interior_Single_block32 1
+    101428: Wall_Interior_Interior_Single_block33
+    101430: Wall_Interior_Interior_Single_block33 1
+    101432: Wall_Interior_Interior_Single_block34
+    101434: Wall_Interior_Interior_Single_block34 1
+    101436: Wall_Interior_Interior_Single_block35
+    101438: Wall_Interior_Interior_Single_block35 1
+    101440: Wall_Interior_Interior_Single_block36
+    101442: Wall_Interior_Interior_Single_block36 1
+    101444: Wall_Interior_Interior_Single_block37
+    101446: Wall_Interior_Interior_Single_block37 1
+    101448: Wall_Interior_Interior_Single_block38
+    101450: Wall_Interior_Interior_Single_block38 1
+    101452: Wall_Interior_Interior_Single_block39
+    101454: Wall_Interior_Interior_Single_block39 1
+    101456: Wall_Interior_Interior_Single_block4
+    101458: Wall_Interior_Interior_Single_block4 1
+    101460: Wall_Interior_Interior_Single_block40
+    101462: Wall_Interior_Interior_Single_block40 1
+    101464: Wall_Interior_Interior_Single_block41
+    101466: Wall_Interior_Interior_Single_block41 1
+    101468: Wall_Interior_Interior_Single_block42
+    101470: Wall_Interior_Interior_Single_block42 1
+    101472: Wall_Interior_Interior_Single_block43
+    101474: Wall_Interior_Interior_Single_block44
+    101476: Wall_Interior_Interior_Single_block45
+    101478: Wall_Interior_Interior_Single_block46
+    101480: Wall_Interior_Interior_Single_block47
+    101482: Wall_Interior_Interior_Single_block48
+    101484: Wall_Interior_Interior_Single_block49
+    101486: Wall_Interior_Interior_Single_block5
+    101488: Wall_Interior_Interior_Single_block5 1
+    101490: Wall_Interior_Interior_Single_block50
+    101492: Wall_Interior_Interior_Single_block51
+    101494: Wall_Interior_Interior_Single_block52
+    101496: Wall_Interior_Interior_Single_block53
+    101498: Wall_Interior_Interior_Single_block54
+    101500: Wall_Interior_Interior_Single_block6
+    101502: Wall_Interior_Interior_Single_block6 1
+    101504: Wall_Interior_Interior_Single_block7
+    101506: Wall_Interior_Interior_Single_block7 1
+    101508: Wall_Interior_Interior_Single_block8
+    101510: Wall_Interior_Interior_Single_block8 1
+    101512: Wall_Interior_Interior_Single_block9
+    101514: Wall_Interior_Interior_Single_block9 1
+    101516: Wall_Window_Exterior_Interior1
+    101518: Wall_Window_Exterior_Interior2
+    101520: Wall_Window_Exterior_Interior3
+    101522: Wall_Window_Exterior_Interior4
+    101524: Wall_Window_Exterior_Interior5
+    101526: Window_Frame
+    101528: Window_Frame 1
+    101530: Window_Frame 2
+    101532: Window_Frame 3
+    101534: Window_Frame 4
+    101536: Window_Glass
+    101538: Window_Glass 1
+    101540: Window_Glass 2
+    101542: Window_Glass 3
+    101544: Window_Glass 4
+    400000: Ceilings
+    400002: Door_Closed
+    400004: Door_Closed 1
+    400006: Door_Closed 2
+    400008: Door_Closed 3
+    400010: Door_Closed_Left
+    400012: Door_Closed_Left 1
+    400014: Door_Closed_Left 2
+    400016: Door_Closed_Left 3
+    400018: Door_Closed_Right
+    400020: Door_Closed_Right 1
+    400022: Door_Closed_Right 2
+    400024: Door_Closed_Right 3
+    400026: Doorway_Double
+    400028: Doorway_Double 1
+    400030: Doorway_Double 2
+    400032: Doorway_Double 3
+    400034: Doorway_Double 4
+    400036: Doorway_Double 5
+    400038: Doorway_Single
+    400040: Doorway_Single 1
+    400042: Doorway_Single 2
+    400044: Doorway_Single 3
+    400046: Endcap_Left
+    400048: Endcap_Left 1
+    400050: Endcap_Left 10
+    400052: Endcap_Left 100
+    400054: Endcap_Left 101
+    400056: Endcap_Left 102
+    400058: Endcap_Left 103
+    400060: Endcap_Left 104
+    400062: Endcap_Left 105
+    400064: Endcap_Left 106
+    400066: Endcap_Left 107
+    400068: Endcap_Left 108
+    400070: Endcap_Left 109
+    400072: Endcap_Left 11
+    400074: Endcap_Left 110
+    400076: Endcap_Left 111
+    400078: Endcap_Left 112
+    400080: Endcap_Left 113
+    400082: Endcap_Left 114
+    400084: Endcap_Left 115
+    400086: Endcap_Left 116
+    400088: Endcap_Left 117
+    400090: Endcap_Left 118
+    400092: Endcap_Left 119
+    400094: Endcap_Left 12
+    400096: Endcap_Left 120
+    400098: Endcap_Left 121
+    400100: Endcap_Left 122
+    400102: Endcap_Left 123
+    400104: Endcap_Left 124
+    400106: Endcap_Left 125
+    400108: Endcap_Left 126
+    400110: Endcap_Left 127
+    400112: Endcap_Left 128
+    400114: Endcap_Left 129
+    400116: Endcap_Left 13
+    400118: Endcap_Left 130
+    400120: Endcap_Left 131
+    400122: Endcap_Left 132
+    400124: Endcap_Left 133
+    400126: Endcap_Left 134
+    400128: Endcap_Left 135
+    400130: Endcap_Left 136
+    400132: Endcap_Left 137
+    400134: Endcap_Left 138
+    400136: Endcap_Left 139
+    400138: Endcap_Left 14
+    400140: Endcap_Left 140
+    400142: Endcap_Left 141
+    400144: Endcap_Left 142
+    400146: Endcap_Left 143
+    400148: Endcap_Left 144
+    400150: Endcap_Left 145
+    400152: Endcap_Left 146
+    400154: Endcap_Left 147
+    400156: Endcap_Left 148
+    400158: Endcap_Left 149
+    400160: Endcap_Left 15
+    400162: Endcap_Left 150
+    400164: Endcap_Left 151
+    400166: Endcap_Left 152
+    400168: Endcap_Left 153
+    400170: Endcap_Left 154
+    400172: Endcap_Left 155
+    400174: Endcap_Left 156
+    400176: Endcap_Left 157
+    400178: Endcap_Left 158
+    400180: Endcap_Left 159
+    400182: Endcap_Left 16
+    400184: Endcap_Left 160
+    400186: Endcap_Left 161
+    400188: Endcap_Left 162
+    400190: Endcap_Left 17
+    400192: Endcap_Left 18
+    400194: Endcap_Left 19
+    400196: Endcap_Left 2
+    400198: Endcap_Left 20
+    400200: Endcap_Left 21
+    400202: Endcap_Left 22
+    400204: Endcap_Left 23
+    400206: Endcap_Left 24
+    400208: Endcap_Left 25
+    400210: Endcap_Left 26
+    400212: Endcap_Left 27
+    400214: Endcap_Left 28
+    400216: Endcap_Left 29
+    400218: Endcap_Left 3
+    400220: Endcap_Left 30
+    400222: Endcap_Left 31
+    400224: Endcap_Left 32
+    400226: Endcap_Left 33
+    400228: Endcap_Left 34
+    400230: Endcap_Left 35
+    400232: Endcap_Left 36
+    400234: Endcap_Left 37
+    400236: Endcap_Left 38
+    400238: Endcap_Left 39
+    400240: Endcap_Left 4
+    400242: Endcap_Left 40
+    400244: Endcap_Left 41
+    400246: Endcap_Left 42
+    400248: Endcap_Left 43
+    400250: Endcap_Left 44
+    400252: Endcap_Left 45
+    400254: Endcap_Left 46
+    400256: Endcap_Left 47
+    400258: Endcap_Left 48
+    400260: Endcap_Left 49
+    400262: Endcap_Left 5
+    400264: Endcap_Left 50
+    400266: Endcap_Left 51
+    400268: Endcap_Left 52
+    400270: Endcap_Left 53
+    400272: Endcap_Left 54
+    400274: Endcap_Left 55
+    400276: Endcap_Left 56
+    400278: Endcap_Left 57
+    400280: Endcap_Left 58
+    400282: Endcap_Left 59
+    400284: Endcap_Left 6
+    400286: Endcap_Left 60
+    400288: Endcap_Left 61
+    400290: Endcap_Left 62
+    400292: Endcap_Left 63
+    400294: Endcap_Left 64
+    400296: Endcap_Left 65
+    400298: Endcap_Left 66
+    400300: Endcap_Left 67
+    400302: Endcap_Left 68
+    400304: Endcap_Left 69
+    400306: Endcap_Left 7
+    400308: Endcap_Left 70
+    400310: Endcap_Left 71
+    400312: Endcap_Left 72
+    400314: Endcap_Left 73
+    400316: Endcap_Left 74
+    400318: Endcap_Left 75
+    400320: Endcap_Left 76
+    400322: Endcap_Left 77
+    400324: Endcap_Left 78
+    400326: Endcap_Left 79
+    400328: Endcap_Left 8
+    400330: Endcap_Left 80
+    400332: Endcap_Left 81
+    400334: Endcap_Left 82
+    400336: Endcap_Left 83
+    400338: Endcap_Left 84
+    400340: Endcap_Left 85
+    400342: Endcap_Left 86
+    400344: Endcap_Left 87
+    400346: Endcap_Left 88
+    400348: Endcap_Left 89
+    400350: Endcap_Left 9
+    400352: Endcap_Left 90
+    400354: Endcap_Left 91
+    400356: Endcap_Left 92
+    400358: Endcap_Left 93
+    400360: Endcap_Left 94
+    400362: Endcap_Left 95
+    400364: Endcap_Left 96
+    400366: Endcap_Left 97
+    400368: Endcap_Left 98
+    400370: Endcap_Left 99
+    400372: Endcap_Right
+    400374: Endcap_Right 1
+    400376: Endcap_Right 10
+    400378: Endcap_Right 100
+    400380: Endcap_Right 101
+    400382: Endcap_Right 102
+    400384: Endcap_Right 103
+    400386: Endcap_Right 104
+    400388: Endcap_Right 105
+    400390: Endcap_Right 106
+    400392: Endcap_Right 107
+    400394: Endcap_Right 108
+    400396: Endcap_Right 109
+    400398: Endcap_Right 11
+    400400: Endcap_Right 110
+    400402: Endcap_Right 111
+    400404: Endcap_Right 112
+    400406: Endcap_Right 113
+    400408: Endcap_Right 114
+    400410: Endcap_Right 115
+    400412: Endcap_Right 116
+    400414: Endcap_Right 117
+    400416: Endcap_Right 118
+    400418: Endcap_Right 119
+    400420: Endcap_Right 12
+    400422: Endcap_Right 120
+    400424: Endcap_Right 121
+    400426: Endcap_Right 122
+    400428: Endcap_Right 123
+    400430: Endcap_Right 124
+    400432: Endcap_Right 125
+    400434: Endcap_Right 126
+    400436: Endcap_Right 127
+    400438: Endcap_Right 128
+    400440: Endcap_Right 129
+    400442: Endcap_Right 13
+    400444: Endcap_Right 130
+    400446: Endcap_Right 131
+    400448: Endcap_Right 132
+    400450: Endcap_Right 133
+    400452: Endcap_Right 134
+    400454: Endcap_Right 135
+    400456: Endcap_Right 136
+    400458: Endcap_Right 137
+    400460: Endcap_Right 138
+    400462: Endcap_Right 139
+    400464: Endcap_Right 14
+    400466: Endcap_Right 140
+    400468: Endcap_Right 141
+    400470: Endcap_Right 142
+    400472: Endcap_Right 143
+    400474: Endcap_Right 144
+    400476: Endcap_Right 145
+    400478: Endcap_Right 146
+    400480: Endcap_Right 147
+    400482: Endcap_Right 148
+    400484: Endcap_Right 149
+    400486: Endcap_Right 15
+    400488: Endcap_Right 150
+    400490: Endcap_Right 151
+    400492: Endcap_Right 152
+    400494: Endcap_Right 153
+    400496: Endcap_Right 154
+    400498: Endcap_Right 155
+    400500: Endcap_Right 156
+    400502: Endcap_Right 157
+    400504: Endcap_Right 158
+    400506: Endcap_Right 159
+    400508: Endcap_Right 16
+    400510: Endcap_Right 160
+    400512: Endcap_Right 161
+    400514: Endcap_Right 162
+    400516: Endcap_Right 17
+    400518: Endcap_Right 18
+    400520: Endcap_Right 19
+    400522: Endcap_Right 2
+    400524: Endcap_Right 20
+    400526: Endcap_Right 21
+    400528: Endcap_Right 22
+    400530: Endcap_Right 23
+    400532: Endcap_Right 24
+    400534: Endcap_Right 25
+    400536: Endcap_Right 26
+    400538: Endcap_Right 27
+    400540: Endcap_Right 28
+    400542: Endcap_Right 29
+    400544: Endcap_Right 3
+    400546: Endcap_Right 30
+    400548: Endcap_Right 31
+    400550: Endcap_Right 32
+    400552: Endcap_Right 33
+    400554: Endcap_Right 34
+    400556: Endcap_Right 35
+    400558: Endcap_Right 36
+    400560: Endcap_Right 37
+    400562: Endcap_Right 38
+    400564: Endcap_Right 39
+    400566: Endcap_Right 4
+    400568: Endcap_Right 40
+    400570: Endcap_Right 41
+    400572: Endcap_Right 42
+    400574: Endcap_Right 43
+    400576: Endcap_Right 44
+    400578: Endcap_Right 45
+    400580: Endcap_Right 46
+    400582: Endcap_Right 47
+    400584: Endcap_Right 48
+    400586: Endcap_Right 49
+    400588: Endcap_Right 5
+    400590: Endcap_Right 50
+    400592: Endcap_Right 51
+    400594: Endcap_Right 52
+    400596: Endcap_Right 53
+    400598: Endcap_Right 54
+    400600: Endcap_Right 55
+    400602: Endcap_Right 56
+    400604: Endcap_Right 57
+    400606: Endcap_Right 58
+    400608: Endcap_Right 59
+    400610: Endcap_Right 6
+    400612: Endcap_Right 60
+    400614: Endcap_Right 61
+    400616: Endcap_Right 62
+    400618: Endcap_Right 63
+    400620: Endcap_Right 64
+    400622: Endcap_Right 65
+    400624: Endcap_Right 66
+    400626: Endcap_Right 67
+    400628: Endcap_Right 68
+    400630: Endcap_Right 69
+    400632: Endcap_Right 7
+    400634: Endcap_Right 70
+    400636: Endcap_Right 71
+    400638: Endcap_Right 72
+    400640: Endcap_Right 73
+    400642: Endcap_Right 74
+    400644: Endcap_Right 75
+    400646: Endcap_Right 76
+    400648: Endcap_Right 77
+    400650: Endcap_Right 78
+    400652: Endcap_Right 79
+    400654: Endcap_Right 8
+    400656: Endcap_Right 80
+    400658: Endcap_Right 81
+    400660: Endcap_Right 82
+    400662: Endcap_Right 83
+    400664: Endcap_Right 84
+    400666: Endcap_Right 85
+    400668: Endcap_Right 86
+    400670: Endcap_Right 87
+    400672: Endcap_Right 88
+    400674: Endcap_Right 89
+    400676: Endcap_Right 9
+    400678: Endcap_Right 90
+    400680: Endcap_Right 91
+    400682: Endcap_Right 92
+    400684: Endcap_Right 93
+    400686: Endcap_Right 94
+    400688: Endcap_Right 95
+    400690: Endcap_Right 96
+    400692: Endcap_Right 97
+    400694: Endcap_Right 98
+    400696: Endcap_Right 99
+    400698: Floor_Celing1
+    400700: Floor_Celing10
+    400702: Floor_Celing11
+    400704: Floor_Celing14
+    400706: Floor_Celing15
+    400708: Floor_Celing16
+    400710: Floor_Celing17
+    400712: Floor_Celing18
+    400714: Floor_Celing19
+    400716: Floor_Celing2
+    400718: Floor_Celing20
+    400720: Floor_Celing21
+    400722: Floor_Celing22
+    400724: Floor_Celing23
+    400726: Floor_Celing23 1
+    400728: Floor_Celing24
+    400730: Floor_Celing24 1
+    400732: Floor_Celing26
+    400734: Floor_Celing26 1
+    400736: Floor_Celing27
+    400738: Floor_Celing27 1
+    400740: Floor_Celing28
+    400742: Floor_Celing29
+    400744: Floor_Celing3
+    400746: Floor_Celing30
+    400748: Floor_Celing31
+    400750: Floor_Celing32
+    400752: Floor_Celing33
+    400754: Floor_Celing34
+    400756: Floor_Celing35
+    400758: Floor_Celing36
+    400760: Floor_Celing37
+    400762: Floor_Celing38
+    400764: Floor_Celing39
+    400766: Floor_Celing4
+    400768: Floor_Celing40
+    400770: Floor_Celing41
+    400772: Floor_Celing42
+    400774: Floor_Celing43
+    400776: Floor_Celing44
+    400778: Floor_Celing45
+    400780: Floor_Celing46
+    400782: Floor_Celing47
+    400784: Floor_Celing48
+    400786: Floor_Celing49
+    400788: Floor_Celing5
+    400790: Floor_Celing50
+    400792: Floor_Celing51
+    400794: Floor_Celing52
+    400796: Floor_Celing53
+    400798: Floor_Celing54
+    400800: Floor_Celing55
+    400802: Floor_Celing6
+    400804: Floor_Celing7
+    400806: Floor_Celing8
+    400808: Floor_Celing9
+    400810: Floor_Celing_Half1
+    400812: Floor_Celing_Half10
+    400814: Floor_Celing_Half11
+    400816: Floor_Celing_Half12
+    400818: Floor_Celing_Half13
+    400820: Floor_Celing_Half14
+    400822: Floor_Celing_Half2
+    400824: Floor_Celing_Half3
+    400826: Floor_Celing_Half4
+    400828: Floor_Celing_Half5
+    400830: Floor_Celing_Half5 1
+    400832: Floor_Celing_Half6
+    400834: Floor_Celing_Half6 1
+    400836: Floor_Celing_Half7
+    400838: Floor_Celing_Half8
+    400840: Floor_Celing_Half9
+    400842: Garage
+    400844: Garage1
+    400846: Garage_Door
+    400848: Garage_Door 1
+    400850: Garage_Door1
+    400852: Garage_Wall
+    400854: Roof_Overhang1
+    400856: Roof_Overhang11
+    400858: Roof_Overhang12
+    400860: Roof_Overhang2
+    400862: Roof_Overhang3
+    400864: Roof_Overhang4
+    400866: Roof_Overhang5
+    400868: Roof_Overhang6
+    400870: Roof_Overhung_Corner1
+    400872: Roof_Overhung_Corner10
+    400874: Roof_Overhung_Corner11
+    400876: Roof_Overhung_Corner12
+    400878: Roof_Overhung_Corner13
+    400880: Roof_Overhung_Corner14
+    400882: Roof_Overhung_Corner2
+    400884: Roof_Overhung_Corner3
+    400886: Roof_Overhung_Corner4
+    400888: Roof_Overhung_Corner5
+    400890: Roof_Overhung_Corner6
+    400892: Roof_Overhung_Corner7
+    400894: Roof_Overhung_Corner8
+    400896: Roof_Overhung_Corner9
+    400898: Roof_Overhung_Corner_Half1
+    400900: Roof_Overhung_Corner_Half10
+    400902: Roof_Overhung_Corner_Half11
+    400904: Roof_Overhung_Corner_Half12
+    400906: Roof_Overhung_Corner_Half2
+    400908: Roof_Overhung_Corner_Half20
+    400910: Roof_Overhung_Corner_Half21
+    400912: Roof_Overhung_Corner_Half22
+    400914: Roof_Overhung_Corner_Half23
+    400916: Roof_Overhung_Corner_Half24
+    400918: Roof_Overhung_Corner_Half25
+    400920: Roof_Overhung_Corner_Half3
+    400922: Roof_Overhung_Corner_Half4
+    400924: Roof_Overhung_Corner_Half5
+    400926: Roof_Overhung_Corner_Half6
+    400928: Roof_Overhung_Corner_Half7
+    400930: Roof_Overhung_Corner_Half8
+    400932: Roof_Overhung_Corner_Half9
+    400934: //RootNode
+    400936: shop_0001:Garage_Door
+    400938: shop_0001:Garage_Wall
+    400940: Wall_Doorway_Double_Exterior_Interior1
+    400942: Wall_Doorway_Double_Exterior_Interior2
+    400944: Wall_Doorway_Double_Exterior_Interior3
+    400946: Wall_Doorway_Double_Exterior_Interior4
+    400948: Wall_Doorway_Double_Exterior_Interior5
+    400950: Wall_Doorway_Double_Exterior_Interior6
+    400952: Wall_Doorway_Single_Exterior_Interior1
+    400954: Wall_Doorway_Single_Exterior_Interior2
+    400956: Wall_Doorway_Single_Exterior_Interior3
+    400958: Wall_Doorway_Single_Exterior_Interior4
+    400960: Wall_Exterior_Interior1
+    400962: Wall_Exterior_Interior13
+    400964: Wall_Exterior_Interior14
+    400966: Wall_Exterior_Interior15
+    400968: Wall_Exterior_Interior16
+    400970: Wall_Exterior_Interior17
+    400972: Wall_Exterior_Interior18
+    400974: Wall_Exterior_Interior19
+    400976: Wall_Exterior_Interior2
+    400978: Wall_Exterior_Interior20
+    400980: Wall_Exterior_Interior21
+    400982: Wall_Exterior_Interior22
+    400984: Wall_Exterior_Interior23
+    400986: Wall_Exterior_Interior24
+    400988: Wall_Exterior_Interior25
+    400990: Wall_Exterior_Interior26
+    400992: Wall_Exterior_Interior27
+    400994: Wall_Exterior_Interior28
+    400996: Wall_Exterior_Interior29
+    400998: Wall_Exterior_Interior3
+    401000: Wall_Exterior_Interior30
+    401002: Wall_Exterior_Interior31
+    401004: Wall_Exterior_Interior31 1
+    401006: Wall_Exterior_Interior32
+    401008: Wall_Exterior_Interior32 1
+    401010: Wall_Exterior_Interior33
+    401012: Wall_Exterior_Interior33 1
+    401014: Wall_Exterior_Interior34
+    401016: Wall_Exterior_Interior34 1
+    401018: Wall_Exterior_Interior4
+    401020: Wall_Exterior_Interior5
+    401022: Wall_Exterior_Interior6
+    401024: Wall_Exterior_Interior7
+    401026: Wall_Exterior_Interior8
+    401028: Wall_Exterior_Interior9
+    401030: Wall_Exterior_Interior_Single10
+    401032: Wall_Exterior_Interior_Single11
+    401034: Wall_Exterior_Interior_Single12
+    401036: Wall_Exterior_Interior_Single13
+    401038: Wall_Exterior_Interior_Single14
+    401040: Wall_Exterior_Interior_Single15
+    401042: Wall_Exterior_Interior_Single16
+    401044: Wall_Exterior_Interior_Single17
+    401046: Wall_Exterior_Interior_Single18
+    401048: Wall_Exterior_Interior_Single19
+    401050: Wall_Exterior_Interior_Single2
+    401052: Wall_Exterior_Interior_Single20
+    401054: Wall_Exterior_Interior_Single21
+    401056: Wall_Exterior_Interior_Single22
+    401058: Wall_Exterior_Interior_Single23
+    401060: Wall_Exterior_Interior_Single26
+    401062: Wall_Exterior_Interior_Single27
+    401064: Wall_Exterior_Interior_Single28
+    401066: Wall_Exterior_Interior_Single29
+    401068: Wall_Exterior_Interior_Single3
+    401070: Wall_Exterior_Interior_Single30
+    401072: Wall_Exterior_Interior_Single31
+    401074: Wall_Exterior_Interior_Single32
+    401076: Wall_Exterior_Interior_Single33
+    401078: Wall_Exterior_Interior_Single34
+    401080: Wall_Exterior_Interior_Single35
+    401082: Wall_Exterior_Interior_Single36
+    401084: Wall_Exterior_Interior_Single37
+    401086: Wall_Exterior_Interior_Single38
+    401088: Wall_Exterior_Interior_Single39
+    401090: Wall_Exterior_Interior_Single4
+    401092: Wall_Exterior_Interior_Single40
+    401094: Wall_Exterior_Interior_Single41
+    401096: Wall_Exterior_Interior_Single42
+    401098: Wall_Exterior_Interior_Single43
+    401100: Wall_Exterior_Interior_Single44
+    401102: Wall_Exterior_Interior_Single45
+    401104: Wall_Exterior_Interior_Single46
+    401106: Wall_Exterior_Interior_Single47
+    401108: Wall_Exterior_Interior_Single48
+    401110: Wall_Exterior_Interior_Single49
+    401112: Wall_Exterior_Interior_Single5
+    401114: Wall_Exterior_Interior_Single50
+    401116: Wall_Exterior_Interior_Single51
+    401118: Wall_Exterior_Interior_Single52
+    401120: Wall_Exterior_Interior_Single53
+    401122: Wall_Exterior_Interior_Single54
+    401124: Wall_Exterior_Interior_Single55
+    401126: Wall_Exterior_Interior_Single56
+    401128: Wall_Exterior_Interior_Single57
+    401130: Wall_Exterior_Interior_Single58
+    401132: Wall_Exterior_Interior_Single59
+    401134: Wall_Exterior_Interior_Single6
+    401136: Wall_Exterior_Interior_Single60
+    401138: Wall_Exterior_Interior_Single61
+    401140: Wall_Exterior_Interior_Single62
+    401142: Wall_Exterior_Interior_Single63
+    401144: Wall_Exterior_Interior_Single64
+    401146: Wall_Exterior_Interior_Single65
+    401148: Wall_Exterior_Interior_Single67
+    401150: Wall_Exterior_Interior_Single68
+    401152: Wall_Exterior_Interior_Single69
+    401154: Wall_Exterior_Interior_Single7
+    401156: Wall_Exterior_Interior_Single70
+    401158: Wall_Exterior_Interior_Single71
+    401160: Wall_Exterior_Interior_Single72
+    401162: Wall_Exterior_Interior_Single73
+    401164: Wall_Exterior_Interior_Single74
+    401166: Wall_Exterior_Interior_Single75
+    401168: Wall_Exterior_Interior_Single76
+    401170: Wall_Exterior_Interior_Single77
+    401172: Wall_Exterior_Interior_Single78
+    401174: Wall_Exterior_Interior_Single79
+    401176: Wall_Exterior_Interior_Single8
+    401178: Wall_Exterior_Interior_Single80
+    401180: Wall_Exterior_Interior_Single80 1
+    401182: Wall_Exterior_Interior_Single81
+    401184: Wall_Exterior_Interior_Single81 1
+    401186: Wall_Exterior_Interior_Single82
+    401188: Wall_Exterior_Interior_Single82 1
+    401190: Wall_Exterior_Interior_Single83
+    401192: Wall_Exterior_Interior_Single83 1
+    401194: Wall_Exterior_Interior_Single84
+    401196: Wall_Exterior_Interior_Single84 1
+    401198: Wall_Exterior_Interior_Single85
+    401200: Wall_Exterior_Interior_Single85 1
+    401202: Wall_Exterior_Interior_Single9
+    401204: Wall_Half_Exterior_Interior1
+    401206: Wall_Half_Exterior_Interior2
+    401208: Wall_Half_Exterior_Interior3
+    401210: Wall_Half_Exterior_Interior4
+    401212: Wall_Interior_Interior_Short1
+    401214: Wall_Interior_Interior_Short1 1
+    401216: Wall_Interior_Interior_Short10
+    401218: Wall_Interior_Interior_Short10 1
+    401220: Wall_Interior_Interior_Short11
+    401222: Wall_Interior_Interior_Short11 1
+    401224: Wall_Interior_Interior_Short12
+    401226: Wall_Interior_Interior_Short12 1
+    401228: Wall_Interior_Interior_Short13
+    401230: Wall_Interior_Interior_Short13 1
+    401232: Wall_Interior_Interior_Short14
+    401234: Wall_Interior_Interior_Short14 1
+    401236: Wall_Interior_Interior_Short15
+    401238: Wall_Interior_Interior_Short15 1
+    401240: Wall_Interior_Interior_Short16
+    401242: Wall_Interior_Interior_Short16 1
+    401244: Wall_Interior_Interior_Short17
+    401246: Wall_Interior_Interior_Short17 1
+    401248: Wall_Interior_Interior_Short18
+    401250: Wall_Interior_Interior_Short18 1
+    401252: Wall_Interior_Interior_Short19
+    401254: Wall_Interior_Interior_Short19 1
+    401256: Wall_Interior_Interior_Short2
+    401258: Wall_Interior_Interior_Short2 1
+    401260: Wall_Interior_Interior_Short20
+    401262: Wall_Interior_Interior_Short20 1
+    401264: Wall_Interior_Interior_Short21
+    401266: Wall_Interior_Interior_Short21 1
+    401268: Wall_Interior_Interior_Short22
+    401270: Wall_Interior_Interior_Short22 1
+    401272: Wall_Interior_Interior_Short23
+    401274: Wall_Interior_Interior_Short23 1
+    401276: Wall_Interior_Interior_Short24
+    401278: Wall_Interior_Interior_Short24 1
+    401280: Wall_Interior_Interior_Short25
+    401282: Wall_Interior_Interior_Short25 1
+    401284: Wall_Interior_Interior_Short26
+    401286: Wall_Interior_Interior_Short27
+    401288: Wall_Interior_Interior_Short28
+    401290: Wall_Interior_Interior_Short29
+    401292: Wall_Interior_Interior_Short3
+    401294: Wall_Interior_Interior_Short3 1
+    401296: Wall_Interior_Interior_Short30
+    401298: Wall_Interior_Interior_Short31
+    401300: Wall_Interior_Interior_Short4
+    401302: Wall_Interior_Interior_Short4 1
+    401304: Wall_Interior_Interior_Short5
+    401306: Wall_Interior_Interior_Short5 1
+    401308: Wall_Interior_Interior_Short6
+    401310: Wall_Interior_Interior_Short6 1
+    401312: Wall_Interior_Interior_Short7
+    401314: Wall_Interior_Interior_Short7 1
+    401316: Wall_Interior_Interior_Short8
+    401318: Wall_Interior_Interior_Short8 1
+    401320: Wall_Interior_Interior_Short9
+    401322: Wall_Interior_Interior_Short9 1
+    401324: Wall_Interior_Interior_Single_block1
+    401326: Wall_Interior_Interior_Single_block1 1
+    401328: Wall_Interior_Interior_Single_block10
+    401330: Wall_Interior_Interior_Single_block10 1
+    401332: Wall_Interior_Interior_Single_block11
+    401334: Wall_Interior_Interior_Single_block11 1
+    401336: Wall_Interior_Interior_Single_block12
+    401338: Wall_Interior_Interior_Single_block12 1
+    401340: Wall_Interior_Interior_Single_block13
+    401342: Wall_Interior_Interior_Single_block13 1
+    401344: Wall_Interior_Interior_Single_block14
+    401346: Wall_Interior_Interior_Single_block14 1
+    401348: Wall_Interior_Interior_Single_block15
+    401350: Wall_Interior_Interior_Single_block15 1
+    401352: Wall_Interior_Interior_Single_block16
+    401354: Wall_Interior_Interior_Single_block16 1
+    401356: Wall_Interior_Interior_Single_block17
+    401358: Wall_Interior_Interior_Single_block17 1
+    401360: Wall_Interior_Interior_Single_block18
+    401362: Wall_Interior_Interior_Single_block18 1
+    401364: Wall_Interior_Interior_Single_block19
+    401366: Wall_Interior_Interior_Single_block19 1
+    401368: Wall_Interior_Interior_Single_block2
+    401370: Wall_Interior_Interior_Single_block2 1
+    401372: Wall_Interior_Interior_Single_block20
+    401374: Wall_Interior_Interior_Single_block20 1
+    401376: Wall_Interior_Interior_Single_block21
+    401378: Wall_Interior_Interior_Single_block21 1
+    401380: Wall_Interior_Interior_Single_block22
+    401382: Wall_Interior_Interior_Single_block22 1
+    401384: Wall_Interior_Interior_Single_block23
+    401386: Wall_Interior_Interior_Single_block23 1
+    401388: Wall_Interior_Interior_Single_block24
+    401390: Wall_Interior_Interior_Single_block24 1
+    401392: Wall_Interior_Interior_Single_block25
+    401394: Wall_Interior_Interior_Single_block25 1
+    401396: Wall_Interior_Interior_Single_block26
+    401398: Wall_Interior_Interior_Single_block26 1
+    401400: Wall_Interior_Interior_Single_block27
+    401402: Wall_Interior_Interior_Single_block27 1
+    401404: Wall_Interior_Interior_Single_block28
+    401406: Wall_Interior_Interior_Single_block28 1
+    401408: Wall_Interior_Interior_Single_block29
+    401410: Wall_Interior_Interior_Single_block29 1
+    401412: Wall_Interior_Interior_Single_block3
+    401414: Wall_Interior_Interior_Single_block3 1
+    401416: Wall_Interior_Interior_Single_block30
+    401418: Wall_Interior_Interior_Single_block30 1
+    401420: Wall_Interior_Interior_Single_block31
+    401422: Wall_Interior_Interior_Single_block31 1
+    401424: Wall_Interior_Interior_Single_block32
+    401426: Wall_Interior_Interior_Single_block32 1
+    401428: Wall_Interior_Interior_Single_block33
+    401430: Wall_Interior_Interior_Single_block33 1
+    401432: Wall_Interior_Interior_Single_block34
+    401434: Wall_Interior_Interior_Single_block34 1
+    401436: Wall_Interior_Interior_Single_block35
+    401438: Wall_Interior_Interior_Single_block35 1
+    401440: Wall_Interior_Interior_Single_block36
+    401442: Wall_Interior_Interior_Single_block36 1
+    401444: Wall_Interior_Interior_Single_block37
+    401446: Wall_Interior_Interior_Single_block37 1
+    401448: Wall_Interior_Interior_Single_block38
+    401450: Wall_Interior_Interior_Single_block38 1
+    401452: Wall_Interior_Interior_Single_block39
+    401454: Wall_Interior_Interior_Single_block39 1
+    401456: Wall_Interior_Interior_Single_block4
+    401458: Wall_Interior_Interior_Single_block4 1
+    401460: Wall_Interior_Interior_Single_block40
+    401462: Wall_Interior_Interior_Single_block40 1
+    401464: Wall_Interior_Interior_Single_block41
+    401466: Wall_Interior_Interior_Single_block41 1
+    401468: Wall_Interior_Interior_Single_block42
+    401470: Wall_Interior_Interior_Single_block42 1
+    401472: Wall_Interior_Interior_Single_block43
+    401474: Wall_Interior_Interior_Single_block44
+    401476: Wall_Interior_Interior_Single_block45
+    401478: Wall_Interior_Interior_Single_block46
+    401480: Wall_Interior_Interior_Single_block47
+    401482: Wall_Interior_Interior_Single_block48
+    401484: Wall_Interior_Interior_Single_block49
+    401486: Wall_Interior_Interior_Single_block5
+    401488: Wall_Interior_Interior_Single_block5 1
+    401490: Wall_Interior_Interior_Single_block50
+    401492: Wall_Interior_Interior_Single_block51
+    401494: Wall_Interior_Interior_Single_block52
+    401496: Wall_Interior_Interior_Single_block53
+    401498: Wall_Interior_Interior_Single_block54
+    401500: Wall_Interior_Interior_Single_block6
+    401502: Wall_Interior_Interior_Single_block6 1
+    401504: Wall_Interior_Interior_Single_block7
+    401506: Wall_Interior_Interior_Single_block7 1
+    401508: Wall_Interior_Interior_Single_block8
+    401510: Wall_Interior_Interior_Single_block8 1
+    401512: Wall_Interior_Interior_Single_block9
+    401514: Wall_Interior_Interior_Single_block9 1
+    401516: Wall_Window_Exterior_Interior1
+    401518: Wall_Window_Exterior_Interior2
+    401520: Wall_Window_Exterior_Interior3
+    401522: Wall_Window_Exterior_Interior4
+    401524: Wall_Window_Exterior_Interior5
+    401526: Window_Frame
+    401528: Window_Frame 1
+    401530: Window_Frame 2
+    401532: Window_Frame 3
+    401534: Window_Frame 4
+    401536: Window_Glass
+    401538: Window_Glass 1
+    401540: Window_Glass 2
+    401542: Window_Glass 3
+    401544: Window_Glass 4
+    2100000: Buildings_Exterior_mat
+    2100002: Buildings_Interior_mat
+    2100004: Buildings_Garage_mat
+    2100006: shop_0001_Shop_Interior_mat
+    2300000: Door_Closed
+    2300002: Door_Closed 1
+    2300004: Door_Closed 2
+    2300006: Door_Closed 3
+    2300008: Door_Closed_Left
+    2300010: Door_Closed_Left 1
+    2300012: Door_Closed_Left 2
+    2300014: Door_Closed_Left 3
+    2300016: Door_Closed_Right
+    2300018: Door_Closed_Right 1
+    2300020: Door_Closed_Right 2
+    2300022: Door_Closed_Right 3
+    2300024: Doorway_Double
+    2300026: Doorway_Double 1
+    2300028: Doorway_Double 2
+    2300030: Doorway_Double 3
+    2300032: Doorway_Double 4
+    2300034: Doorway_Double 5
+    2300036: Doorway_Single
+    2300038: Doorway_Single 1
+    2300040: Doorway_Single 2
+    2300042: Doorway_Single 3
+    2300044: Endcap_Left
+    2300046: Endcap_Left 1
+    2300048: Endcap_Left 10
+    2300050: Endcap_Left 100
+    2300052: Endcap_Left 101
+    2300054: Endcap_Left 102
+    2300056: Endcap_Left 103
+    2300058: Endcap_Left 104
+    2300060: Endcap_Left 105
+    2300062: Endcap_Left 106
+    2300064: Endcap_Left 107
+    2300066: Endcap_Left 108
+    2300068: Endcap_Left 109
+    2300070: Endcap_Left 11
+    2300072: Endcap_Left 110
+    2300074: Endcap_Left 111
+    2300076: Endcap_Left 112
+    2300078: Endcap_Left 113
+    2300080: Endcap_Left 114
+    2300082: Endcap_Left 115
+    2300084: Endcap_Left 116
+    2300086: Endcap_Left 117
+    2300088: Endcap_Left 118
+    2300090: Endcap_Left 119
+    2300092: Endcap_Left 12
+    2300094: Endcap_Left 120
+    2300096: Endcap_Left 121
+    2300098: Endcap_Left 122
+    2300100: Endcap_Left 123
+    2300102: Endcap_Left 124
+    2300104: Endcap_Left 125
+    2300106: Endcap_Left 126
+    2300108: Endcap_Left 127
+    2300110: Endcap_Left 128
+    2300112: Endcap_Left 129
+    2300114: Endcap_Left 13
+    2300116: Endcap_Left 130
+    2300118: Endcap_Left 131
+    2300120: Endcap_Left 132
+    2300122: Endcap_Left 133
+    2300124: Endcap_Left 134
+    2300126: Endcap_Left 135
+    2300128: Endcap_Left 136
+    2300130: Endcap_Left 137
+    2300132: Endcap_Left 138
+    2300134: Endcap_Left 139
+    2300136: Endcap_Left 14
+    2300138: Endcap_Left 140
+    2300140: Endcap_Left 141
+    2300142: Endcap_Left 142
+    2300144: Endcap_Left 143
+    2300146: Endcap_Left 144
+    2300148: Endcap_Left 145
+    2300150: Endcap_Left 146
+    2300152: Endcap_Left 147
+    2300154: Endcap_Left 148
+    2300156: Endcap_Left 149
+    2300158: Endcap_Left 15
+    2300160: Endcap_Left 150
+    2300162: Endcap_Left 151
+    2300164: Endcap_Left 152
+    2300166: Endcap_Left 153
+    2300168: Endcap_Left 154
+    2300170: Endcap_Left 155
+    2300172: Endcap_Left 156
+    2300174: Endcap_Left 157
+    2300176: Endcap_Left 158
+    2300178: Endcap_Left 159
+    2300180: Endcap_Left 16
+    2300182: Endcap_Left 160
+    2300184: Endcap_Left 161
+    2300186: Endcap_Left 162
+    2300188: Endcap_Left 17
+    2300190: Endcap_Left 18
+    2300192: Endcap_Left 19
+    2300194: Endcap_Left 2
+    2300196: Endcap_Left 20
+    2300198: Endcap_Left 21
+    2300200: Endcap_Left 22
+    2300202: Endcap_Left 23
+    2300204: Endcap_Left 24
+    2300206: Endcap_Left 25
+    2300208: Endcap_Left 26
+    2300210: Endcap_Left 27
+    2300212: Endcap_Left 28
+    2300214: Endcap_Left 29
+    2300216: Endcap_Left 3
+    2300218: Endcap_Left 30
+    2300220: Endcap_Left 31
+    2300222: Endcap_Left 32
+    2300224: Endcap_Left 33
+    2300226: Endcap_Left 34
+    2300228: Endcap_Left 35
+    2300230: Endcap_Left 36
+    2300232: Endcap_Left 37
+    2300234: Endcap_Left 38
+    2300236: Endcap_Left 39
+    2300238: Endcap_Left 4
+    2300240: Endcap_Left 40
+    2300242: Endcap_Left 41
+    2300244: Endcap_Left 42
+    2300246: Endcap_Left 43
+    2300248: Endcap_Left 44
+    2300250: Endcap_Left 45
+    2300252: Endcap_Left 46
+    2300254: Endcap_Left 47
+    2300256: Endcap_Left 48
+    2300258: Endcap_Left 49
+    2300260: Endcap_Left 5
+    2300262: Endcap_Left 50
+    2300264: Endcap_Left 51
+    2300266: Endcap_Left 52
+    2300268: Endcap_Left 53
+    2300270: Endcap_Left 54
+    2300272: Endcap_Left 55
+    2300274: Endcap_Left 56
+    2300276: Endcap_Left 57
+    2300278: Endcap_Left 58
+    2300280: Endcap_Left 59
+    2300282: Endcap_Left 6
+    2300284: Endcap_Left 60
+    2300286: Endcap_Left 61
+    2300288: Endcap_Left 62
+    2300290: Endcap_Left 63
+    2300292: Endcap_Left 64
+    2300294: Endcap_Left 65
+    2300296: Endcap_Left 66
+    2300298: Endcap_Left 67
+    2300300: Endcap_Left 68
+    2300302: Endcap_Left 69
+    2300304: Endcap_Left 7
+    2300306: Endcap_Left 70
+    2300308: Endcap_Left 71
+    2300310: Endcap_Left 72
+    2300312: Endcap_Left 73
+    2300314: Endcap_Left 74
+    2300316: Endcap_Left 75
+    2300318: Endcap_Left 76
+    2300320: Endcap_Left 77
+    2300322: Endcap_Left 78
+    2300324: Endcap_Left 79
+    2300326: Endcap_Left 8
+    2300328: Endcap_Left 80
+    2300330: Endcap_Left 81
+    2300332: Endcap_Left 82
+    2300334: Endcap_Left 83
+    2300336: Endcap_Left 84
+    2300338: Endcap_Left 85
+    2300340: Endcap_Left 86
+    2300342: Endcap_Left 87
+    2300344: Endcap_Left 88
+    2300346: Endcap_Left 89
+    2300348: Endcap_Left 9
+    2300350: Endcap_Left 90
+    2300352: Endcap_Left 91
+    2300354: Endcap_Left 92
+    2300356: Endcap_Left 93
+    2300358: Endcap_Left 94
+    2300360: Endcap_Left 95
+    2300362: Endcap_Left 96
+    2300364: Endcap_Left 97
+    2300366: Endcap_Left 98
+    2300368: Endcap_Left 99
+    2300370: Endcap_Right
+    2300372: Endcap_Right 1
+    2300374: Endcap_Right 10
+    2300376: Endcap_Right 100
+    2300378: Endcap_Right 101
+    2300380: Endcap_Right 102
+    2300382: Endcap_Right 103
+    2300384: Endcap_Right 104
+    2300386: Endcap_Right 105
+    2300388: Endcap_Right 106
+    2300390: Endcap_Right 107
+    2300392: Endcap_Right 108
+    2300394: Endcap_Right 109
+    2300396: Endcap_Right 11
+    2300398: Endcap_Right 110
+    2300400: Endcap_Right 111
+    2300402: Endcap_Right 112
+    2300404: Endcap_Right 113
+    2300406: Endcap_Right 114
+    2300408: Endcap_Right 115
+    2300410: Endcap_Right 116
+    2300412: Endcap_Right 117
+    2300414: Endcap_Right 118
+    2300416: Endcap_Right 119
+    2300418: Endcap_Right 12
+    2300420: Endcap_Right 120
+    2300422: Endcap_Right 121
+    2300424: Endcap_Right 122
+    2300426: Endcap_Right 123
+    2300428: Endcap_Right 124
+    2300430: Endcap_Right 125
+    2300432: Endcap_Right 126
+    2300434: Endcap_Right 127
+    2300436: Endcap_Right 128
+    2300438: Endcap_Right 129
+    2300440: Endcap_Right 13
+    2300442: Endcap_Right 130
+    2300444: Endcap_Right 131
+    2300446: Endcap_Right 132
+    2300448: Endcap_Right 133
+    2300450: Endcap_Right 134
+    2300452: Endcap_Right 135
+    2300454: Endcap_Right 136
+    2300456: Endcap_Right 137
+    2300458: Endcap_Right 138
+    2300460: Endcap_Right 139
+    2300462: Endcap_Right 14
+    2300464: Endcap_Right 140
+    2300466: Endcap_Right 141
+    2300468: Endcap_Right 142
+    2300470: Endcap_Right 143
+    2300472: Endcap_Right 144
+    2300474: Endcap_Right 145
+    2300476: Endcap_Right 146
+    2300478: Endcap_Right 147
+    2300480: Endcap_Right 148
+    2300482: Endcap_Right 149
+    2300484: Endcap_Right 15
+    2300486: Endcap_Right 150
+    2300488: Endcap_Right 151
+    2300490: Endcap_Right 152
+    2300492: Endcap_Right 153
+    2300494: Endcap_Right 154
+    2300496: Endcap_Right 155
+    2300498: Endcap_Right 156
+    2300500: Endcap_Right 157
+    2300502: Endcap_Right 158
+    2300504: Endcap_Right 159
+    2300506: Endcap_Right 16
+    2300508: Endcap_Right 160
+    2300510: Endcap_Right 161
+    2300512: Endcap_Right 162
+    2300514: Endcap_Right 17
+    2300516: Endcap_Right 18
+    2300518: Endcap_Right 19
+    2300520: Endcap_Right 2
+    2300522: Endcap_Right 20
+    2300524: Endcap_Right 21
+    2300526: Endcap_Right 22
+    2300528: Endcap_Right 23
+    2300530: Endcap_Right 24
+    2300532: Endcap_Right 25
+    2300534: Endcap_Right 26
+    2300536: Endcap_Right 27
+    2300538: Endcap_Right 28
+    2300540: Endcap_Right 29
+    2300542: Endcap_Right 3
+    2300544: Endcap_Right 30
+    2300546: Endcap_Right 31
+    2300548: Endcap_Right 32
+    2300550: Endcap_Right 33
+    2300552: Endcap_Right 34
+    2300554: Endcap_Right 35
+    2300556: Endcap_Right 36
+    2300558: Endcap_Right 37
+    2300560: Endcap_Right 38
+    2300562: Endcap_Right 39
+    2300564: Endcap_Right 4
+    2300566: Endcap_Right 40
+    2300568: Endcap_Right 41
+    2300570: Endcap_Right 42
+    2300572: Endcap_Right 43
+    2300574: Endcap_Right 44
+    2300576: Endcap_Right 45
+    2300578: Endcap_Right 46
+    2300580: Endcap_Right 47
+    2300582: Endcap_Right 48
+    2300584: Endcap_Right 49
+    2300586: Endcap_Right 5
+    2300588: Endcap_Right 50
+    2300590: Endcap_Right 51
+    2300592: Endcap_Right 52
+    2300594: Endcap_Right 53
+    2300596: Endcap_Right 54
+    2300598: Endcap_Right 55
+    2300600: Endcap_Right 56
+    2300602: Endcap_Right 57
+    2300604: Endcap_Right 58
+    2300606: Endcap_Right 59
+    2300608: Endcap_Right 6
+    2300610: Endcap_Right 60
+    2300612: Endcap_Right 61
+    2300614: Endcap_Right 62
+    2300616: Endcap_Right 63
+    2300618: Endcap_Right 64
+    2300620: Endcap_Right 65
+    2300622: Endcap_Right 66
+    2300624: Endcap_Right 67
+    2300626: Endcap_Right 68
+    2300628: Endcap_Right 69
+    2300630: Endcap_Right 7
+    2300632: Endcap_Right 70
+    2300634: Endcap_Right 71
+    2300636: Endcap_Right 72
+    2300638: Endcap_Right 73
+    2300640: Endcap_Right 74
+    2300642: Endcap_Right 75
+    2300644: Endcap_Right 76
+    2300646: Endcap_Right 77
+    2300648: Endcap_Right 78
+    2300650: Endcap_Right 79
+    2300652: Endcap_Right 8
+    2300654: Endcap_Right 80
+    2300656: Endcap_Right 81
+    2300658: Endcap_Right 82
+    2300660: Endcap_Right 83
+    2300662: Endcap_Right 84
+    2300664: Endcap_Right 85
+    2300666: Endcap_Right 86
+    2300668: Endcap_Right 87
+    2300670: Endcap_Right 88
+    2300672: Endcap_Right 89
+    2300674: Endcap_Right 9
+    2300676: Endcap_Right 90
+    2300678: Endcap_Right 91
+    2300680: Endcap_Right 92
+    2300682: Endcap_Right 93
+    2300684: Endcap_Right 94
+    2300686: Endcap_Right 95
+    2300688: Endcap_Right 96
+    2300690: Endcap_Right 97
+    2300692: Endcap_Right 98
+    2300694: Endcap_Right 99
+    2300696: Floor_Celing1
+    2300698: Floor_Celing10
+    2300700: Floor_Celing11
+    2300702: Floor_Celing14
+    2300704: Floor_Celing15
+    2300706: Floor_Celing16
+    2300708: Floor_Celing17
+    2300710: Floor_Celing18
+    2300712: Floor_Celing19
+    2300714: Floor_Celing2
+    2300716: Floor_Celing20
+    2300718: Floor_Celing21
+    2300720: Floor_Celing22
+    2300722: Floor_Celing23
+    2300724: Floor_Celing23 1
+    2300726: Floor_Celing24
+    2300728: Floor_Celing24 1
+    2300730: Floor_Celing26
+    2300732: Floor_Celing26 1
+    2300734: Floor_Celing27
+    2300736: Floor_Celing27 1
+    2300738: Floor_Celing28
+    2300740: Floor_Celing29
+    2300742: Floor_Celing3
+    2300744: Floor_Celing30
+    2300746: Floor_Celing31
+    2300748: Floor_Celing32
+    2300750: Floor_Celing33
+    2300752: Floor_Celing34
+    2300754: Floor_Celing35
+    2300756: Floor_Celing36
+    2300758: Floor_Celing37
+    2300760: Floor_Celing38
+    2300762: Floor_Celing39
+    2300764: Floor_Celing4
+    2300766: Floor_Celing40
+    2300768: Floor_Celing41
+    2300770: Floor_Celing42
+    2300772: Floor_Celing43
+    2300774: Floor_Celing44
+    2300776: Floor_Celing45
+    2300778: Floor_Celing46
+    2300780: Floor_Celing47
+    2300782: Floor_Celing48
+    2300784: Floor_Celing49
+    2300786: Floor_Celing5
+    2300788: Floor_Celing50
+    2300790: Floor_Celing51
+    2300792: Floor_Celing52
+    2300794: Floor_Celing53
+    2300796: Floor_Celing54
+    2300798: Floor_Celing55
+    2300800: Floor_Celing6
+    2300802: Floor_Celing7
+    2300804: Floor_Celing8
+    2300806: Floor_Celing9
+    2300808: Floor_Celing_Half1
+    2300810: Floor_Celing_Half10
+    2300812: Floor_Celing_Half11
+    2300814: Floor_Celing_Half12
+    2300816: Floor_Celing_Half13
+    2300818: Floor_Celing_Half14
+    2300820: Floor_Celing_Half2
+    2300822: Floor_Celing_Half3
+    2300824: Floor_Celing_Half4
+    2300826: Floor_Celing_Half5
+    2300828: Floor_Celing_Half5 1
+    2300830: Floor_Celing_Half6
+    2300832: Floor_Celing_Half6 1
+    2300834: Floor_Celing_Half7
+    2300836: Floor_Celing_Half8
+    2300838: Floor_Celing_Half9
+    2300840: Garage_Door
+    2300842: Garage_Door 1
+    2300844: Garage_Door1
+    2300846: Garage_Wall
+    2300848: Roof_Overhang1
+    2300850: Roof_Overhang11
+    2300852: Roof_Overhang12
+    2300854: Roof_Overhang2
+    2300856: Roof_Overhang3
+    2300858: Roof_Overhang4
+    2300860: Roof_Overhang5
+    2300862: Roof_Overhang6
+    2300864: Roof_Overhung_Corner1
+    2300866: Roof_Overhung_Corner10
+    2300868: Roof_Overhung_Corner11
+    2300870: Roof_Overhung_Corner12
+    2300872: Roof_Overhung_Corner13
+    2300874: Roof_Overhung_Corner14
+    2300876: Roof_Overhung_Corner2
+    2300878: Roof_Overhung_Corner3
+    2300880: Roof_Overhung_Corner4
+    2300882: Roof_Overhung_Corner5
+    2300884: Roof_Overhung_Corner6
+    2300886: Roof_Overhung_Corner7
+    2300888: Roof_Overhung_Corner8
+    2300890: Roof_Overhung_Corner9
+    2300892: Roof_Overhung_Corner_Half1
+    2300894: Roof_Overhung_Corner_Half10
+    2300896: Roof_Overhung_Corner_Half11
+    2300898: Roof_Overhung_Corner_Half12
+    2300900: Roof_Overhung_Corner_Half2
+    2300902: Roof_Overhung_Corner_Half20
+    2300904: Roof_Overhung_Corner_Half21
+    2300906: Roof_Overhung_Corner_Half22
+    2300908: Roof_Overhung_Corner_Half23
+    2300910: Roof_Overhung_Corner_Half24
+    2300912: Roof_Overhung_Corner_Half25
+    2300914: Roof_Overhung_Corner_Half3
+    2300916: Roof_Overhung_Corner_Half4
+    2300918: Roof_Overhung_Corner_Half5
+    2300920: Roof_Overhung_Corner_Half6
+    2300922: Roof_Overhung_Corner_Half7
+    2300924: Roof_Overhung_Corner_Half8
+    2300926: Roof_Overhung_Corner_Half9
+    2300928: shop_0001:Garage_Door
+    2300930: shop_0001:Garage_Wall
+    2300932: Wall_Doorway_Double_Exterior_Interior1
+    2300934: Wall_Doorway_Double_Exterior_Interior2
+    2300936: Wall_Doorway_Double_Exterior_Interior3
+    2300938: Wall_Doorway_Double_Exterior_Interior4
+    2300940: Wall_Doorway_Double_Exterior_Interior5
+    2300942: Wall_Doorway_Double_Exterior_Interior6
+    2300944: Wall_Doorway_Single_Exterior_Interior1
+    2300946: Wall_Doorway_Single_Exterior_Interior2
+    2300948: Wall_Doorway_Single_Exterior_Interior3
+    2300950: Wall_Doorway_Single_Exterior_Interior4
+    2300952: Wall_Exterior_Interior1
+    2300954: Wall_Exterior_Interior13
+    2300956: Wall_Exterior_Interior14
+    2300958: Wall_Exterior_Interior15
+    2300960: Wall_Exterior_Interior16
+    2300962: Wall_Exterior_Interior17
+    2300964: Wall_Exterior_Interior18
+    2300966: Wall_Exterior_Interior19
+    2300968: Wall_Exterior_Interior2
+    2300970: Wall_Exterior_Interior20
+    2300972: Wall_Exterior_Interior21
+    2300974: Wall_Exterior_Interior22
+    2300976: Wall_Exterior_Interior23
+    2300978: Wall_Exterior_Interior24
+    2300980: Wall_Exterior_Interior25
+    2300982: Wall_Exterior_Interior26
+    2300984: Wall_Exterior_Interior27
+    2300986: Wall_Exterior_Interior28
+    2300988: Wall_Exterior_Interior29
+    2300990: Wall_Exterior_Interior3
+    2300992: Wall_Exterior_Interior30
+    2300994: Wall_Exterior_Interior31
+    2300996: Wall_Exterior_Interior31 1
+    2300998: Wall_Exterior_Interior32
+    2301000: Wall_Exterior_Interior32 1
+    2301002: Wall_Exterior_Interior33
+    2301004: Wall_Exterior_Interior33 1
+    2301006: Wall_Exterior_Interior34
+    2301008: Wall_Exterior_Interior34 1
+    2301010: Wall_Exterior_Interior4
+    2301012: Wall_Exterior_Interior5
+    2301014: Wall_Exterior_Interior6
+    2301016: Wall_Exterior_Interior7
+    2301018: Wall_Exterior_Interior8
+    2301020: Wall_Exterior_Interior9
+    2301022: Wall_Exterior_Interior_Single10
+    2301024: Wall_Exterior_Interior_Single11
+    2301026: Wall_Exterior_Interior_Single12
+    2301028: Wall_Exterior_Interior_Single13
+    2301030: Wall_Exterior_Interior_Single14
+    2301032: Wall_Exterior_Interior_Single15
+    2301034: Wall_Exterior_Interior_Single16
+    2301036: Wall_Exterior_Interior_Single17
+    2301038: Wall_Exterior_Interior_Single18
+    2301040: Wall_Exterior_Interior_Single19
+    2301042: Wall_Exterior_Interior_Single2
+    2301044: Wall_Exterior_Interior_Single20
+    2301046: Wall_Exterior_Interior_Single21
+    2301048: Wall_Exterior_Interior_Single22
+    2301050: Wall_Exterior_Interior_Single23
+    2301052: Wall_Exterior_Interior_Single26
+    2301054: Wall_Exterior_Interior_Single27
+    2301056: Wall_Exterior_Interior_Single28
+    2301058: Wall_Exterior_Interior_Single29
+    2301060: Wall_Exterior_Interior_Single3
+    2301062: Wall_Exterior_Interior_Single30
+    2301064: Wall_Exterior_Interior_Single31
+    2301066: Wall_Exterior_Interior_Single32
+    2301068: Wall_Exterior_Interior_Single33
+    2301070: Wall_Exterior_Interior_Single34
+    2301072: Wall_Exterior_Interior_Single35
+    2301074: Wall_Exterior_Interior_Single36
+    2301076: Wall_Exterior_Interior_Single37
+    2301078: Wall_Exterior_Interior_Single38
+    2301080: Wall_Exterior_Interior_Single39
+    2301082: Wall_Exterior_Interior_Single4
+    2301084: Wall_Exterior_Interior_Single40
+    2301086: Wall_Exterior_Interior_Single41
+    2301088: Wall_Exterior_Interior_Single42
+    2301090: Wall_Exterior_Interior_Single43
+    2301092: Wall_Exterior_Interior_Single44
+    2301094: Wall_Exterior_Interior_Single45
+    2301096: Wall_Exterior_Interior_Single46
+    2301098: Wall_Exterior_Interior_Single47
+    2301100: Wall_Exterior_Interior_Single48
+    2301102: Wall_Exterior_Interior_Single49
+    2301104: Wall_Exterior_Interior_Single5
+    2301106: Wall_Exterior_Interior_Single50
+    2301108: Wall_Exterior_Interior_Single51
+    2301110: Wall_Exterior_Interior_Single52
+    2301112: Wall_Exterior_Interior_Single53
+    2301114: Wall_Exterior_Interior_Single54
+    2301116: Wall_Exterior_Interior_Single55
+    2301118: Wall_Exterior_Interior_Single56
+    2301120: Wall_Exterior_Interior_Single57
+    2301122: Wall_Exterior_Interior_Single58
+    2301124: Wall_Exterior_Interior_Single59
+    2301126: Wall_Exterior_Interior_Single6
+    2301128: Wall_Exterior_Interior_Single60
+    2301130: Wall_Exterior_Interior_Single61
+    2301132: Wall_Exterior_Interior_Single62
+    2301134: Wall_Exterior_Interior_Single63
+    2301136: Wall_Exterior_Interior_Single64
+    2301138: Wall_Exterior_Interior_Single65
+    2301140: Wall_Exterior_Interior_Single67
+    2301142: Wall_Exterior_Interior_Single68
+    2301144: Wall_Exterior_Interior_Single69
+    2301146: Wall_Exterior_Interior_Single7
+    2301148: Wall_Exterior_Interior_Single70
+    2301150: Wall_Exterior_Interior_Single71
+    2301152: Wall_Exterior_Interior_Single72
+    2301154: Wall_Exterior_Interior_Single73
+    2301156: Wall_Exterior_Interior_Single74
+    2301158: Wall_Exterior_Interior_Single75
+    2301160: Wall_Exterior_Interior_Single76
+    2301162: Wall_Exterior_Interior_Single77
+    2301164: Wall_Exterior_Interior_Single78
+    2301166: Wall_Exterior_Interior_Single79
+    2301168: Wall_Exterior_Interior_Single8
+    2301170: Wall_Exterior_Interior_Single80
+    2301172: Wall_Exterior_Interior_Single80 1
+    2301174: Wall_Exterior_Interior_Single81
+    2301176: Wall_Exterior_Interior_Single81 1
+    2301178: Wall_Exterior_Interior_Single82
+    2301180: Wall_Exterior_Interior_Single82 1
+    2301182: Wall_Exterior_Interior_Single83
+    2301184: Wall_Exterior_Interior_Single83 1
+    2301186: Wall_Exterior_Interior_Single84
+    2301188: Wall_Exterior_Interior_Single84 1
+    2301190: Wall_Exterior_Interior_Single85
+    2301192: Wall_Exterior_Interior_Single85 1
+    2301194: Wall_Exterior_Interior_Single9
+    2301196: Wall_Half_Exterior_Interior1
+    2301198: Wall_Half_Exterior_Interior2
+    2301200: Wall_Half_Exterior_Interior3
+    2301202: Wall_Half_Exterior_Interior4
+    2301204: Wall_Interior_Interior_Short1
+    2301206: Wall_Interior_Interior_Short1 1
+    2301208: Wall_Interior_Interior_Short10
+    2301210: Wall_Interior_Interior_Short10 1
+    2301212: Wall_Interior_Interior_Short11
+    2301214: Wall_Interior_Interior_Short11 1
+    2301216: Wall_Interior_Interior_Short12
+    2301218: Wall_Interior_Interior_Short12 1
+    2301220: Wall_Interior_Interior_Short13
+    2301222: Wall_Interior_Interior_Short13 1
+    2301224: Wall_Interior_Interior_Short14
+    2301226: Wall_Interior_Interior_Short14 1
+    2301228: Wall_Interior_Interior_Short15
+    2301230: Wall_Interior_Interior_Short15 1
+    2301232: Wall_Interior_Interior_Short16
+    2301234: Wall_Interior_Interior_Short16 1
+    2301236: Wall_Interior_Interior_Short17
+    2301238: Wall_Interior_Interior_Short17 1
+    2301240: Wall_Interior_Interior_Short18
+    2301242: Wall_Interior_Interior_Short18 1
+    2301244: Wall_Interior_Interior_Short19
+    2301246: Wall_Interior_Interior_Short19 1
+    2301248: Wall_Interior_Interior_Short2
+    2301250: Wall_Interior_Interior_Short2 1
+    2301252: Wall_Interior_Interior_Short20
+    2301254: Wall_Interior_Interior_Short20 1
+    2301256: Wall_Interior_Interior_Short21
+    2301258: Wall_Interior_Interior_Short21 1
+    2301260: Wall_Interior_Interior_Short22
+    2301262: Wall_Interior_Interior_Short22 1
+    2301264: Wall_Interior_Interior_Short23
+    2301266: Wall_Interior_Interior_Short23 1
+    2301268: Wall_Interior_Interior_Short24
+    2301270: Wall_Interior_Interior_Short24 1
+    2301272: Wall_Interior_Interior_Short25
+    2301274: Wall_Interior_Interior_Short25 1
+    2301276: Wall_Interior_Interior_Short26
+    2301278: Wall_Interior_Interior_Short27
+    2301280: Wall_Interior_Interior_Short28
+    2301282: Wall_Interior_Interior_Short29
+    2301284: Wall_Interior_Interior_Short3
+    2301286: Wall_Interior_Interior_Short3 1
+    2301288: Wall_Interior_Interior_Short30
+    2301290: Wall_Interior_Interior_Short31
+    2301292: Wall_Interior_Interior_Short4
+    2301294: Wall_Interior_Interior_Short4 1
+    2301296: Wall_Interior_Interior_Short5
+    2301298: Wall_Interior_Interior_Short5 1
+    2301300: Wall_Interior_Interior_Short6
+    2301302: Wall_Interior_Interior_Short6 1
+    2301304: Wall_Interior_Interior_Short7
+    2301306: Wall_Interior_Interior_Short7 1
+    2301308: Wall_Interior_Interior_Short8
+    2301310: Wall_Interior_Interior_Short8 1
+    2301312: Wall_Interior_Interior_Short9
+    2301314: Wall_Interior_Interior_Short9 1
+    2301316: Wall_Interior_Interior_Single_block1
+    2301318: Wall_Interior_Interior_Single_block1 1
+    2301320: Wall_Interior_Interior_Single_block10
+    2301322: Wall_Interior_Interior_Single_block10 1
+    2301324: Wall_Interior_Interior_Single_block11
+    2301326: Wall_Interior_Interior_Single_block11 1
+    2301328: Wall_Interior_Interior_Single_block12
+    2301330: Wall_Interior_Interior_Single_block12 1
+    2301332: Wall_Interior_Interior_Single_block13
+    2301334: Wall_Interior_Interior_Single_block13 1
+    2301336: Wall_Interior_Interior_Single_block14
+    2301338: Wall_Interior_Interior_Single_block14 1
+    2301340: Wall_Interior_Interior_Single_block15
+    2301342: Wall_Interior_Interior_Single_block15 1
+    2301344: Wall_Interior_Interior_Single_block16
+    2301346: Wall_Interior_Interior_Single_block16 1
+    2301348: Wall_Interior_Interior_Single_block17
+    2301350: Wall_Interior_Interior_Single_block17 1
+    2301352: Wall_Interior_Interior_Single_block18
+    2301354: Wall_Interior_Interior_Single_block18 1
+    2301356: Wall_Interior_Interior_Single_block19
+    2301358: Wall_Interior_Interior_Single_block19 1
+    2301360: Wall_Interior_Interior_Single_block2
+    2301362: Wall_Interior_Interior_Single_block2 1
+    2301364: Wall_Interior_Interior_Single_block20
+    2301366: Wall_Interior_Interior_Single_block20 1
+    2301368: Wall_Interior_Interior_Single_block21
+    2301370: Wall_Interior_Interior_Single_block21 1
+    2301372: Wall_Interior_Interior_Single_block22
+    2301374: Wall_Interior_Interior_Single_block22 1
+    2301376: Wall_Interior_Interior_Single_block23
+    2301378: Wall_Interior_Interior_Single_block23 1
+    2301380: Wall_Interior_Interior_Single_block24
+    2301382: Wall_Interior_Interior_Single_block24 1
+    2301384: Wall_Interior_Interior_Single_block25
+    2301386: Wall_Interior_Interior_Single_block25 1
+    2301388: Wall_Interior_Interior_Single_block26
+    2301390: Wall_Interior_Interior_Single_block26 1
+    2301392: Wall_Interior_Interior_Single_block27
+    2301394: Wall_Interior_Interior_Single_block27 1
+    2301396: Wall_Interior_Interior_Single_block28
+    2301398: Wall_Interior_Interior_Single_block28 1
+    2301400: Wall_Interior_Interior_Single_block29
+    2301402: Wall_Interior_Interior_Single_block29 1
+    2301404: Wall_Interior_Interior_Single_block3
+    2301406: Wall_Interior_Interior_Single_block3 1
+    2301408: Wall_Interior_Interior_Single_block30
+    2301410: Wall_Interior_Interior_Single_block30 1
+    2301412: Wall_Interior_Interior_Single_block31
+    2301414: Wall_Interior_Interior_Single_block31 1
+    2301416: Wall_Interior_Interior_Single_block32
+    2301418: Wall_Interior_Interior_Single_block32 1
+    2301420: Wall_Interior_Interior_Single_block33
+    2301422: Wall_Interior_Interior_Single_block33 1
+    2301424: Wall_Interior_Interior_Single_block34
+    2301426: Wall_Interior_Interior_Single_block34 1
+    2301428: Wall_Interior_Interior_Single_block35
+    2301430: Wall_Interior_Interior_Single_block35 1
+    2301432: Wall_Interior_Interior_Single_block36
+    2301434: Wall_Interior_Interior_Single_block36 1
+    2301436: Wall_Interior_Interior_Single_block37
+    2301438: Wall_Interior_Interior_Single_block37 1
+    2301440: Wall_Interior_Interior_Single_block38
+    2301442: Wall_Interior_Interior_Single_block38 1
+    2301444: Wall_Interior_Interior_Single_block39
+    2301446: Wall_Interior_Interior_Single_block39 1
+    2301448: Wall_Interior_Interior_Single_block4
+    2301450: Wall_Interior_Interior_Single_block4 1
+    2301452: Wall_Interior_Interior_Single_block40
+    2301454: Wall_Interior_Interior_Single_block40 1
+    2301456: Wall_Interior_Interior_Single_block41
+    2301458: Wall_Interior_Interior_Single_block41 1
+    2301460: Wall_Interior_Interior_Single_block42
+    2301462: Wall_Interior_Interior_Single_block42 1
+    2301464: Wall_Interior_Interior_Single_block43
+    2301466: Wall_Interior_Interior_Single_block44
+    2301468: Wall_Interior_Interior_Single_block45
+    2301470: Wall_Interior_Interior_Single_block46
+    2301472: Wall_Interior_Interior_Single_block47
+    2301474: Wall_Interior_Interior_Single_block48
+    2301476: Wall_Interior_Interior_Single_block49
+    2301478: Wall_Interior_Interior_Single_block5
+    2301480: Wall_Interior_Interior_Single_block5 1
+    2301482: Wall_Interior_Interior_Single_block50
+    2301484: Wall_Interior_Interior_Single_block51
+    2301486: Wall_Interior_Interior_Single_block52
+    2301488: Wall_Interior_Interior_Single_block53
+    2301490: Wall_Interior_Interior_Single_block54
+    2301492: Wall_Interior_Interior_Single_block6
+    2301494: Wall_Interior_Interior_Single_block6 1
+    2301496: Wall_Interior_Interior_Single_block7
+    2301498: Wall_Interior_Interior_Single_block7 1
+    2301500: Wall_Interior_Interior_Single_block8
+    2301502: Wall_Interior_Interior_Single_block8 1
+    2301504: Wall_Interior_Interior_Single_block9
+    2301506: Wall_Interior_Interior_Single_block9 1
+    2301508: Wall_Window_Exterior_Interior1
+    2301510: Wall_Window_Exterior_Interior2
+    2301512: Wall_Window_Exterior_Interior3
+    2301514: Wall_Window_Exterior_Interior4
+    2301516: Wall_Window_Exterior_Interior5
+    2301518: Window_Frame
+    2301520: Window_Frame 1
+    2301522: Window_Frame 2
+    2301524: Window_Frame 3
+    2301526: Window_Frame 4
+    2301528: Window_Glass
+    2301530: Window_Glass 1
+    2301532: Window_Glass 2
+    2301534: Window_Glass 3
+    2301536: Window_Glass 4
+    3300000: Door_Closed
+    3300002: Door_Closed 1
+    3300004: Door_Closed 2
+    3300006: Door_Closed 3
+    3300008: Door_Closed_Left
+    3300010: Door_Closed_Left 1
+    3300012: Door_Closed_Left 2
+    3300014: Door_Closed_Left 3
+    3300016: Door_Closed_Right
+    3300018: Door_Closed_Right 1
+    3300020: Door_Closed_Right 2
+    3300022: Door_Closed_Right 3
+    3300024: Doorway_Double
+    3300026: Doorway_Double 1
+    3300028: Doorway_Double 2
+    3300030: Doorway_Double 3
+    3300032: Doorway_Double 4
+    3300034: Doorway_Double 5
+    3300036: Doorway_Single
+    3300038: Doorway_Single 1
+    3300040: Doorway_Single 2
+    3300042: Doorway_Single 3
+    3300044: Endcap_Left
+    3300046: Endcap_Left 1
+    3300048: Endcap_Left 10
+    3300050: Endcap_Left 100
+    3300052: Endcap_Left 101
+    3300054: Endcap_Left 102
+    3300056: Endcap_Left 103
+    3300058: Endcap_Left 104
+    3300060: Endcap_Left 105
+    3300062: Endcap_Left 106
+    3300064: Endcap_Left 107
+    3300066: Endcap_Left 108
+    3300068: Endcap_Left 109
+    3300070: Endcap_Left 11
+    3300072: Endcap_Left 110
+    3300074: Endcap_Left 111
+    3300076: Endcap_Left 112
+    3300078: Endcap_Left 113
+    3300080: Endcap_Left 114
+    3300082: Endcap_Left 115
+    3300084: Endcap_Left 116
+    3300086: Endcap_Left 117
+    3300088: Endcap_Left 118
+    3300090: Endcap_Left 119
+    3300092: Endcap_Left 12
+    3300094: Endcap_Left 120
+    3300096: Endcap_Left 121
+    3300098: Endcap_Left 122
+    3300100: Endcap_Left 123
+    3300102: Endcap_Left 124
+    3300104: Endcap_Left 125
+    3300106: Endcap_Left 126
+    3300108: Endcap_Left 127
+    3300110: Endcap_Left 128
+    3300112: Endcap_Left 129
+    3300114: Endcap_Left 13
+    3300116: Endcap_Left 130
+    3300118: Endcap_Left 131
+    3300120: Endcap_Left 132
+    3300122: Endcap_Left 133
+    3300124: Endcap_Left 134
+    3300126: Endcap_Left 135
+    3300128: Endcap_Left 136
+    3300130: Endcap_Left 137
+    3300132: Endcap_Left 138
+    3300134: Endcap_Left 139
+    3300136: Endcap_Left 14
+    3300138: Endcap_Left 140
+    3300140: Endcap_Left 141
+    3300142: Endcap_Left 142
+    3300144: Endcap_Left 143
+    3300146: Endcap_Left 144
+    3300148: Endcap_Left 145
+    3300150: Endcap_Left 146
+    3300152: Endcap_Left 147
+    3300154: Endcap_Left 148
+    3300156: Endcap_Left 149
+    3300158: Endcap_Left 15
+    3300160: Endcap_Left 150
+    3300162: Endcap_Left 151
+    3300164: Endcap_Left 152
+    3300166: Endcap_Left 153
+    3300168: Endcap_Left 154
+    3300170: Endcap_Left 155
+    3300172: Endcap_Left 156
+    3300174: Endcap_Left 157
+    3300176: Endcap_Left 158
+    3300178: Endcap_Left 159
+    3300180: Endcap_Left 16
+    3300182: Endcap_Left 160
+    3300184: Endcap_Left 161
+    3300186: Endcap_Left 162
+    3300188: Endcap_Left 17
+    3300190: Endcap_Left 18
+    3300192: Endcap_Left 19
+    3300194: Endcap_Left 2
+    3300196: Endcap_Left 20
+    3300198: Endcap_Left 21
+    3300200: Endcap_Left 22
+    3300202: Endcap_Left 23
+    3300204: Endcap_Left 24
+    3300206: Endcap_Left 25
+    3300208: Endcap_Left 26
+    3300210: Endcap_Left 27
+    3300212: Endcap_Left 28
+    3300214: Endcap_Left 29
+    3300216: Endcap_Left 3
+    3300218: Endcap_Left 30
+    3300220: Endcap_Left 31
+    3300222: Endcap_Left 32
+    3300224: Endcap_Left 33
+    3300226: Endcap_Left 34
+    3300228: Endcap_Left 35
+    3300230: Endcap_Left 36
+    3300232: Endcap_Left 37
+    3300234: Endcap_Left 38
+    3300236: Endcap_Left 39
+    3300238: Endcap_Left 4
+    3300240: Endcap_Left 40
+    3300242: Endcap_Left 41
+    3300244: Endcap_Left 42
+    3300246: Endcap_Left 43
+    3300248: Endcap_Left 44
+    3300250: Endcap_Left 45
+    3300252: Endcap_Left 46
+    3300254: Endcap_Left 47
+    3300256: Endcap_Left 48
+    3300258: Endcap_Left 49
+    3300260: Endcap_Left 5
+    3300262: Endcap_Left 50
+    3300264: Endcap_Left 51
+    3300266: Endcap_Left 52
+    3300268: Endcap_Left 53
+    3300270: Endcap_Left 54
+    3300272: Endcap_Left 55
+    3300274: Endcap_Left 56
+    3300276: Endcap_Left 57
+    3300278: Endcap_Left 58
+    3300280: Endcap_Left 59
+    3300282: Endcap_Left 6
+    3300284: Endcap_Left 60
+    3300286: Endcap_Left 61
+    3300288: Endcap_Left 62
+    3300290: Endcap_Left 63
+    3300292: Endcap_Left 64
+    3300294: Endcap_Left 65
+    3300296: Endcap_Left 66
+    3300298: Endcap_Left 67
+    3300300: Endcap_Left 68
+    3300302: Endcap_Left 69
+    3300304: Endcap_Left 7
+    3300306: Endcap_Left 70
+    3300308: Endcap_Left 71
+    3300310: Endcap_Left 72
+    3300312: Endcap_Left 73
+    3300314: Endcap_Left 74
+    3300316: Endcap_Left 75
+    3300318: Endcap_Left 76
+    3300320: Endcap_Left 77
+    3300322: Endcap_Left 78
+    3300324: Endcap_Left 79
+    3300326: Endcap_Left 8
+    3300328: Endcap_Left 80
+    3300330: Endcap_Left 81
+    3300332: Endcap_Left 82
+    3300334: Endcap_Left 83
+    3300336: Endcap_Left 84
+    3300338: Endcap_Left 85
+    3300340: Endcap_Left 86
+    3300342: Endcap_Left 87
+    3300344: Endcap_Left 88
+    3300346: Endcap_Left 89
+    3300348: Endcap_Left 9
+    3300350: Endcap_Left 90
+    3300352: Endcap_Left 91
+    3300354: Endcap_Left 92
+    3300356: Endcap_Left 93
+    3300358: Endcap_Left 94
+    3300360: Endcap_Left 95
+    3300362: Endcap_Left 96
+    3300364: Endcap_Left 97
+    3300366: Endcap_Left 98
+    3300368: Endcap_Left 99
+    3300370: Endcap_Right
+    3300372: Endcap_Right 1
+    3300374: Endcap_Right 10
+    3300376: Endcap_Right 100
+    3300378: Endcap_Right 101
+    3300380: Endcap_Right 102
+    3300382: Endcap_Right 103
+    3300384: Endcap_Right 104
+    3300386: Endcap_Right 105
+    3300388: Endcap_Right 106
+    3300390: Endcap_Right 107
+    3300392: Endcap_Right 108
+    3300394: Endcap_Right 109
+    3300396: Endcap_Right 11
+    3300398: Endcap_Right 110
+    3300400: Endcap_Right 111
+    3300402: Endcap_Right 112
+    3300404: Endcap_Right 113
+    3300406: Endcap_Right 114
+    3300408: Endcap_Right 115
+    3300410: Endcap_Right 116
+    3300412: Endcap_Right 117
+    3300414: Endcap_Right 118
+    3300416: Endcap_Right 119
+    3300418: Endcap_Right 12
+    3300420: Endcap_Right 120
+    3300422: Endcap_Right 121
+    3300424: Endcap_Right 122
+    3300426: Endcap_Right 123
+    3300428: Endcap_Right 124
+    3300430: Endcap_Right 125
+    3300432: Endcap_Right 126
+    3300434: Endcap_Right 127
+    3300436: Endcap_Right 128
+    3300438: Endcap_Right 129
+    3300440: Endcap_Right 13
+    3300442: Endcap_Right 130
+    3300444: Endcap_Right 131
+    3300446: Endcap_Right 132
+    3300448: Endcap_Right 133
+    3300450: Endcap_Right 134
+    3300452: Endcap_Right 135
+    3300454: Endcap_Right 136
+    3300456: Endcap_Right 137
+    3300458: Endcap_Right 138
+    3300460: Endcap_Right 139
+    3300462: Endcap_Right 14
+    3300464: Endcap_Right 140
+    3300466: Endcap_Right 141
+    3300468: Endcap_Right 142
+    3300470: Endcap_Right 143
+    3300472: Endcap_Right 144
+    3300474: Endcap_Right 145
+    3300476: Endcap_Right 146
+    3300478: Endcap_Right 147
+    3300480: Endcap_Right 148
+    3300482: Endcap_Right 149
+    3300484: Endcap_Right 15
+    3300486: Endcap_Right 150
+    3300488: Endcap_Right 151
+    3300490: Endcap_Right 152
+    3300492: Endcap_Right 153
+    3300494: Endcap_Right 154
+    3300496: Endcap_Right 155
+    3300498: Endcap_Right 156
+    3300500: Endcap_Right 157
+    3300502: Endcap_Right 158
+    3300504: Endcap_Right 159
+    3300506: Endcap_Right 16
+    3300508: Endcap_Right 160
+    3300510: Endcap_Right 161
+    3300512: Endcap_Right 162
+    3300514: Endcap_Right 17
+    3300516: Endcap_Right 18
+    3300518: Endcap_Right 19
+    3300520: Endcap_Right 2
+    3300522: Endcap_Right 20
+    3300524: Endcap_Right 21
+    3300526: Endcap_Right 22
+    3300528: Endcap_Right 23
+    3300530: Endcap_Right 24
+    3300532: Endcap_Right 25
+    3300534: Endcap_Right 26
+    3300536: Endcap_Right 27
+    3300538: Endcap_Right 28
+    3300540: Endcap_Right 29
+    3300542: Endcap_Right 3
+    3300544: Endcap_Right 30
+    3300546: Endcap_Right 31
+    3300548: Endcap_Right 32
+    3300550: Endcap_Right 33
+    3300552: Endcap_Right 34
+    3300554: Endcap_Right 35
+    3300556: Endcap_Right 36
+    3300558: Endcap_Right 37
+    3300560: Endcap_Right 38
+    3300562: Endcap_Right 39
+    3300564: Endcap_Right 4
+    3300566: Endcap_Right 40
+    3300568: Endcap_Right 41
+    3300570: Endcap_Right 42
+    3300572: Endcap_Right 43
+    3300574: Endcap_Right 44
+    3300576: Endcap_Right 45
+    3300578: Endcap_Right 46
+    3300580: Endcap_Right 47
+    3300582: Endcap_Right 48
+    3300584: Endcap_Right 49
+    3300586: Endcap_Right 5
+    3300588: Endcap_Right 50
+    3300590: Endcap_Right 51
+    3300592: Endcap_Right 52
+    3300594: Endcap_Right 53
+    3300596: Endcap_Right 54
+    3300598: Endcap_Right 55
+    3300600: Endcap_Right 56
+    3300602: Endcap_Right 57
+    3300604: Endcap_Right 58
+    3300606: Endcap_Right 59
+    3300608: Endcap_Right 6
+    3300610: Endcap_Right 60
+    3300612: Endcap_Right 61
+    3300614: Endcap_Right 62
+    3300616: Endcap_Right 63
+    3300618: Endcap_Right 64
+    3300620: Endcap_Right 65
+    3300622: Endcap_Right 66
+    3300624: Endcap_Right 67
+    3300626: Endcap_Right 68
+    3300628: Endcap_Right 69
+    3300630: Endcap_Right 7
+    3300632: Endcap_Right 70
+    3300634: Endcap_Right 71
+    3300636: Endcap_Right 72
+    3300638: Endcap_Right 73
+    3300640: Endcap_Right 74
+    3300642: Endcap_Right 75
+    3300644: Endcap_Right 76
+    3300646: Endcap_Right 77
+    3300648: Endcap_Right 78
+    3300650: Endcap_Right 79
+    3300652: Endcap_Right 8
+    3300654: Endcap_Right 80
+    3300656: Endcap_Right 81
+    3300658: Endcap_Right 82
+    3300660: Endcap_Right 83
+    3300662: Endcap_Right 84
+    3300664: Endcap_Right 85
+    3300666: Endcap_Right 86
+    3300668: Endcap_Right 87
+    3300670: Endcap_Right 88
+    3300672: Endcap_Right 89
+    3300674: Endcap_Right 9
+    3300676: Endcap_Right 90
+    3300678: Endcap_Right 91
+    3300680: Endcap_Right 92
+    3300682: Endcap_Right 93
+    3300684: Endcap_Right 94
+    3300686: Endcap_Right 95
+    3300688: Endcap_Right 96
+    3300690: Endcap_Right 97
+    3300692: Endcap_Right 98
+    3300694: Endcap_Right 99
+    3300696: Floor_Celing1
+    3300698: Floor_Celing10
+    3300700: Floor_Celing11
+    3300702: Floor_Celing14
+    3300704: Floor_Celing15
+    3300706: Floor_Celing16
+    3300708: Floor_Celing17
+    3300710: Floor_Celing18
+    3300712: Floor_Celing19
+    3300714: Floor_Celing2
+    3300716: Floor_Celing20
+    3300718: Floor_Celing21
+    3300720: Floor_Celing22
+    3300722: Floor_Celing23
+    3300724: Floor_Celing23 1
+    3300726: Floor_Celing24
+    3300728: Floor_Celing24 1
+    3300730: Floor_Celing26
+    3300732: Floor_Celing26 1
+    3300734: Floor_Celing27
+    3300736: Floor_Celing27 1
+    3300738: Floor_Celing28
+    3300740: Floor_Celing29
+    3300742: Floor_Celing3
+    3300744: Floor_Celing30
+    3300746: Floor_Celing31
+    3300748: Floor_Celing32
+    3300750: Floor_Celing33
+    3300752: Floor_Celing34
+    3300754: Floor_Celing35
+    3300756: Floor_Celing36
+    3300758: Floor_Celing37
+    3300760: Floor_Celing38
+    3300762: Floor_Celing39
+    3300764: Floor_Celing4
+    3300766: Floor_Celing40
+    3300768: Floor_Celing41
+    3300770: Floor_Celing42
+    3300772: Floor_Celing43
+    3300774: Floor_Celing44
+    3300776: Floor_Celing45
+    3300778: Floor_Celing46
+    3300780: Floor_Celing47
+    3300782: Floor_Celing48
+    3300784: Floor_Celing49
+    3300786: Floor_Celing5
+    3300788: Floor_Celing50
+    3300790: Floor_Celing51
+    3300792: Floor_Celing52
+    3300794: Floor_Celing53
+    3300796: Floor_Celing54
+    3300798: Floor_Celing55
+    3300800: Floor_Celing6
+    3300802: Floor_Celing7
+    3300804: Floor_Celing8
+    3300806: Floor_Celing9
+    3300808: Floor_Celing_Half1
+    3300810: Floor_Celing_Half10
+    3300812: Floor_Celing_Half11
+    3300814: Floor_Celing_Half12
+    3300816: Floor_Celing_Half13
+    3300818: Floor_Celing_Half14
+    3300820: Floor_Celing_Half2
+    3300822: Floor_Celing_Half3
+    3300824: Floor_Celing_Half4
+    3300826: Floor_Celing_Half5
+    3300828: Floor_Celing_Half5 1
+    3300830: Floor_Celing_Half6
+    3300832: Floor_Celing_Half6 1
+    3300834: Floor_Celing_Half7
+    3300836: Floor_Celing_Half8
+    3300838: Floor_Celing_Half9
+    3300840: Garage_Door
+    3300842: Garage_Door 1
+    3300844: Garage_Door1
+    3300846: Garage_Wall
+    3300848: Roof_Overhang1
+    3300850: Roof_Overhang11
+    3300852: Roof_Overhang12
+    3300854: Roof_Overhang2
+    3300856: Roof_Overhang3
+    3300858: Roof_Overhang4
+    3300860: Roof_Overhang5
+    3300862: Roof_Overhang6
+    3300864: Roof_Overhung_Corner1
+    3300866: Roof_Overhung_Corner10
+    3300868: Roof_Overhung_Corner11
+    3300870: Roof_Overhung_Corner12
+    3300872: Roof_Overhung_Corner13
+    3300874: Roof_Overhung_Corner14
+    3300876: Roof_Overhung_Corner2
+    3300878: Roof_Overhung_Corner3
+    3300880: Roof_Overhung_Corner4
+    3300882: Roof_Overhung_Corner5
+    3300884: Roof_Overhung_Corner6
+    3300886: Roof_Overhung_Corner7
+    3300888: Roof_Overhung_Corner8
+    3300890: Roof_Overhung_Corner9
+    3300892: Roof_Overhung_Corner_Half1
+    3300894: Roof_Overhung_Corner_Half10
+    3300896: Roof_Overhung_Corner_Half11
+    3300898: Roof_Overhung_Corner_Half12
+    3300900: Roof_Overhung_Corner_Half2
+    3300902: Roof_Overhung_Corner_Half20
+    3300904: Roof_Overhung_Corner_Half21
+    3300906: Roof_Overhung_Corner_Half22
+    3300908: Roof_Overhung_Corner_Half23
+    3300910: Roof_Overhung_Corner_Half24
+    3300912: Roof_Overhung_Corner_Half25
+    3300914: Roof_Overhung_Corner_Half3
+    3300916: Roof_Overhung_Corner_Half4
+    3300918: Roof_Overhung_Corner_Half5
+    3300920: Roof_Overhung_Corner_Half6
+    3300922: Roof_Overhung_Corner_Half7
+    3300924: Roof_Overhung_Corner_Half8
+    3300926: Roof_Overhung_Corner_Half9
+    3300928: shop_0001:Garage_Door
+    3300930: shop_0001:Garage_Wall
+    3300932: Wall_Doorway_Double_Exterior_Interior1
+    3300934: Wall_Doorway_Double_Exterior_Interior2
+    3300936: Wall_Doorway_Double_Exterior_Interior3
+    3300938: Wall_Doorway_Double_Exterior_Interior4
+    3300940: Wall_Doorway_Double_Exterior_Interior5
+    3300942: Wall_Doorway_Double_Exterior_Interior6
+    3300944: Wall_Doorway_Single_Exterior_Interior1
+    3300946: Wall_Doorway_Single_Exterior_Interior2
+    3300948: Wall_Doorway_Single_Exterior_Interior3
+    3300950: Wall_Doorway_Single_Exterior_Interior4
+    3300952: Wall_Exterior_Interior1
+    3300954: Wall_Exterior_Interior13
+    3300956: Wall_Exterior_Interior14
+    3300958: Wall_Exterior_Interior15
+    3300960: Wall_Exterior_Interior16
+    3300962: Wall_Exterior_Interior17
+    3300964: Wall_Exterior_Interior18
+    3300966: Wall_Exterior_Interior19
+    3300968: Wall_Exterior_Interior2
+    3300970: Wall_Exterior_Interior20
+    3300972: Wall_Exterior_Interior21
+    3300974: Wall_Exterior_Interior22
+    3300976: Wall_Exterior_Interior23
+    3300978: Wall_Exterior_Interior24
+    3300980: Wall_Exterior_Interior25
+    3300982: Wall_Exterior_Interior26
+    3300984: Wall_Exterior_Interior27
+    3300986: Wall_Exterior_Interior28
+    3300988: Wall_Exterior_Interior29
+    3300990: Wall_Exterior_Interior3
+    3300992: Wall_Exterior_Interior30
+    3300994: Wall_Exterior_Interior31
+    3300996: Wall_Exterior_Interior31 1
+    3300998: Wall_Exterior_Interior32
+    3301000: Wall_Exterior_Interior32 1
+    3301002: Wall_Exterior_Interior33
+    3301004: Wall_Exterior_Interior33 1
+    3301006: Wall_Exterior_Interior34
+    3301008: Wall_Exterior_Interior34 1
+    3301010: Wall_Exterior_Interior4
+    3301012: Wall_Exterior_Interior5
+    3301014: Wall_Exterior_Interior6
+    3301016: Wall_Exterior_Interior7
+    3301018: Wall_Exterior_Interior8
+    3301020: Wall_Exterior_Interior9
+    3301022: Wall_Exterior_Interior_Single10
+    3301024: Wall_Exterior_Interior_Single11
+    3301026: Wall_Exterior_Interior_Single12
+    3301028: Wall_Exterior_Interior_Single13
+    3301030: Wall_Exterior_Interior_Single14
+    3301032: Wall_Exterior_Interior_Single15
+    3301034: Wall_Exterior_Interior_Single16
+    3301036: Wall_Exterior_Interior_Single17
+    3301038: Wall_Exterior_Interior_Single18
+    3301040: Wall_Exterior_Interior_Single19
+    3301042: Wall_Exterior_Interior_Single2
+    3301044: Wall_Exterior_Interior_Single20
+    3301046: Wall_Exterior_Interior_Single21
+    3301048: Wall_Exterior_Interior_Single22
+    3301050: Wall_Exterior_Interior_Single23
+    3301052: Wall_Exterior_Interior_Single26
+    3301054: Wall_Exterior_Interior_Single27
+    3301056: Wall_Exterior_Interior_Single28
+    3301058: Wall_Exterior_Interior_Single29
+    3301060: Wall_Exterior_Interior_Single3
+    3301062: Wall_Exterior_Interior_Single30
+    3301064: Wall_Exterior_Interior_Single31
+    3301066: Wall_Exterior_Interior_Single32
+    3301068: Wall_Exterior_Interior_Single33
+    3301070: Wall_Exterior_Interior_Single34
+    3301072: Wall_Exterior_Interior_Single35
+    3301074: Wall_Exterior_Interior_Single36
+    3301076: Wall_Exterior_Interior_Single37
+    3301078: Wall_Exterior_Interior_Single38
+    3301080: Wall_Exterior_Interior_Single39
+    3301082: Wall_Exterior_Interior_Single4
+    3301084: Wall_Exterior_Interior_Single40
+    3301086: Wall_Exterior_Interior_Single41
+    3301088: Wall_Exterior_Interior_Single42
+    3301090: Wall_Exterior_Interior_Single43
+    3301092: Wall_Exterior_Interior_Single44
+    3301094: Wall_Exterior_Interior_Single45
+    3301096: Wall_Exterior_Interior_Single46
+    3301098: Wall_Exterior_Interior_Single47
+    3301100: Wall_Exterior_Interior_Single48
+    3301102: Wall_Exterior_Interior_Single49
+    3301104: Wall_Exterior_Interior_Single5
+    3301106: Wall_Exterior_Interior_Single50
+    3301108: Wall_Exterior_Interior_Single51
+    3301110: Wall_Exterior_Interior_Single52
+    3301112: Wall_Exterior_Interior_Single53
+    3301114: Wall_Exterior_Interior_Single54
+    3301116: Wall_Exterior_Interior_Single55
+    3301118: Wall_Exterior_Interior_Single56
+    3301120: Wall_Exterior_Interior_Single57
+    3301122: Wall_Exterior_Interior_Single58
+    3301124: Wall_Exterior_Interior_Single59
+    3301126: Wall_Exterior_Interior_Single6
+    3301128: Wall_Exterior_Interior_Single60
+    3301130: Wall_Exterior_Interior_Single61
+    3301132: Wall_Exterior_Interior_Single62
+    3301134: Wall_Exterior_Interior_Single63
+    3301136: Wall_Exterior_Interior_Single64
+    3301138: Wall_Exterior_Interior_Single65
+    3301140: Wall_Exterior_Interior_Single67
+    3301142: Wall_Exterior_Interior_Single68
+    3301144: Wall_Exterior_Interior_Single69
+    3301146: Wall_Exterior_Interior_Single7
+    3301148: Wall_Exterior_Interior_Single70
+    3301150: Wall_Exterior_Interior_Single71
+    3301152: Wall_Exterior_Interior_Single72
+    3301154: Wall_Exterior_Interior_Single73
+    3301156: Wall_Exterior_Interior_Single74
+    3301158: Wall_Exterior_Interior_Single75
+    3301160: Wall_Exterior_Interior_Single76
+    3301162: Wall_Exterior_Interior_Single77
+    3301164: Wall_Exterior_Interior_Single78
+    3301166: Wall_Exterior_Interior_Single79
+    3301168: Wall_Exterior_Interior_Single8
+    3301170: Wall_Exterior_Interior_Single80
+    3301172: Wall_Exterior_Interior_Single80 1
+    3301174: Wall_Exterior_Interior_Single81
+    3301176: Wall_Exterior_Interior_Single81 1
+    3301178: Wall_Exterior_Interior_Single82
+    3301180: Wall_Exterior_Interior_Single82 1
+    3301182: Wall_Exterior_Interior_Single83
+    3301184: Wall_Exterior_Interior_Single83 1
+    3301186: Wall_Exterior_Interior_Single84
+    3301188: Wall_Exterior_Interior_Single84 1
+    3301190: Wall_Exterior_Interior_Single85
+    3301192: Wall_Exterior_Interior_Single85 1
+    3301194: Wall_Exterior_Interior_Single9
+    3301196: Wall_Half_Exterior_Interior1
+    3301198: Wall_Half_Exterior_Interior2
+    3301200: Wall_Half_Exterior_Interior3
+    3301202: Wall_Half_Exterior_Interior4
+    3301204: Wall_Interior_Interior_Short1
+    3301206: Wall_Interior_Interior_Short1 1
+    3301208: Wall_Interior_Interior_Short10
+    3301210: Wall_Interior_Interior_Short10 1
+    3301212: Wall_Interior_Interior_Short11
+    3301214: Wall_Interior_Interior_Short11 1
+    3301216: Wall_Interior_Interior_Short12
+    3301218: Wall_Interior_Interior_Short12 1
+    3301220: Wall_Interior_Interior_Short13
+    3301222: Wall_Interior_Interior_Short13 1
+    3301224: Wall_Interior_Interior_Short14
+    3301226: Wall_Interior_Interior_Short14 1
+    3301228: Wall_Interior_Interior_Short15
+    3301230: Wall_Interior_Interior_Short15 1
+    3301232: Wall_Interior_Interior_Short16
+    3301234: Wall_Interior_Interior_Short16 1
+    3301236: Wall_Interior_Interior_Short17
+    3301238: Wall_Interior_Interior_Short17 1
+    3301240: Wall_Interior_Interior_Short18
+    3301242: Wall_Interior_Interior_Short18 1
+    3301244: Wall_Interior_Interior_Short19
+    3301246: Wall_Interior_Interior_Short19 1
+    3301248: Wall_Interior_Interior_Short2
+    3301250: Wall_Interior_Interior_Short2 1
+    3301252: Wall_Interior_Interior_Short20
+    3301254: Wall_Interior_Interior_Short20 1
+    3301256: Wall_Interior_Interior_Short21
+    3301258: Wall_Interior_Interior_Short21 1
+    3301260: Wall_Interior_Interior_Short22
+    3301262: Wall_Interior_Interior_Short22 1
+    3301264: Wall_Interior_Interior_Short23
+    3301266: Wall_Interior_Interior_Short23 1
+    3301268: Wall_Interior_Interior_Short24
+    3301270: Wall_Interior_Interior_Short24 1
+    3301272: Wall_Interior_Interior_Short25
+    3301274: Wall_Interior_Interior_Short25 1
+    3301276: Wall_Interior_Interior_Short26
+    3301278: Wall_Interior_Interior_Short27
+    3301280: Wall_Interior_Interior_Short28
+    3301282: Wall_Interior_Interior_Short29
+    3301284: Wall_Interior_Interior_Short3
+    3301286: Wall_Interior_Interior_Short3 1
+    3301288: Wall_Interior_Interior_Short30
+    3301290: Wall_Interior_Interior_Short31
+    3301292: Wall_Interior_Interior_Short4
+    3301294: Wall_Interior_Interior_Short4 1
+    3301296: Wall_Interior_Interior_Short5
+    3301298: Wall_Interior_Interior_Short5 1
+    3301300: Wall_Interior_Interior_Short6
+    3301302: Wall_Interior_Interior_Short6 1
+    3301304: Wall_Interior_Interior_Short7
+    3301306: Wall_Interior_Interior_Short7 1
+    3301308: Wall_Interior_Interior_Short8
+    3301310: Wall_Interior_Interior_Short8 1
+    3301312: Wall_Interior_Interior_Short9
+    3301314: Wall_Interior_Interior_Short9 1
+    3301316: Wall_Interior_Interior_Single_block1
+    3301318: Wall_Interior_Interior_Single_block1 1
+    3301320: Wall_Interior_Interior_Single_block10
+    3301322: Wall_Interior_Interior_Single_block10 1
+    3301324: Wall_Interior_Interior_Single_block11
+    3301326: Wall_Interior_Interior_Single_block11 1
+    3301328: Wall_Interior_Interior_Single_block12
+    3301330: Wall_Interior_Interior_Single_block12 1
+    3301332: Wall_Interior_Interior_Single_block13
+    3301334: Wall_Interior_Interior_Single_block13 1
+    3301336: Wall_Interior_Interior_Single_block14
+    3301338: Wall_Interior_Interior_Single_block14 1
+    3301340: Wall_Interior_Interior_Single_block15
+    3301342: Wall_Interior_Interior_Single_block15 1
+    3301344: Wall_Interior_Interior_Single_block16
+    3301346: Wall_Interior_Interior_Single_block16 1
+    3301348: Wall_Interior_Interior_Single_block17
+    3301350: Wall_Interior_Interior_Single_block17 1
+    3301352: Wall_Interior_Interior_Single_block18
+    3301354: Wall_Interior_Interior_Single_block18 1
+    3301356: Wall_Interior_Interior_Single_block19
+    3301358: Wall_Interior_Interior_Single_block19 1
+    3301360: Wall_Interior_Interior_Single_block2
+    3301362: Wall_Interior_Interior_Single_block2 1
+    3301364: Wall_Interior_Interior_Single_block20
+    3301366: Wall_Interior_Interior_Single_block20 1
+    3301368: Wall_Interior_Interior_Single_block21
+    3301370: Wall_Interior_Interior_Single_block21 1
+    3301372: Wall_Interior_Interior_Single_block22
+    3301374: Wall_Interior_Interior_Single_block22 1
+    3301376: Wall_Interior_Interior_Single_block23
+    3301378: Wall_Interior_Interior_Single_block23 1
+    3301380: Wall_Interior_Interior_Single_block24
+    3301382: Wall_Interior_Interior_Single_block24 1
+    3301384: Wall_Interior_Interior_Single_block25
+    3301386: Wall_Interior_Interior_Single_block25 1
+    3301388: Wall_Interior_Interior_Single_block26
+    3301390: Wall_Interior_Interior_Single_block26 1
+    3301392: Wall_Interior_Interior_Single_block27
+    3301394: Wall_Interior_Interior_Single_block27 1
+    3301396: Wall_Interior_Interior_Single_block28
+    3301398: Wall_Interior_Interior_Single_block28 1
+    3301400: Wall_Interior_Interior_Single_block29
+    3301402: Wall_Interior_Interior_Single_block29 1
+    3301404: Wall_Interior_Interior_Single_block3
+    3301406: Wall_Interior_Interior_Single_block3 1
+    3301408: Wall_Interior_Interior_Single_block30
+    3301410: Wall_Interior_Interior_Single_block30 1
+    3301412: Wall_Interior_Interior_Single_block31
+    3301414: Wall_Interior_Interior_Single_block31 1
+    3301416: Wall_Interior_Interior_Single_block32
+    3301418: Wall_Interior_Interior_Single_block32 1
+    3301420: Wall_Interior_Interior_Single_block33
+    3301422: Wall_Interior_Interior_Single_block33 1
+    3301424: Wall_Interior_Interior_Single_block34
+    3301426: Wall_Interior_Interior_Single_block34 1
+    3301428: Wall_Interior_Interior_Single_block35
+    3301430: Wall_Interior_Interior_Single_block35 1
+    3301432: Wall_Interior_Interior_Single_block36
+    3301434: Wall_Interior_Interior_Single_block36 1
+    3301436: Wall_Interior_Interior_Single_block37
+    3301438: Wall_Interior_Interior_Single_block37 1
+    3301440: Wall_Interior_Interior_Single_block38
+    3301442: Wall_Interior_Interior_Single_block38 1
+    3301444: Wall_Interior_Interior_Single_block39
+    3301446: Wall_Interior_Interior_Single_block39 1
+    3301448: Wall_Interior_Interior_Single_block4
+    3301450: Wall_Interior_Interior_Single_block4 1
+    3301452: Wall_Interior_Interior_Single_block40
+    3301454: Wall_Interior_Interior_Single_block40 1
+    3301456: Wall_Interior_Interior_Single_block41
+    3301458: Wall_Interior_Interior_Single_block41 1
+    3301460: Wall_Interior_Interior_Single_block42
+    3301462: Wall_Interior_Interior_Single_block42 1
+    3301464: Wall_Interior_Interior_Single_block43
+    3301466: Wall_Interior_Interior_Single_block44
+    3301468: Wall_Interior_Interior_Single_block45
+    3301470: Wall_Interior_Interior_Single_block46
+    3301472: Wall_Interior_Interior_Single_block47
+    3301474: Wall_Interior_Interior_Single_block48
+    3301476: Wall_Interior_Interior_Single_block49
+    3301478: Wall_Interior_Interior_Single_block5
+    3301480: Wall_Interior_Interior_Single_block5 1
+    3301482: Wall_Interior_Interior_Single_block50
+    3301484: Wall_Interior_Interior_Single_block51
+    3301486: Wall_Interior_Interior_Single_block52
+    3301488: Wall_Interior_Interior_Single_block53
+    3301490: Wall_Interior_Interior_Single_block54
+    3301492: Wall_Interior_Interior_Single_block6
+    3301494: Wall_Interior_Interior_Single_block6 1
+    3301496: Wall_Interior_Interior_Single_block7
+    3301498: Wall_Interior_Interior_Single_block7 1
+    3301500: Wall_Interior_Interior_Single_block8
+    3301502: Wall_Interior_Interior_Single_block8 1
+    3301504: Wall_Interior_Interior_Single_block9
+    3301506: Wall_Interior_Interior_Single_block9 1
+    3301508: Wall_Window_Exterior_Interior1
+    3301510: Wall_Window_Exterior_Interior2
+    3301512: Wall_Window_Exterior_Interior3
+    3301514: Wall_Window_Exterior_Interior4
+    3301516: Wall_Window_Exterior_Interior5
+    3301518: Window_Frame
+    3301520: Window_Frame 1
+    3301522: Window_Frame 2
+    3301524: Window_Frame 3
+    3301526: Window_Frame 4
+    3301528: Window_Glass
+    3301530: Window_Glass 1
+    3301532: Window_Glass 2
+    3301534: Window_Glass 3
+    3301536: Window_Glass 4
+    4300000: Floor_Celing1
+    4300002: Wall_Window_Exterior_Interior1
+    4300004: Window_Frame
+    4300006: Window_Glass
+    4300008: Wall_Exterior_Interior1
+    4300010: Endcap_Left
+    4300012: Endcap_Right
+    4300014: Wall_Doorway_Single_Exterior_Interior1
+    4300016: Doorway_Single
+    4300018: Door_Closed
+    4300020: Wall_Doorway_Double_Exterior_Interior3
+    4300022: Doorway_Double
+    4300024: Endcap_Left
+    4300026: Endcap_Right
+    4300028: Door_Closed_Right
+    4300030: Door_Closed_Left
+    4300032: Wall_Doorway_Double_Exterior_Interior1
+    4300034: Doorway_Double
+    4300036: Endcap_Left
+    4300038: Endcap_Right
+    4300040: Floor_Celing_Half1
+    4300042: Wall_Half_Exterior_Interior1
+    4300044: Floor_Celing2
+    4300046: Floor_Celing3
+    4300048: Floor_Celing4
+    4300050: Floor_Celing5
+    4300052: Floor_Celing6
+    4300054: Floor_Celing7
+    4300056: Floor_Celing8
+    4300058: Floor_Celing9
+    4300060: Floor_Celing10
+    4300062: Floor_Celing11
+    4300064: Floor_Celing14
+    4300066: Floor_Celing15
+    4300068: Floor_Celing16
+    4300070: Wall_Window_Exterior_Interior2
+    4300072: Window_Frame
+    4300074: Window_Glass
+    4300076: Wall_Exterior_Interior_Single2
+    4300078: Wall_Exterior_Interior_Single3
+    4300080: Wall_Exterior_Interior_Single4
+    4300082: Endcap_Left
+    4300084: Endcap_Right
+    4300086: Wall_Exterior_Interior2
+    4300088: Endcap_Left
+    4300090: Endcap_Right
+    4300092: Wall_Exterior_Interior_Single5
+    4300094: Wall_Exterior_Interior_Single6
+    4300096: Wall_Exterior_Interior3
+    4300098: Endcap_Left
+    4300100: Endcap_Right
+    4300102: Wall_Exterior_Interior4
+    4300104: Endcap_Left
+    4300106: Endcap_Right
+    4300108: Wall_Exterior_Interior_Single7
+    4300110: Wall_Exterior_Interior_Single8
+    4300112: Wall_Exterior_Interior_Single9
+    4300114: Endcap_Left
+    4300116: Endcap_Right
+    4300118: Wall_Exterior_Interior_Single10
+    4300120: Wall_Exterior_Interior_Single11
+    4300122: Floor_Celing17
+    4300124: Wall_Exterior_Interior_Single12
+    4300126: Endcap_Left
+    4300128: Endcap_Right
+    4300130: Wall_Exterior_Interior_Single13
+    4300132: Endcap_Left
+    4300134: Endcap_Right
+    4300136: Wall_Exterior_Interior5
+    4300138: Endcap_Left
+    4300140: Endcap_Right
+    4300142: Wall_Exterior_Interior6
+    4300144: Endcap_Left
+    4300146: Endcap_Right
+    4300148: Wall_Exterior_Interior_Single14
+    4300150: Wall_Exterior_Interior_Single15
+    4300152: Wall_Exterior_Interior_Single16
+    4300154: Wall_Exterior_Interior_Single17
+    4300156: Wall_Exterior_Interior_Single18
+    4300158: Wall_Exterior_Interior_Single19
+    4300160: Wall_Exterior_Interior_Single20
+    4300162: Wall_Exterior_Interior7
+    4300164: Endcap_Left
+    4300166: Endcap_Right
+    4300168: Wall_Exterior_Interior_Single21
+    4300170: Floor_Celing18
+    4300172: Floor_Celing19
+    4300174: Floor_Celing20
+    4300176: Floor_Celing_Half2
+    4300178: Floor_Celing_Half3
+    4300180: Floor_Celing21
+    4300182: Floor_Celing_Half4
+    4300184: Wall_Exterior_Interior8
+    4300186: Endcap_Left
+    4300188: Endcap_Right
+    4300190: Wall_Exterior_Interior_Single22
+    4300192: Wall_Exterior_Interior_Single23
+    4300194: Wall_Exterior_Interior9
+    4300196: Endcap_Left
+    4300198: Endcap_Right
+    4300200: Wall_Exterior_Interior_Single26
+    4300202: Wall_Exterior_Interior_Single27
+    4300204: Endcap_Left
+    4300206: Endcap_Right
+    4300208: Wall_Exterior_Interior_Single28
+    4300210: Wall_Exterior_Interior_Single29
+    4300212: Wall_Exterior_Interior_Single30
+    4300214: Wall_Exterior_Interior_Single31
+    4300216: Wall_Exterior_Interior_Single32
+    4300218: Endcap_Left
+    4300220: Endcap_Right
+    4300222: Wall_Exterior_Interior_Single33
+    4300224: Endcap_Left
+    4300226: Endcap_Right
+    4300228: Wall_Half_Exterior_Interior2
+    4300230: Wall_Exterior_Interior13
+    4300232: Endcap_Left
+    4300234: Endcap_Right
+    4300236: Wall_Exterior_Interior_Single34
+    4300238: Wall_Exterior_Interior_Single35
+    4300240: Wall_Window_Exterior_Interior3
+    4300242: Window_Frame
+    4300244: Window_Glass
+    4300246: Wall_Window_Exterior_Interior4
+    4300248: Window_Frame
+    4300250: Window_Glass
+    4300252: Wall_Window_Exterior_Interior5
+    4300254: Window_Frame
+    4300256: Window_Glass
+    4300258: Wall_Exterior_Interior14
+    4300260: Endcap_Left
+    4300262: Endcap_Right
+    4300264: Wall_Exterior_Interior_Single36
+    4300266: Wall_Exterior_Interior_Single37
+    4300268: Wall_Exterior_Interior_Single38
+    4300270: Endcap_Left
+    4300272: Endcap_Right
+    4300274: Wall_Exterior_Interior_Single39
+    4300276: Wall_Half_Exterior_Interior3
+    4300278: Wall_Exterior_Interior_Single40
+    4300280: Endcap_Left
+    4300282: Endcap_Right
+    4300284: Wall_Exterior_Interior_Single41
+    4300286: Endcap_Left
+    4300288: Endcap_Right
+    4300290: Wall_Half_Exterior_Interior4
+    4300292: Wall_Exterior_Interior15
+    4300294: Endcap_Left
+    4300296: Endcap_Right
+    4300298: Wall_Exterior_Interior_Single42
+    4300300: Wall_Exterior_Interior_Single43
+    4300302: Wall_Exterior_Interior_Single44
+    4300304: Endcap_Left
+    4300306: Endcap_Right
+    4300308: Wall_Exterior_Interior16
+    4300310: Endcap_Left
+    4300312: Endcap_Right
+    4300314: Wall_Exterior_Interior17
+    4300316: Endcap_Left
+    4300318: Endcap_Right
+    4300320: Wall_Exterior_Interior_Single45
+    4300322: Endcap_Left
+    4300324: Endcap_Right
+    4300326: Wall_Exterior_Interior_Single46
+    4300328: Endcap_Left
+    4300330: Endcap_Right
+    4300332: Wall_Exterior_Interior_Single47
+    4300334: Endcap_Left
+    4300336: Endcap_Right
+    4300338: Wall_Doorway_Double_Exterior_Interior2
+    4300340: Doorway_Double
+    4300342: Endcap_Left
+    4300344: Endcap_Right
+    4300346: Wall_Exterior_Interior_Single48
+    4300348: Endcap_Left
+    4300350: Endcap_Right
+    4300352: Wall_Exterior_Interior_Single49
+    4300354: Endcap_Left
+    4300356: Endcap_Right
+    4300358: Wall_Exterior_Interior18
+    4300360: Endcap_Left
+    4300362: Endcap_Right
+    4300364: Wall_Exterior_Interior_Single50
+    4300366: Endcap_Left
+    4300368: Endcap_Right
+    4300370: Wall_Exterior_Interior_Single51
+    4300372: Endcap_Left
+    4300374: Endcap_Right
+    4300376: Wall_Exterior_Interior19
+    4300378: Endcap_Left
+    4300380: Endcap_Right
+    4300382: Wall_Exterior_Interior_Single52
+    4300384: Endcap_Left
+    4300386: Endcap_Right
+    4300388: Wall_Exterior_Interior_Single53
+    4300390: Endcap_Left
+    4300392: Endcap_Right
+    4300394: Wall_Exterior_Interior_Single54
+    4300396: Endcap_Left
+    4300398: Endcap_Right
+    4300400: Wall_Exterior_Interior20
+    4300402: Endcap_Left
+    4300404: Endcap_Right
+    4300406: Floor_Celing22
+    4300408: Wall_Doorway_Single_Exterior_Interior2
+    4300410: Doorway_Single
+    4300412: Door_Closed
+    4300414: Wall_Doorway_Double_Exterior_Interior4
+    4300416: Doorway_Double
+    4300418: Endcap_Left
+    4300420: Endcap_Right
+    4300422: Door_Closed_Right
+    4300424: Door_Closed_Left
+    4300426: Wall_Exterior_Interior21
+    4300428: Endcap_Left
+    4300430: Endcap_Right
+    4300432: Wall_Exterior_Interior_Single55
+    4300434: Wall_Exterior_Interior_Single56
+    4300436: Wall_Exterior_Interior22
+    4300438: Endcap_Left
+    4300440: Endcap_Right
+    4300442: Wall_Exterior_Interior23
+    4300444: Endcap_Left
+    4300446: Endcap_Right
+    4300448: Wall_Doorway_Single_Exterior_Interior3
+    4300450: Doorway_Single
+    4300452: Door_Closed
+    4300454: Wall_Exterior_Interior_Single57
+    4300456: Wall_Exterior_Interior_Single58
+    4300458: Wall_Exterior_Interior_Single59
+    4300460: Wall_Exterior_Interior_Single60
+    4300462: Wall_Exterior_Interior_Single61
+    4300464: Wall_Exterior_Interior24
+    4300466: Endcap_Left
+    4300468: Endcap_Right
+    4300470: Wall_Exterior_Interior_Single62
+    4300472: Wall_Exterior_Interior_Single63
+    4300474: Wall_Exterior_Interior_Single64
+    4300476: Endcap_Left
+    4300478: Endcap_Right
+    4300480: Wall_Exterior_Interior_Single65
+    4300482: Endcap_Left
+    4300484: Endcap_Right
+    4300486: Wall_Exterior_Interior_Single67
+    4300488: Wall_Exterior_Interior25
+    4300490: Endcap_Left
+    4300492: Endcap_Right
+    4300494: Wall_Exterior_Interior_Single68
+    4300496: Wall_Exterior_Interior_Single69
+    4300498: Wall_Exterior_Interior_Single70
+    4300500: Wall_Exterior_Interior_Single71
+    4300502: Wall_Exterior_Interior_Single72
+    4300504: Wall_Doorway_Single_Exterior_Interior4
+    4300506: Doorway_Single
+    4300508: Door_Closed
+    4300510: Wall_Exterior_Interior26
+    4300512: Endcap_Left
+    4300514: Endcap_Right
+    4300516: Wall_Exterior_Interior27
+    4300518: Endcap_Left
+    4300520: Endcap_Right
+    4300522: Wall_Exterior_Interior_Single73
+    4300524: Wall_Exterior_Interior_Single74
+    4300526: Wall_Exterior_Interior28
+    4300528: Endcap_Left
+    4300530: Endcap_Right
+    4300532: Wall_Exterior_Interior_Single75
+    4300534: Wall_Exterior_Interior29
+    4300536: Endcap_Left
+    4300538: Endcap_Right
+    4300540: Wall_Exterior_Interior_Single76
+    4300542: Endcap_Left
+    4300544: Endcap_Right
+    4300546: Wall_Exterior_Interior_Single77
+    4300548: Wall_Exterior_Interior30
+    4300550: Endcap_Left
+    4300552: Endcap_Right
+    4300554: Wall_Exterior_Interior_Single78
+    4300556: Endcap_Left
+    4300558: Endcap_Right
+    4300560: Wall_Exterior_Interior_Single79
+    4300562: Endcap_Left
+    4300564: Endcap_Right
+    4300566: shop_0001:Garage_Wall
+    4300568: shop_0001:Garage_Door
+    4300570: Garage_Door
+    4300572: Wall_Interior_Interior_Short1
+    4300574: Wall_Interior_Interior_Single_block1
+    4300576: Endcap_Left
+    4300578: Endcap_Right
+    4300580: Floor_Celing23
+    4300582: Floor_Celing24
+    4300584: Floor_Celing26
+    4300586: Floor_Celing27
+    4300588: Floor_Celing_Half5
+    4300590: Floor_Celing_Half6
+    4300592: Wall_Exterior_Interior31
+    4300594: Endcap_Left
+    4300596: Endcap_Right
+    4300598: Wall_Exterior_Interior32
+    4300600: Endcap_Left
+    4300602: Endcap_Right
+    4300604: Wall_Exterior_Interior_Single80
+    4300606: Wall_Exterior_Interior_Single81
+    4300608: Wall_Exterior_Interior_Single82
+    4300610: Wall_Interior_Interior_Single_block2
+    4300612: Endcap_Left
+    4300614: Endcap_Right
+    4300616: Wall_Interior_Interior_Single_block3
+    4300618: Endcap_Left
+    4300620: Endcap_Right
+    4300622: Wall_Interior_Interior_Short2
+    4300624: Wall_Interior_Interior_Short3
+    4300626: Wall_Interior_Interior_Single_block4
+    4300628: Endcap_Left
+    4300630: Endcap_Right
+    4300632: Wall_Interior_Interior_Single_block5
+    4300634: Endcap_Left
+    4300636: Endcap_Right
+    4300638: Wall_Interior_Interior_Short4
+    4300640: Wall_Interior_Interior_Short5
+    4300642: Wall_Interior_Interior_Single_block6
+    4300644: Endcap_Left
+    4300646: Endcap_Right
+    4300648: Wall_Interior_Interior_Single_block7
+    4300650: Endcap_Left
+    4300652: Endcap_Right
+    4300654: Wall_Interior_Interior_Short6
+    4300656: Wall_Interior_Interior_Short7
+    4300658: Wall_Interior_Interior_Single_block8
+    4300660: Endcap_Left
+    4300662: Endcap_Right
+    4300664: Wall_Interior_Interior_Single_block9
+    4300666: Endcap_Left
+    4300668: Endcap_Right
+    4300670: Wall_Interior_Interior_Short8
+    4300672: Wall_Interior_Interior_Single_block10
+    4300674: Endcap_Left
+    4300676: Endcap_Right
+    4300678: Wall_Interior_Interior_Single_block11
+    4300680: Endcap_Left
+    4300682: Endcap_Right
+    4300684: Wall_Interior_Interior_Single_block12
+    4300686: Endcap_Left
+    4300688: Endcap_Right
+    4300690: Wall_Exterior_Interior33
+    4300692: Endcap_Left
+    4300694: Endcap_Right
+    4300696: Wall_Interior_Interior_Short9
+    4300698: Wall_Interior_Interior_Short10
+    4300700: Wall_Interior_Interior_Short11
+    4300702: Wall_Interior_Interior_Short12
+    4300704: Wall_Interior_Interior_Short13
+    4300706: Wall_Interior_Interior_Short14
+    4300708: Wall_Interior_Interior_Short15
+    4300710: Wall_Interior_Interior_Short16
+    4300712: Wall_Exterior_Interior34
+    4300714: Endcap_Left
+    4300716: Endcap_Right
+    4300718: Wall_Exterior_Interior_Single83
+    4300720: Wall_Exterior_Interior_Single84
+    4300722: Wall_Interior_Interior_Single_block13
+    4300724: Endcap_Left
+    4300726: Endcap_Right
+    4300728: Wall_Interior_Interior_Single_block14
+    4300730: Endcap_Left
+    4300732: Endcap_Right
+    4300734: Wall_Interior_Interior_Single_block15
+    4300736: Endcap_Left
+    4300738: Endcap_Right
+    4300740: Wall_Interior_Interior_Single_block16
+    4300742: Endcap_Left
+    4300744: Endcap_Right
+    4300746: Wall_Interior_Interior_Single_block17
+    4300748: Endcap_Left
+    4300750: Endcap_Right
+    4300752: Wall_Interior_Interior_Single_block18
+    4300754: Endcap_Left
+    4300756: Endcap_Right
+    4300758: Wall_Interior_Interior_Single_block19
+    4300760: Endcap_Left
+    4300762: Endcap_Right
+    4300764: Wall_Interior_Interior_Single_block20
+    4300766: Endcap_Left
+    4300768: Endcap_Right
+    4300770: Wall_Interior_Interior_Single_block21
+    4300772: Endcap_Left
+    4300774: Endcap_Right
+    4300776: Wall_Interior_Interior_Single_block22
+    4300778: Endcap_Left
+    4300780: Endcap_Right
+    4300782: Wall_Interior_Interior_Single_block23
+    4300784: Endcap_Left
+    4300786: Endcap_Right
+    4300788: Wall_Interior_Interior_Single_block24
+    4300790: Endcap_Left
+    4300792: Endcap_Right
+    4300794: Wall_Exterior_Interior_Single85
+    4300796: Wall_Interior_Interior_Single_block25
+    4300798: Endcap_Left
+    4300800: Endcap_Right
+    4300802: Wall_Interior_Interior_Single_block26
+    4300804: Endcap_Left
+    4300806: Endcap_Right
+    4300808: Wall_Interior_Interior_Single_block27
+    4300810: Endcap_Left
+    4300812: Endcap_Right
+    4300814: Wall_Interior_Interior_Short17
+    4300816: Wall_Interior_Interior_Short18
+    4300818: Wall_Interior_Interior_Single_block28
+    4300820: Endcap_Left
+    4300822: Endcap_Right
+    4300824: Wall_Interior_Interior_Single_block29
+    4300826: Endcap_Left
+    4300828: Endcap_Right
+    4300830: Wall_Interior_Interior_Short19
+    4300832: Wall_Interior_Interior_Single_block30
+    4300834: Endcap_Left
+    4300836: Endcap_Right
+    4300838: Wall_Interior_Interior_Single_block31
+    4300840: Endcap_Left
+    4300842: Endcap_Right
+    4300844: Wall_Interior_Interior_Short20
+    4300846: Wall_Interior_Interior_Short21
+    4300848: Wall_Interior_Interior_Short22
+    4300850: Wall_Interior_Interior_Single_block32
+    4300852: Endcap_Left
+    4300854: Endcap_Right
+    4300856: Wall_Interior_Interior_Single_block33
+    4300858: Endcap_Left
+    4300860: Endcap_Right
+    4300862: Wall_Interior_Interior_Single_block34
+    4300864: Endcap_Left
+    4300866: Endcap_Right
+    4300868: Wall_Interior_Interior_Single_block35
+    4300870: Endcap_Left
+    4300872: Endcap_Right
+    4300874: Wall_Interior_Interior_Single_block36
+    4300876: Endcap_Left
+    4300878: Endcap_Right
+    4300880: Wall_Interior_Interior_Single_block37
+    4300882: Endcap_Left
+    4300884: Endcap_Right
+    4300886: Wall_Interior_Interior_Short23
+    4300888: Wall_Interior_Interior_Short24
+    4300890: Wall_Interior_Interior_Short25
+    4300892: Wall_Interior_Interior_Single_block38
+    4300894: Endcap_Left
+    4300896: Endcap_Right
+    4300898: Wall_Interior_Interior_Single_block39
+    4300900: Endcap_Left
+    4300902: Endcap_Right
+    4300904: Wall_Interior_Interior_Single_block40
+    4300906: Endcap_Left
+    4300908: Endcap_Right
+    4300910: Wall_Interior_Interior_Single_block41
+    4300912: Endcap_Left
+    4300914: Endcap_Right
+    4300916: Wall_Interior_Interior_Single_block42
+    4300918: Endcap_Left
+    4300920: Endcap_Right
+    4300922: Wall_Interior_Interior_Single_block43
+    4300924: Endcap_Left
+    4300926: Endcap_Right
+    4300928: Wall_Interior_Interior_Short26
+    4300930: Wall_Interior_Interior_Short27
+    4300932: Wall_Interior_Interior_Single_block44
+    4300934: Endcap_Left
+    4300936: Endcap_Right
+    4300938: Wall_Interior_Interior_Single_block45
+    4300940: Endcap_Left
+    4300942: Endcap_Right
+    4300944: Wall_Interior_Interior_Short28
+    4300946: Wall_Interior_Interior_Single_block46
+    4300948: Endcap_Left
+    4300950: Endcap_Right
+    4300952: Wall_Interior_Interior_Single_block47
+    4300954: Endcap_Left
+    4300956: Endcap_Right
+    4300958: Wall_Interior_Interior_Single_block48
+    4300960: Endcap_Left
+    4300962: Endcap_Right
+    4300964: Garage_Wall
+    4300966: Garage_Door
+    4300968: Garage_Door1
+    4300970: Wall_Interior_Interior_Short1
+    4300972: Wall_Interior_Interior_Single_block1
+    4300974: Endcap_Left
+    4300976: Endcap_Right
+    4300978: Floor_Celing23
+    4300980: Floor_Celing24
+    4300982: Floor_Celing26
+    4300984: Floor_Celing27
+    4300986: Floor_Celing_Half5
+    4300988: Floor_Celing_Half6
+    4300990: Wall_Exterior_Interior31
+    4300992: Endcap_Left
+    4300994: Endcap_Right
+    4300996: Wall_Exterior_Interior32
+    4300998: Endcap_Left
+    4301000: Endcap_Right
+    4301002: Wall_Exterior_Interior_Single80
+    4301004: Wall_Exterior_Interior_Single81
+    4301006: Wall_Exterior_Interior_Single82
+    4301008: Wall_Interior_Interior_Single_block2
+    4301010: Endcap_Left
+    4301012: Endcap_Right
+    4301014: Wall_Interior_Interior_Single_block3
+    4301016: Endcap_Left
+    4301018: Endcap_Right
+    4301020: Wall_Interior_Interior_Short2
+    4301022: Wall_Interior_Interior_Short3
+    4301024: Wall_Interior_Interior_Single_block4
+    4301026: Endcap_Left
+    4301028: Endcap_Right
+    4301030: Wall_Interior_Interior_Single_block5
+    4301032: Endcap_Left
+    4301034: Endcap_Right
+    4301036: Wall_Interior_Interior_Short4
+    4301038: Wall_Interior_Interior_Short5
+    4301040: Wall_Interior_Interior_Single_block6
+    4301042: Endcap_Left
+    4301044: Endcap_Right
+    4301046: Wall_Interior_Interior_Single_block7
+    4301048: Endcap_Left
+    4301050: Endcap_Right
+    4301052: Wall_Interior_Interior_Short6
+    4301054: Wall_Interior_Interior_Short7
+    4301056: Wall_Interior_Interior_Single_block8
+    4301058: Endcap_Left
+    4301060: Endcap_Right
+    4301062: Wall_Interior_Interior_Single_block9
+    4301064: Endcap_Left
+    4301066: Endcap_Right
+    4301068: Wall_Interior_Interior_Short8
+    4301070: Wall_Interior_Interior_Single_block10
+    4301072: Endcap_Left
+    4301074: Endcap_Right
+    4301076: Wall_Interior_Interior_Single_block11
+    4301078: Endcap_Left
+    4301080: Endcap_Right
+    4301082: Wall_Interior_Interior_Single_block12
+    4301084: Endcap_Left
+    4301086: Endcap_Right
+    4301088: Wall_Exterior_Interior33
+    4301090: Endcap_Left
+    4301092: Endcap_Right
+    4301094: Wall_Interior_Interior_Short9
+    4301096: Wall_Interior_Interior_Short10
+    4301098: Wall_Interior_Interior_Short11
+    4301100: Wall_Interior_Interior_Short12
+    4301102: Wall_Interior_Interior_Short13
+    4301104: Wall_Interior_Interior_Short14
+    4301106: Wall_Interior_Interior_Short15
+    4301108: Wall_Interior_Interior_Short16
+    4301110: Wall_Exterior_Interior34
+    4301112: Endcap_Left
+    4301114: Endcap_Right
+    4301116: Wall_Exterior_Interior_Single83
+    4301118: Wall_Exterior_Interior_Single84
+    4301120: Wall_Interior_Interior_Single_block13
+    4301122: Endcap_Left
+    4301124: Endcap_Right
+    4301126: Wall_Interior_Interior_Single_block14
+    4301128: Endcap_Left
+    4301130: Endcap_Right
+    4301132: Wall_Interior_Interior_Single_block15
+    4301134: Endcap_Left
+    4301136: Endcap_Right
+    4301138: Wall_Interior_Interior_Single_block16
+    4301140: Endcap_Left
+    4301142: Endcap_Right
+    4301144: Wall_Interior_Interior_Single_block17
+    4301146: Endcap_Left
+    4301148: Endcap_Right
+    4301150: Wall_Interior_Interior_Single_block18
+    4301152: Endcap_Left
+    4301154: Endcap_Right
+    4301156: Wall_Interior_Interior_Single_block19
+    4301158: Endcap_Left
+    4301160: Endcap_Right
+    4301162: Wall_Interior_Interior_Single_block20
+    4301164: Endcap_Left
+    4301166: Endcap_Right
+    4301168: Wall_Interior_Interior_Single_block21
+    4301170: Endcap_Left
+    4301172: Endcap_Right
+    4301174: Wall_Interior_Interior_Single_block22
+    4301176: Endcap_Left
+    4301178: Endcap_Right
+    4301180: Wall_Interior_Interior_Single_block23
+    4301182: Endcap_Left
+    4301184: Endcap_Right
+    4301186: Wall_Interior_Interior_Single_block24
+    4301188: Endcap_Left
+    4301190: Endcap_Right
+    4301192: Wall_Exterior_Interior_Single85
+    4301194: Wall_Interior_Interior_Single_block25
+    4301196: Endcap_Left
+    4301198: Endcap_Right
+    4301200: Wall_Interior_Interior_Single_block26
+    4301202: Endcap_Left
+    4301204: Endcap_Right
+    4301206: Wall_Interior_Interior_Single_block27
+    4301208: Endcap_Left
+    4301210: Endcap_Right
+    4301212: Wall_Interior_Interior_Short17
+    4301214: Wall_Interior_Interior_Short18
+    4301216: Wall_Interior_Interior_Single_block28
+    4301218: Endcap_Left
+    4301220: Endcap_Right
+    4301222: Wall_Interior_Interior_Single_block29
+    4301224: Endcap_Left
+    4301226: Endcap_Right
+    4301228: Wall_Interior_Interior_Short19
+    4301230: Wall_Interior_Interior_Single_block30
+    4301232: Endcap_Left
+    4301234: Endcap_Right
+    4301236: Wall_Interior_Interior_Single_block31
+    4301238: Endcap_Left
+    4301240: Endcap_Right
+    4301242: Wall_Interior_Interior_Short20
+    4301244: Wall_Interior_Interior_Short21
+    4301246: Wall_Interior_Interior_Short22
+    4301248: Wall_Interior_Interior_Single_block32
+    4301250: Endcap_Left
+    4301252: Endcap_Right
+    4301254: Wall_Interior_Interior_Single_block33
+    4301256: Endcap_Left
+    4301258: Endcap_Right
+    4301260: Wall_Interior_Interior_Single_block34
+    4301262: Endcap_Left
+    4301264: Endcap_Right
+    4301266: Wall_Interior_Interior_Single_block35
+    4301268: Endcap_Left
+    4301270: Endcap_Right
+    4301272: Wall_Interior_Interior_Single_block36
+    4301274: Endcap_Left
+    4301276: Endcap_Right
+    4301278: Wall_Interior_Interior_Single_block37
+    4301280: Endcap_Left
+    4301282: Endcap_Right
+    4301284: Wall_Interior_Interior_Short23
+    4301286: Wall_Interior_Interior_Short24
+    4301288: Wall_Interior_Interior_Short25
+    4301290: Wall_Interior_Interior_Single_block38
+    4301292: Endcap_Left
+    4301294: Endcap_Right
+    4301296: Wall_Interior_Interior_Single_block39
+    4301298: Endcap_Left
+    4301300: Endcap_Right
+    4301302: Wall_Interior_Interior_Single_block40
+    4301304: Endcap_Left
+    4301306: Endcap_Right
+    4301308: Wall_Interior_Interior_Single_block41
+    4301310: Endcap_Left
+    4301312: Endcap_Right
+    4301314: Wall_Interior_Interior_Single_block42
+    4301316: Endcap_Left
+    4301318: Endcap_Right
+    4301320: Wall_Interior_Interior_Single_block49
+    4301322: Endcap_Left
+    4301324: Endcap_Right
+    4301326: Wall_Interior_Interior_Short29
+    4301328: Wall_Interior_Interior_Single_block50
+    4301330: Endcap_Left
+    4301332: Endcap_Right
+    4301334: Wall_Interior_Interior_Short30
+    4301336: Wall_Interior_Interior_Single_block51
+    4301338: Endcap_Left
+    4301340: Endcap_Right
+    4301342: Wall_Interior_Interior_Single_block52
+    4301344: Endcap_Left
+    4301346: Endcap_Right
+    4301348: Wall_Interior_Interior_Short31
+    4301350: Wall_Interior_Interior_Single_block53
+    4301352: Endcap_Left
+    4301354: Endcap_Right
+    4301356: Wall_Interior_Interior_Single_block54
+    4301358: Endcap_Left
+    4301360: Endcap_Right
+    4301362: Roof_Overhung_Corner_Half2
+    4301364: Roof_Overhung_Corner_Half3
+    4301366: Roof_Overhung_Corner_Half4
+    4301368: Roof_Overhang2
+    4301370: Roof_Overhung_Corner_Half5
+    4301372: Roof_Overhung_Corner_Half6
+    4301374: Roof_Overhang3
+    4301376: Roof_Overhung_Corner_Half7
+    4301378: Roof_Overhung_Corner_Half8
+    4301380: Roof_Overhang4
+    4301382: Roof_Overhung_Corner_Half9
+    4301384: Roof_Overhung_Corner_Half10
+    4301386: Roof_Overhang5
+    4301388: Roof_Overhung_Corner_Half11
+    4301390: Roof_Overhung_Corner_Half12
+    4301392: Roof_Overhang6
+    4301394: Roof_Overhang11
+    4301396: Roof_Overhung_Corner_Half20
+    4301398: Roof_Overhung_Corner_Half21
+    4301400: Roof_Overhung_Corner2
+    4301402: Roof_Overhung_Corner3
+    4301404: Roof_Overhung_Corner4
+    4301406: Roof_Overhung_Corner5
+    4301408: Roof_Overhung_Corner6
+    4301410: Roof_Overhung_Corner7
+    4301412: Roof_Overhung_Corner_Half22
+    4301414: Roof_Overhung_Corner_Half23
+    4301416: Roof_Overhung_Corner8
+    4301418: Roof_Overhung_Corner9
+    4301420: Roof_Overhung_Corner10
+    4301422: Roof_Overhung_Corner11
+    4301424: Roof_Overhung_Corner12
+    4301426: Roof_Overhung_Corner13
+    4301428: Roof_Overhung_Corner14
+    4301430: Roof_Overhang12
+    4301432: Roof_Overhung_Corner_Half24
+    4301434: Roof_Overhung_Corner_Half25
+    4301436: Roof_Overhung_Corner_Half1
+    4301438: Roof_Overhang1
+    4301440: Roof_Overhung_Corner1
+    4301442: Wall_Doorway_Double_Exterior_Interior5
+    4301444: Doorway_Double
+    4301446: Endcap_Left
+    4301448: Endcap_Right
+    4301450: Door_Closed_Right
+    4301452: Door_Closed_Left
+    4301454: Wall_Doorway_Double_Exterior_Interior6
+    4301456: Doorway_Double
+    4301458: Endcap_Left
+    4301460: Endcap_Right
+    4301462: Door_Closed_Right
+    4301464: Door_Closed_Left
+    4301466: Floor_Celing28
+    4301468: Floor_Celing29
+    4301470: Floor_Celing30
+    4301472: Floor_Celing31
+    4301474: Floor_Celing32
+    4301476: Floor_Celing33
+    4301478: Floor_Celing34
+    4301480: Floor_Celing35
+    4301482: Floor_Celing36
+    4301484: Floor_Celing37
+    4301486: Floor_Celing_Half7
+    4301488: Floor_Celing38
+    4301490: Floor_Celing39
+    4301492: Floor_Celing40
+    4301494: Floor_Celing41
+    4301496: Floor_Celing42
+    4301498: Floor_Celing43
+    4301500: Floor_Celing44
+    4301502: Floor_Celing45
+    4301504: Floor_Celing46
+    4301506: Floor_Celing47
+    4301508: Floor_Celing_Half8
+    4301510: Floor_Celing_Half9
+    4301512: Floor_Celing_Half10
+    4301514: Floor_Celing52
+    4301516: Floor_Celing55
+    4301518: Floor_Celing54
+    4301520: Floor_Celing53
+    4301522: Floor_Celing_Half13
+    4301524: Floor_Celing_Half14
+    4301526: Floor_Celing48
+    4301528: Floor_Celing49
+    4301530: Floor_Celing50
+    4301532: Floor_Celing_Half12
+    4301534: Floor_Celing_Half11
+    4301536: Floor_Celing51
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

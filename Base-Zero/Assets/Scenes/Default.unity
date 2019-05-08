@@ -16070,8 +16070,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489390096}
-  m_LocalRotation: {x: -0.0000000036415906, y: 1, z: -0, w: -0.000000014600495}
-  m_LocalPosition: {x: 0, y: -0.1, z: -0.459}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.01, y: -0.1, z: -0.459}
   m_LocalScale: {x: 0.32299998, y: 0.32299998, z: 0.32300007}
   m_Children:
   - {fileID: 506665473}
@@ -16552,16 +16552,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 7
   range: 20
-  fireRate: 5
+  fireRate: 2
   impactForce: 200
-  magSize: 30
-  currentAmmoCount: 30
+  magSize: 6
+  currentAmmoCount: 6
   reloadTime: 3
   adsZoom: 25
-  adsAccuracy: 100
-  accuracy: 80
+  adsAccuracy: 65
+  accuracy: 25
   recoil: 2
   bulletCount: 8
   semiAuto: 1
@@ -16756,17 +16756,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 9
+  damage: 6
   range: 20
-  fireRate: 5
+  fireRate: 2
   impactForce: 200
   magSize: 2
   currentAmmoCount: 2
   reloadTime: 2
   adsZoom: 25
-  adsAccuracy: 100
-  accuracy: 80
-  recoil: 2
+  adsAccuracy: 65
+  accuracy: 25
+  recoil: 10
   bulletCount: 10
   semiAuto: 1
   projectile: 0
@@ -20385,7 +20385,7 @@ Prefab:
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: playerWeapons.Array.data[2]
-      value: 18
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114478327494606626, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
@@ -20395,12 +20395,12 @@ Prefab:
     - target: {fileID: 114478327494606626, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: equippedWeapons.Array.data[1]
-      value: 7
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: playerWeapons.Array.data[1]
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114478327494606626, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
@@ -20410,7 +20410,7 @@ Prefab:
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: playerWeapons.Array.data[0]
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
@@ -21301,16 +21301,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  range: 200
-  fireRate: 15
+  damage: 20
+  range: 65
+  fireRate: 4
   impactForce: 200
   magSize: 30
   currentAmmoCount: 30
   reloadTime: 2
   adsZoom: 25
   adsAccuracy: 100
-  accuracy: 80
+  accuracy: 65
   recoil: 2
   bulletCount: 1
   semiAuto: 0
@@ -21897,17 +21897,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  range: 200
-  fireRate: 8
+  damage: 20
+  range: 50
+  fireRate: 6
   impactForce: 100
-  magSize: 12
-  currentAmmoCount: 12
-  reloadTime: 1
+  magSize: 8
+  currentAmmoCount: 8
+  reloadTime: 1.5
   adsZoom: 30
   adsAccuracy: 75
-  accuracy: 20
-  recoil: 2
+  accuracy: 40
+  recoil: 1.5
   bulletCount: 1
   semiAuto: 1
   projectile: 0
@@ -25888,7 +25888,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1193770104}
   m_LocalRotation: {x: -0.000000004262544, y: 1, z: -0, w: -0.00000001828104}
-  m_LocalPosition: {x: 0.00000017229468, y: -0.060000155, z: -0.056000054}
+  m_LocalPosition: {x: -0, y: -0.06, z: -0.232}
   m_LocalScale: {x: 0.35690552, y: 0.35690555, z: 0.3569056}
   m_Children:
   - {fileID: 537107246}
@@ -26572,6 +26572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1351187042072464, guid: 396929058c7f816469de5c2304af3931,
     type: 2}
+  dronePrefab: {fileID: 0}
   rad: 150
   maxEnemiesInScene: 25
   timeBetweenSpawns: 2.5
@@ -27415,18 +27416,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 5
   range: 20
-  fireRate: 5
+  fireRate: 3
   impactForce: 200
-  magSize: 30
-  currentAmmoCount: 30
+  magSize: 8
+  currentAmmoCount: 8
   reloadTime: 3
   adsZoom: 25
-  adsAccuracy: 100
-  accuracy: 80
+  adsAccuracy: 50
+  accuracy: 20
   recoil: 2
-  bulletCount: 8
+  bulletCount: 7
   semiAuto: 1
   projectile: 0
   fireAnimation: firing
@@ -31570,7 +31571,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1541646582}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.234}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1384233727}
@@ -31595,17 +31596,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  range: 200
-  fireRate: 15
+  damage: 25
+  range: 65
+  fireRate: 7
   impactForce: 200
   magSize: 30
   currentAmmoCount: 30
   reloadTime: 2
   adsZoom: 25
-  adsAccuracy: 100
+  adsAccuracy: 125
   accuracy: 80
-  recoil: 2
+  recoil: 1.5
   bulletCount: 1
   semiAuto: 0
   projectile: 0
@@ -31676,7 +31677,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1549273379}
   m_LocalRotation: {x: 0, y: 0.99988997, z: 0.014834803, w: 0}
-  m_LocalPosition: {x: 0, y: -0.027, z: -0.123}
+  m_LocalPosition: {x: 0, y: -0.027, z: -0.25}
   m_LocalScale: {x: 0.33906025, y: 0.33906028, z: 0.33906034}
   m_Children:
   - {fileID: 1541646583}
@@ -32140,8 +32141,8 @@ MonoBehaviour:
   currentAmmoCount: 6
   reloadTime: 3
   adsZoom: 30
-  adsAccuracy: 75
-  accuracy: 20
+  adsAccuracy: 100
+  accuracy: 50
   recoil: 4
   bulletCount: 1
   semiAuto: 1
@@ -41786,17 +41787,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  range: 200
-  fireRate: 15
+  damage: 22
+  range: 65
+  fireRate: 8
   impactForce: 200
   magSize: 30
   currentAmmoCount: 30
   reloadTime: 2
   adsZoom: 25
-  adsAccuracy: 100
+  adsAccuracy: 120
   accuracy: 80
-  recoil: 2
+  recoil: 3
   bulletCount: 1
   semiAuto: 0
   projectile: 0
@@ -42832,16 +42833,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  range: 200
-  fireRate: 8
+  damage: 15
+  range: 50
+  fireRate: 10
   impactForce: 100
-  magSize: 12
-  currentAmmoCount: 12
-  reloadTime: 1
+  magSize: 15
+  currentAmmoCount: 15
+  reloadTime: 1.5
   adsZoom: 30
   adsAccuracy: 75
-  accuracy: 20
+  accuracy: 50
   recoil: 2
   bulletCount: 1
   semiAuto: 1
