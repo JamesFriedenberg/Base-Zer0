@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: 703238e145695d6499f4e12a9666ca3e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Body
+    100002: Connector_Mount
+    100004: Connector_Mount 1
+    100006: //RootNode
+    100008: Lower_Turret
+    100010: Main_Rotor
+    100012: Mount_1
+    100014: Mount_1 1
+    100016: Mount_2
+    100018: Mount_2 1
+    100020: Rocket_Pod
+    100022: Rocket_Pod 1
+    100024: Tail_Rotor
+    100026: Tow_Missile1
+    100028: Tow_Missile1 1
+    100030: Tow_Missile2
+    100032: Tow_Missile2 1
+    100034: Tow_Missile3
+    100036: Tow_Missile3 1
+    100038: Tow_Missile4
+    100040: Tow_Missile4 1
+    100042: Turret_Mount
+    100044: Turret_Rotate
+    100046: Weapons_Left
+    100048: Weapons_Right
+    400000: Body
+    400002: Connector_Mount
+    400004: Connector_Mount 1
+    400006: //RootNode
+    400008: Lower_Turret
+    400010: Main_Rotor
+    400012: Mount_1
+    400014: Mount_1 1
+    400016: Mount_2
+    400018: Mount_2 1
+    400020: Rocket_Pod
+    400022: Rocket_Pod 1
+    400024: Tail_Rotor
+    400026: Tow_Missile1
+    400028: Tow_Missile1 1
+    400030: Tow_Missile2
+    400032: Tow_Missile2 1
+    400034: Tow_Missile3
+    400036: Tow_Missile3 1
+    400038: Tow_Missile4
+    400040: Tow_Missile4 1
+    400042: Turret_Mount
+    400044: Turret_Rotate
+    400046: Weapons_Left
+    400048: Weapons_Right
+    2100000: lambert33
+    2100002: Cobra_mat
+    2100004: Drone_mat
+    2300000: Body
+    2300002: Connector_Mount
+    2300004: Connector_Mount 1
+    2300006: Lower_Turret
+    2300008: Main_Rotor
+    2300010: Mount_1
+    2300012: Mount_1 1
+    2300014: Mount_2
+    2300016: Mount_2 1
+    2300018: Rocket_Pod
+    2300020: Rocket_Pod 1
+    2300022: Tail_Rotor
+    2300024: Tow_Missile1
+    2300026: Tow_Missile1 1
+    2300028: Tow_Missile2
+    2300030: Tow_Missile2 1
+    2300032: Tow_Missile3
+    2300034: Tow_Missile3 1
+    2300036: Tow_Missile4
+    2300038: Tow_Missile4 1
+    2300040: Turret_Mount
+    2300042: Turret_Rotate
+    3300000: Body
+    3300002: Connector_Mount
+    3300004: Connector_Mount 1
+    3300006: Lower_Turret
+    3300008: Main_Rotor
+    3300010: Mount_1
+    3300012: Mount_1 1
+    3300014: Mount_2
+    3300016: Mount_2 1
+    3300018: Rocket_Pod
+    3300020: Rocket_Pod 1
+    3300022: Tail_Rotor
+    3300024: Tow_Missile1
+    3300026: Tow_Missile1 1
+    3300028: Tow_Missile2
+    3300030: Tow_Missile2 1
+    3300032: Tow_Missile3
+    3300034: Tow_Missile3 1
+    3300036: Tow_Missile4
+    3300038: Tow_Missile4 1
+    3300040: Turret_Mount
+    3300042: Turret_Rotate
+    4300000: Mount_1
+    4300002: Connector_Mount
+    4300004: Mount_2
+    4300006: Tow_Missile3
+    4300008: Tow_Missile4
+    4300010: Tow_Missile1
+    4300012: Tow_Missile2
+    4300014: Rocket_Pod
+    4300016: Mount_1
+    4300018: Connector_Mount
+    4300020: Mount_2
+    4300022: Tow_Missile3
+    4300024: Tow_Missile4
+    4300026: Tow_Missile1
+    4300028: Tow_Missile2
+    4300030: Rocket_Pod
+    4300032: Body
+    4300034: Turret_Mount
+    4300036: Turret_Rotate
+    4300038: Lower_Turret
+    4300040: Tail_Rotor
+    4300042: Main_Rotor
+    7400000: Drone_Idle
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cobra_mat
+    second: {fileID: 2100000, guid: 50c6794974cb3604e813d985f491e1f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Drone_mat
+    second: {fileID: 2100000, guid: fd2f2727d92071349b74a5e4f315f47e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Drone_Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 50
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.5
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
