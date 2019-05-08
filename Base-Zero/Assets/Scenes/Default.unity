@@ -32132,17 +32132,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d2b6fc19348f144ac34366cd57fc81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  range: 200
-  fireRate: 8
+  damage: 30
+  range: 50
+  fireRate: 4
   impactForce: 100
-  magSize: 12
-  currentAmmoCount: 12
-  reloadTime: 1
+  magSize: 6
+  currentAmmoCount: 6
+  reloadTime: 3
   adsZoom: 30
   adsAccuracy: 75
   accuracy: 20
-  recoil: 2
+  recoil: 4
   bulletCount: 1
   semiAuto: 1
   projectile: 0
