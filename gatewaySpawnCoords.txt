@@ -1,0 +1,8 @@
+SupplyDepot -> Airfield (262.8, 2.17, 23)
+Airfield -> SupplyDepot (496.63, 2.26, 320.61)
+RailPath -> ShippingYard (527.32, .7, 308.04)
+ShippingYard -> RailPath (12.6, .7, 56.3704)
+ShippingYard -> Trainyard (492.03, 1.51, 176.32)
+Trainyard -> ShippingYard (55.09, 1.47, 540.09)
+Trainyard -> SupplyDepot (496.87, 2.26, 199.84)
+SupplyDepot -> Trainyard (156.636, 1.51, 482.8843)
