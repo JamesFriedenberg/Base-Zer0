@@ -15596,6 +15596,21 @@ Prefab:
       propertyPath: goToSceneName
       value: Trainyard
       objectReference: {fileID: 0}
+    - target: {fileID: 114853853428478202, guid: b9c2d3dda731fbc4985d551b2841283d,
+        type: 2}
+      propertyPath: spawnPosition.x
+      value: 492.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853853428478202, guid: b9c2d3dda731fbc4985d551b2841283d,
+        type: 2}
+      propertyPath: spawnPosition.y
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853853428478202, guid: b9c2d3dda731fbc4985d551b2841283d,
+        type: 2}
+      propertyPath: spawnPosition.z
+      value: 176.32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c2d3dda731fbc4985d551b2841283d, type: 2}
   m_IsPrefabAsset: 0
@@ -36116,6 +36131,21 @@ Prefab:
     - target: {fileID: 1655506234174082, guid: b9c2d3dda731fbc4985d551b2841283d, type: 2}
       propertyPath: m_Name
       value: RailPathGate
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853853428478202, guid: b9c2d3dda731fbc4985d551b2841283d,
+        type: 2}
+      propertyPath: spawnPosition.x
+      value: 12.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853853428478202, guid: b9c2d3dda731fbc4985d551b2841283d,
+        type: 2}
+      propertyPath: spawnPosition.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114853853428478202, guid: b9c2d3dda731fbc4985d551b2841283d,
+        type: 2}
+      propertyPath: spawnPosition.z
+      value: 56.3704
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c2d3dda731fbc4985d551b2841283d, type: 2}
