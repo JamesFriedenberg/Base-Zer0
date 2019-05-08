@@ -104,9 +104,17 @@ public class weapon : MonoBehaviour
         if(currentAmmoCount > magSize) currentAmmoCount = magSize;
         currentAccuracy = accuracy;
         GameManager gm = gameManager.GetComponent<GameManager>();
+		//Debug.Log ("Changing ammo here" + gameObject.name + " " + magSize);
+		currentAmmoCount = magSize;
         if(gm.ammoInWeapons != null && gm.ammoInWeapons.Length > 0){
-            //Debug.Log("Ammo" +gm.playerWeapons[gm.currentWeapon]);
-            //currentAmmoCount = gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]];
+			if (gm.ammoInWeapons [gm.playerWeapons [gm.currentWeapon]] == -1) {
+				currentAmmoCount = magSize;
+				Debug.Log ("Changing ammo here" + gameObject.name + " " + magSize);
+				gm.ammoInWeapons [gm.playerWeapons [gm.currentWeapon]] = currentAmmoCount;
+			} else {
+				currentAmmoCount = gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]];
+			}          
+		
         }
     }
     public void FindStats(GameObject objToSearch){
@@ -139,6 +147,7 @@ public class weapon : MonoBehaviour
                 }else if(!children[i].GetComponent<magazine>().upgrade){
                     children[i].gameObject.SetActive(false);
                 }
+
             }
 			if(children[i].GetComponent<scope>() != null){
                 if((int)myScope == (int)children[i].GetComponent<scope>().myScope){
@@ -326,6 +335,16 @@ public class weapon : MonoBehaviour
         //update current ammo count in specific weapon in gamemanager so it will remain
         //consistent through scenes
 //        gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]] = currentAmmoCount;
+		if(gm.ammoInWeapons != null && gm.ammoInWeapons.Length > 0){
+			if (gm.ammoInWeapons [gm.playerWeapons [gm.currentWeapon]] == -1) {
+				currentAmmoCount = magSize;
+				//Debug.Log ("Changing ammo here" + gameObject.name + " " + magSize);
+				gm.ammoInWeapons [gm.playerWeapons [gm.currentWeapon]] = currentAmmoCount;
+			} else {
+				gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]] = currentAmmoCount;
+			}          
+
+		}
         if(projectile){
             DoProjectile();
             return;
@@ -341,8 +360,9 @@ public class weapon : MonoBehaviour
 
             shootDirection.Normalize();
 
-            int layerMask = 1 << 9;
-            layerMask = ~layerMask;
+            int layerMask1 = 1 << 9;
+			int layerMask2 = 1 << 2;
+			int layerMask = ~(layerMask1 | layerMask2);
             if (Physics.Raycast(fpsCam.transform.position, shootDirection, out hit, range, layerMask))
             {
                 DoBullet(hit);
@@ -418,7 +438,17 @@ public class weapon : MonoBehaviour
         int ammoChange = Mathf.Min((magSize - currentAmmoCount), ammoCount);
         currentAmmoCount += ammoChange;
         gameManager.GetComponent<GameManager>().AddAmmo(currentAmmoType, -ammoChange);
+		GameManager gm = gameManager.GetComponent<GameManager> ();
+		if(gm.ammoInWeapons != null && gm.ammoInWeapons.Length > 0){
+			if (gm.ammoInWeapons [gm.playerWeapons [gm.currentWeapon]] == -1) {
+				currentAmmoCount = magSize;
+				//Debug.Log ("Changing ammo here" + gameObject.name + " " + magSize);
+				gm.ammoInWeapons [gm.playerWeapons [gm.currentWeapon]] = currentAmmoCount;
+			} else {
+				gm.ammoInWeapons[gm.playerWeapons[gm.currentWeapon]] = currentAmmoCount;
+			}          
 
+		}
         reloadTimer = 0;
     }
 

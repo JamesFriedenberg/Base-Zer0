@@ -31,7 +31,6 @@ public class GameManager : MonoBehaviour {
     public int[] ammoInWeapons;
 	public ShopWeapon[] weaponsList = new ShopWeapon[44];
     public Vector3 startPosition = Vector3.zero;
-	int timesAwoken = 0;
 
     //list of weapon indices from player weapon array
     public int[] playerWeapons = new int[3];
@@ -41,12 +40,11 @@ public class GameManager : MonoBehaviour {
     void Start(){
         weaponAmmo.Add("LMG", startingAmmo);
         weaponAmmo.Add("AR", startingAmmo);
+		Debug.Log ("Game manager");
 		//updateWeapons ();
     }
     void Awake()
     {
-		timesAwoken++;
-		Debug.Log (timesAwoken);
 
 		//fromSceneWeapons ();
         if(instance == null)
@@ -87,11 +85,9 @@ public class GameManager : MonoBehaviour {
     }
 
 	public void updateWeapons(){
-		Debug.Log ("Goona updaate these weapos");
 		PlayerHandler playerGuns = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerHandler> ();
 		for (int i = 0; i < 44; i++) {
 			if (playerGuns.allWeapons [i] != null) {
-				Debug.Log ("Valid" + i);
 				weaponsList [i].stockUpgraded = false;
 				//weaponsList [i].scopeUpgraded = false;
 				weaponsList [i].barrelUpgraded = false;

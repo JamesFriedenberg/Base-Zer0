@@ -58,7 +58,6 @@ public class SaveLoadGame : MonoBehaviour {
 		QuestManager qm = GetComponent<QuestManager> ();
 		questInfo.currentQuestIndex = qm.questIndex;
 		questPath = Path.Combine(Application.persistentDataPath, "QuestData.txt");
-		Debug.Log (questPath);
 
 		GameManager gm = GetComponent<GameManager> ();
 		playerInfo.scrapCount = gm.playerScraps;
@@ -68,11 +67,9 @@ public class SaveLoadGame : MonoBehaviour {
 		playerPath = Path.Combine(Application.persistentDataPath, "PlayerData.txt");
 
 		gm.updateWeapons ();
-		Debug.Log (gunInfo.Length);
 		for (int i = 0; i < gunInfo.Length; i++) {
 			
 			if (gm.weaponsList[i].valid) {
-				Debug.Log ("Prepping Weapon " + i);
 				Debug.Log (gm.weaponsList [i].purchased);
 				gunInfo [i] = new WeaponData ();
 				gunInfo [i].purchased = gm.weaponsList [i].purchased;
