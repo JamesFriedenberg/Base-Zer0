@@ -24,7 +24,7 @@ public class DroneController : MonoBehaviour
     public int attackDamage = 200;
     public bool playerInRange;
 
-    public float distanceToSeekPlayer = 70f;
+    public float distanceToSeekPlayer = 30f;
     public float height = 70f;
     private float firingRange = 30f;
 
@@ -40,8 +40,14 @@ public class DroneController : MonoBehaviour
         wanderRadius = 80f;
         wanderTime = wanderTimer;
         player = GameObject.FindWithTag("Player");
+        zombie = this.GetComponent<NavMeshAgent>();
         zombie.stoppingDistance = 2f;
-        zombie.baseOffset = Random.Range(50f, 120f);
+        //zombie.baseOffset = Random.Range(30f, 40f);
+        zombie.baseOffset = 15f;
+        if (this.GetComponent<NavMeshAgent>().isOnNavMesh == false || Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 30f)
+        {
+            Destroy(gameObject);
+        }
     }
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
@@ -70,6 +76,8 @@ public class DroneController : MonoBehaviour
     void Update()
     {
 
+        this.transform.LookAt(player.transform);
+
         if (deathFlag == true)
         {
             if (health <= 0f)
@@ -84,47 +92,54 @@ public class DroneController : MonoBehaviour
         
         offsetTimer -= Time.deltaTime;
 
-        zombie.baseOffset += offsetValue * Time.deltaTime;
-        if(offsetTimer <= 0f)
-        {
-            if(Random.Range(0.0f,1.0f) > 0.5f)
-            {
-                offsetValue = -(Random.Range(7f, 9f));
-                offsetTimer = 2f;
-            }
-            else
-            {
-                offsetValue = (Random.Range(7f, 9f));
-                offsetTimer = 2f;
+        //zombie.baseOffset += offsetValue * Time.deltaTime;
+        //if (offsetTimer <= 0f)
+        //{
+        //    //if (this.gameObject.transform.position.y < 2f)
+        //    //{
+        //    //    offsetValue = (Random.Range(7f, 9f));
+        //    //    offsetTimer = 2f;
 
-            }
-        }
+        //    //}
+        //    if (Random.Range(0.0f, 1.0f) > 0.5f)
+        //    {
+        //        offsetValue = -(Random.Range(7f, 9f));
+        //        offsetTimer = 2f;
+        //    }
+        //    else
+        //    {
+        //        offsetValue = (Random.Range(7f, 9f));
+        //        offsetTimer = 2f;
 
-       
-     
+        //    }
+        //}
+
+
+
         float distanceToPlayer = Vector3.Distance(this.transform.position, player.transform.position);
         int playerHealth = player.GetComponent<PlayerHandler>().GetHealth();
 
-        //zombie.SetDestination(player.transform.localPosition);
-        if (distanceToPlayer > distanceToSeekPlayer)
-        {
+        zombie.SetDestination(player.transform.localPosition);
+        //if (distanceToPlayer > distanceToSeekPlayer)
+        //{
 
-            if (wanderTime >= wanderTimer)
-            {
+        //    if (wanderTime >= wanderTimer)
+        //    {
 
-                Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
-                zombie.SetDestination(newDir);
-                wanderTime = 0;
-            }
-        }
-        if(distanceToPlayer < distanceToSeekPlayer)
+        //        Vector3 newDir = randomWanderDirection(transform.position, wanderRadius, 1);
+        //        zombie.SetDestination(newDir);
+        //        wanderTime = 0;
+        //    }
+        //}
+        if (distanceToPlayer < distanceToSeekPlayer)
         {
 
             zombie.SetDestination(player.transform.localPosition);
-            if (distanceToPlayer < 50f)
+            if (distanceToPlayer < 20f)
             {
                 if (shootFlag)
                 {
+                    Debug.Log("ShootyPooty");
                     StartCoroutine(shoot());
                     shootFlag = false;
                 }

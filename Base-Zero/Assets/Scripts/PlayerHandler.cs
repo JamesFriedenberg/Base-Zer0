@@ -114,9 +114,7 @@ public class PlayerHandler : MonoBehaviour
     }
     private void SwitchWeapon(int weaponNumber)
     {
-		
-		if (currentWeapon == weaponNumber ||
-		          !playerWeapons [weaponNumber]) {
+		if (weaponNumber > 2 || weaponNumber < 0 || !playerWeapons [weaponNumber] || currentWeapon == weaponNumber) {
 			return;
 		}
         if(playerWeapons[currentWeapon].GetComponentInChildren<weapon>().IsReloading()) return;

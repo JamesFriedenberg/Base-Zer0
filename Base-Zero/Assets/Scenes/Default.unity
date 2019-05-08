@@ -16510,7 +16510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79165362b63ca104d991d14ba2139a2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgrade: 0
+  upgrade: 1
   magSize: 4
   reloadTime: 1
 --- !u!114 &506665482
@@ -16553,7 +16553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  range: 200
+  range: 20
   fireRate: 5
   impactForce: 200
   magSize: 30
@@ -16757,7 +16757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 9
-  range: 200
+  range: 20
   fireRate: 5
   impactForce: 200
   magSize: 2
@@ -20343,7 +20343,7 @@ Prefab:
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.size
-      value: 8
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 4112974312554988, guid: e7837f307fc4d4b40bc5e260a3fb5a8b, type: 2}
       propertyPath: m_LocalPosition.x
@@ -20395,12 +20395,12 @@ Prefab:
     - target: {fileID: 114478327494606626, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: equippedWeapons.Array.data[1]
-      value: 26
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: playerWeapons.Array.data[1]
-      value: 26
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114478327494606626, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
@@ -20410,47 +20410,227 @@ Prefab:
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: playerWeapons.Array.data[0]
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[0]
-      value: 100
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[2]
-      value: 100
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[1]
-      value: 100
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[3]
-      value: 100
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[4]
-      value: 100
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[5]
-      value: 100
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[6]
-      value: 100
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
         type: 2}
       propertyPath: ammoInWeapons.Array.data[7]
-      value: 100
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[8]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[9]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[10]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[11]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[12]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[13]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[14]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[15]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[16]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[17]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[18]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[19]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[20]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[21]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[22]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[23]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[24]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[25]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[26]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[27]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[28]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[29]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[30]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[31]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[32]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[33]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[34]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[35]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[36]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[37]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[38]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[39]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[40]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[41]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[42]
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114962164922942536, guid: e7837f307fc4d4b40bc5e260a3fb5a8b,
+        type: 2}
+      propertyPath: ammoInWeapons.Array.data[43]
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7837f307fc4d4b40bc5e260a3fb5a8b, type: 2}
@@ -20965,7 +21145,7 @@ MonoBehaviour:
   range: 200
   fireRate: 2
   impactForce: 200
-  magSize: 30
+  magSize: 20
   currentAmmoCount: 30
   reloadTime: 2
   adsZoom: 25
@@ -27039,7 +27219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1261158185
 Transform:
   m_ObjectHideFlags: 0
@@ -27236,7 +27416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  range: 200
+  range: 20
   fireRate: 5
   impactForce: 200
   magSize: 30
@@ -42665,7 +42845,7 @@ MonoBehaviour:
   recoil: 2
   bulletCount: 1
   semiAuto: 1
-  projectile: 1
+  projectile: 0
   fireAnimation: pistol_firing
   currentAmmoType: AR
   fpsCam: {fileID: 1252231735}

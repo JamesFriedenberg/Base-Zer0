@@ -7,6 +7,8 @@ using UnityEngine;
 public class SpawnTEST : MonoBehaviour {
 
     public GameObject zombiePrefab;
+    public GameObject dronePrefab;
+
     public float rad = 200;
     public int maxEnemiesInScene = 25;
     public float timeBetweenSpawns = 1.5f;
@@ -71,10 +73,21 @@ public class SpawnTEST : MonoBehaviour {
     IEnumerator spawnEm()
     {
 
-       
+
+        int droneChance = Random.Range(0, 20);
+        if(droneChance >= 16)
+        {
+            Instantiate(dronePrefab, randomPointOnCircleEdge(rad), transform.rotation);
+
+
+        }
+        else
+        {
             Instantiate(zombiePrefab, randomPointOnCircleEdge(rad), transform.rotation);
 
-            yield return new WaitForSeconds(timeBetweenSpawns);
+        }
+
+        yield return new WaitForSeconds(timeBetweenSpawns);
 
              flag = true;
       

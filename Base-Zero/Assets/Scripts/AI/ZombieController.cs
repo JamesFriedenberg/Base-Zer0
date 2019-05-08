@@ -93,14 +93,11 @@ public class ZombieController : MonoBehaviour {
         wanderTime += Time.deltaTime;
         timer += Time.deltaTime;
 
-        if (zombie.isPathStale)
-        {
-            Debug.Log("Path is stale");
-        }
+    
 
     
 
-        if(distanceToPlayer > 45f)
+        if(distanceToPlayer > 35f)
         {
             zombie.obstacleAvoidanceType = ObstacleAvoidanceType.NoObstacleAvoidance;
 
