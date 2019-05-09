@@ -410,7 +410,7 @@ public class weapon : MonoBehaviour
             {
                     target.TakeDamage(damage);
                 }
-            Debug.Log(target.gameObject.tag);
+
             myImpact = blood;
             }
             else

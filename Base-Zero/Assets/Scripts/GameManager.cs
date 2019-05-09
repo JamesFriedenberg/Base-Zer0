@@ -72,9 +72,9 @@ public class GameManager : MonoBehaviour {
 
 	void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
 	{
-		Debug.Log("Level Loaded");
-		Debug.Log(scene.name);
-		Debug.Log(mode);
+		//Debug.Log("Level Loaded");
+		//Debug.Log(scene.name);
+		//Debug.Log(mode);
 		//fromSceneWeapons ();
 	}
 		
